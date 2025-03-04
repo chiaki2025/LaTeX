@@ -1,0 +1,50 @@
+\chapter{Liên tục}
+\section{Lý thuyết}
+\subsection{Định nghĩa hàm số liên tục}
+\subsubsection{Hàm số liên tục tại một điểm}
+Hàm số $f(x)$ xác định trên khoảng $(a,b)$ liên tục tại điểm $x_{0}\in{(a,b)}$ khi và chỉ khi:
+\begin{equation} \label{eq:sixth}
+\lim_{x\to x_{0^{+}}}f(x)=\lim_{x\to x_{0^{-}}}f(x)=f(x_{0})
+\end{equation}
+\subsubsection{Hàm số liên tục trên khoảng}
+Hàm số $f(x)$ liên tục trên khoảng $(a,b)$ nếu nó liên tục tại tất cả các điểm thuộc khoảng $(a,b)$.
+\\ Định lý: Mọi hàm sơ cấp đều liên tục trên miền xác định của nó.
+\subsection{Phân loại các điểm gián đoạn}
+\subsubsection{Điểm gián đoạn loại 1}
+Giả sử $x_{0}\in(a,b)$. Nếu \textbf{tồn tại đồng thời} cả hai giới hạn $\lim_{x\to x_0^+}f(x)$ và $\lim_{x\to x_0^-}f(x)$ và \underline{ít nhất một trong hai giới hạn} khác $f(x_{0})$ thì ta gọi 
+$x_{0}$ là điểm gián đoạn loại 1 của hàm số.
+\subsubsection{Điểm gián đoạn loại 2}
+Điểm gián đoạn không phải là loại 1 thì được gọi là điểm gián đoạn loại 2.
+\section{Bài tập}
+Bài tập mẫu: Xét tính liên tục và biện luận điểm gián đoạn của hàm số sau:
+\begin{equation*}
+    f(x)=\left\{\begin{aligned}
+        \frac{1-\cos{x}}{x^2} \quad(x\neq0)\\
+         A\quad(x=0)\\
+    \end{aligned}\right.
+\end{equation*}
+Lời giải: Xét giới hạn sau:
+$$\lim_{x\to0}\frac{1-\cos{x}}{x^2}=\lim_{x\to0}\frac{2\sin^2{\frac{x}{2}}}{4(\frac{x}{2})^2}=\frac{1}{2}$$
+Nếu $$\lim_{x\to0}f(x)=A=\frac{1}{2}$$ thì $f(x)$ liên tục tại điểm $0$.
+Do cả giới hạn trái và giới hạn phải tại $0$ đều tồn tại nên nếu $A\neq\frac{1}{2}$ thì $0$ là điểm gián đoạn loại 1 của hàm số.
+\\Bài tập: Xét tính liên tục và phân loại điểm gián đoạn của các hàm số sau:
+\begin{enumerate}
+    \item \begin{equation*}
+        f(x)=\left\{\begin{aligned}
+            \frac{x-1}{4}(x+1)^2 \quad(|x|\leq1)\\
+            |x|-1 \quad(|x|>1)\\
+        \end{aligned}\right.
+    \end{equation*}
+    \item \begin{equation*}
+        f(x)=\left\{\begin{aligned}
+            \frac{\ln(6x+1)}{x}\quad(x>0)\\
+            x+100\quad(x\leq0)
+        \end{aligned}\right.
+    \end{equation*}
+    \item \begin{equation*}
+        f(x)=\left\{\begin{aligned}
+            \frac{e^{4x}-\cos{x}}{x}\quad(x\neq0)\\
+            x+100\quad(x=0)
+        \end{aligned}\right.
+    \end{equation*}
+\end{enumerate}

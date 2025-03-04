@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage[utf8]{vietnam}
+\usepackage[14pt]{extsizes}
+\usepackage{amsmath}
+\title{Bài tập Giải tích 1}
+\date{24/11/2023}
+\begin{document}
+\maketitle
+\section{Tích phân suy rộng}
+\subsection{Tính bằng định nghĩa}
+\begin{enumerate}
+    \item $$\int_{0}^{+\infty}\frac{x^2+1}{x^4+1}dx$$
+    \item $$\int_{0}^{+\infty}\frac{dx}{x^4+1}dx$$
+    \item $$\int_{0}^{+\infty}\frac{\arctan x}{\sqrt{(x^2+1)^3}}dx$$
+\end{enumerate}
+\subsection{Sử dụng các dấu hiệu để khảo sát sự hội tụ}
+\subsubsection{Dấu hiệu so sánh}
+Cho hai hàm số $f(x)$ và $g(x)$ thỏa mãn $0\leq f(x)\leq g(x)$:
+\begin{enumerate}
+    \item Nếu tích phân $\int_{a}^{+\infty}f(x)dx$ phân kỳ thì $\int_{a}^{+\infty}g(x)dx$ cũng phân kỳ
+    \item Nếu tích phân $\int_{a}^{+\infty}g(x)dx$ hội tụ thì tích phân $\int_{a}^{+\infty}f(x)dx$ cũng hội tụ
+\end{enumerate}
+Ý tưởng để xử lý bài tập dạng này là so sánh tích phân suy rộng đã cho với một tích phân suy rộng đã xác định được tính chất của nó, thường là tích phân suy rộng loại 1 dạng: $$A_{n}=\int_{a}^{+\infty}\frac{1}{x^\alpha}dx$$
+\begin{itemize}
+\item  Với $\alpha>1$, tích phân $A_{n}$ hội tụ
+\item  Với $\alpha \leq 1$, tích phân $A_{n}$ phân kỳ
+\end{itemize}
+Trong trường hợp tích phân suy rộng loại 2: $$A_{n}=\int_{a}^{b}\frac{1}{x^\alpha}dx$$
+\begin{itemize}
+\item Với $\alpha \geq 1$, tích phân $A_{n}$ phân kỳ
+\item Với $\alpha<1$, tích phân $A_{n}$ hội tụ
+\end{itemize}
+Ngoài ra, chúng ta có một dấu hiệu so sánh tương đương khác để khảo sát sự hội tụ của tích phân suy rộng:
+\\ Giả sử $f(x)$ và $g(x)$ xác định hữu hạn, không âm, xét giới hạn sau: $$\lim_{x\to+\infty}\frac{f(x)}{g(x)}=k$$
+\begin{itemize}
+    \item $k=0$, $f(x)$ phân kỳ thì $g(x)$ cũng phân kỳ
+    \item $0<k<+\infty$, $f(x)$ và $g(x)$ cùng tính hội tụ hoặc phân kỳ
+    \item $k=+\infty$, $f(x)$ hội tụ thì $g(x)$ cũng hội tụ
+\end{itemize}
+Bài tập: Xét tích phân suy rộng hội tụ hay phân kì bằng dấu hiệu so sánh:
+\begin{enumerate}
+    \item $$\int_{1}^{+\infty}\frac{\sin{nx}dx}{\sqrt{x+1}\sqrt[3]{x^2+1}}$$
+    \item $$\int_{0}^{1}\frac{\ln{x}dx}{\sqrt{1-x^2}}$$
+    \item $$\int_{1}^{+\infty}\frac{dx}{\sqrt{4x+\ln{x}}}$$
+    \item $$\int_{0}^{1}\frac{x^3dx}{\sqrt[3]{(1-x^2)^5}}$$
+\end{enumerate}
+\section{Chuỗi số}
+\subsection{Xét sự hội tụ dựa vào định nghĩa}
+Cho dãy số $a_{1},a_{2},...,a_{n},...$, đặt: $$A_{n}=\sum_{i=1}^{n}a_{i}$$
+Ta gọi $A_{n}$ là dãy tổng riêng của chuỗi số và xây dựng định nghĩa về chuỗi số hội tụ: $$S_{n}=\sum_{n=1}^{+\infty}a_{n}=\lim_{n\to+\infty}A_{n}=A$$
+Hiển nhiên khi chuỗi số $S_{n}$ hội tụ thì \textbf{dãy số a(n) sẽ tiến về 0 khi n tiến ra dương vô cùng, đây là tính chất rất quan trọng để giải các bài tập tiếp theo}. Dễ thấy khi $a_{n}$ không hội tụ về 0 khi n tiến ra dương vô cùng thì đồng nghĩa chuỗi số $S_{n}$ \textbf{phân kỳ}
+\\Bài tập: Dựa vào định nghĩa, xét sự hội tụ của chuỗi sau và tính tổng của chúng:
+\begin{enumerate}
+    \item $$\sum_{n=1}^{+\infty}\frac{1}{n(n+1)(n+2)}$$
+    \item $$\sum_{n=1}^{+\infty}\frac{2n+1}{n^2(n+1)^2}$$
+\end{enumerate}
+\subsection{Xét sự hội tụ dựa vào các dấu hiệu}
+\subsubsection{Dấu hiệu so sánh}
+Cho hai chuỗi số dương $\sum_{n=1}^{+\infty}a_{n}$ và $\sum_{n=1}^{+\infty}b_{n}$, giả sử tồn tại số $N$ sao cho $a_{n}\leq b_{n}$ với $\forall n\geq N$, khi đó ta có:
+\begin{itemize}
+    \item $\sum_{n=1}^{+\infty}a_{n}$ phân kỳ thì $\sum_{n=1}^{+\infty}b_{n}$ cũng phân kỳ
+    \item $\sum_{n=1}^{+\infty}b_{n}$ hội tụ thì $\sum_{n=1}^{+\infty}a_{n}$ cũng hội tụ
+\end{itemize}
+Tương tự như dấu hiệu so sánh tương đương của tích phân suy rộng, ta cũng có thể làm tương tự: $$\lim_{n\to+\infty}\frac{a_{n}}{b_{n}}=k$$
+\begin{itemize}
+    \item Với $k=0$, $\sum_{n=1}^{+\infty}a_{n}$ phân kỳ thì $\sum_{n=1}^{+\infty}b_{n}$ cũng phân kỳ
+    \item Với $0<k<+\infty$, $\sum_{n=1}^{+\infty}a_{n}$ và $\sum_{n=1}^{+\infty}b_{n}$ cùng tính hội tụ hay phân kì
+    \item Với $k=+\infty$, $\sum_{n=1}^{+\infty}a_{n}$ hội tụ thì $\sum_{n=1}^{+\infty}b_{n}$ cũng hội tụ
+\end{itemize}
+\subsubsection{Dấu hiệu D'Alambert}
+Cho chuỗi số dương $$A_{n}=\sum_{n=1}^{+\infty}a_{n}$$
+Ta xét giới hạn sau: $$\lim_{n\to+\infty}\frac{a_{n+1}}{a_{n}}=D$$
+\begin{itemize}
+    \item $D<1$, chuỗi số hội tụ
+    \item $D=1$, chưa thể kết luận
+    \item $D>1$, chuỗi phân kỳ
+\end{itemize}
+\subsubsection{Dấu hiệu Cauchy}
+Cho chuỗi số dương $$A_{n}=\sum_{n=1}^{+\infty}a_{n}$$
+Ta xét giới hạn sau: $$\lim_{n\to+\infty}\sqrt[n]{a_{n}}=C$$
+\begin{itemize}
+    \item $C<1$, chuỗi số hội tụ
+    \item $C=1$, chưa thể kết luận
+    \item $C>1$, chuỗi phân kỳ
+\end{itemize}
+\subsubsection{Dấu hiệu Leibniz}
+Dấu hiệu Leibniz \textbf{chỉ dùng cho chuỗi đan dấu}, xét chuỗi đan dấu sau $$A_{n}=\sum_{n=1}^{+\infty}(-1)^{n-1}a_{n}$$
+\\ Chuỗi này hội tụ nếu:
+\begin{enumerate}
+    \item $a_{n}$ đơn điệu giảm
+    \item $a_{n}\to 0$ khi $n\to+\infty$
+\end{enumerate}
+Đối với các bài xét chuỗi $A_{n}$ không phải là một chuỗi số dương, thì chúng ta phải thực hiện thao tác xét sự \textbf{hội tụ tuyệt đối hay bán hội tụ của chuỗi số đó}
+\\ Cho chuỗi số $A_{n}$ \textbf{không phải là một chuỗi số dương}, ta có tính chất sau:
+\begin{enumerate}
+    \item Nếu chuỗi số $|A_{n}|$ hội tụ thì chuỗi $A_{n}$ cũng hội tụ và ta gọi chuỗi số $A_{n}$ là chuỗi hội tụ tuyệt đối
+    \item Nếu chuỗi số $|A_{n}|$ phân kỳ mà chuỗi $A_{n}$ hội tụ thì ta gọi chuỗi số $A_{n}$ là chuỗi bán hội tụ
+\end{enumerate}
+Vậy nếu chúng ta \underline{TƯ DUY} một chút thì khi xử lý các bài toán liên quan đến chuỗi số không dương thì ta phải xét tính hội tụ hay phân kì của chuỗi $|A_{n}|$ trước
+\subsubsection{Dấu hiệu tích phân}
+Chuỗi số dương $\sum_{n=1}^{+\infty}a_{n}$ luôn cùng tính chất hội tụ hay phân kỳ với tích phân suy rộng $\int_{1}^{+\infty}f(x)dx$ với điều kiện $f(n)=a_{n}$, để cho dễ nhớ thì có thể hiểu đơn giản bản chất của cả hai phép toán tích phân suy rộng và tính tổng chuỗi số đến vô hạn đều có cùng một bản chất là \textbf{cộng từng đoạn nhỏ lại cho đến vô cùng}, nên tính chất của chúng giống nhau. Ví dụ như cả tích phân suy rộng $\int_{1}^{+\infty}\frac{1}{x^2}dx$ và chuỗi số $\sum_{n=1}^{+\infty}\frac{1}{n^2}$ đều hội tụ
+\\ \textbf{Tính chất quan trọng dùng trong dấu hiệu so sánh:}
+\\ Xét chuỗi số dương: $$S_{n}=\sum_{n=1}^{+\infty}\frac{1}{n^\alpha}$$
+\begin{itemize}
+    \item $\alpha>1$, chuỗi số hội tụ
+    \item $\alpha\leq 1$, chuỗi số phân kỳ
+\end{itemize}
+Bài tập:
+\\ Dùng dấu hiệu so sánh để xét tính hội tụ hay phân kì của các chuỗi số sau
+\begin{enumerate}
+    \item $$\sum_{n=1}^{+\infty}\frac{1}{\sqrt{n(n+1)}}$$
+    \item $$\sum_{n=1}^{+\infty}\frac{1}{\sqrt{n(n^2+1)}}$$
+    \item $$\sum_{n=1}^{+\infty}\frac{1}{n!}$$
+    \item $$\sum_{n=1}^{+\infty}\frac{1}{\sqrt{n}}\sin{\frac{1}{n}}$$
+\end{enumerate}
+Kết hợp các dấu hiệu để xét tính hội tụ hay phân kì của các chuỗi số sau:
+\begin{enumerate}
+    \item $$\sum_{n=1}^{+\infty}\frac{(n+1)^2}{n^2.3^n}$$
+    \item $$\sum_{n=1}^{+\infty}\left(\frac{2n^2+2n-1}{5n^2-2n+1}\right)^n$$
+    \item $$\sum_{n=1}^{+\infty}\left(\frac{n^2+3}{n^2+4}\right)^{n^3+1}$$
+    \item $$\sum_{n=1}^{+\infty}\frac{4^n.n!}{n^n}$$
+\end{enumerate}
+Khảo sát tính hội tụ của các chuỗi số sau:
+\begin{enumerate}
+    \item $$\sum_{n=1}^{+\infty}(-1)^{n-1}\frac{\sqrt{n}}{n+100}$$
+    \item $$\sum_{n=1}^{+\infty}(-1)^{n}\left(\frac{3n+1}{3n-2}\right)^{5n+2}$$
+    \item $$\sum_{n=1}^{+\infty}\frac{(-1)^{n-1}}{n}\sin{\frac{\sqrt{n}}{n+1}}$$
+\end{enumerate}
+Nói chung là làm mấy bài này vẫn chưa đủ để qua cuối kì đâu, nhưng chịu đọc với chịu làm thì vẫn còn cứu được. Làm xong rồi thì giở sách, lên mạng kiếm đề với bài tập trên Zalo mà bú đi, và quan trọng nhất là phải TƯ DUY. Chúc tai qua nạn khỏi
+\begin{center}
+    \textbf{NAMMOAMUAMUDAPHAT}
+    \end{center}
+\end{document}

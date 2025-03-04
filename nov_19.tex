@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{graphicx}
+
+\newtheorem{theorem}{Theorem}[section]
+% \nemtheorem{corollary}{Corollary}[theorem]
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\cv}[2]{\begin{bmatrix}
+    #1\\
+    #2\\
+\end{bmatrix}}
+
+\title{Hello World}
+\author{Chiaki}
+\date{Nov 19}
+\begin{document}
+\maketitle
+\section*{Introduction}
+\begin{enumerate}
+\item Let's begin with a \textbf{formula}: $e^{i\pi}+1=0$
+\item \textit{But we can also do}
+$$\lim_{n\to+\infty}\left(1+\frac{1}{n}\right)^n=\lim_{n\to+\infty}\frac{n}{\sqrt[n]{n!}}=\lim_{x\to 0}\left(1+\frac{1}{x}\right)^{x}=e$$
+\item We can do another:
+\begin{align}
+e&=\sum_{n=0}^{+\infty}\frac{1}{n!}\\\text{Like and subscribe}&=\lim_{n\to+\infty}\left(1+\frac{1}{n}\right)^{n}
+\end{align}
+\end{enumerate}
+\section*{\underline{More formula}}
+$$\int_{a}^{+\infty}f(x)dx$$
+$$\iint_{a}^{b}$$
+$$\vec{v}=<v_1,v_2>$$
+$$\begin{bmatrix}
+1 & 2 &3\\
+4 & 5 & x \\
+\end{bmatrix}$$
+$$\begin{bmatrix}
+    1&2&3&4\\
+    5&x&y&z\\
+\end{bmatrix}$$
+$$\int_{-\infty}^{+\infty}\sin{x}dx$$
+Define $\pi$ value: $$\pi=3.1415$$
+Otherwise, we can define:
+\begin{equation}
+    e=2.71
+\end{equation}
+\begin{equation}
+\label{pi}
+    \pi=3.14 
+\end{equation}
+Matrix \ref{pi} is cool!!!!
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{sakuya.png}
+    \caption{A cute cat.}
+    \label{fig:cat}
+    \end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{pantsu.png}
+    \caption{A cute pantsu}
+\end{figure}
+\begin{equation}
+\begin{split}
+S_{n}&=\lim_{n\to+\infty}\sum_{n=1}^{+\infty}\frac{1}{n}\\&=+\infty
+\end{split}
+\end{equation}
+\newpage
+\section{More Trick}
+\begin{table}
+\caption{A nifty table}
+\begin{center}
+\begin{tabular}{|c|c|}
+    \hline
+    1&2 \\ \hline
+    3a&4b \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\includegraphics[width=0.5\textwidth]{sakuya.png}
+\begin{theorem}[Youtube]
+We should like and subscribe 
+\begin{proof}
+    Check out Visual Studio Code please
+\end{proof}
+\end{theorem}
+\begin{theorem}
+    You should ring the notification too
+\begin{proof}
+    I don't think so
+\end{proof}
+\end{theorem}
+Real numbers symbol: $\mathbb{R}$ \\
+Real number: $\R$ \\
+I can create a matrix: $\cv{1}{2}$
+\end{document}

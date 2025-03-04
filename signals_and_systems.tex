@@ -1,0 +1,270 @@
+\documentclass{article}
+\usepackage[utf8]{vietnam}
+\usepackage[14pt]{extsizes}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{geometry}
+\usepackage{mathrsfs}
+
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+}
+\usepackage{enumitem}
+\title{Tín hiệu và hệ thống}
+\begin{document}
+\maketitle
+\section{Giới thiệu về tín hiệu và hệ thống}
+\subsection{Tín hiệu}
+\subsubsection{Năng lượng và công suất}
+\begin{enumerate}
+    \item Tín hiệu liên tục
+    $$E_{\infty}=\int_{-\infty}^{+\infty}|x(t)|^2dt$$
+    $$P=\lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{T}|x(t)|^2dt$$
+    \item Tín hiệu rời rạc
+    $$E_{\infty}=\sum_{n=-\infty}^{+\infty}|x[n]|^2$$
+    $$P=\lim_{N\to+\infty}\frac{1}{2N+1}\sum_{n=-N}^{+N}|x[n]|^2$$
+\end{enumerate}
+\subsubsection{Phép toán trên tín hiệu}
+$$f(t)\to f(at+b)$$
+$$x[n]\to x[an+b]$$
+\subsection{Hệ thống}
+\begin{itemize}
+    \item Không nhớ: chỉ phụ thuộc vào hiện tại
+    \item Nhân quả: không phụ thuộc vào tương lai
+    \item Tuyến tính: thỏa mãn nguyên lý chồng chất
+\\ Xét tín hiệu $x_{3}(t)=Ax_{1}(t)+Bx_{2}(t)$, nếu tuyến tính thì tín hiệu ra là $y_{3}(t)=Ay_{1}(t)+By_{2}(t)$.
+\\ $y(t)=|x(t-1)|$. Xét tín hiệu $x_{3}(t)=Ax_{1}(t)+Bx_{2}(t)$, đầu ra là $$y_{3}(t)=|x_{3}(t-1)|=|Ax_{1}(t-1)+Bx_{2}(t-1)|$$
+khác với đầu ra tuyến tính là $y_{3}(t)=Ay_{1}(t)+By_{2}(t)=A|x_{1}(t-1)|+B|x_{2}(t-1)|$
+
+
+
+
+    \item Ổn định: chỉ n trong một khoảng xác định. Định nghĩa là nếu $|x(t)|<B$ thì $|y(t)|<f(B)$. Ví dụ hệ thống
+    $$y(t)=|x(t-1)|$$
+    Giả sử $|x(t)|<B$ thì $|x(t-1)|<B$, suy ra $|y(t)|<B$
+    \item Bất biến: không phụ thuộc vào thời điểm $t_{0}$
+\end{itemize}
+\section{Hệ thống LTI}
+\subsection{Tích chập}
+\begin{enumerate}
+    \item Thời gian liên tục
+    $$y(t)=\int_{-\infty}^{+\infty}x(\tau)h(t-\tau)d\tau=x(t)*h(t)$$
+    \item Thời gian rời rạc
+    $$y[n]=\sum_{k=-\infty}^{+\infty}x[k]h[n-k]=x[n]*h[n]$$
+\end{enumerate}
+\subsection{Tính chất hệ thống LTI}
+\begin{itemize}
+    \item Không nhớ: $h(t) (h[n])=0 (t,n\neq 0)$
+    \item Nhân quả: $h(t) (h[n])=0(\forall t,n\leq 0)$
+    \item Ổn định:
+    $$\int_{-\infty}^{+\infty}|h(t)|dt<+\infty$$
+    $$\sum_{k=-\infty}^{+\infty}|h[k]|<+\infty$$
+\end{itemize}
+\subsection{Phương trình vi/sai phân biểu diễn hệ thống LTI}
+\subsubsection{Phương trình vi phân}
+$$\frac{dy(t)}{dt}+2y(t)=x(t)$$
+Biết $y(0^{-})=2$ và $x(t)=e^{-t}u(t)$, tìm tín hiệu ra $y(t)$.
+\\Nghiệm phương trình trong Giải tích (hay Kĩ thuật điện)
+$$y_{G}(t)=y_{H}(t)+y_{P}(t)$$
+Tìm nghiệm $y_{H}(t)$ thì không có đầu vào, tức là $x(t)=0$ suy ra
+$y_{H}=Ae^{st}$, ta tính được $s=-2$, vậy $y_{H}(t)=Ae^{-2t}$
+\\Tìm nghiệm $y_{P}(t)$ thì chỉ cần thỏa mãn đầu vào:
+$$\frac{dy(t)}{dt}+2y(t)=e^{-t}u(t)$$
+Nghiệm $y_{P}(t)=Ke^{-t}$, ta tính được $K=1$. Suy ra $y_{G}(t)=Ae^{-2t}+e^{-t}$, thay điều kiện đầu vào để tìm nốt $A=1$.
+Vậy ta có $y_{G}(t)=(e^{-2t}+e^{-t})u(t)$
+\\Nghiệm của tín hiệu và hệ thống:\\
+Tìm nghiệm đáp ứng tự nhiên $y_{N}(t)$, nghiệm này có dạng giống với nghiệm thuần nhất và thỏa mãn điều kiện khởi tạo.
+$$y_{N}(t)=Ae^{-2t}=2e^{-2t}$$
+Tìm nghiệm đáp ứng lực, nghiệm này có dạng giống với nghiệm tổng quát với điều kiện khởi tạo bằng không (không quan tâm nữa):
+$$y_{F}(t)=-e^{-2t}+e^{-t}$$
+\\Tìm nghiệm tín hiệu ra của hệ thống:
+$$y(t)=y_{N}(t)+y_{F}(t)=(e^{-2t}+e^{-t})u(t)$$
+\subsubsection{Phương trình sai phân}
+$$y[n]+2y[n-1]=x[n]$$
+Biết $y[0]=2$ và $x(t)=3^{-n}u[n]$, tìm tín hiệu ra $y[n]$.
+\\Tìm nghiệm $y_{N}[n]$, $y_{N}[n]=K\lambda^{n}$, ta tính được:
+$$\lambda^{n}+2\lambda^{n-1}=0$$
+vậy $\lambda=-2$, $K=2$.
+\\Tìm nghiệm $y_{F}[n]=A.3^{-n}+K(-2)^n$, ta thu được $A=\frac{1}{7}$
+$$y_{F}[n]=\frac{1}{7}.3^{-n}+\frac{-1}{7}(-2)^n$$
+Có 6 loại nghiệm gồm
+\begin{itemize}
+    \item Nghiệm thuần nhất $y_{H}$: nghiệm thỏa mãn đầu vào bằng $0$
+    \item Nghiệm riêng $y_{P}$: nghiệm thỏa mãn có đầu vào
+    \item Nghiệm tổng quát $y_{G}$ = Nghiệm thuần nhất + Nghiệm riêng và thỏa mãn điều kiện khởi tạo.
+    \item Nghiệm tự nhiên $y_{N}$: có \textbf{dạng} nghiệm thuần nhất và thỏa mãn điều kiện khởi tạo
+    \item Nghiệm đáp ứng lực $y_{F}$: có \textbf{dạng} nghiệm tổng quát và thõa mãn điều kiện khởi tạo bằng $0$.
+    \item Nghiệm đầu ra $y$ = Nghiệm tự nhiên + Nghiệm đáp ứng lực 
+\end{itemize}
+\section{Biến đổi Fourier}
+\subsection{Điều kiện tồn tại biến đổi Fourier}
+Để tín hiệu có thể biến đổi Fourier thì nó phải là một tín hiệu \textit{NĂNG LƯỢNG} (tức là $E$ hữu hạn, hội tụ).
+\subsection{Chuỗi Fourier (FS)}
+\begin{enumerate}
+    \item Tín hiệu liên tục và \textbf{tuần hoàn}:
+    $$x(t)=\sum_{k=-\infty}^{+\infty}a_{k}e^{jk\omega t}$$
+    $$a_{k}=\frac{1}{T}\int_{T}x(t)e^{-jk\omega t}dt$$
+    \item Tín hiệu rời rạc và \textbf{tuần hoàn}:
+    $$x[n]=\sum_{k=<N_{0}>}c_{k}e^{jk\Omega n}$$
+    $$c_{k}=\frac{1}{N_{0}}\sum_{n=<N_{0}>}x[n]e^{-jk\Omega n}$$
+\end{enumerate}
+Tín hiệu tuần hoàn $x(t)$ hoặc $x[n]$ đi qua hệ thống LTI có đầu ra như sau:
+$$y(t)=\sum H(\omega)x(t)$$
+$$y[n]=\sum H(\Omega)x[n]$$
+\subsection{Biến đổi Fourier (FT)}
+\subsubsection{Tín hiệu liên tục}
+$$x(t)=\frac{1}{2\pi}\int_{-\infty}^{+\infty}x(\omega)e^{j\omega t}d\omega$$
+$$X(\omega)=\int_{-\infty}^{+\infty}x(t)e^{-j\omega t}dt$$
+Tính chất của CTFT:
+\begin{enumerate}
+    \item Dịch thời gian: $$\mathscr{F}({x(t-t_{0})})=X(\omega)e^{-j\omega t_{0}}$$
+    \item Dịch tần số: $$\mathscr{F}^{-1}(X(\omega-\omega_{0}))=x(t)e^{j\omega_{0}t}$$
+    \item Đạo hàm theo thời gian: $$\mathscr{F}\left(\frac{dx(t)}{dt}\right)=j\omega X(\omega)$$
+    \item Đạo hàm theo tần số: $$\mathscr{F}^{-1}\left(\frac{dX(\omega)}{d\omega}\right)=-jtx(t)$$
+    \item Giãn nở: $$\mathscr{F}(x(at))=\frac{1}{|a|}X\left(\frac{\omega}{a}\right)$$
+    \item Nhân: $$\mathscr{F}{(x(t)h(t))}=\frac{1}{2\pi}X(\omega)*H(\omega)$$
+    \item Tích chập: $$\mathscr{F}(x(t)*h(t))=X(\omega)H(\omega)$$
+\end{enumerate}
+\subsubsection{Tín hiệu rời rạc}
+$$x[n]=\frac{1}{2\pi}\int_{2\pi}x[n]e^{j\Omega n}d\Omega$$
+$$X[\Omega]=\sum_{n=-\infty}^{+\infty}x[n]e^{-j\Omega n}$$
+Tính chất của DTFT: Giống với CTFT (thay $t$ bằng $n$ và $\omega$ thành $\Omega$), bỏ tính chất 3 và 5.
+\\Ta sử dụng $$\mathscr{UZ}(x(t))=\mathscr{X}(z)$$
+\section{Biến đổi Laplace}
+\subsection{Điều kiện tồn tại biến đổi Laplace}
+Biến đổi Laplace có thể biến đổi tất cả các loại tín hiệu thông qua phép đặt $s=\sigma+j\omega$.
+\subsection{Tính chất của biến đổi Laplace}
+\begin{enumerate}
+    \item Dịch thời gian: $\mathscr{L}(x(t-t_{0}))=X(s)e^{-st_{0}}$
+    \item Dịch trong miền $s$: $\mathscr{L}^{-1}(X(s-s_{0}))=x(t)e^{s_{0}t}$
+    \item Đạo hàm theo thời gian $\mathscr{L}\left(\frac{dx(t)}{dt}\right)=s.X(s)$
+    \item Đạo hàm theo $s$: $\mathscr{L}^{-1}\left(\frac{dX(s)}{ds}\right)=-tx(t)$
+    \item Tích chập: $\mathscr{L}(x(t)*h(t))=X(s)H(s)$
+\end{enumerate}
+\subsection{Phân tích hệ thống bằng biến đổi Laplace}
+\begin{enumerate}
+    \item Vẽ vùng ROC (nghiệm vùng ROC là nghiệm mẫu phân thức bằng 0)
+    \item Quan sát vùng ROC, nếu vùng ROC có hướng mà hắt sang phải thì hệ thống \textit{nhân quả}, hắt sang trái \textit{phản nhân quả}, bị kẹp là \textit{phi nhân quả}.
+    \item Nếu vùng ROC chứa trục ảo $Im$ thì hệ thống \textit{ổn định}
+\end{enumerate}
+\subsection{Giải phương trình vi phân có điều kiện đầu}
+\subsubsection{Khái niệm biến đổi Laplace một phía}
+$$X(s)=\mathscr{L}(x(t))=\int_{-\infty}^{+\infty}x(t)e^{-st}dt$$
+$$\mathscr{X}(s)=\mathscr{UL}(x(t))=\int_{0^{-}}^{+\infty}x(t)e^{-st}dt$$
+\subsubsection{Tính chất}
+$$\mathscr{UL}\left(\frac{dy(t)}{dt}\right)=s\mathscr{Y}(s)-y(0)$$
+$$\mathscr{UL}\left(\frac{d^{2}y(t)}{dt^{2}}\right)=s^{2}\mathscr{Y}(s)-sy(0)-y'(0)$$
+\subsubsection{Ứng dụng để phân tích hệ thống}
+Hệ thống LTI được biểu diễn bởi phương trình
+$$\frac{d^{2}y(t)}{dt^2}+4\frac{dy(t)}{dt}+5y(t)=x(t)$$
+Xác định đáp ứng của hệ thống khi không có tín hiệu vào với điều kiện $y(0^{-})=1$ và $y'(0)=-2$.
+\\Đáp ứng hệ thống khi không có tín hiệu vào là đáp ứng \textbf{tự nhiên}, còn đáp ứng của hệ thống khi có tín hiệu vào là đáp ứng \textbf{lực}.
+$$\mathscr{UL}\left(\frac{d^{2}y(t)}{dt^{2}}+4\frac{dy(t)}{dt}+5y(t)\right)=\mathscr{UL}(x(t))$$
+$$s^{2}\mathscr{Y}(s)-sy(0)-y'(0)+4[s\mathscr{Y}(s)-y(0)]+5\mathscr{Y}(s)=\mathscr{X}(s)$$
+$$\mathscr{Y}(s)(s^{2}+4s+5)-s+2-4=\mathscr{X}(s)$$
+$$\mathscr{Y}(s)=\frac{\mathscr{X}(s)}{s^{2}+4s+5}+\frac{s+2}{s^{2}+4s+5}$$
+Ta có $$\mathscr{Y}_{N}(s)=\frac{s+2}{s^{2}+4s+5}=\frac{s+2}{(s+2)^{2}+1}$$
+Ta phải biến đổi Laplace một phía ngược để tìm hàm $y_{N}(t)$
+$$y_{N}(t)=e^{-2t}\cos{t}.u(t)$$
+\\Xác định hàm $H(s)$, $H(\omega)$ và $h(t)$
+Sử dụng biến đổi Laplace 2 phía (thường), ta có:
+$$\mathscr{L}\left(\frac{d^{2}y(t)}{dt^{2}}+4\frac{dy(t)}{dt}+5y(t)\right)=\mathscr{L}(x(t))$$
+$$s^{2}Y(s)+4sY(s)+5Y(s)=X(s)$$
+$$H(s)=\frac{Y(s)}{X(s)}=\frac{1}{s^{2}+4s+5}=\frac{1}{(s+2)^2+1}$$
+Để xác định $H(\omega)$ có tồn tại không thì ta cần phải giải phương trình cực và tìm điểm cực:
+$$s^{2}+4s+5=0\rightarrow s=-2-j || s=-2+j$$
+Vậy ta kết luận đây là hệ thống ổn định, tồn tại đáp ứng tần số.
+Để tìm $H(\omega)$, chỉ cần thay $s=j\omega$ vào là xong.
+$$H(\omega)=\frac{1}{-\omega^{2}+4j\omega+5}$$
+$$h(t)=\mathscr{L}^{-1}(H(s))=e^{-2t}\sin{t}.u(t)$$
+Xác định đầu ra (không có điều kiện đầu) với đầu vào $x(t)=\cos{(t)}u(t)$. Ta thực 
+hiện phép biến đổi Laplace $X(s)=\frac{s}{s^{2}+1}$
+$$Y(s)=\mathscr{L}(y(t))=\mathscr{L}(h(t)*x(t))=H(s)X(s)=\frac{s}{(s^{2}+1)(s^{2}+4s+5)}$$$$=\frac{As+B}{s^{2}+1}+\frac{Cs+D}{s^{2}+4s+5}$$
+$$As(s^{2}+4s+5)+B(s^{2}+4s+5)+Cs(s^{2}+1)+D(s^{2}+1)=s$$
+\section{Biến đổi Z}
+\subsection{Điều kiện tồn tại}
+Biến đổi Z dùng để biến đổi tất cả các tín hiệu rời rạc qua phép đặt $z=Ae^{j\Omega}$
+\subsection{Tính chất}
+\begin{enumerate}
+    \item Dịch thời gian: $$\mathscr{Z}(x(n-{n_{0}}))=X(z)z^{-n_{0}}$$
+    \item Đạo hàm theo $z$: $$\mathscr{Z}\left(z\frac{dX(z)}{dz}\right)=-nx[n]$$
+    \item Co giãn: $$\mathscr{Z}(a^{n}x[n])=X(az^{-1})$$
+    \item Tích chập: $$\mathscr{Z}((x(n)*h(n))=X(z)H(z)$$
+\end{enumerate}
+\subsection{Phân tích hệ thống bằng biến đổi Z}
+\begin{enumerate}
+    \item Vẽ đường tròn đơn vị, xác định $|z|$ (đường tròn cực)
+    \item Nếu mà các vòng tròn $|z|$ mà có hướng hắt ra ngoài thì là \textit{nhân quả}, kẹp giữa hai vòng là \textit{phi nhân quả}, hướng vào trong là \textit{phản nhân quả}
+    \item Nếu hệ thống có miền ROC chứa vòng tròn đơn vị $|z|=1$ thì hệ thống ổn định.
+\end{enumerate}
+\subsection{Biến đổi Z một phía}
+\subsubsection{Định nghĩa của biến đổi Z một phía}
+$$\mathscr{Z}(x(n))=X(z)=\sum_{n=-\infty}^{+\infty}x(n)z^{-n}$$
+$$\mathscr{UZ}(x(n))=\mathscr{X}(z)=\sum_{n=0}^{+\infty}x(n)z^{-n}$$
+\subsubsection{Tính chất của biến đổi Z một phía}
+$$\mathscr{UZ}(x(n-1))=\mathscr{X}(z)z^{-1}+y[-1]$$
+$$\mathscr{UZ}(x(n-2))=\mathscr{X}(z)z^{-2}+y[-1]z^{-1}+y[-2]$$
+\subsubsection{Ứng dụng để phân tích hệ thống}
+$$y[n]+\frac{1}{4}y[n-2]=x[n]$$
+Hệ thống này có biến đổi Z là:
+$$\mathscr{Z}(y[n]+\frac{1}{4}y[n-2])=\mathscr{Z}(x[n])$$
+$$Y(z)(1+\frac{1}{4}z^{-2})=X(z)$$
+$$H(z)=\frac{1}{1+\frac{1}{4}z^{-2}}$$
+Giải phương trình $1+\frac{1}{4}z^{-2}=0$, phương trình này có nghiệm là $|z|=\frac{1}{2}$, nhân quả thì tức 
+là có bao đường tròn đơn vị $|z|=1$, vậy hệ thống này ổn định. Suy ra tồn tại đáp ứng tần số (thay $z=e^{j\Omega}$):
+$$H(\Omega)=\frac{1}{1+\frac{1}{4}e^{-j2\Omega}}$$
+Đáp ứng xung:
+$$h[n]=\mathscr{Z}^{-1}(H(z))=\left(\frac{1}{2}\right)^{n}\cos{\left(\frac{\pi n}{2}\right)}u[n]$$
+\\Xác định đáp ứng hệ thống với điều kiện đầu $y[-1]=1, y[-2]=0$ (không có tín hiệu vào)
+Ta sẽ làm cách biến đổi $Z$ một phía:
+$$\mathscr{UZ}(y[n]+\frac{1}{4}y[n-2])=\mathscr{UZ}(x(n))$$
+$$\mathscr{Y}(z)+\frac{1}{4}(\mathscr{Y}(z)z^{-2}+y[-1]z^{-1}+y[-2])=\mathscr{X}(z)$$
+$$\mathscr{Y}(z)(1+\frac{1}{4}z^{-2})+\frac{1}{4}z^{-1}=\mathscr{X}(z)$$
+$$\mathscr{Y}(z)=\frac{\mathscr{X}(z)}{1+\frac{1}{4}z^{-2}}-\frac{1}{4}\frac{z^{-1}}{1+\frac{1}{4}z^{-2}}$$
+$$\mathscr{Y}_{N}(z)=\frac{-z^{-1}}{4(1+\frac{1}{4}z^{-2})}$$
+$$y_{N}(n)=\mathscr{UZ}^{-1}(\mathscr{Y}_{N}(z))=\frac{-1}{4}\left(\frac{1}{2}\right)^{n-1}\sin{\left(\frac{\pi n}{2}\right)}u[n-1]$$
+Xác định đáp ứng lực (không tính điều kiện đầu) với đầu vào là $x[n]=u[n-1]-u[n-4]$
+$$X(z)=\mathscr{Z}(x[n])=\frac{z^{-1}-z^{-4}}{1-z^{-1}}=z^{-1}+z^{-2}+z^{-3}$$
+$$Y(z)=X(z)H(z)=\frac{z^{-1}+z^{-2}+z^{-3}}{1+\frac{1}{4}z^{-2}}$$
+$$y(n)=(\frac{1}{2})^{n-1}\cos(\frac{\pi(n-1)}{2})u[n-1]+(\frac{1}{2})^{n-2}\cos(\frac{\pi(n-2)}{2})u[n-2]+(\frac{1}{2})^{n-3}\cos(\frac{\pi(n-3)}{2})u[n-3]$$
+\section{Ôn tập}
+\subsection{Phương trình vi/sai phân phân tích hệ thống LTI}
+Bài 1: Cho hệ thống LTI nhân quả được biểu diễn bởi phương trình sai phân sau:
+$$y[n]-4y[n-1]+3y[n-2]=x[n]+2x[n-1]$$
+Xác định đáp ứng tự nhiên của hệ thống với điều kiện đầu vào $y[-1]=1, y[-2]=0$.
+\\Đáp ứng tự nhiên của hệ thống có dạng nghiệm của nghiệm thuần nhất và thỏa mãn điều kiện đầu.
+\\Nghiệm thuần nhất của $y_{N}[n]$ có dạng $y_{N}[n]=K_{1}\lambda_{1}^{n}+K_{2}\lambda_{2}^{n}$ với phương trình đặc trưng:
+$$\lambda^{n}-4\lambda^{n-1}+3\lambda^{n-2}=0$$ suy ra 2 nghiệm $\lambda_{1}=1$, $\lambda_{2}=3$. Vậy ta có
+$y_{N}[n]=K_{1}+K_{2}3^{n}$, giờ thay vào điều kiện đầu tính $K_{1}=\frac{-1}{2}$ và $K_{2}=\frac{9}{2}$.
+$$\Leftrightarrow y_{N}[n]=\frac{-1}{2}+\frac{9}{2}3^{n}$$
+Tìm tín hiệu lối ra khi có tín hiệu đầu vào là $x[n]=\left(\frac{1}{2}\right)^{n}u[n]$
+\\Ta cần phải tìm đáp ứng cưỡng bức (đáp ứng của hệ thống khi có tín hiệu đầu vào và đã hoạt động ổn định), đặt toàn bộ điều kiện đầu vào bằng $0$. Nghiệm cưỡng bức
+có dạng nghiệm tổng quát.
+\\Để tìm nghiệm tổng quát thì ta cần phải tìm nghiệm riêng $y_{P}[n]$ của hệ thống.
+$$y_{P}[n]-4y_{P}[n-1]+3y_{P}[n-2]=\left(\frac{1}{2}\right)^{n}u[n]+\left(\frac{1}{2}\right)^{n}u[n-1]$$
+Với $n\geq1$ thì $u[n]=u[n-1]=1$, nghiệm riêng $y_{P}[n]$ có dạng $y_{P}[n]=C\left(\frac{1}{2}\right)^{n}$, thay vào ta có $C=-2$.
+Vậy ta có nghiệm đáp ứng cưỡng bức của hệ thống là $y_{F}[n]=K_{1}+K_{2}3^{n}-2\left(\frac{1}{2}\right)^{n}$, ta tính được $y_{F}[n]=\frac{19}{2}-\frac{27}{2}3^{n}-2\left(\frac{1}{2}\right)^{n}$
+\\Suy ra đáp ứng của cả hệ thống là 
+$$y[n]=y_{F}[n]+y_{N}[n]=\left[9-9.3^{n}-2\left(\frac{1}{2}\right)^{n}\right]$$
+Bài 2:
+Hệ thống LTI được biểu diễn bởi phương trình
+$$\frac{d^{2}y(t)}{dt^2}+4\frac{dy(t)}{dt}+5y(t)=x(t)$$
+Xác định đáp ứng của hệ thống khi không có tín hiệu vào với điều kiện $y(0^{-})=1$ và $y'(0)=-2$.
+\\Đáp ứng hệ thống khi không có tín hiệu vào là đáp ứng \textbf{tự nhiên}, còn đáp ứng của hệ thống khi có tín hiệu vào là đáp ứng \textbf{lực}.
+\\Để tìm đáp ứng tự nhiên là nghiệm $y_{N}(t)$, nghiệm này có dạng nghiệm thuần nhất $y_{H}(t)$ và thỏa mãn điều kiện đầu.
+\\Nghiệm thuần nhất có dạng là $y_{H}(t)=K_{1}e^{\lambda_{1}t}+K_{2}e^{\lambda_{2}t}$, giải phương trình đặc trưng, ta có:
+$$\lambda^2+4\lambda+5=0$$ suy ra $\lambda_{1}=-2-j$ và $\lambda_{2}=-2+j$. Vậy ta có nghiệm thuần nhất là $y_{H}(t)=K_{1}e^{(-2-j)t}+K_{2}e^{(-2+j)t}$.
+\\Để tìm nghiệm đáp ứng tự nhiên thì nghiệm thuần nhất phải thỏa mãn điều kiện đầu. Ta tính được hệ số $K_{1}=\frac{1}{2}$ và $K_{2}=\frac{1}{2}$. Ta thu được nghiệm 
+$$y_{N}(t)=\frac{1}{2}(e^{(-j-2)t}+e^{(j-2)t})=\frac{1}{2}e^{-2t}(e^{-jt}+e^{jt})=\cos{t}.e^{-2t}u(t)$$
+Tìm đáp ứng hệ thống khi có tín hiệu đầu vào $x(t)=te^{-t}u(t)$ và $x(t)=\cos{(t)}u(t)$.
+\\Để tìm $y_{F}(t)$ thì trước tiên ta phải tìm nghiệm $y_{P}(t)$, ta chọn dạng nghiệm $y_{P}(t)=A\cos{t}+B\sin{t}$, ta có $y'_{P}(t)=-A\sin{t}+B\cos{t}$, $y''_{P}(t)=-A\cos{t}-B\sin{t}$
+$$-A\cos{t}-B\sin{t}+4(-A\sin{t}+B\cos{t})+5(A\cos{t}+B\sin{t})=\cos{(t)}u{(t)}$$
+$A=B=\frac{1}{8}$
+Ta suy ra $y_{F}=\frac{1}{8}\left(\cos{(t)}+\sin{(t)})\right)+C_{1}e^{(-j-2)t}+C_{2}e^{(j-2)t}$, tính được $C_{1}=\frac{-1}{16}-\frac{j3}{16}$ và $C_{2}=\frac{-1}{16}+\frac{j3}{16}$
+
+\subsection{Tính hệ số FS và vẽ phổ tín hiệu}
+Không học nữa, đi bão!!!!
+
+\end{document} 

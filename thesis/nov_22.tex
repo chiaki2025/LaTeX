@@ -1,0 +1,27 @@
+\documentclass[twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{lipsum}
+\title{\textbf{First Thesis}\\{University of Engineering and Technology}}
+\author{Chiaki}
+\date{November 2023}
+\begin{document}
+\maketitle
+\chapter*{Abstract}
+A thesis about playing Mahjong. It's not cool
+\chapter*{Dedication}
+For my reader
+\chapter*{Acknowledgements}
+I want to thank
+\tableofcontents
+\listoffigures
+\include{ch_subscribe}
+\include{ch_thesis}
+\include{Conclusions}
+\appendix
+\include{appendix}
+I want to do a footnote right here\footnote[1]{This is my first time}, maybe it's too dumb.
+I think the best way\footnote[2]{Fuck life} to success.
+\lipsum{1-10}
+\end{document}

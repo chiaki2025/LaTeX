@@ -1,0 +1,63 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[12pt]{extsizes}
+\usepackage{amsmath,amsfonts,amsthm,graphicx,lipsum}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{setspace}
+\onehalfspacing
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=red,
+    pdftitle={How to write a thesis},
+}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr, lastpage}
+\usepackage{tikz,tcolorbox}
+\usepackage{siunitx}
+\pagestyle{fancy}
+\lhead{Trefor's LaTeX guide}
+\rhead{Sponsored by Overleaf}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+\begin{document}
+\tableofcontents
+\chapter{Useful Packages}
+I want to link to my YouTube channel \href{https://www.youtube.com/watch?v=331YxgOJUGw&t=0s}{Youtube channel}
+\section{Amsmath}
+\begin{Verbatim}[numbers=left,frame=single,formatcom*=\color{blue}]
+    #include <stdio.h>
+    void sum(int *a, int *b){
+        int sum;
+        sum=*a+*b;
+        printf("%d",sum);
+    }
+    int main(){
+        int a=10,b=11;
+        sum(&a,&b);
+        return 0;
+    }
+\end{Verbatim}
+\section{Amsfonts}
+\section{Tcolorbox}
+\begin{tcolorbox}
+This is a Tcolorbox
+\end{tcolorbox}
+\newpage
+\section{Function in C}
+Let's make this \color{red}{position} red. \color{blue} This text will be blue until I change it
+\begin{tcolorbox}[colback=red!5!white,colframe=red!80!white,title=My nice heading]
+This is a color box with a heading
+\end{tcolorbox}
+\section{SI Units}
+\section{Lorem Ipsum}
+\lipsum[1-4]
+\end{document}

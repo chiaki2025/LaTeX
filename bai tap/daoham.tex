@@ -1,0 +1,218 @@
+\chapter{Đạo hàm và ứng dụng}
+\section{Khái niệm đạo hàm}
+\subsection{Lý thuyết}
+Hàm số $f(x)$ khả vi (tồn tại đạo hàm) tại điểm $x=x_{0}$ khi và chỉ khi giới hạn sau tồn tại:
+\begin{equation} \label{eq:seventh}
+f'(x_{0})=\lim_{x\to x_{0}}\frac{f(x)-f(x_{0})}{x-x_{0}}
+\end{equation}
+Nếu đặt hiệu số $x-x_{0}=\Delta x$, ta có:
+\begin{equation} \label{eq:eighth}
+    f'(x_{0})=\lim_{\Delta x\to0}\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}
+\end{equation}
+Ta gọi giá trị $f'(x_{0})$ là giá trị đạo hàm cấp 1 của $f(x)$ tại điểm $x_{0}$.
+Đối với các bài toán cho hàm rẽ nhánh thì ta cần phải khảo sát cả giới hạn trái và giới hạn phải của hàm số đã cho tại các điểm cần xét tương ứng để xét tính khả vi của nó.
+\subsection{Bài tập}
+Khảo sát tính khả vi của tất cả các hàm rẽ nhánh đã cho tại các điểm tương ứng trong phần bài tập chương 2 (Liên tục).
+\section{Công thức đạo hàm cơ bản}
+\subsection{Lý thuyết}
+Ta có công thức về đạo hàm của hàm ngược như sau:
+$$y'_{x}x'_{y}=1$$
+Đây là một công thức nên nhớ để có thể tính được đạo hàm của các hàm ngược như $\arcsin{x}$, $\arccos{x}$,... Ở đây chúng ta sẽ tính đạo hàm của hàm $y=\arcsin{x}$ từ công thức trên, các hàm ngược khác làm tương tự và có thể coi như bài tập vận dụng nên làm.
+\\ Từ hàm số $y=\arcsin{x}$, ta có thể suy ra $x=\sin{y}$, từ công thức trên ta có:
+$$y'_{x}=\frac{1}{x'_{y}}=\frac{1}{\cos{y}}=\frac{1}{\sqrt{1-x^2}}$$
+Vậy ta đã tìm được đạo hàm của hàm số $y_{x}=\arcsin{x}$ một cách dễ dàng và tránh nhớ công thức quá máy móc. Chứng minh tương tự với các hàm ngược khác, ta có bảng công thức đạo hàm sau:
+\begin{tcolorbox}
+    \begin{equation}(\arcsin{x})'=\frac{1}{\sqrt{1-x^2}}\end{equation}
+    \begin{equation}(\arccos{x})'=\frac{-1}{\sqrt{1-x^2}}\end{equation}
+    \begin{equation}(\arctan{x})'=\frac{1}{1+x^2}\end{equation}
+    \begin{equation}(arccot{x})'=\frac{-1}{1+x^2}\end{equation}
+\end{tcolorbox}
+\subsection{Bài tập}
+Bài tập mẫu: Tính đạo hàm cấp 1 của hàm số:
+$$y=x^x$$
+Lời giải: Đây là một bài toán quan trọng và kĩ năng lấy logarit tự nhiên cả 2 vế sẽ được áp dụng nhiều trong các bài toán sau này để tính đạo hàm các hàm số mũ (làm ý 7 phần bài tập tương tự):
+$$y=x^x$$ $$\Leftrightarrow \ln{y}=x\ln{x}$$ $$\Leftrightarrow (\ln{y})'=(x\ln{x})'$$ $$\Leftrightarrow \frac{y'}{y}=\ln{x}+1$$ $$\Leftrightarrow y'=y(\ln{x}+1)=x^x(\ln{x}+1)$$
+\\Bài tập: Tính đạo hàm cấp 1 của các hàm số sau:
+\begin{enumerate}
+    \item $$y=\ln(x+\sqrt{x^2+1})$$
+    \item $$y=\tan{(\ln{x})}$$
+    \item $$y=\arccos(\sin{x^2}-\cos{x^2})$$
+    \item $$y=\arctan{\frac{x\sqrt{2}}{1-x^2}}$$
+    \item $$y=|(x-1)(x+1)^2|$$
+    \item \begin{equation*}
+        y=\left\{\begin{aligned}
+            1-x\quad(x\in(-\infty,1))\\
+            (1-x)(2-x)\quad(x\in[1,2])\\
+            -(2-x)\quad(x\in(2,+\infty))\\
+        \end{aligned}\right.
+    \end{equation*}
+    \item $$y=\frac{(2x-1)^3}{\sqrt{3x+2}\sqrt[3]{3x-1}}$$
+\end{enumerate}
+\section{Đạo hàm cấp cao}
+\subsection{Lý thuyết}
+Đạo hàm cấp $n$ của hàm số $f(x)$ tại điểm $x_{0}$ được định nghĩa là:
+$$f^{(n)}(x_{0})=(f^{(n-1)}(x_{0}))'$$
+với $f^{(n-1)}(x_{0})$ là đạo hàm cấp $n-1$ của hàm số.
+Chúng ta xây dựng bảng công thức đạo hàm cấp cao của một số hàm số cơ bản.
+\begin{tcolorbox}
+\begin{equation}
+\sin^{(n)}{x}=\cos{\left(x+\frac{n\pi}{2}\right)}
+\end{equation}
+\begin{equation}
+\cos^{(n)}{x}=\sin{\left(x+\frac{n\pi}{2}\right)}
+\end{equation}
+\begin{equation}
+\left(\frac{1}{x}\right)^{(n)}=\frac{(-1)^{n}n!}{x^{n+1}}
+\end{equation}
+\begin{equation}
+(\ln{x})^{(n)}=\left(\frac{1}{x}\right)^{(n-1)}=\frac{(-1)^{n-1}(n-1)!}{x^n}
+\end{equation}
+\begin{equation}
+(x^\alpha)^{(n)}=\alpha(\alpha-1)(\alpha-2)...(\alpha-n+1)x^{\alpha-n}
+\end{equation}
+\end{tcolorbox}
+Tất cả các công thức nêu trên đều có thể dễ dàng chứng minh bằng phép quy nạp. Một điều quan trọng khi học công thức là hãy cố gắng chứng minh lại các công thức để hiểu bản chất toán của chúng.
+Ta sẽ bắt đầu chứng minh từng công thức đã nêu:
+\\Với $n=1,2$, dễ thấy tất cả các công thức đều đúng. Giả sử các công thức đều đúng với $n=k$ $(k\geq2)$, ta sẽ chứng minh chúng cũng đúng với $n=k+1$ như sau:
+$$\sin^{(k+1)}(x)=\cos\left(x+\frac{(k+1)\pi}{2}\right)=-\sin\left(x+\frac{k\pi}{2}\right)=(\sin^{(k)}(x))'$$
+$$\cos^{(k+1)}(x)=\sin\left(x+\frac{(k+1)\pi}{2}\right)=\cos{\left(x+\frac{k\pi}{2}\right)}=(\cos^{(k)}{x})'$$
+$$\left(\frac{1}{x}\right)^{(k+1)}=\frac{(-1)^{k+1}(k+1)!}{x^{k+2}}=[(-1)^{k}k!x^{(-k-1)}]'=\left[\left(\frac{1}{x}\right)^{(k)}\right]'$$
+\begin{equation*}
+\begin{split}
+(x^\alpha)^{(k+1)}&=\alpha(\alpha-1)(\alpha-2)...(\alpha-k)x^{\alpha-(k+1)}\\&=[\alpha(\alpha-1)(\alpha-2)...(\alpha-k+1)x^{\alpha-k}]'\\&=[(x^{\alpha})^{(k)}]'
+\end{split}
+\end{equation*}
+Khi cần tính đạo hàm cấp cao của tích hai hàm số $f(x)$ và $g(x)$, ta có thể dùng công thức Leibniz: \begin{equation}\label{eq:ninth}
+    [f(x).g(x)]^{(n)}=\sum_{k=0}^{n}C_{n}^{k}f^{(k)}(x)g^{(n-k)}(x)
+\end{equation}
+\subsection{Bài tập}
+\subsubsection{Bài tập sử dụng các công thức đạo hàm cấp cao}
+\begin{enumerate}
+    \item Chứng minh lại tất cả các công thức đạo hàm cấp cao.
+    \item Tính đạo hàm cấp $n$ của các hàm số sau đây:
+    $$y=\frac{x^2}{1-x}$$
+    $$y=\frac{1+x}{\sqrt{1-x}}$$
+    $$y=\frac{1}{x^2-3x+2}$$
+    $$y=\sin^2{x}$$
+    $$y=\frac{1}{2x+3}$$
+\end{enumerate}
+\subsubsection{Bài tập sử dụng công thức Leibniz (\ref{eq:ninth})}
+Bài tập mẫu: Tính đạo hàm cấp $20$ của hàm số $f(x)=x^2e^{2x}$:\\
+Lời giải: Áp dụng công thức Leibniz cho đạo hàm cấp cao, ta có:
+\begin{equation*}
+\begin{split}
+f^{(n)}(x)=(x^2e^{2x})^{(n)}&=\sum_{k=0}^{n}C_{n}^k(x^2)^{(k)}(e^{2x})^{(n-k)}\\&=C_{n}^{0}(x^2)^{(0)}(e^{2x})^{(n)}+C_{n}^{1}(x^2)^{(1)}(e^{2x})^{(n-1)}+C_{n}^{2}(x^2)^{(2)}(e^{2x})^{(n-2)}\\&+C_{n}^{3}(x^2)^(3)(e^{2x})^{(n-3)}+...\\&=2^nx^2e^{2x}+2^{n-1}n2xe^{2x}+2C_{n}^{2}2^{n-2}e^{2x}\\&=e^{2x}(2^nx^2+2^nnx+2^{n-1}C_{n}^{2})\\&=2^ne^{2x}\left(x^2+nx+\frac{C_{n}^{2}}{2}\right)
+\end{split}
+\end{equation*}
+Thay $n=20$ vào phương trình trên, ta thu được kết quả $2^{20}e^{2x}(x^2+20x+95)$
+Bài tập:
+\begin{enumerate}
+    \item Tính đạo hàm cấp $n$ của hàm số $y=x\cos{2x}$
+    \item Tính giá trị $f^{(20)}(\pi)$ của hàm số $f(x)=(x^2+3x+1)\sin{2x}$
+    \item Tính giá trị $f^{(10)}(0)$ của hàm số $f(x)=x^2(\sin^4{x}+\cos^4{x})$
+    \item Tính giá trị $f^{(10)}(-1)$ của hàm số $f(x)=(x^2+3x+1)\ln{(x+2)}$
+\end{enumerate}
+\section{Khai triển Taylor và Maclaurin}
+\subsection{Lý thuyết}
+Khai triển Taylor được sử dụng để tính xấp xỉ giá trị của hàm số $f(x)$ tại điểm $x_{0}$ như sau:
+\begin{equation}\label{eq:tenth}
+f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_{0})}{k!}(x-x_{0})^{k}+0((x-x_{0})^{n})
+\end{equation}
+Trong trường hợp đặc biệt $x_{0}=0$, ta gọi công thức (\ref{eq:tenth}) là khai triển Maclaurin:
+\begin{equation}\label{eq:eleventh}
+f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(0)}{k!}x^k+0(x^n)
+\end{equation}
+Chúng ta sẽ xây dựng các công thức khai triển Maclaurin của một số hàm số cơ bản. Điều kiện tiên quyết để làm được các bài tập phần khai triển Taylor và Maclaurin này là \underline{kĩ năng tính toán phải tốt} và nắm rất vững \textbf{công thức đạo hàm cấp cao}.
+Tại điểm $x_{0}=0$, ta khai triển các hàm số như sau:
+\begin{itemize}
+    \item $$f(x)=\sin{x}=\sum_{k=0}^{n}\frac{f^{(k)}(0)}{k!}x^k=\sum_{k=0}^{n}\frac{\cos{\frac{k\pi}{2}}}{k!}x^k=\sum_{k=0}^{n}\frac{(-1)^{k}}{(2k+1)!}x^{2k+1}+0(x^{2n})$$
+    \item $$f(x)=\cos{x}=\sum_{k=0}^{n}\frac{f^{(k)}(0)}{k!}x^k=\sum_{k=0}^{n}\frac{\sin{\frac{k\pi}{2}}}{k!}x^k=\sum_{k=0}^{n}\frac{(-1)^{k}}{(2k)!}x^{2k}+0(x^{2k+1})$$
+    \item $$f(x)=\frac{1}{x+1}=\sum_{k=0}^{n}\frac{f^{(k)}(0)}{k!}x^k=\sum_{k=0}^{n}\frac{(-1)^kk!}{(x_{0}+1)^kk!}x^k=\sum_{k=0}^{n}(-1)^kx^k+0(x^n)$$
+    \item \begin{equation*}
+        \begin{split}
+        f(x)&=\ln{(x+1)}=\sum_{k=1}^{n}\frac{f^{(k)}(0)}{k!}x^k=\sum_{k=1}^{n}\frac{(-1)^{k-1}(k-1)!}{k!(x_{0}+1)^k}x^k\\&=\sum_{k=1}^{n}\frac{(-1)^{k-1}}{k}x^k+0(x^n)
+        \end{split}
+    \end{equation*}
+    \item $$f(x)=e^x=\sum_{k=0}^{n}\frac{f^{(k)}(0)}{k!}x^k=\sum_{k=0}^{n}\frac{x^k}{k!}+0(x^n)$$
+    \item \begin{equation*}
+        \begin{split}
+            f(x)&=(x+1)^\alpha=\sum_{k=0}^{n}\frac{f^{(k)}(0)}{k!}x^k=\sum_{k=0}^{n}\frac{\alpha(\alpha-1)...(\alpha-k+1)(x+1)^{\alpha-k}}{k!}x^{k}\\&=\sum_{k=0}^{n}\frac{\alpha(\alpha-1)...(\alpha-k+1)}{k!}x^k=\sum_{k=0}^{n}\binom{\alpha}{k}x^k+0(x^n)
+        \end{split}
+    \end{equation*}
+\end{itemize}
+\subsection{Bài tập sử dụng khai triển Taylor}
+Bài tập mẫu 1: Khai triển hàm số $f(x)=2x^3-3x^2+5x+1$ theo lũy thừa của $x+1$.\\
+Lời giải: Từ công thức của khai triển Taylor:
+$$f(x)=\sum_{k=0}^n\frac{f^{(k)}(x_{0})}{k!}(x-x_{0})^k+0((x-x_{0})^n)$$
+Ta tính đạo hàm của hàm số $f(x)$ tại điểm $x=-9$ như sau:
+$$f(x)=2x^3-3x^2+5x+1\Rightarrow f(-1)=1$$
+$$f'(x)=6x^2-6x+5\Rightarrow f'(-1)=17$$
+$$f''(x)=12x-6\Rightarrow f''(-1)=-18$$
+$$f'''(x)=12\Rightarrow f'''(-1)=12$$
+Vậy ta tìm được khai triển của hàm số $f(x)$ như sau:
+\begin{equation*}
+\begin{split}
+f(x)&=\frac{-9}{0!}+\frac{17}{1!}(x+1)+\frac{-18}{2!}(x+1)^2+\frac{12}{3!}(x+1)^3\\&=2(x+1)^3-9(x+1)^2+17(x+1)-9
+\end{split}
+\end{equation*}
+Bài tập mẫu 2: Khai triển hàm số $f(x)=\sqrt{x}$ theo công thức Taylor tại điểm $x_{0}=1$\\
+Lời giải: Chúng ta có thể tiếp cận bài toán này theo hai hướng, hướng thứ nhất là khai triển trực tiếp bằng công thức Taylor (\ref{eq:tenth}) hoặc đặt ẩn phụ rồi khai triển
+gián tiếp bằng công thức Maclaurin (\ref{eq:eleventh}).\\
+Hướng 1: Từ dạng khai triển của công thức Taylor (\ref{eq:tenth}), ta sẽ tìm giá trị $f^{(k)}(1)$:
+$$f^{(k)}(x)=(x^{\frac{1}{2}})^{(k)}=\left(\frac{1}{2}\right)\left(\frac{1}{2}-1\right)...\left(\frac{1}{2}-k+1\right)x^{\frac{1}{2}-k}=k!\binom{\frac{1}{2}}{k}x^{\frac{1}{2}-k}$$
+Thay $x=1$, ta thu được $$f^{(k)}(1)=k!\binom{\frac{1}{2}}{k}$$
+Thay vào công thức khai triển Taylor tại $x_{0}=1$, ta có:
+\begin{equation*}
+f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(1)}{k!}(x-1)^k=\sum_{k=0}^{n}\binom{\frac{1}{2}}{k}(x-1)^k+0((x-1)^n)
+\end{equation*}
+Hướng 2: Đặt ẩn phụ rồi khai triển gián tiếp bằng công thức Maclaurin (\ref{eq:eleventh})
+Đặt $t=x-1$, ta biến đổi từ khai triển công thức Maclaurin cơ bản như sau:
+\begin{equation*}
+\sqrt{x}=(t+1)^{\frac{1}{2}}=\sum_{k=0}^{n}\binom{\frac{1}{2}}{k}t^k+0(t^n)=\sum_{k=0}^{n}\binom{\frac{1}{2}}{k}(x-1)^k+0((x-1)^n)
+\end{equation*}
+Dễ thấy cả 2 hướng giải trên tương đương với nhau, với mỗi bài toán ta cần chọn hướng đi hợp lý để giải quyết.
+\\Bài tập mẫu 3: Khai triển hàm số $f(x)=\ln{(x^2-7x+12)}$ tại điểm $x_{0}=1$
+\\Lời giải: Đối với bài tập này, ta thấy nếu chọn hướng 1 sẽ rất khó giải quyết nên ta sẽ xử lý theo hướng 2 như sau:\\
+Đặt $t=x-1$, ta biến đổi:
+\begin{equation*}
+\begin{split}
+\ln{(x^2-7x+12)}&=\ln{(t^2-5t+6)}=\ln{(t-2)}+\ln{(t-3)}
+\end{split}
+\end{equation*}
+Dễ thấy chúng ta không thể đi tiếp theo hướng này do $t\rightarrow0$ nên $\ln{(t-2)}$ và $\ln{(t-3)}$ không xác định. Thay vào đó, ta sẽ đặt $t=1-x$ rồi biến đổi:
+\begin{equation*}
+\begin{split}
+\ln{(x^2-7x+12)}&=\ln{(t^2+5t+6)}=\ln{(t+2)}+\ln{(t+3)}\\&=\ln{2\left(t+\frac{1}{2}\right)}+\ln{3\left(t+\frac{1}{3}\right)}\\&=\ln{6}+\ln{\left(1+\frac{t}{2}\right)}+\ln{\left(1+\frac{t}{3}\right)}\\&=\ln{6}+\sum_{k=0}^{n}\frac{(-1)^{k-1}}{k}\left(\frac{t}{2}\right)^{k}+\sum_{k=0}^{n}\frac{(-1)^{k-1}}{k}\left(\frac{t}{3}\right)^k
+\\&=\ln{6}+\sum_{k=0}^{n}\frac{(-1)^{k-1}}{k}(3^{-k}+2^{-k})(1-x)^k\\&=\ln{6}-\sum_{k=0}^{n}\frac{3^{-k}+2^{-k}}{k}(x-1)^{k}
+\end{split}
+\end{equation*}
+\newpage
+Bài tập: Thực hiện các yêu cầu sau:
+\begin{enumerate}
+    \item Khai triển hàm số $f(x)=x^3+2x^2-3x+4$ theo lũy thừa của $x+1$.
+    \item Khai triển hàm số $f(x)=(x^2-1)e^{2x}$ tại điểm $x_{0}=-1$
+    \item Khai triển hàm số sau tại điểm $x_{0}=2$: $$f(x)=\ln{\frac{(x-1)^{(x-2)}}{3-x}}$$
+    \item Khai triển hàm số sau tại điểm $x_{0}=3$: $$f(x)=\frac{x^2-3x+3}{x-2}$$
+    \item Khai triển hàm số sau tại điểm $x_{0}=2$: $$f(x)=\frac{x^2+4x+4}{x^2+10x+25}$$
+\end{enumerate}
+\subsection{Bài tập sử dụng khai triển Maclaurin}
+Bài tập mẫu 1: Khai triển Maclaurin của hàm số: $$f(x)=\frac{1}{\sqrt{1+4x}}$$
+Lời giải: Ta biến đổi tương đương như sau:
+\begin{equation*}
+f(x)=\frac{1}{\sqrt{1+4x}}=(1+4x)^{\frac{-1}{2}}=\sum_{k=0}^{n}\binom{\frac{-1}{2}}{k}(4x)^k
+\end{equation*}
+Thế nhưng, do phép toán $\binom{\frac{-1}{2}}{k}$ không tồn tại nên ta phải tìm một cách biểu diễn khác. Ta có:
+\begin{equation*}
+\begin{split}
+(1+4x)^{\frac{-1}{2}}&=\sum_{k=0}^{n}\left(\frac{(\frac{-1}{2})(\frac{-1}{2}-1)...(\frac{-1}{2}-k+1)}{k!}\right)4^kx^k\\&=\sum_{k=0}^{n}\left(\frac{\frac{-1}{2}\frac{-3}{2}...\frac{1-2k}{2}}{k!}\right)4^kx^k\\&=\sum_{k=0}^{n}\left(\frac{(-1)^k(2k-1)!!}{2^kk!}\right)4^kx^k\\&=\sum_{k=0}^{n}\frac{(-2)^k(2k-1)!!}{k!}x^k+o(x^n)
+\end{split}
+\end{equation*}
+Bài tập: Khai triển Maclaurin của các hàm số sau:
+\begin{enumerate}
+    \item $$f(x)=\ln{\frac{2-3x}{2+3x}}$$
+    \item $$f(x)=\ln{(2+x-x^2)}$$
+    \item $$f(x)=\frac{1-2x^2}{2+x-x^2}$$
+    \item $$f(x)=\frac{3x^2+5x-5}{x^2+x-2}$$
+    \item $$f(x)=\cos^3{x}$$
+\end{enumerate}
+\section{Ứng dụng của đạo hàm trong một số bài toán}

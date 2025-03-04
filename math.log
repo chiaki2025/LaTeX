@@ -1,0 +1,1221 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.19)  20 NOV 2023 00:52
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/ADMIN/Desktop/LaTex/math.tex
+(c:/Users/ADMIN/Desktop/LaTex/math.tex
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-11-09>
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/vntex\vietnam.sty
+Package: vietnam 2009/07/12 v1.3 support for Vietnamese
+ (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+ (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5enc.def
+File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
+Now handling font encoding T5 ...
+... processing UTF-8 mapping file for font encoding T5
+ (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5enc.dfu
+File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+01A0 (decimal 416)
+   defining Unicode char U+01A1 (decimal 417)
+   defining Unicode char U+01AF (decimal 431)
+   defining Unicode char U+01B0 (decimal 432)
+   defining Unicode char U+1EA0 (decimal 7840)
+   defining Unicode char U+1EA1 (decimal 7841)
+   defining Unicode char U+1EA2 (decimal 7842)
+   defining Unicode char U+1EA3 (decimal 7843)
+   defining Unicode char U+1EA4 (decimal 7844)
+   defining Unicode char U+1EA5 (decimal 7845)
+   defining Unicode char U+1EA6 (decimal 7846)
+   defining Unicode char U+1EA7 (decimal 7847)
+   defining Unicode char U+1EA8 (decimal 7848)
+   defining Unicode char U+1EA9 (decimal 7849)
+   defining Unicode char U+1EAA (decimal 7850)
+   defining Unicode char U+1EAB (decimal 7851)
+   defining Unicode char U+1EAC (decimal 7852)
+   defining Unicode char U+1EAD (decimal 7853)
+   defining Unicode char U+1EAE (decimal 7854)
+   defining Unicode char U+1EAF (decimal 7855)
+   defining Unicode char U+1EB0 (decimal 7856)
+   defining Unicode char U+1EB1 (decimal 7857)
+   defining Unicode char U+1EB2 (decimal 7858)
+   defining Unicode char U+1EB3 (decimal 7859)
+   defining Unicode char U+1EB4 (decimal 7860)
+   defining Unicode char U+1EB5 (decimal 7861)
+   defining Unicode char U+1EB6 (decimal 7862)
+   defining Unicode char U+1EB7 (decimal 7863)
+   defining Unicode char U+1EB8 (decimal 7864)
+   defining Unicode char U+1EB9 (decimal 7865)
+   defining Unicode char U+1EBA (decimal 7866)
+   defining Unicode char U+1EBB (decimal 7867)
+   defining Unicode char U+1EBC (decimal 7868)
+   defining Unicode char U+1EBD (decimal 7869)
+   defining Unicode char U+1EBE (decimal 7870)
+   defining Unicode char U+1EBF (decimal 7871)
+   defining Unicode char U+1EC0 (decimal 7872)
+   defining Unicode char U+1EC1 (decimal 7873)
+   defining Unicode char U+1EC2 (decimal 7874)
+   defining Unicode char U+1EC3 (decimal 7875)
+   defining Unicode char U+1EC4 (decimal 7876)
+   defining Unicode char U+1EC5 (decimal 7877)
+   defining Unicode char U+1EC6 (decimal 7878)
+   defining Unicode char U+1EC7 (decimal 7879)
+   defining Unicode char U+1EC8 (decimal 7880)
+   defining Unicode char U+1EC9 (decimal 7881)
+   defining Unicode char U+1ECA (decimal 7882)
+   defining Unicode char U+1ECB (decimal 7883)
+   defining Unicode char U+1ECC (decimal 7884)
+   defining Unicode char U+1ECD (decimal 7885)
+   defining Unicode char U+1ECE (decimal 7886)
+   defining Unicode char U+1ECF (decimal 7887)
+   defining Unicode char U+1ED0 (decimal 7888)
+   defining Unicode char U+1ED1 (decimal 7889)
+   defining Unicode char U+1ED2 (decimal 7890)
+   defining Unicode char U+1ED3 (decimal 7891)
+   defining Unicode char U+1ED4 (decimal 7892)
+   defining Unicode char U+1ED5 (decimal 7893)
+   defining Unicode char U+1ED6 (decimal 7894)
+   defining Unicode char U+1ED7 (decimal 7895)
+   defining Unicode char U+1ED8 (decimal 7896)
+   defining Unicode char U+1ED9 (decimal 7897)
+   defining Unicode char U+1EDA (decimal 7898)
+   defining Unicode char U+1EDB (decimal 7899)
+   defining Unicode char U+1EDC (decimal 7900)
+   defining Unicode char U+1EDD (decimal 7901)
+   defining Unicode char U+1EDE (decimal 7902)
+   defining Unicode char U+1EDF (decimal 7903)
+   defining Unicode char U+1EE0 (decimal 7904)
+   defining Unicode char U+1EE1 (decimal 7905)
+   defining Unicode char U+1EE2 (decimal 7906)
+   defining Unicode char U+1EE3 (decimal 7907)
+   defining Unicode char U+1EE4 (decimal 7908)
+   defining Unicode char U+1EE5 (decimal 7909)
+   defining Unicode char U+1EE6 (decimal 7910)
+   defining Unicode char U+1EE7 (decimal 7911)
+   defining Unicode char U+1EE8 (decimal 7912)
+   defining Unicode char U+1EE9 (decimal 7913)
+   defining Unicode char U+1EEA (decimal 7914)
+   defining Unicode char U+1EEB (decimal 7915)
+   defining Unicode char U+1EEC (decimal 7916)
+   defining Unicode char U+1EED (decimal 7917)
+   defining Unicode char U+1EEE (decimal 7918)
+   defining Unicode char U+1EEF (decimal 7919)
+   defining Unicode char U+1EF0 (decimal 7920)
+   defining Unicode char U+1EF1 (decimal 7921)
+   defining Unicode char U+1EF2 (decimal 7922)
+   defining Unicode char U+1EF3 (decimal 7923)
+   defining Unicode char U+1EF4 (decimal 7924)
+   defining Unicode char U+1EF5 (decimal 7925)
+   defining Unicode char U+1EF6 (decimal 7926)
+   defining Unicode char U+1EF7 (decimal 7927)
+   defining Unicode char U+1EF8 (decimal 7928)
+   defining Unicode char U+1EF9 (decimal 7929)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+))
+LaTeX Font Info:    Trying to load font information for T5+cmr on input line 112.
+ (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmr.fd
+File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)) (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/vntex\vncaps.tex
+File: vncaps.tex 2006/06/07 v1.1 Captions in Vietnamese
+))
+c:/Users/ADMIN/Desktop/LaTex/math.tex:4: Argument of \@fileswith@pti@ns has an extra }.
+<inserted text> 
+                \par 
+l.4 \usepackage{
+                graphicx}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\usepackage {\@fileswith@ptions \@pkgextension }\def \reserved@b {\@fileswith@ptions \ETC.
+c:/Users/ADMIN/Desktop/LaTex/math.tex:4: Paragraph ended before \@fileswith@pti@ns was complete.
+<to be read again> 
+                   \par 
+l.4 \usepackage{
+                graphicx}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+\let \reserved@d =[\def 
+c:/Users/ADMIN/Desktop/LaTex/math.tex:4: Paragraph ended before \reserved@b was complete.
+<to be read again> 
+                   \par 
+l.4 \usepackage{
+                graphicx}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:4: Undefined control sequence.
+\@nnil ->\@nil 
+               
+l.4 \usepackage{
+                graphicx}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:4: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \usepackage{
+                graphicx}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count194
+\l__pdf_internal_box=\box51
+) (math.aux)
+\openout1 = `math.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 7.
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:13: Undefined control sequence.
+l.13     \includegraphics
+                         [width=0.8\textwidth]{fumo.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:13: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.13     \includegraphics[width=0.8\textwidth]
+                                              {fumo.png}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:13: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.13     \includegraphics[width=0.8\textwidth]
+                                              {fumo.png}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:16: LaTeX Error: Environment CJK undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \begin{CJK}
+                {UTF8}{min}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character こ (U+3053)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character れ (U+308C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character は (U+306F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character 最 (U+6700)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character 初 (U+521D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character セ (U+30BB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character ク (U+30AF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character シ (U+30B7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character ョ (U+30E7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character ン (U+30F3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character で (U+3067)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character あ (U+3042)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:17: LaTeX Error: Unicode character る (U+308B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...��れは最初のセクションである}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character 日 (U+65E5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     日
+            本語で \LaTeX の組版を実証するための導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character 本 (U+672C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     日本
+               語で \LaTeX の組版を実証するための導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character 語 (U+8A9E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     日本語
+                  で \LaTeX の組版を実証するための導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character で (U+3067)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     日本語で
+                      \LaTeX の組版を実証するための導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     日本語で \LaTeX の
+                                組版を実証するための導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character 組 (U+7D44)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     日本語で \LaTeX の組
+                                   版を実証するための導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character 版 (U+7248)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     日本語で \LaTeX の組版
+                                      を実証するための導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character を (U+3092)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     日本語で \LaTeX の組版を
+                                         実証するための導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character 実 (U+5B9F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     日本語で \LaTeX の組版を実
+                                            証するための導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character 証 (U+8A3C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     日本語で \LaTeX の組版を実証
+                                               するための導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character す (U+3059)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     日本語で \LaTeX の組版を実証す
+                                                  るための導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character る (U+308B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...�本語で \LaTeX の組版を実証する
+                                                  ための導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character た (U+305F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...�語で \LaTeX の組版を実証するた
+                                                  めの導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character め (U+3081)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...�で \LaTeX の組版を実証するため
+                                                  の導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...� \LaTeX の組版を実証するための
+                                                  導入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character 導 (U+5C0E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...LaTeX の組版を実証するための導
+                                                  入部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character 入 (U+5165)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...eX の組版を実証するための導入
+                                                  部分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character 部 (U+90E8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...の組版を実証するための導入部
+                                                  分。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character 分 (U+5206)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...組版を実証するための導入部分
+                                                  。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:18: LaTeX Error: Unicode character 。 (U+3002)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...版を実証するための導入部分。
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character フ (U+30D5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     フ
+            ォントはまた、数学的な形態および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character ォ (U+30A9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     フォ
+               ントはまた、数学的な形態および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character ン (U+30F3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     フォン
+                  トはまた、数学的な形態および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character ト (U+30C8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     フォント
+                     はまた、数学的な形態および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character は (U+306F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     フォントは
+                        また、数学的な形態および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character ま (U+307E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     フォントはま
+                           た、数学的な形態および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character た (U+305F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     フォントはまた
+                              、数学的な形態および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character 、 (U+3001)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     フォントはまた、
+                                 数学的な形態および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character 数 (U+6570)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     フォントはまた、数
+                                    学的な形態および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character 学 (U+5B66)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     フォントはまた、数学
+                                       的な形態および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character 的 (U+7684)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     フォントはまた、数学的
+                                          な形態および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character な (U+306A)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     フォントはまた、数学的な
+                                             形態および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character 形 (U+5F62)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     フォントはまた、数学的な形
+                                                態および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character 態 (U+614B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...フォントはまた、数学的な形態
+                                                  および他の環境で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character お (U+304A)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...ォントはまた、数学的な形態お
+                                                  よび他の環境で使�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character よ (U+3088)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...ントはまた、数学的な形態およ
+                                                  び他の環境で使用�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character び (U+3073)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...トはまた、数学的な形態および
+                                                  他の環境で使用す�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character 他 (U+4ED6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...はまた、数学的な形態および他
+                                                  の環境で使用する�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...また、数学的な形態および他の
+                                                  環境で使用するこ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character 環 (U+74B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...た、数学的な形態および他の環
+                                                  境で使用すること�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character 境 (U+5883)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...、数学的な形態および他の環境
+                                                  で使用することが�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character で (U+3067)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...数学的な形態および他の環境で
+                                                  使用することがで�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character 使 (U+4F7F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...学的な形態および他の環境で使
+                                                  用することができる
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character 用 (U+7528)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...的な形態および他の環境で使用
+                                                  することができる
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character す (U+3059)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...な形態および他の環境で使用す
+                                                  ることができる
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character る (U+308B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...形態および他の環境で使用する
+                                                  ことができる
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character こ (U+3053)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...態および他の環境で使用するこ
+                                                  とができる
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character と (U+3068)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...および他の環境で使用すること
+                                                  ができる
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character が (U+304C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...よび他の環境で使用することが
+                                                  できる
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character で (U+3067)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...び他の環境で使用することがで
+                                                  きる
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character き (U+304D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...他の環境で使用することができ
+                                                  る
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:20: LaTeX Error: Unicode character る (U+308B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...の環境で使用することができる
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/ADMIN/Desktop/LaTex/math.tex:21: LaTeX Error: \begin{document} ended by \end{CJK}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21     \end{CJK}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{C:/Users/ADMIN/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+] (math.aux)
+ ***********
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-11-09>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 1285 strings out of 474586
+ 18745 string characters out of 5745672
+ 1925558 words of memory out of 5000000
+ 23523 multiletter control sequences out of 15000+600000
+ 561967 words of font info for 40 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,5n,65p,235b,172s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr7.pfb>
+Output written on math.pdf (1 page, 79704 bytes).
+PDF statistics:
+ 51 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

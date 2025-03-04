@@ -1,0 +1,43 @@
+\contentsline {chapter}{\numberline {1}Giới hạn}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Giới hạn dãy số}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Lý thuyết}{3}{subsection.1.1.1}%
+\contentsline {subsubsection}{Định nghĩa dãy số}{3}{section*.2}%
+\contentsline {subsubsection}{Tính chất}{3}{section*.3}%
+\contentsline {subsection}{\numberline {1.1.2}Bài tập}{4}{subsection.1.1.2}%
+\contentsline {subsubsection}{Bài tập chỉ cần dùng kiến thức THPT để giải}{4}{section*.4}%
+\contentsline {subsubsection}{Bài tập sử dụng nguyên lý kẹp (\ref {eq:first})}{4}{section*.5}%
+\contentsline {subsubsection}{Bài tập sử dụng định nghĩa số $e$ (\ref {eq:second})}{6}{section*.6}%
+\contentsline {section}{\numberline {1.2}Giới hạn hàm số}{7}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Lý thuyết}{7}{subsection.1.2.1}%
+\contentsline {subsubsection}{Định nghĩa hàm số}{7}{section*.7}%
+\contentsline {subsubsection}{Tính chất}{7}{section*.8}%
+\contentsline {subsection}{\numberline {1.2.2}Bài tập}{7}{subsection.1.2.2}%
+\contentsline {subsubsection}{Bài tập chỉ cần dùng kiến thức THPT để giải}{7}{section*.9}%
+\contentsline {subsubsection}{Bài tập sử dụng nguyên lý kẹp (\ref {eq:third})}{9}{section*.10}%
+\contentsline {subsubsection}{Bài tập sử dụng các giới hạn đặc biệt (\ref {eq:fourth})(\ref {eq:fifth})}{9}{section*.11}%
+\contentsline {chapter}{\numberline {2}Liên tục}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lý thuyết}{12}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Định nghĩa hàm số liên tục}{12}{subsection.2.1.1}%
+\contentsline {subsubsection}{Hàm số liên tục tại một điểm}{12}{section*.12}%
+\contentsline {subsubsection}{Hàm số liên tục trên khoảng}{12}{section*.13}%
+\contentsline {subsection}{\numberline {2.1.2}Phân loại các điểm gián đoạn}{12}{subsection.2.1.2}%
+\contentsline {subsubsection}{Điểm gián đoạn loại 1}{12}{section*.14}%
+\contentsline {subsubsection}{Điểm gián đoạn loại 2}{13}{section*.15}%
+\contentsline {section}{\numberline {2.2}Bài tập}{13}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Đạo hàm và ứng dụng}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Khái niệm đạo hàm}{14}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Lý thuyết}{14}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Bài tập}{14}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Công thức đạo hàm cơ bản}{15}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Lý thuyết}{15}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Bài tập}{15}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Đạo hàm cấp cao}{17}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Lý thuyết}{17}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Bài tập}{18}{subsection.3.3.2}%
+\contentsline {subsubsection}{Bài tập sử dụng các công thức đạo hàm cấp cao}{18}{section*.16}%
+\contentsline {subsubsection}{Bài tập sử dụng công thức Leibniz (\ref {eq:ninth})}{19}{section*.17}%
+\contentsline {section}{\numberline {3.4}Khai triển Taylor và Maclaurin}{19}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Lý thuyết}{19}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Bài tập sử dụng khai triển Taylor}{21}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Bài tập sử dụng khai triển Maclaurin}{23}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Ứng dụng của đạo hàm trong một số bài toán}{24}{section.3.5}%

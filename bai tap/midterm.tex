@@ -1,0 +1,108 @@
+\documentclass[9pt]{extarticle}
+\usepackage[paperheight=6in,
+   paperwidth=5in,
+   top=10mm,
+   bottom=20mm,
+   left=10mm,
+   right=10mm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{setspace}
+\usepackage[utf8]{vietnam}
+\onehalfspacing
+\title{Đề kiểm tra giữa kì Giải tích 1}
+\author{Thời gian: 180 phút}
+\begin{document}
+\maketitle
+\section*{Lưu ý: Hãy cố gắng làm tất cả các câu hỏi để có thể lấy được điểm thành phần ngay cả khi không thể làm hết trọn vẹn từng câu.}
+\section{Giới hạn và liên tục:}
+\subsection{Giới hạn dãy số:}
+Hãy tính giới hạn của dãy số sau khi $n\to+\infty$:
+$$u_{n}=\frac{n}{2^n}$$
+\textit{(Gợi ý: Sử dụng nhị thức Newton hoặc phép quy nạp toán học để chứng minh $2^n>\frac{n(n-1)}{2}$ rồi dùng nguyên lý kẹp)}
+\subsection{Giới hạn hàm số:}
+Hãy tính các giới hạn hàm số sau:
+\begin{equation*}
+\begin{split}
+L_{1}&=\lim_{x\to1}\frac{\sqrt{2x+7}-\sqrt{x+8}}{x^2-1}\\
+L_{2}&=\lim_{x\to0}(1+\sin{x})^{\frac{1}{x}}\\
+L_{3}&=\lim_{x\to0^{+}}\left(\frac{5}{2+\sqrt{x+9}}\right)^{\frac{1}{\sin{x}}}\\
+L_{4}&=\lim_{x\to\frac{\pi}{4}}\frac{1-\tan^2{x}}{\sqrt{\sqrt{2}\cos{x}-1}}
+\end{split}
+\end{equation*}
+\begin{center}
+\textit{(Lưu ý: Được sử dụng công thức L'Hospital)}
+\end{center}
+\subsection{Tính liên tục của hàm số:}
+Hàm số $f(x)$ là một hàm rẽ nhánh được xác định như sau:
+\begin{equation*}
+    f(x)=\left\{\begin{aligned}
+        |x^2-4| \quad(|x|\leq1)\\
+         |x|-4\quad(|x|>1)\\
+    \end{aligned}\right.
+\end{equation*}
+\begin{enumerate}
+    \item Khảo sát tính liên tục của hàm số $f(x)$ trên tập số thực.
+    \item Hãy phác họa lại (không cần tỉ lệ chính xác) đồ thị của hàm số trên hệ trục tọa độ Descartes và giải thích cách vẽ.
+\end{enumerate}
+\section{Đạo hàm và ứng dụng của đạo hàm}
+\subsection{Đạo hàm trong vật lý:}
+\textit{Lưu ý: Chỉ được sử dụng các công thức đưa ra trong bài toán này để tính toán, nếu sử dụng các công thức khác sẽ không có điểm và \textbf{hãy tính các kết quả chính xác đến 3 chữ số thập phân.}}\\
+Một chất điểm $P$ đang di chuyển với phương trình $x=A\cos{\omega t}$ $(cm)$ với $A$ và $\omega$ là hằng số. Chúng ta định nghĩa các khái niệm sau:
+\begin{enumerate}
+    \item Vận tốc trung bình của một chất điểm (kí hiệu là $\overline{v}$) là đại lượng đo bởi thương số giữa độ dịch chuyển $\Delta x$ $(cm)$ và khoảng thời gian $\Delta t$ $(s)$ mà vật thực hiện dao động: $$\overline{v}=\frac{\Delta x}{\Delta t}$$ Lấy $A=5,\omega=3$, hãy tính $\overline{v_{1}}$ của chất điểm giữa hai thời điểm $t_{0}=2 \text{s}$ và $t_{1}=2.1\text{s}$. Tương tự, hãy tính $\overline{v}_{2\to4}$ cho các trường hợp $t_{2}=2.01\text{s}$, $t_{3}=2.001\text{s}$, $t_{4}=2.0001\text{s}$, $t_{5}=2.00001\text{s}$.
+Thống kê các giá trị thu được bằng một bảng gồm ba cột như sau:
+\begin{center}
+    \begin{tabular}{ c| c|c }
+     $\overline{v}$ & $\Delta t$&$\varepsilon$  \\ 
+     $\overline{v_{1}}$ & $\Delta t_{1}$  \\  
+     $\overline{v_{2}}$&  $\Delta t_{2}$ \\  
+     ... & ...\\
+    \end{tabular}
+    \end{center}
+    \begin{center}
+        \textit{(Lưu ý: Hãy vẽ giống y hệt bảng trên với cột $\varepsilon$ bỏ trống!!)}
+    \end{center}
+ Vận tốc tức thời của một chất điểm (kí hiệu là $v$) tại một thời điểm $t$ được định nghĩa là giới hạn của $\overline{v}$ trong khoảng thời gian $(t,t+\Delta t)$ khi $\Delta t\to0$.
+$$v=\lim_{\Delta t\to 0}\frac{\Delta x}{\Delta t}$$
+Sử dụng công thức trên, hãy tìm hàm $v(t)$ của chất điểm $P$. Sau khi đã tìm ra hàm $v(t)$, hãy thay các hằng số $A=5,\omega=3$ để tính $v(2)$. (\textbf{Nếu thay
+thẳng hàm $v(t)$ mà không chứng minh sẽ không có điểm nào}).
+    \\ Sai số $\varepsilon$ giữa $\overline{v}$ và $v$ được định nghĩa như sau: $$\varepsilon=|v-\overline{v}|$$
+Trong bảng thống kê đã vẽ trên, hãy hoàn thành nốt cột sai số $\varepsilon$ và đưa ra nhận xét về mối quan hệ giữa ba đại lượng $(\overline{v},\Delta t,\varepsilon)$ trong bảng với giá trị $v(2)$ đã tìm ra ở câu trước.
+    \item Dao động của chất điểm bất kì được gọi là dao động điều hòa nếu phương trình ly độ của nó thỏa mãn:
+     $$\frac{d^2x}{dt^2}+\omega^2x=0$$
+Hãy chứng minh chất điểm $P$ dao động điều hòa.
+\end{enumerate}
+\subsection{Ứng dụng đạo hàm để tính xấp xỉ giá trị một hàm số tại một điểm}
+\subsubsection{Vi phân và phép tính xấp xỉ}
+Từ khái niệm đạo hàm của hàm số $y(x)$ tại điểm $x=x_{0}$:
+$$y'(x_{0})=\lim_{h\to0}\frac{y(x_{0}+h)-y(x_{0})}{h}$$
+Khi $h$ tiến gần về $0$ và tương đối nhỏ, chúng ta có thể viết lại công thức trên ở dạng xấp xỉ:
+\begin{equation}
+y'(x_{0})\approx\frac{y(x_{0}+h)-y(x_{0})}{h}\Rightarrow y(x_{0}+h)\approx y'(x_{0})h+y(x_{0})
+\end{equation}
+và gọi phương trình (1) là \textit{phương trình xấp xỉ tuyến tính}.
+\\Hãy sử dụng phương trình trên để ước lượng giá trị xấp xỉ của $\sqrt{1.03}$ \textit{(Gợi ý: $x_{0}=1,h=0.03$)} đến 3 chữ số thập phân và tính sai số $\varepsilon$ giữa kết quả thu được bằng phép ước lượng trên với kết quả tính toán bằng máy tính Casio.
+\subsubsection{Khai triển Maclaurin và phép tính xấp xỉ}
+Trong bài toán này chúng ta sẽ khảo sát phương pháp ước lượng khác bằng khai triển Maclaurin có khả năng thu lại được kết quả có độ chính xác cao hơn (hay sai số $\varepsilon$ nhỏ hơn và tiến càng sát về $0$).
+\\ Khai triển Maclaurin của một hàm số để tính xấp xỉ giá trị $x$ rất gần với $0$ được biểu diễn như sau:
+\begin{equation}
+f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(0)}{k!}x^k+o(x^n)
+\end{equation}
+\begin{center}
+    ($o(x^n)$ là một vô cùng bé bậc $n$ coi như bằng $0$ và có thể bỏ qua trong quá trình tính toán)
+\end{center}
+Ta sẽ thử áp dụng khai triển Maclaurin để ước lượng một kết quả chính xác hơn của $\sqrt{1.03}$ bằng các bước như sau: \textit{(Hãy thực hiện tất cả các yêu cầu dưới đây)}
+\begin{enumerate}
+    \item Tìm công thức đạo hàm cấp $k$ của hàm số $f(x)$ và chứng minh bằng phép quy nạp toán học: $$f(x)=(x+1)^{\alpha}$$ 
+    \begin{center}
+    ($\alpha$ không phải là số nguyên dương và khác $0$)
+    \end{center}
+    \item Thay $x=0$ để tìm ra hàm $f^{(k)}(0)$, hãy thay kết quả vừa tìm được vào phương trình (2) để tìm ra khai triển Maclaurin của hàm số $f(x)$ và viết khai triển dưới dạng bậc $n$ tổng quát.
+    \item Để ước lượng giá trị xấp xỉ của $\sqrt{1.03}$, trong bài toán này ta sẽ chỉ lấy kết quả đến khai triển bậc $n=3$, thay $\alpha=\frac{1}{2}$, $x=0.03$ và tính ra kết quả cuối cùng đến 3 chữ số thập phân.
+\end{enumerate}
+\begin{center}
+    \textbf{HẾT}
+\end{center}
+\end{document}

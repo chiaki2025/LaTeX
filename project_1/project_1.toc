@@ -1,0 +1,19 @@
+\contentsline {chapter}{\numberline {1}Giới thiệu báo cáo}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Lý do chọn đề tài}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Mục đích của đề tài}{4}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Giới thiệu về Microsoft Copilot}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Quá trình phát triển}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Tính năng}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Cách sử dụng Copilot}{6}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Nguyên lý hoạt động}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Cấu tạo}{8}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Transformer model}{8}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Language model}{9}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Nguyên lý hoạt động}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Quy trình huấn luyện AI}{10}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Giai đoạn 1}{10}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Giai đoạn 2}{10}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Giai đoạn 3}{11}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Ứng dụng và tiềm năng phát triển}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Ứng dụng của Copilot}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Tiềm năng trong tương lai}{13}{section.4.2}%

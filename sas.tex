@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{vietnam}
+\usepackage[14pt]{extsizes}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{geometry}
+\usepackage{mathrsfs}
+
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+}
+\usepackage{enumitem} 
+\title{Tín hiệu và hệ thống}
+\begin{document}
+\maketitle
+\section{Giới thiệu về Tín hiệu và hệ thống}
+\subsection{Tín hiệu}
+\subsubsection{Năng lượng và công suất của tín hiệu}
+\begin{enumerate}
+    \item Tín hiệu liên tục
+    $$E_{\infty}=\int_{-\infty}^{+\infty}|x(t)|^2dt$$
+    $$P=\lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{+T}|x(t)|^2dt$$
+    \item Tín hiệu rời rạc
+    $$E_{\infty}=\sum_{n=-\infty}^{+\infty}|x[n]|^2$$
+\end{enumerate}
+\section{Hệ thống LTI}
+\section{Biến đổi Fourier}
+\subsection{Chuỗi Fourier (FS)}
+\subsubsection{Chuỗi Fourier cho tín hiệu liên tục (CTFS)}
+Khái niệm: Một tín hiệu liên tục và \textbf{tuần hoàn} bất kì có thể được biểu diễn dưới dạng tổng của các tín hiệu tuần hoàn nhỏ hơn:
+$$x(t)=\sum_{k=-\infty}^{+\infty}a_{k}e^{jk\omega t}$$
+$$a_{k}=\frac{1}{T}\int_{-\infty}^{+\infty}x(t)e^{-jk\omega t}$$
+\section{Biến đổi Laplace}
+\section{Biến đổi Z}
+$$\mathscr{L}(x[n])$$
+\begin{itemize}
+    \item $$\%$$
+\end{itemize}
+\end{document}

@@ -1,0 +1,154 @@
+\chapter{Giới hạn}
+\section{Giới hạn dãy số}
+\subsection{Lý thuyết}
+\subsubsection{Định nghĩa dãy số}
+Dãy số $u_{n}$ được định nghĩa thông qua ánh xạ:
+$$u_{n}:\mathbb{N}\rightarrow\mathbb{R}$$
+Ta có thể hiểu đơn giản dãy số là một trường hợp đặc biệt của hàm số $x\rightarrow f(x)$ khi $x$ là một số nguyên $n\in\mathbb{N}$ thay vì là một số thực bất kì thuộc $\mathbb{R}$. Chính vì thế nên \textbf{không được nhầm
+lẫn} giữa hai khái niệm dãy số và hàm số với nhau. 
+\subsubsection{Tính chất}
+1. Nguyên lý kẹp:
+\\ Giả sử các dãy số $x_{n}$, $y_{n}$, $z_{n}$ thỏa mãn bất đẳng thức $x_{n}\leq y_{n}\leq z_{n}$, đồng thời các dãy số $x_{n}$ và $z_{n}$ cùng hội tụ đến $L$. Khi đó ta có:
+\begin{equation} \label{eq:first}
+    \lim_{n\to+\infty}y_{n}=L
+\end{equation}
+2. Định nghĩa của số $e$:
+\begin{equation} \label{eq:second}
+    e=\lim_{n\to+\infty}\left(1+\frac{1}{n}\right)^n
+\end{equation}
+\subsection{Bài tập}
+\subsubsection{Bài tập chỉ cần dùng kiến thức THPT để giải}
+Tính các giới hạn dãy số sau:
+\begin{enumerate}
+    \item $$\lim_{n\to+\infty}\frac{1+a+a^2+...+a^n}{1+b+b^2+...+b^n} (|a|<1, |b|<1)$$
+    \item $$\lim_{n\to+\infty}\sqrt{2}\sqrt[4]{2}\sqrt[8]{2}...\sqrt[2^n]{2}$$
+    \item $$\lim_{n\to+\infty}\frac{1^2+2^2+...+n^2}{n^3}$$
+    \item $$\lim_{n\to+\infty}\frac{(-2)^n+3^n}{(-2)^{n+1}+3^{n+1}}$$
+    \item $$\lim_{n\to+\infty}\sqrt{n}(\sqrt{n+1}-\sqrt{n})$$
+    \item $$\lim_{n\to+\infty}\frac{\sqrt{n^2+n+1}-2\sqrt{n^2-n+1}}{n}$$
+    \item $$\lim_{n\to+\infty}(\sqrt[3]{n+1}-\sqrt[3]{n})$$
+\end{enumerate}
+\subsubsection{Bài tập sử dụng nguyên lý kẹp (\ref{eq:first})}
+Bài tập mẫu 1: Tìm giới hạn của dãy số sau: $$\lim_{n\to+\infty}x_{n}=\frac{8\cos{\frac{n\pi}{2}}}{n+4}$$
+Lời giải: Ta có bất phương trình sau:
+$$\frac{-8}{n+4}\leq\frac{8\cos{\frac{n\pi}{2}}}{n+4}\leq\frac{8}{n+4}$$
+Do $$\lim_{n\to+\infty}\frac{-8}{n+4}=\lim_{n\to+\infty}\frac{8}{n+4}=0$$
+nên từ nguyên lý kẹp ta suy ra: $$\lim_{n\to+\infty}\frac{8\cos{\frac{n\pi}{2}}}{n+4}=0$$
+Bài tập mẫu 2: Tìm giới hạn của dãy số sau:$$u_{n}=\lim_{n\to+\infty}\sum_{k=1}^{n}\frac{1}{\sqrt{n^2+k}}$$
+Lời giải: Ta có bất phương trình sau:
+$$\frac{n}{\sqrt{n^2+n}}\leq\sum_{k=1}^{n}\frac{1}{\sqrt{n^2+k}}\leq\frac{n}{\sqrt{n^2+1}}$$
+Do
+$$\lim_{n\to+\infty}\frac{n}{\sqrt{n^2+n}}=\lim_{n\to+\infty}\frac{n}{\sqrt{n^2+1}}=1$$
+nên từ nguyên lý kẹp ta suy ra:
+$$\lim_{n\to+\infty}\sum_{k=1}^{n}\frac{1}{\sqrt{n^2+k}}=1$$
+Bài tập: Tính giới hạn các dãy số sau, dùng \underline{nguyên lý kẹp}:
+\begin{enumerate}
+    \item $$\lim_{n\to+\infty}\frac{(-1)^n.n}{n+1}$$
+    \item $$\lim_{n\to+\infty}\frac{2n+(-1)^n}{n}$$
+    \item $$\lim_{n\to+\infty}\sum_{k=0}^{n}\frac{1}{(n+k)^2}$$
+\end{enumerate}
+\subsubsection{Bài tập sử dụng định nghĩa số $e$ (\ref{eq:second})}
+Bài tập mẫu: Tìm giới hạn của dãy số sau: $$\lim_{n\to+\infty}\left(\frac{3n+1}{3n-2}\right)^{5n+2}$$
+Lời giải: Ý tưởng chung của các bài tập dạng này là chú ý đến dạng của biểu thức (\ref{eq:second}) và tách đúng theo dạng đó.
+\begin{equation*}
+\begin{split}
+\lim_{n\to+\infty}\left(\frac{3n+1}{3n-2}\right)^{5n+2}&=\lim_{n\to+\infty}\left(1+\frac{3}{3n-2}\right)^{5n+2}\\&=\lim_{n\to+\infty}\left(1+\frac{3}{3n-2}\right)^{\frac{3n-2}{3}\frac{3}{3n-2}(5n+2)}\\&=\lim_{n\to+\infty}e^{\frac{3.(5n+2)}{3n-2}}=e^5
+\end{split}
+\end{equation*}
+Bài tập: Tính giới hạn của các dãy số sau:
+\begin{enumerate}
+    \item $$\lim_{n\to+\infty}\left(\frac{2n^2+2n-1}{5n^2-2n+1}\right)^{n}$$
+    \item $$\lim_{n\to+\infty}\left(\frac{2n^2+2n-1}{5n^2-2n+1}\right)^{n^2+1}$$
+    \item $$\lim_{n\to+\infty}\left(\frac{n^2+3}{n^2+4}\right)^{n^3+1}$$
+    \item $$\lim_{n\to+\infty}\left(\frac{n}{2n+4}\right)^{n}$$
+\end{enumerate}
+\section{Giới hạn hàm số}
+\subsection{Lý thuyết}
+\subsubsection{Định nghĩa hàm số}
+Tương tự như định nghĩa dãy số $u_{n}$, hàm số $f(x)$ được định nghĩa thông qua ánh xạ:$$f(x):\mathbb{R}\rightarrow\mathbb{R}$$
+\subsubsection{Tính chất}
+1. Nguyên lý kẹp (\refeq{eq:first})\\
+Giống với giới hạn dãy số, ta cũng có nguyên lý kẹp cho giới hạn hàm số được phát biểu như sau:\\
+Cho 3 hàm số $f(x)$, $g(x)$, $h(x)$ thỏa mãn bất đẳng thức $f(x)\leq g(x)\leq h(x)$ và$$\lim_{x\to x_{0}}f(x)=\lim_{x\to x_{0}}h(x)=L$$ Khi đó ta có:
+\begin{equation} \label{eq:third}
+\lim_{x\to x_{0}}g(x)=L
+\end{equation}
+2. Các giới hạn đặc biệt
+\begin{equation}\label{eq:fourth}
+\lim_{x\to0}\frac{\sin{x}}{x}=1
+\end{equation}
+\begin{equation}\label{eq:fifth}
+\lim_{x\to\infty}\left(1+\frac{1}{x}\right)^x=\lim_{x\to0}\left(1+x\right)^\frac{1}{x}=e
+\end{equation}
+\subsection{Bài tập}
+\underline{Lưu ý quan trọng: }Tất cả các bài tập trước chương 3 (Đạo hàm và ứng dụng) đều \textbf{TUYỆT ĐỐI KHÔNG ĐƯỢC DÙNG QUY TẮC L'HOSPITAL ĐỂ TÍNH GIỚI HẠN.}
+\subsubsection{Bài tập chỉ cần dùng kiến thức THPT để giải}
+Tính giới hạn các hàm số sau, biết $n\in\mathbb{N}$:
+\begin{enumerate}
+    \item $$\lim_{x\to1}\frac{x^3-x^2-x+1}{x^3+x^2-x-1}$$
+    \item $$\lim_{x\to+\infty}\frac{3x^4-2}{\sqrt{x^8+3x+4}}$$
+    \item $$\lim_{x\to0}\frac{(1+x)(1+2x)(1+3x)-1}{x}$$
+    \item $$\lim_{x\to1}\frac{x^{100}-2x+1}{x^{50}-2x+1}$$
+    \item $$\lim_{x\to1}\frac{x+x^2+...+x^n-n}{x-1}$$
+    \item $$\lim_{x\to\infty}\frac{(2x-3)^{20}(3x+2)^{30}}{(2x+1)^{50}}$$
+    \item $$\lim_{x\to+\infty}\frac{\sqrt{x+\sqrt{x+\sqrt{x}}}}{\sqrt{x+1}}$$
+    \item $$\lim_{x\to+\infty}\frac{\sqrt{x}+\sqrt[3]{x}+\sqrt[4]{x}}{\sqrt{2x+1}}$$
+    \item $$\lim_{x\to+\infty}x(\sqrt{x^2+2x}-2\sqrt{x^2+x}+x)$$
+    \item $$\lim_{x\to+\infty}x^\frac{3}{2}(\sqrt{x+2}-2\sqrt{x+1}+\sqrt{x})$$
+    \item $$\lim_{x\to0}\frac{\sqrt[n]{1+x}-1}{x}$$
+\end{enumerate}
+Tính giới hạn các hàm số lượng giác sau (gợi ý: đối với các bài tập $x\to a$ với $a\ne 0$ hay $a$ không tiến ra vô cực ta có thể đặt ẩn phụ $t=x-a$, khi đó $t\to0$):
+\begin{enumerate}
+    \item $$\lim_{x\to0}\frac{\sqrt{\cos{x}}-\sqrt[3]{\cos{x}}}{\sin^2{x}}$$
+    \item $$\lim_{x\to\frac{\pi}{6}}{\frac{2\sin^2{x}+\sin{x}-1}{2\sin^2{x}-3\sin{x}+1}}$$
+    \item $$\lim_{x\to\frac{\pi}{2}}\left(\frac{\sin{x}}{\cos^2{x}}-\tan^2{x}\right)$$
+    \item $$\lim_{x\to\frac{\pi}{3}}{\frac{\tan^3{x}-3\tan{x}}{\cos(x+\frac{\pi}{6})}}$$
+\end{enumerate}
+\subsubsection{Bài tập sử dụng nguyên lý kẹp (\ref{eq:third})}
+Tính giới hạn hàm số sau:
+$$\lim_{x\to0}x\sin{\frac{1}{x}}$$
+\subsubsection{Bài tập sử dụng các giới hạn đặc biệt (\ref{eq:fourth})(\ref{eq:fifth})}
+Bài tập mẫu 1: Tính giới hạn hàm số:$$\lim_{x\to0}\frac{x^2}{\sqrt{1+x\sin{x}}-\sqrt{\cos{x}}}$$
+Lời giải:
+\begin{equation*}
+\begin{split}
+\lim_{x\to0}\frac{x^2}{\sqrt{1+x\sin{x}}-\sqrt{\cos{x}}}&=\lim_{x\to0}\frac{x^2}{\sqrt{1+x\sin{x}}-1-(\sqrt{\cos{x}}-1)}\\&=\lim_{x\to0}\frac{x^2}{\frac{x\sin{x}}{\sqrt{1+x\sin{x}}+1}+\frac{2\sin^2{\frac{x}{2}}}{\sqrt{\cos{x}}+1}}\\&=\lim_{x\to0}\frac{1}{\frac{\frac{\sin{x}}{x}}{\sqrt{1+x\sin{x}}+1}+\frac{2\frac{\sin^2{\frac{x}{2}}}{4\frac{x^2}{4}}}{\sqrt{\cos{x}}+1}}\\&=\frac{1}{\frac{1}{1+1}+\frac{\frac{1}{2}}{2}}\\&=\frac{4}{3}
+\end{split}
+\end{equation*}
+Bài tập mẫu 2: Tính giới hạn hàm số:
+\begin{equation*}
+\begin{split}
+\lim_{x\to+\infty}\left(\frac{3x+1}{3x-2}\right)^{5x+2}&=\lim_{x\to+\infty}\left(1+\frac{3}{3x-2}\right)^{5x+2}\\&=\lim_{x\to+\infty}\left(1+\frac{3}{3x-2}\right)^{\frac{3x-2}{3}\frac{3}{3x-2}(5x+2)}\\&=e^5
+\end{split}
+\end{equation*}
+Bài tập mẫu 3: Tính giới hạn hàm số:
+$$\lim_{x\to-2}\frac{\arcsin{(x+2)}}{x^2+2x}$$
+Lời giải: Đặt $t=x+2$, ta có:
+\begin{equation*}
+\begin{split}
+\lim_{x\to-2}\frac{\arcsin{(x+2)}}{x^2+2x}&=\lim_{t\to0}\frac{\arcsin{t}}{(t-2)^2+2(t-2)}\\&=\lim_{t\to0}\frac{\arcsin{t}}{t^2-2t}
+\end{split}
+\end{equation*}
+Đặt $\arcsin{t}=u$, ta có:
+$$\lim_{u\to0}\frac{u}{\sin^2{u}-2\sin{u}}=\lim_{u\to0}\frac{u}{\sin{u}}\frac{1}{\sin{u}-2}=\frac{-1}{2}$$
+Điều quan trọng nhất để làm được các bài tập dạng này đó là nắm chắc được hai giới hạn đặc biệt (\ref{eq:fourth}) và (\ref{eq:fifth}), đồng thời phải vận dụng linh hoạt các phép đặt ẩn phụ như các bài tập mẫu.\\
+Bài tập: Sử dụng giới hạn đặc biệt (\ref{eq:fourth}) để tính các giới hạn sau:
+\begin{enumerate}
+    \item $$\lim_{x\to0}\frac{\sin^2{x}}{\sqrt{1+x\sin{x}}-\cos{x}}$$
+    \item $$\lim_{x\to0}\frac{1+x\sin{x}-\cos{2x}}{\sin^2{x}}$$
+    \item $$\lim_{x\to\frac{1}{2}}{\frac{\arcsin{(1-2x)}}{4x^2-1}}$$
+\end{enumerate}
+Bài tập: Sử dụng giới hạn đặc biệt (\ref{eq:fifth}) để tính các giới hạn sau:
+\begin{enumerate}
+    \item $$\lim_{x\to\infty}\left(\frac{x+2}{2x+1}\right)^{x^2}$$
+    \item $$\lim_{x\to\infty}\left(\frac{3x^2-x+1}{2x^2+x-1}\right)^{\frac{x^2}{1-x}}$$
+\end{enumerate}
+Bài tập: Kết hợp các phương pháp đã học để tính giới hạn sau:
+\begin{enumerate}
+    \item $$\lim_{x\to0}(1+x^2)^{\cot^2{x}}$$
+    \item $$\lim_{x\to0}\left(\frac{1+\tan{x}}{1+\sin{x}}\right)^{\frac{1}{\sin^3{x}}}$$
+    \item $$\lim_{x\to0}\left(\frac{1+\tan{x}}{1+\sin{x}}\right)^{\frac{1}{\sin{x}}}$$
+    \item $$\lim_{x\to+\infty}\left(\sin{\frac{1}{x}}+\cos{\frac{1}{x}}\right)^x$$
+\end{enumerate}
+
+
