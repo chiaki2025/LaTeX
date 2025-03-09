@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[utf8]{vietnam}
+\usepackage[12pt]{extsizes}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{mathtools}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+ \usepackage{graphicx}
+ \usepackage{titling}
+ \title{Bài tập về nhà: Phương trình sai phân tuyến tính
+}
+\author{Vũ Hàn Tín 23020874}
+\date{Ngày 8/3/2025}
+ \usepackage{fancyhdr}
+\fancypagestyle{plain}{%  the preset of fancyhdr 
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot[L]{\thedate}
+    \fancyhead[L]{ELT 3144: Xử lý tín hiệu số}
+    \fancyhead[R]{\theauthor}
+}
+\makeatletter\def\@maketitle{%
+\newpage
+\null
+\vskip 1em%
+\begin{center}%
+\let \footnote \thanks
+  {\LARGE \@title \par}%
+  \vskip 1em%
+  %{\large \@date}%
+\end{center}%
+\par
+\vskip 1em}
+\makeatother
+\begin{document}
+\maketitle
+\section*{Nhiệm vụ:}
+\subsection*{a. Giải tìm đáp ứng tổng quát của hệ thống $y[n]$ dưới dạng tổng đáp ứng các đầu vào.}
+Ta sẽ tiếp cận câu hỏi này theo hai cách, cách thứ nhất sử dụng phương trình đặc trưng và cách thứ hai sử dụng biến đổi $\mathscr{UZ}$ (Unilateral Z transform).
+\subsubsection*{Cách thứ nhất:}
+Xét phương trình sai phân $$y[n]-0.5y[n-1]-0.06y[n-2]=2x[n]+x[n-1]$$
+Đối với đáp ứng đầu vào triệt tiêu $y_{zi}[n]$ là đáp ứng \textbf{tự nhiên} của hệ thống, ta cần phải giải phương trình sai phân thuần nhất với điều kiện khởi tạo của hệ thống như sau:
+\begin{equation*}
+    \begin{cases} 
+        y[n]-0.5y[n-1]-0.06y[n-2]=0 \\ 
+        y[-1]=1, y[-2]=-2 \\
+    \end{cases}
+\end{equation*}
+Đầu tiên, ta cần phải giải phương trình sai phân thuần nhất:
+$$1-0.5\lambda^{-1}-0.06\lambda^{-2}=0$$
+$$\Leftrightarrow \lambda_{1} = 0.6, \lambda_{2} = -0.1 $$
+Vậy ta có nghiệm $y_{zi}[n]$ có dạng như sau:
+$$y_{zi}[n]=K_{1}(0.6)^{n}+K_{2}(-0.1)^{n}$$
+Thay điều kiện khởi tạo của hệ thống (initial condition) $y[-1]=1,y[-2]=-2$, ta giải ra được $K_{1}$ và $K_{2}$ tương ứng:
+$$\begin{cases*}
+    K_{1} = \frac{72}{175}  \\
+    K_{2} = -\frac{11}{350} \\
+\end{cases*}$$
+Vậy ta có nghiệm đáp ứng đầu vào triệt tiêu: $$y_{zi}[n]=\frac{72}{175}(0.6)^{n}-\frac{11}{350}(-0.1)^{n}$$
+Tiếp theo ta sẽ tìm $y_{zs}[n]$ (đáp ứng khởi dộng từ gốc với $n\geq0$), tức là đáp ứng \textbf{lực} của hệ thống như sau:
+\begin{equation*}
+\begin{split}
+    y[n]-0.5y[n-1]-0.06y[n-2]&=2x[n]+x[n-1] \\ \Leftrightarrow y[n]-0.5y[n-1]-0.06y[n-2]&=2u[n]-2u[n-3]+u[n-1]-u[n-4]
+\end{split}
+\end{equation*}
+\end{document}
