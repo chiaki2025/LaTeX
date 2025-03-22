@@ -1,0 +1,16 @@
+# Fdb version 4
+["pdflatex"] 1741932902 "/home/Chiaki/LaTeX/tutoring/sas2.tex" "sas2.pdf" "sas2" 1741932902 2
+  "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/Chiaki/LaTeX/tutoring/sas2.tex" 1741932902 168 6839a8eff70396b16b9360d77ecacd74 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1667332637 20144 d5ecf0a5140c8d8d8b72cbe86e320eff ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1667332637 8448 c33a4e1cb35cee9b33c2b21033b73e39 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1740936618 7878419 8e1ae05cefa763d0815f9d3da81a31af ""
+  "sas2.aux" 0 -1 0 "pdflatex"
+  "sas2.tex" 1741932902 168 6839a8eff70396b16b9360d77ecacd74 ""
+  (generated)
+  "sas2.aux"
+  "sas2.log"
+  "sas2.pdf"
+  (rewritten before read)
