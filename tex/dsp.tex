@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[utf8]{vietnam}
+\usepackage[14pt]{extsizes}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{geometry}
+\usepackage{mathrsfs}
+
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+}
+\usepackage{enumitem} 
+\title{Tín hiệu và hệ thống}
+\begin{document}
+\maketitle
+\section{Phương trình sai phân}
+\subsection{Biểu diễn hệ thống}
+Một hệ thống là một cấu trúc sẽ có một cấu hình chung như này:
+\begin{equation*}
+    x[n]\rightarrow h[n] \rightarrow y[n]
+\end{equation*}
+trong đó thì $h[n]$ được gọi là ĐÁP ỨNG XUNG CỦA HỆ THỐNG.
+Một hệ thống rời rạc bất kỳ có thể được biểu diễn bằng phương trình sai phân.
+\\ Ví dụ: $y[n] = y[n-1] + x[n]$, tức là có thể biểu diễn mọi hệ thống với đầu ra là một hàm số theo đầu vào.
+\subsection{Mô tả hệ thống bằng phương trình sai phân}
+\subsubsection{Đáp ứng của hệ thống}
+Khi phân tích một hệ thống bất kì thì đều phải đi qua 2 giai đoạn: giai đoạn khởi tạo và giai đoạn ổn định.
+\\ Vậy ta phải phân tích hệ thống thành hai phần (hai nghiệm) để biểu diễn hai quá trình, nghiệm đầu tiên gọi là nghiệm \textbf{ĐÁP ỨNG TỰ NHIÊN} (kí hiệu là $y_{N}[n]$) va nghiem con lai goi la nghiem
+\textbf{DAP UNG LUC} (ki hieu la $y_{F}[n]$). 
+\subsubsection{Phan tich dap ung he thong}
+\begin{enumerate}
+    \item Nghiem dap ung tu nhien duoc tinh nhu sau: nghiem dap ung tu nhien la nghiem thoa man \textit{DAU VAO BANG 0} (tuc la $x[n]=0$) va dieu kien khoi tao cua he thong ($y[-1] = ...., y[-2] = .....$)
+    \item Nghiem dap ung luc duoc tinh nhu sau: nghiem dap ung luc la nghiem thoa man \textit{DIEU KIEN KHOI TAO BANG 0} (tuc la $y[-1]=y[-2]=0$) va dau vao cua he thong.
+\end{enumerate}
+\section{Bai tap}
+\subsection{$y[n]+2y[n-1]-3y[n-2]=x[n-1]$ voi $y[-1]=0, y[-2]=3$}
+Tim dap ung cua he thong.
+\begin{enumerate}
+    \item Dap ung tu nhien $y_{N}[n]$ la dap ung thoa man khong co dau vao, tuc la ve phai bang 0, va thoa man dieu kien khoi tao. Nghiem $y_{N}[n]$ phai thoa man: $y[n]+2y[n-1]-3y[n-2]=0$ va $y[-1]=0, y[-2]=3$.
+Nhung phuong trinh ma co dang $y[n]+2y[n-1]-3y[n-2]=0$ co dang nghiem la $y_{N}[n] = K.\lambda^{n}$, thay vao thi ta co:
+\begin{equation*}
+    K.\lambda^{n}+2K\lambda^{n-1}-3K\lambda^{n-2}=0 \Leftrightarrow 1 + 2\lambda^{-1}-3\lambda^{-2}=0
+\end{equation*}
+  \begin{equation*}
+    \lambda = 1 or \lambda = -3
+  \end{equation*}
+Vay ta co $y_{N}[n] = K_{1}(1)^{n} + K_{2}(-3)^{n}$, tiep tuc la nhin cai dieu kien $y[-1] = 0, y[-2] = 3$ roi thay vao, tinh $K_{1}=\frac{9}{4}$ voi $K_{2}=\frac{27}{4}$
+    \item Khong co dap ung luc.
+\end{enumerate}
+\subsection{$4y[n]-y[n-2]=x[n]$ voi $x[n]=\left(\frac{1}{2}\right)^{n}u[n]$}
+\begin{enumerate}
+    \item Khong co dap ung tu nhien
+    \item Dap ung luc tinh nhu sau: thoa man dau vao voi dieu kien khoi tao bang 0.
+    \begin{equation*}
+        4y[n]-y[n-2]=\left(\frac{1}{2}\right)^{n}u[n]
+    \end{equation*}
+    Cach giai nhu sau: an thang luon dau ra la nghiem cua dau vao, tuc la an thang $y_{F}[n]=C\left(\frac{1}{2}\right)^{n}u[n]$, thay vao thi ta co
+    \begin{equation*}
+        4C\left(\frac{1}{2}\right)^{n}u[n]-C\left(\frac{1}{2}\right)^{n-2}u[n-2]=\left(\frac{1}{2}\right)^{n}u[n]
+    \end{equation*}
+    Ta co voi $n\geq2$ thi $u[n]=u[n-2]=1$ (cai nay rat quan trong va khong duoc quen), voi $n\geq2$, ta co:
+    \begin{equation*}
+        4C\left(\frac{1}{2}\right)^{n}-C\left(\frac{1}{2}\right)^{n-2}=\left(\frac{1}{2}\right)^{n}
+    \end{equation*}
+\end{enumerate}
+\end{document}

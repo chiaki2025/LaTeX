@@ -1,0 +1,45 @@
+This is TeX, Version 3.141592653 (TeX Live 2022/Debian) (preloaded format=tex 2025.3.3)  9 MAR 2025 17:29
+**nano.tex
+(./nano.tex
+! Undefined control sequence.
+l.1 \documentclass
+                  {article}
+? 
+! Undefined control sequence.
+l.2 \usepackage
+               {amsmath} % For better equation formatting
+? 
+! Undefined control sequence.
+l.3 \begin
+          {document}
+? 
+! Undefined control sequence.
+l.5 \begin
+          {equation}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \intop 
+\int ->\intop 
+              \nolimits 
+l.6 \int
+        _{a}^{b} y(x) \,dx = \frac{b-a}{\delta} \lim_{\delta \to +\infty} y(...
+
+? 
+! Undefined control sequence.
+l.6 \int_{a}^{b} y(x) \,dx = \frac
+                                  {b-a}{\delta} \lim_{\delta \to +\infty} y(...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \end 
+l.7 \end
+        {equation}
+? 
+[1] )
+Output written on nano.dvi (1 page, 648 bytes).

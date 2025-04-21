@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{vietnam}
+\usepackage{mathrsfs}
+\begin{document}
+\section*{Giải thích tính chất ổn định của hệ thống}
+\subsection{Chứng minh công thức}
+Hệ thống $h[n]$ ổn định khi và chỉ khi
+$$\sum_{n=-\infty}^{+\infty}|h[n]|<+\infty$$
+Xét hệ thống LTI bất kì, điều kiện BIBO (bounded input bounded output) được thể hiện như sau:
+\begin{equation}
+|y[n]|=|x[n]*h[n]|=\left|\sum_{k=-\infty}^{+\infty}x[k]h[n-k]\right|=\left|\sum_{k=-\infty}^{+\infty}x[n-k]h[k]\right|
+\end{equation}
+\begin{equation}
+< \sum_{k=-\infty}^{+\infty}\left|x[n-k]h[k]\right|<\sum_{k=-\infty}^{+\infty}B|h[k]|
+\end{equation}
+Vậy để $y[n]<+\infty$ thì $$\sum_{n=-\infty}^{+\infty}|h[n]|<+\infty$$
+\subsection{Giải thích bài toán hôm qua}
+$$h[n]=2\sin{\left(\frac{\pi}{100}n\right)}\cos{\left(\frac{\pi}{2}n\right)}=\sin{\left(\frac{51\pi n}{100}\right)}+\sin{\left(\frac{49\pi n}{100}\right)}$$
+Vậy suy ra
+$$\sum_{n=-\infty}^{+\infty}|h[n]|=\sum_{n=-\infty}^{+\infty}\left|\sin{\left(\frac{51\pi n}{100}\right)}+\sin{\left(\frac{49\pi n}{100}\right)}\right|$$
+Ta sẽ phải chỉ ra đây không phải là một hệ thống BIBO do tổng trên phân kỳ, do đó ta sẽ chứng minh:
+$$\sum_{n=-\infty}^{+\infty}|h[n]|\rightarrow +\infty$$
+Ý tưởng chứng minh: nhận thấy $h[n]$ là một hàm tuần hoàn với chu kì cơ sở $N_{0}=200$ (cách tìm chu kì cơ sở ra sao thì tự xem lại chương 1 Tín hiệu hệ thống), và
+ta chỉ cần chỉ ra tổng trị tuyệt đối của $h[n]$ lớn hơn 0 trên 1 chu kì cơ sở thì tổng trị tuyệt đối của $h[n]$ hiển nhiên sẽ tiến ra dương vô cùng trên miền $n$ vô cùng.
+Chọn một khoảng $N_{0}=200$ bất kì, ta thấy:
+$$\sum_{n=<N_{0}>}^{}\left|\sin{\left(\frac{51\pi n}{100}\right)}+\sin{\left(\frac{49\pi n}{100}\right)}\right|=\sum_{n=0}^{200}\left|\sin{\left(\frac{51\pi n}{100}\right)}+\sin{\left(\frac{49\pi n}{100}\right)}\right|> 0$$ Kết thúc bài toán.
+\end{document} 
