@@ -1,0 +1,303 @@
+% This LaTeX was auto-generated from MATLAB code.
+% To make changes, update the MATLAB code and export to LaTeX again.
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{epstopdf}
+\usepackage[table]{xcolor}
+\usepackage{matlab}
+
+\sloppy
+\epstopdfsetup{outdir=./}
+\graphicspath{ {./23020874_VuHanTin_images/} }
+
+\begin{document}
+
+\matlabtitle{De thi giua ki thuc hanh}
+
+\begin{matlabcode}
+% Bai 1: Bieu dien tin hieu roi rac
+% a) Ve do thi mien thoi gian va in ra nang luong
+n=-5:5;
+xn=2.^(n/2-1).*(unitstep(n+5)-unitstep(n-6));
+figure;
+stem(n,xn,'filled');
+title('Do thi tin hieu x[n] trong mien thoi gian');
+xlabel('n');ylabel('x[n]');
+grid on;
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{50.77772202709483em}]{figure_0.png}
+\end{center}
+\begin{matlabcode}
+energy=sum(abs(xn).^2)
+\end{matlabcode}
+\begin{matlaboutput}
+energy = 15.9922
+\end{matlaboutput}
+\begin{matlabcode}
+figure;
+subplot(2,2,1);
+xlat=2.^(-n/2).*(unitstep(-n+5)-unitstep(-n-6))-1;
+stem(n,xlat,'filled');
+title('Do thi tin hieu x[-n]');
+xlabel('n');ylabel('x[-n]');
+grid on;
+subplot(2,2,2);
+xtre=2.^((n+1)/2).*(unitstep(n+6)-unitstep(n-5))-1;
+stem(n,xtre,'filled');
+title('Do thi tin hieu x[n+1]');
+xlabel('n');ylabel('x[n+1]');
+grid on;
+subplot(2,2,3);
+xco=2.^((2*n-2)/2).*(unitstep((2*n-2)+5)-unitstep((2*n-2)-6))-1;
+stem(n,xtre,'filled');
+title('Do thi tin hieu x[2n-2]');
+xlabel('n');ylabel('x[2n-2]');
+grid on;
+subplot(2,2,4);
+xnhan=xn.*unitstep(n);
+stem(n,xnhan,'filled');
+title('Do thi tin hieu x[n]u[n]');
+xlabel('n');ylabel('x[n]u[n]');
+grid on;
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{50.77772202709483em}]{figure_1.png}
+\end{center}
+
+
+\begin{matlabcode}
+% Bai 2: Lay mau va bieu dien tin hieu tren mien thoi gian
+f1=10;f2=150;fsam=4000;
+t=0:1/fsam:1;
+xt=(1+0.5*sin(2*pi*f1*t)).*sin(2*pi*f2*t);
+fs1=800;fs2=200;
+figure;
+subplot(2,1,1);
+n1=0:1/fs1:1;
+xn1=(1+0.5*sin(2*pi*f1*n1)).*sin(2*pi*f2*n1);
+stem(n1,xn1,'.');
+title('Tin hieu lay mau voi tan so fs1=800Hz');
+xlabel('n');ylabel('x1[n]');
+grid on;
+subplot(2,1,2);
+n2=0:1/fs2:1;
+xn2=(1+0.5*sin(2*pi*f1*n2)).*sin(2*pi*f2*n2);
+stem(n2,xn2,'.');
+title('Tin hieu lay mau voi tan so fs2=200Hz');
+xlabel('n');ylabel('x2[n]');
+grid on;
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{50.77772202709483em}]{figure_2.png}
+\end{center}
+\begin{matlabcode}
+figure;
+subplot(2,1,1);
+Xt=fft(xt);
+Nt=length(xt);
+Mag_Xt=abs(Xt)/Nt;
+Arg_Xt=angle(Xt);
+wt=linspace(0,2*pi,Nt);
+ft=(wt*fsam)/(2*pi);
+plot(ft,Mag_Xt);
+title('Pho bien do cua tin hieu x(t)');
+xlabel('Tan so Hz'); ylabel('|X(f)|');
+grid on;
+subplot(2,1,2);
+plot(ft,Arg_Xt);
+title('Pho pha cua tin hieu x(t)');
+xlabel('Tan so Hz'); ylabel('<X(f)');
+grid on;
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{50.77772202709483em}]{figure_3.png}
+\end{center}
+\begin{matlabcode}
+Xn1=fft(xn1);
+Nn1=length(xn1);
+Mag_Xn1=abs(Xn1)/Nn1;
+Arg_Xn1=angle(Xn1);
+wn1=linspace(0,2*pi,Nn1);
+fn1=(wn1*fs1)/(2*pi);
+figure;
+subplot(2,1,1);
+plot(fn1,Mag_Xn1);
+title('Pho bien do cua tin hieu x1[n]');
+xlabel('Tan so Hz'); ylabel('|X(f)|');
+grid on;
+subplot(2,1,2);
+plot(fn1,Arg_Xn1);
+title('Pho pha cua tin hieu x1[n]');
+xlabel('Tan so Hz'); ylabel('<X(f)');
+grid on;
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{50.77772202709483em}]{figure_4.png}
+\end{center}
+\begin{matlabcode}
+figure;
+Xn2=fft(xn2);
+Nn2=length(xn2);
+Mag_Xn2=abs(Xn2)/Nn2;
+Arg_Xn2=angle(Xn2);
+wn2=linspace(0,2*pi,Nn2);
+fn2=(wn2*fs2)/(2*pi);
+figure;
+subplot(2,1,1);
+plot(fn2,Mag_Xn2);
+title('Pho bien do cua tin hieu x2[n]');
+xlabel('Tan so Hz'); ylabel('|X(f)|');
+grid on;
+subplot(2,1,2);
+plot(fn2,Arg_Xn2);
+title('Pho pha cua tin hieu x2[n]');
+xlabel('Tan so Hz'); ylabel('<X(f)');
+grid on;
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{50.77772202709483em}]{figure_5.png}
+\end{center}
+\begin{matlabcode}
+% Ket qua hien tuong thu duocL Voi tan so lay mau cang thap thi pho bi
+% chong (aliasing), dan den tin hieu khoi phuc duoc khong con giong voi tin
+% hieu goc. Dong thoi pha cua cac tin hieu lay mau voi tan so thap cung bi
+% meo di dang ke.
+\end{matlabcode}
+
+
+\begin{matlabcode}
+% Bai 3: He thong tuyen tinh bat bien:
+b=[1 2 -1];
+a=[1 4 -3];
+n=0:20;
+figure;
+impz(b,a);
+grid on;
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{50.77772202709483em}]{figure_6.png}
+\end{center}
+\begin{matlabcode}
+zi=filtic(b,a,[0 4],[-1 1]);
+ystep=filter(b,a,unitstep(n),zi);
+figure;
+stem(n,ystep,'filled');
+title('Dap ung xung bac thang cua he thong');
+xlabel('n');ylabel('hst[n]');
+grid on;
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{50.77772202709483em}]{figure_7.png}
+\end{center}
+\begin{matlabcode}
+zplane(b,a);
+grid on;
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{50.77772202709483em}]{figure_8.png}
+\end{center}
+\begin{matlabcode}
+% He thong nay khong on dinh
+xn=exp(-n).*unitstep(n);
+yxn=filter(b,a,xn,zi);
+figure;
+stem(n,yxn,'filled');
+title('Dau ra cua tin hieu x[n]');
+xlabel('n');ylabel('y[n]');
+grid on;
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{50.77772202709483em}]{figure_9.png}
+\end{center}
+\begin{matlabcode}
+% He thong nhan qua khong on dinh, de he thong on dinh, ta phai dieu chinh lai
+% vector a
+a1=[1 1/3 0];
+zplane(b,a1);
+grid on;
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{50.77772202709483em}]{figure_10.png}
+\end{center}
+
+
+\begin{matlabcode}
+% Bai 4: Loc IIR
+fsam=1000;f1=50;f2=100;f3=200;
+n=0:1/fsam:1;
+xn=sin(2*pi*f1*n)+sin(2*pi*f2*n)+sin(2*pi*f3*n);
+yn=xn+randn(size(xn));
+figure;
+Xn=fft(xn);
+Nx=length(xn);
+MagXn=abs(Xn)/Nx;
+subplot(2,1,1);
+wx=linspace(0,2*pi,Nx);
+fx=(wx*fsam)/(2*pi);
+plot(fx,MagXn);
+title('Pho bien do tin hieu x[n]');
+xlabel('Tan so Hz'); ylabel('|X(f)|');
+grid on;
+subplot(2,1,2);
+Yn=fft(yn);
+Ny=length(yn);
+MagYn=abs(Yn)/Ny;
+wy=linspace(0,2*pi,Ny);
+fy=(wy*fsam)/(2*pi);
+plot(fy,MagYn);
+title('Pho bien do tin hieu y[n]');
+xlabel('Tan so Hz'); ylabel('|Y(f)|');
+grid on;
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{50.77772202709483em}]{figure_11.png}
+\end{center}
+
+
+\matlabheading{Ta can thiet ke bo loc BP Chebyshev voi cac thong so sau: fpass=[80 170], fstop= [50 200], Rpass=1, Rstop=30}
+
+\begin{matlabcode}
+fpass=[80 170]; fstop=[50 200]; Rpass=1; Rstop=30;
+wpass=2*fpass/fsam; wstop=2*fstop/fsam;
+[n_bac Wn]=cheb1ord(wpass,wstop,Rpass,Rstop);
+[b a]=cheby1(n_bac,Rpass,Wn);
+yloc=filter(b,a,yn);
+figure;
+subplot(2,1,1);
+stem(n,yloc,'.');
+title('Tin hieu yloc[n] sau khi loc o mien thoi gian');
+xlabel('n'); ylabel('yloc[n]');
+grid on;
+subplot(2,1,2);
+Yn=fft(yloc);
+Nloc=length(yloc);
+wy=linspace(0,2*pi,Nloc);
+fy=fsam*wy/(2*pi);
+MagY=abs(Yn)/Nloc;
+plot(fy,MagY);
+title("Pho cua tin hieu yloc[n]");
+xlabel('Tan so Hz'); ylabel('|Yloc(f)|');
+grid on;
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{50.77772202709483em}]{figure_12.png}
+\end{center}
+\begin{matlabcode}
+
+function u=unitstep(n)
+u=(n>=0);
+end
+
+\end{matlabcode}
+
+\end{document}

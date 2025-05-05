@@ -156,4 +156,41 @@ $$H(s)=\sum\frac{c_{i}}{s-p_{k}}\to H(z)=\sum\frac{1}{p_{k}}\left(\frac{e^{p_{k}
 Lưu ý lúc này phần biến đổi tần số sẽ khác:
 $$\Omega=\frac{2}{T_{s}}\tan{\left(\frac{\omega}{2}\right)}$$
 $$s=\frac{2}{T_{s}}\frac{1-z^{-1}}{1+z^{-1}}$$
+\subsection{Bài tập áp dụng}
+\subsubsection{Thiết kế bộ lọc Chebyshev thông cao IIR dùng phương pháp song tuyến tính và thỏa mãn các đặc điểm sau:
+}
+\begin{itemize}
+  \item Độ gợn sóng ở dải thông từ $10kHz$ không lớn hơn $2.5kdB$
+  \item Độ suy hao lớn hơn $20dB$ ở các tần số nhỏ hơn $5kHz$
+  \item Tần số lấy mẫu là $50kHz$
+\end{itemize}
+\begin{enumerate}
+  \item Chuyển đổi tần số số $\omega$ sang tần số tương tự $\Omega$ theo công thức song tuyến tính:
+  \begin{equation*}
+    \Omega = \frac{2}{T_{s}}\tan{\frac{\omega}{2}}=2f_{s}\tan{\frac{2\pi f}{2f_{s}}}=2f_{s}\tan{\frac{\pi f}{f_{s}}}
+  \end{equation*}
+ \textbf{Nhớ công thức để chuyển đổi từ $f\to\omega$ là $\omega=\frac{2\pi f}{f_{s}}$ chứ không phải là $\omega = 2\pi f$}
+  \item Sau khi tính được $\Omega_{s}$ và $\Omega_{p}$ theo công thức trên, tìm tỉ số:
+  \begin{equation*}
+    k= \frac{\Omega_{p}}{\Omega_{s}}
+  \end{equation*}
+Trong trường hợp bài trên là $k\approx 2.233 \Rightarrow$ chọn bộ lọc có bậc $N=3$, $r=2.5dB$ (cách nhìn hình chọn bậc thì tự đọc lại slide cô Thịnh)
+  \item Thiết kế bộ lọc chuẩn hóa thông thấp $(\Omega_{c}=1)$ với bậc $N=3$ và $r=2.5dB$ dựa vào phương trình đáp ứng biên độ của bộ lọc Chebyshev:
+  \begin{equation*}
+    |H(\Omega)|^2=\frac{\alpha}{1+\varepsilon^2C_{3}^2(\Omega)}
+  \end{equation*}
+  \item Do $|H(\Omega)^2|=H(s)H(-s)$ và $$\Omega=\frac{s}{j}$$ nên thay tất cả vào lại $|H(\Omega)|^2$ viết lại nó dưới dạng hàm $H(s)$:
+  \begin{equation*}
+    |H(\Omega)|^2=\frac{\alpha}{1+\varepsilon^2(4\Omega^3-3\Omega)^2}=\frac{\alpha}{1+\varepsilon^2\left(4(\frac{s}{j})^3-3\left(\frac{s}{j}\right)\right)^2}=...
+  \end{equation*}
+  \item Giải phương trình nghiệm cực ở mẫu để tìm ra các nghiệm cực, trong trường hợp này có tổng cộng $6$ nghiệm với một phương trình bậc $6$. Chỉ lấy $3$ nghiệm cực có phần thực âm.
+  \item Viết lại hàm truyền của bộ lọc chuẩn hóa thông thấp dưới dạng:
+  $$H(s)=\frac{\beta}{(s-s_{1})(s-s_{2})(s-s_{3})}$$
+với $\beta$ là một hằng số được chọn sao cho thỏa mãn $H(0)=1$.
+  \item Thay $s\to \frac{\Omega_{c}}{s}$ (trong trường hợp này $\Omega_{c}=\Omega_{s}$) để chuyển đổi từ bộ lọc thông thấp chuẩn hóa thành bộ lọc thông cao bình thường theo như các đặc tả ở $1$.
+  \item Áp dụng công thức song tuyến tính thay vào hàm $H(s)$ để chuyển đổi từ bộ lọc tương tự sang bộ lọc số: $$s=\frac{2}{T}\frac{1-z^{-1}}{1+z^{-1}}$$
+\end{enumerate}
+Cách giải phương trình bậc $6$ ở trên, đầu tiên đặt $s^2$ là ẩn phụ, sau đó bấm máy tính ra được $3$ nghiệm, các nghiệm đều có dạng $a+jb$ với $a,b$ khoảng một vài tỷ. Ta phải chuyển số phức về dạng mũ để tính căn bằng máy tính Casio:
+$$a+jb\to r\angle \theta=re^{j\theta}$$
+Khi đó $$\sqrt{re^{j\theta}}=\sqrt{r}(\pm e^{j\frac{\theta}{2}})^2$$, chuyển lại căn bậc 2 này về dạng số phức, xong.
 \end{document}
