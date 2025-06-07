@@ -1,7 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1743092397 "/home/Chiaki/LaTeX/fourier.tex" "fourier.pdf" "fourier" 1743092397 0
+["pdflatex"] 1749135042 "fourier.tex" "fourier.pdf" "fourier" 1749135043 0
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/Chiaki/LaTeX/fourier.tex" 1743092397 12129 7c5b2eaeee4244e5adfed2cbd4baa381 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -89,8 +88,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1740936571 4623309 82ee5d777482be164acd86bb957845af ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1740936618 7878419 8e1ae05cefa763d0815f9d3da81a31af ""
-  "fourier.aux" 1743092397 3151 a6cc57fa43adaf5bafdff4bda7fd8fde "pdflatex"
-  "fourier.tex" 1743092397 12129 7c5b2eaeee4244e5adfed2cbd4baa381 ""
+  "fourier.aux" 1749135043 3151 a6cc57fa43adaf5bafdff4bda7fd8fde "pdflatex"
+  "fourier.tex" 1749135042 12131 c7eee759c73b3f3ac71ae5570376d2dc ""
   "fs.jpg" 1742643524 37088 b42aad3dfba6fa3cba59b0f169b65ff3 ""
   (generated)
   "fourier.aux"
