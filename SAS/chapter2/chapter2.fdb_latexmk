@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1751135077 "chapter2.tex" "chapter2.pdf" "chapter2" 1751135078 0
+["pdflatex"] 1751223828 "chapter2.tex" "chapter2.pdf" "chapter2" 1751223829 0
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -219,17 +219,20 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1740936571 4623309 82ee5d777482be164acd86bb957845af ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1740936618 7878419 8e1ae05cefa763d0815f9d3da81a31af ""
-  "chapter2.aux" 1751135078 6321 5148122486ae98dd11ebbfa81596e3e0 "pdflatex"
-  "chapter2.nav" 1751135078 3189 862f8c76da14315132ab66d1c2e4ce5a "pdflatex"
-  "chapter2.out" 1751135078 1137 355b467901dc1a9edabb678e995a97e0 "pdflatex"
-  "chapter2.tex" 1751135077 14956 52f42ea7d61ca8ffb09088a56ccb4d86 ""
-  "chapter2.toc" 1751135078 759 f0deead15a2af82373478e494f8a65d9 "pdflatex"
+  "chapter2.aux" 1751223829 7769 98d2db30e53c3348b39f35e9e02bd8ef "pdflatex"
+  "chapter2.nav" 1751223829 3873 275ee50df4dca6620be209421e3db081 "pdflatex"
+  "chapter2.out" 1751223829 1137 355b467901dc1a9edabb678e995a97e0 "pdflatex"
+  "chapter2.tex" 1751223828 18862 e0834e3e7051381d8e4fbffdce13689b ""
+  "chapter2.toc" 1751223829 959 b066fddfba32172c888c9b1cb78648c9 "pdflatex"
   "conv.jpg" 1751116382 67694 fe8ccfe50aac64d5a8e4692bdce0a1e6 ""
+  "conv1.jpg" 1751217133 50241 51256dc3fb6d8874588b411d133b2ba5 ""
   "dirac.jpg" 1751133079 58938 f3a17a34be47a1aa66d5086c8a4047fb ""
   "discrete.jpg" 1751102340 44200 267458a3ea4f139f3726548d785caf9d ""
   "process.jpg" 1751104380 81443 089b144b233238c7a7895a0363eb6c9a ""
+  "result.jpg" 1751219456 12401 779b94d7e6e98abe9c43001fb0bc9c80 ""
   "system.jpg" 1751106251 74845 88809f97c199dba2f219eb138ae79eb1 ""
   "tau.jpg" 1751134391 100568 7d435f89149fdc4533c49849ab8f32e4 ""
+  "test.jpg" 1751221413 84583 7a5c03da184d312ccd151c8365f510bd ""
   (generated)
   "chapter2.aux"
   "chapter2.log"
