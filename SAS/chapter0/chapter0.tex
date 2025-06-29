@@ -33,7 +33,7 @@
 						\item Mặt phẳng phức
 						\item Đồng nhất thức Euler
 					\end{itemize}
-				\item Ý nghĩa của số phức trong Vật lý
+				\item Số phức trong Vật lý
 					\begin{itemize}
 						\item Dao động điều hòa
 						\item Mạch RLC
@@ -145,5 +145,185 @@ Giả sử trong trận bóng này, âm thanh gây nhiễu từ cổ động vi�
 	\end{itemize}
 \end{frame}
 \begin{frame}{Ôn tập số phức (optional)}
+	\begin{itemize}
+		\item{Các phép toán cơ bản với số phức}
+			\begin{itemize}
+				\item Mặt phẳng phức
+					\begin{itemize}
+						\item Chúng ta định nghĩa đơn vị ảo (imaginary unit) như sau: $$i^2=-1$$
+						\item Trong sách vật lý và các tài liệu kĩ thuật điện khác, người ta thường kí hiệu: $$j^2=-1$$ để tránh bị nhầm lẫn với cường độ dòng điện.
+						\item Chúng ta định nghĩa số phức (complex number) là các số có dạng: $$s=a+jb$$ với $a,b\in\mathbb{R}$. Tập hợp của các số phức là tập $\mathbb{C}$
+							, ta có thể dễ dàng nhận thấy $\mathbb{R}\subset\mathbb{C}$.
+						\item Chúng ta định nghĩa số phức liên hợp của số phức $s$ (complex conjugate) là:
+							$$\overline{s}=a-jb$$
+						\item Chúng ta định nghĩa các phép toán cơ bản như cộng, trừ, nhân, chia số phức với trường hợp đơn giản nhất với hai số phức $s_{1}=a+jb$ và $s_{2}=c+jd$ như sau: 
+\begin{equation*}
+	\begin{split}
+		s_{1}+s_{2}&=a+jb+c+jd=(a+c)+j(b+d) \\
+		s_{1}-s_{2}&=a+jb-(c+jd)=(a-c)+j(b-d) \\
+		s_{1}s_{2}&=(a+jb)(c+jd)=(ac-bd)+j(ad+bc)\\
+		\frac{s_{1}}{s_{2}}&=\frac{a+jb}{c+jd}=\frac{(a+jb){(\overline{c+jd})}}{(c+jd)(\overline{c+jd})}=\frac{(a+jb)(c-jd)}{(c+jd)(c-jd)}=\frac{(ac+bd)+j(bc-ad)}{c^2+d^2}\\
+	\end{split}
+\end{equation*}
+					\end{itemize}
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+\begin{frame}{Ôn tập số phức (optional)}
+	\begin{itemize}
+		\item Các phép toán cơ bản với số phức
+			\begin{itemize}
+				\item Mặt phẳng phức
+					\begin{itemize}
+						\item Chúng ta định nghĩa một mặt phẳng phức (complex plane) với hai trục $\Re$ và $\Im$ như hình vẽ:
+		\begin{figure}[h]
+			\includegraphics[width=0.3\textwidth]{complex.png}
+			\caption{Complex plane}			\label{fig:re5}
+		\end{figure}
+	\item Số phức $s_{1}=a+jb$ được định nghĩa ở trên có thể được biểu diễn trong mặt phẳng phức thông qua điểm $S_{1}(a,b)$. Lấy $s_{2}=c+jd$ và điểm $S_{2}(c,d)$, các bạn có thể tự nghiệm thu lại được kết quả của các phép toán cộng, trừ số phức ở trên bản chất chỉ là cộng, trừ vector trong mặt phẳng phức mà thôi. \alert{Chưa vẽ đường tròn vội.}
+	\item Đo độ lớn của vector $\overrightarrow{OS_{1}}$, $|\overrightarrow{OS_{1}}|=r$, vẽ đường tròn tâm $O$ bán kính $r$ như hình vẽ, chúng ta có thể tiếp tục định nghĩa thêm các khái niệm sau:
+		\\	1. Module của số phức $s_{1}$: $$|s_{1}|=|\overrightarrow{OS_{1}}|=|r|=\sqrt{a^2+b^2}$$
+		\\ 	2. Dạng biểu diễn lượng giác của số phức: rất hiển nhiên, khi ta vẽ đường tròn trên mặt phẳng phức, ta sẽ liên tưởng ngay đến \textbf{đường tròn đơn vị}: 
+		$$s_{1}=\sqrt{a^2+b^2}\left(\frac{a}{\sqrt{a^2+b^2}}+\frac{jb}{\sqrt{a^2+b^2}}\right)=|s_{1}|(\cos{\theta}+j\sin{\theta})$$
+		\end{itemize}
+	\end{itemize}
+	\end{itemize}
+\end{frame}
+\begin{frame}{Ôn tập số phức (optional)}
+	\begin{itemize}
+		\item Các phép toán cơ bản với số phức 
+			\begin{itemize}
+				\item Đồng nhất thức Euler 
+					\begin{itemize}
+						\item Đồng nhất thức Euler (Euler's identity) là một trong các phương trình đẹp nhất của toán học, nó bắc cầu nối giữa phép tính mũ phức với dạng biểu diễn lượng giác của số phức như sau: $$e^{j\theta}=\cos{\theta}+j\sin{\theta}$$
+						\item Đồng nhất thức này có thể được chứng minh vô cùng đơn giản như sau, dựa vào khai triển chuỗi Taylor-Maclaurine:
+			\begin{equation*}
+	\begin{split}
+		e^{j\theta}&=\sum_{k=0}^{+\infty}\frac{(j\theta)^k}{k!}=\sum_{k=0}^{+\infty}\frac{(j\theta)^{2k}}{(2k)!}+\sum_{k=0}^{+\infty}\frac{(j\theta)^{2k+1}}{(2k+1)!}=\sum_{k=0}^{+\infty}(-1)^{k}\frac{(\theta)^{2k}}{(2k)!}+j\sum_{k=0}^{+\infty}(-1)^{k}\frac{(\theta)^{2k+1}}{(2k+1)!} \\
+			   &= \cos{\theta}+j\sin{\theta}
+	\end{split}
+			\end{equation*}
+		\item Một kết quả đặc biệt của Đồng nhất thức Euler được coi như là biểu thức đẹp nhất của môn toán, khi nó đã chỉ ra mối liên hệ của $5$ hằng số cơ bản nhất: $$e^{j\pi}+1=0$$
+		\item  Việc bắc cầu nối giữa phép tính cộng và phép tính mũ đã mở ra cho chúng ta một công cụ cực kì mạnh để thực hiện phép tính nhân, chia, lũy thừa,... với số phức, chẳng hạn như để tính lũy thừa bậc $n$ của một số phức bất kì, ta viết lại số phức đó về dạng lượng giác (tất cả các số phức đều có thể viết dưới dạng lượng giác) rồi biến đổi như sau:
+			\begin{equation*}
+			\begin{split}
+				(s_{1})^{n}&=[|r|(\cos{\theta}+j\sin{\theta})]^n\\
+					   &=|r|^{n}(e^{jn\theta})=|r|^{n}(\cos{n\theta}+j\sin{n\theta})
+			\end{split}
+		\end{equation*}
+					\end{itemize}
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+\begin{frame}{Ôn tập số phức (optional)}
+	\begin{itemize}
+		\item Số phức trong vật lý
+			\begin{itemize}
+				\item Dao động điều hòa
+					\begin{figure}[h]
+						\includegraphics[width=0.4\textwidth]{harmonic.png}
+						\caption{Harmonic Oscillation}
+						\label{fig:re6}
+					\end{figure}
+	\begin{itemize}
+		\item Ta xét một vật xanh đang dao động điều hòa như hình minh họa trên \textbf{đường tròn đơn vị}, để cho đơn giản ta quy ước pha ban đầu của vật xanh $\phi=0 \, \text{rad}$. Theo định nghĩa, để vật xanh dao động điều hòa được trên trục $\Re$ thì nó phải là \textbf{hình chiếu vuông góc} của vật đỏ đang chuyển động tròn đều trên đường tròn. Hiển nhiên ta có phương trình dao động của vật xanh là:
+			$$x(t)=\cos(\theta)=\cos(\omega t)$$
+với $\omega$ là tốc độ góc của vật đỏ.
+\item Không chỉ dừng lại ở vật xanh, ta muốn biểu diễn thêm phương trình dao động của vật đỏ với trục $\Im$ nữa, để làm được điều này, ta hạ hình chiếu màu xanh lá cây xuống trục $\Im$ như hình vẽ. Dễ thấy phương trình dao động của vật xanh lá (vị trí tương đối của vật đỏ với trục $\Im$) là: $$y(t)=\sin{(\theta)}=\sin{(\omega t)}$$
+	\end{itemize}
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+\begin{frame}{Ôn tập số phức (optional)}
+\begin{itemize}
+	\item Số phức trong vật lý
+		\begin{itemize}
+			\item Dao động điều hòa
+				\begin{itemize}
+					\item Để biểu diễn một cách hoàn chỉnh quá trình một vật đang dao động điều hòa, chúng ta không chỉ biểu diễn chính phương trình của vật đó đang dao động (phương trình $x(t)$ của vật xanh với trục $\Re$), mà còn cần phải biểu diễn cả phương trình của tác nhân chuyển động tròn đều gây ra dao động điều hòa đấy nữa (phương trình $y(t)$ của vật đỏ với trục $\Im$).
+					\item Các quá trình dao động điều hòa trong tự nhiên như con lắc lò xo hay con lắc đơn, trên thực tế chúng ta chỉ có thể quan sát được quá trình dao động của \textbf{vật xanh} (tức là chỉ quan sát được vật thể đang dao động điều hòa), chứ không thể quan sát được \alert{vật đỏ} (tức là tác nhân khiến cho vật xanh dao động điều hòa). Chính vì thế nên chúng ta biểu diễn quá trình dao động của vật xanh (vật thật) trên trục $\Re$ (vì nó thật sự tồn tại và quan sát được), còn quá trình dao động của vật đỏ trên trục $\Im$ (vì nó chỉ là phép quy ước toán học chứ không có thật).
+					\item Vậy để biểu diễn được toàn bộ quá trình dao động điều hòa một cách \alert{hoàn chỉnh}, ta cần phải xây dựng một biểu thức gồm 2 phần, phần thực ($\Re$) để biểu diễn vật xanh và phần ảo ($\Im$) để biểu diễn vật đỏ. Biểu thức này có dạng như sau:
+						$$z(t)=x(t)+jy(t)=\cos{(\omega t)}+j\sin{(\omega t)}=e^{j\omega t}$$
+					\item Tổng quát hóa, chúng ta có thể biểu diễn tất cả các dao động điều hòa dưới dạng mũ phức như biểu thức trên. Việc biểu diễn dưới dạng này rất tiện trong việc xử lý các phép toán nhân, chia,... và đặc biệt hơn nữa là \textbf{xử lý các bài toán có yếu tố pha thay đổi}. 
+				\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+\begin{frame}{Ôn tập số phức (optional)}
+\begin{itemize}
+	\item Số phức trong vật lý
+	\begin{itemize}
+	\item Mạch RLC:
+		cho một nguồn điện AC được nối với các linh kiện $R$, $L$, $C$ như hình vẽ, hãy tìm phương trình của cường độ dòng điện và hiệu điện thế giữa hai đầu từng linh kiện trong mạch. 
+	\begin{figure}[h]
+		\includegraphics[width=0.3\textwidth]{rlc.jpg}
+		\caption{AC circuit}
+		\label{fig:re7}
+	\end{figure}
+	\item Cách 1: tiếp cận bài toán vật lý không sử dụng phương pháp dòng phức:
+\\ Từ tính chất của các linh kiện trong mạch và các linh kiện được đấu nối tiếp, ta có các phương trình tương ứng sau:
+\begin{equation*}
+\begin{cases}
+	v=V\cos{(\omega t+\theta)} \\
+	v=v_{R}+v_{L}+v_{C} \\
+	v_{R}=iR \\
+	v_{L}=L\frac{di}{dt} \\
+	i=C\frac{dv_{c}}{dt} \\
+\end{cases}
+\end{equation*}
+Ta xét phương trình tổng quát của dòng điện $i$ như sau (cùng tần số với $v$ do các linh kiện thụ động không có khả năng thay đổi tần số dao động): $i=I\cos(\omega t+\phi)$, biến đổi từ đây, ta lần lượt biểu diễn được phương trình của các hiệu điện thế giữa hai đầu các linh kiện trong mạch như sau:
+\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}{Ôn tập số phức (optional)}
+	\begin{itemize}
+		\item Số phức trong vật lý
+		\begin{itemize}
+				\item Cách 1: tiếp cận bài toán vật lý không sử dụng phương pháp dòng phức:
+
+\begin{equation*}
+\begin{cases}
+	v_{R}=IR\cos(\omega t+\phi)\\
+	v_{L}=-IL\omega\sin{(\omega t+\phi)}=IL\omega\cos{(\omega t+\phi+\frac{\pi}{2})}=IX_{L}\cos{(\omega t+\phi+\frac{\pi}{2})} \\
+	v_{C}=\frac{I}{C\omega} \sin{(\omega t+\phi)}=\frac{I}{C\omega}\cos{(\omega t+\phi-\frac{\pi}{2})}=IX_{C}\cos{(\omega t+\phi-\frac{\pi}{2})} \\
+\end{cases}
+\end{equation*}
+Ta lần lượt biểu diễn các vector trên giản đồ Fresnel:
+	\begin{figure}[h]
+		\includegraphics[width=0.6\textwidth]{fresnel.jpg}
+		\caption{Fresnel diagram}
+		\label{fig:re8}
+	\end{figure}
+Quan sát giản đồ và bằng phép cộng vector và biến đổi hình học, ta lần lượt thu được kết quả:
+\begin{equation*}
+	\begin{split}
+		\varphi=\theta-\phi=\arctan{\frac{X_{L}-X_{C}}{R}} \quad I=\frac{V}{\sqrt{R^2+(X_{L}-X_{C})^2}}
+	\end{split}
+\end{equation*}
+\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}{Ôn tập số phức (optional)}
+\begin{itemize}
+	\item Số phức trong vật lý
+		\begin{itemize}
+	\item Cách 2: tiếp cận bài toán vật lý bằng phương pháp dòng phức:
+\begin{equation*}
+	\begin{cases}
+		\textbf{V}=V\angle \theta \\
+		R = R \\
+		Z_{L}=j\omega L \\
+		Z_{C}=\frac{1}{j\omega C} \\
+		\textbf{Z}=R+Z_{L}+Z_{C} \\
+	\end{cases}
+	\Rightarrow \textbf{I}=\frac{\textbf{V}}{\textbf{Z}}=\frac{\textbf{V}}{R+Z_{L}+Z_{C}}
+\end{equation*}
+Suy ngẫm: hãy giải thích vì sao ta chỉ cần xét $\textbf{V}=V\angle \theta$ chứ không phải $\omega t+ \theta$, bản chất của phép biển đổi dòng phức từ $v\to \textbf{V}$ là gì, chứng minh lại tất cả các công thức tìm $Z$.
+\\ Sau này ở chương $3$ ta sẽ hiểu phép biến đổi dòng phức này theo góc nhìn khác, đây chính là phép biến đổi \alert{Fourier}. Phép biến đổi \alert{Fourier} có thể chuyển phép đạo hàm và tích phân thành phép tính đơn giản hơn là nhân và chia, chúng ta sẽ phân tích sâu và kĩ hơn sau.
+\end{itemize}
+\item Tại sao lại dùng số phức để biểu diễn tín hiệu ?
+
+	\\ \alert{Các bạn hãy tự suy ngẫm và phân tích để tìm ra câu trả lời của chính mình!}
+\end{itemize}
 \end{frame}
 \end{document}

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  28 JUN 2025 00:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  29 JUN 2025 01:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**chapter0.tex
-(./chapter0.tex
+**chapter2.tex
+(./chapter2.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16> (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/09/13 v3.68 A class for typesetting presentations
@@ -777,8 +777,8 @@ Package: wrapfig 2003/01/31  v 3.6
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count344
 \l__pdf_internal_box=\box82
-) (./chapter0.aux)
-\openout1 = `chapter0.aux'.
+) (./chapter2.aux)
+\openout1 = `chapter2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -859,9 +859,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring OFF on input line 19.
- (./chapter0.out) (./chapter0.out)
+ (./chapter2.out) (./chapter2.out)
 \@outlinefile=\write5
-\openout5 = `chapter0.out'.
+\openout5 = `chapter2.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 19.
@@ -928,166 +928,141 @@ Dictionary: translator-months-dictionary, Language: English
 Dictionary: translator-numbers-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./chapter0.nav) [1
+) (./chapter2.nav) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./chapter0.toc) [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./chapter2.toc) [2
 
 ] [3
 
+] [4
+
 ]
-<linux.jpg, id=41, 501.875pt x 503.8825pt>
-File: linux.jpg Graphic file (type jpg)
-<use linux.jpg>
-Package pdftex.def Info: linux.jpg  used on input line 60.
-(pdftex.def)             Requested size: 122.91406pt x 123.40231pt.
- [4
-
- <./linux.jpg>]
-<cat.jpg, id=48, 675.52374pt x 449.68pt>
-File: cat.jpg Graphic file (type jpg)
-<use cat.jpg>
-Package pdftex.def Info: cat.jpg  used on input line 69.
-(pdftex.def)             Requested size: 122.91406pt x 81.81718pt.
- [5
-
- <./cat.jpg>]
-<model.png, id=55, 858.20625pt x 188.705pt>
-File: model.png Graphic file (type png)
-<use model.png>
-Package pdftex.def Info: model.png  used on input line 82.
-(pdftex.def)             Requested size: 230.46739pt x 50.6746pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 82.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 50.
  (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-) [6
-
- <./model.png>] [7
+) [5
 
 ]
-<original.jpeg, id=71, 1927.2pt x 966.61125pt>
-File: original.jpeg Graphic file (type jpg)
-<use original.jpeg>
-Package pdftex.def Info: original.jpeg  used on input line 98.
-(pdftex.def)             Requested size: 307.28987pt x 154.11523pt.
- [8
+<discrete.jpg, id=91, 1452.42625pt x 421.575pt>
+File: discrete.jpg Graphic file (type jpg)
+<use discrete.jpg>
+Package pdftex.def Info: discrete.jpg  used on input line 78.
+(pdftex.def)             Requested size: 184.3758pt x 53.51369pt.
 
- <./original.jpeg>]
-<filter.png, id=79, 1445.4pt x 724.95844pt>
-File: filter.png Graphic file (type png)
-<use filter.png>
-Package pdftex.def Info: filter.png  used on input line 106.
-(pdftex.def)             Requested size: 307.28987pt x 154.1263pt.
- [9
+Overfull \vbox (0.74652pt too high) detected at line 78
+ []
 
- <./filter.png (PNG copy)>] [10
+[6
+
+ <./discrete.jpg>]
+<process.jpg, id=104, 1555.8125pt x 770.88pt>
+File: process.jpg Graphic file (type jpg)
+<use process.jpg>
+Package pdftex.def Info: process.jpg  used on input line 86.
+(pdftex.def)             Requested size: 307.28987pt x 152.25595pt.
+ [7
+
+ <./process.jpg>]
+<system.jpg, id=115, 1702.36pt x 601.24625pt>
+File: system.jpg Graphic file (type jpg)
+<use system.jpg>
+Package pdftex.def Info: system.jpg  used on input line 98.
+(pdftex.def)             Requested size: 245.83282pt x 86.81609pt.
+
+Overfull \vbox (9.95395pt too high) detected at line 98
+ []
+
+[8
+
+ <./system.jpg>] [9
 
 ]
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 139.
- (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmtt.fd
-File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [11
+<conv.jpg, id=130, 1016.79875pt x 864.22874pt>
+File: conv.jpg Graphic file (type jpg)
+<use conv.jpg>
+Package pdftex.def Info: conv.jpg  used on input line 114.
+(pdftex.def)             Requested size: 245.83282pt x 208.94882pt.
+
+Overfull \vbox (4.78197pt too high) detected at line 114
+ []
+
+[10
+
+ <./conv.jpg>] [11
 
 ] [12
 
-] [13
-
 ]
-<complex.png, id=119, 514.92375pt x 445.665pt>
-File: complex.png Graphic file (type png)
-<use complex.png>
-Package pdftex.def Info: complex.png  used on input line 191.
-(pdftex.def)             Requested size: 92.1879pt x 79.78781pt.
- [14
-
- <./complex.png>]
-Overfull \hbox (3.26813pt too wide) detected at line 217
+Overfull \hbox (11.39998pt too wide) detected at line 167
 []
  []
 
 
-Overfull \hbox (51.00073pt too wide) detected at line 217
+Overfull \hbox (6.4045pt too wide) detected at line 167
 []
+ []
+
+[13
+
+] [14
+
+]
+<dirac.jpg, id=164, 1401.235pt x 861.2175pt>
+File: dirac.jpg Graphic file (type jpg)
+<use dirac.jpg>
+Package pdftex.def Info: dirac.jpg  used on input line 193.
+(pdftex.def)             Requested size: 276.559pt x 169.96703pt.
+
+Overfull \vbox (7.79968pt too high) detected at line 193
  []
 
 [15
 
-]
-<harmonic.png, id=136, 548.0475pt x 431.6125pt>
-File: harmonic.png Graphic file (type png)
-<use harmonic.png>
-Package pdftex.def Info: harmonic.png  used on input line 236.
-(pdftex.def)             Requested size: 122.91406pt x 96.79907pt.
+ <./dirac.jpg>]
+<tau.jpg, id=172, 1629.08624pt x 799.98875pt>
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 199.
+(pdftex.def)             Requested size: 307.28987pt x 150.90082pt.
  [16
 
- <./harmonic.png>] [17
-
-]
-<rlc.jpg, id=150, 331.2375pt x 165.61874pt>
-File: rlc.jpg Graphic file (type jpg)
-<use rlc.jpg>
-Package pdftex.def Info: rlc.jpg  used on input line 277.
-(pdftex.def)             Requested size: 92.1879pt x 46.0924pt.
- [18
-
- <./rlc.jpg>]
-<fresnel.jpg, id=160, 1365.1pt x 527.9725pt>
-File: fresnel.jpg Graphic file (type jpg)
-<use fresnel.jpg>
-Package pdftex.def Info: fresnel.jpg  used on input line 305.
-(pdftex.def)             Requested size: 184.3758pt x 71.30544pt.
- [19
-
- <./fresnel.jpg>]
-
-./chapter0.tex:328: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.328 \end{frame}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[20
+ <./tau.jpg>] [17
 
 ]
 \tf@nav=\write6
-\openout6 = `chapter0.nav'.
+\openout6 = `chapter2.nav'.
 
 \tf@toc=\write7
-\openout7 = `chapter0.toc'.
+\openout7 = `chapter2.toc'.
 
 \tf@snm=\write8
-\openout8 = `chapter0.snm'.
+\openout8 = `chapter2.snm'.
 
- (./chapter0.aux)
-Package rerunfilecheck Info: File `chapter0.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ (./chapter2.aux)
+Package rerunfilecheck Info: File `chapter2.out' has not changed.
+(rerunfilecheck)             Checksum: 355B467901DC1A9EDABB678E995A97E0;1137.
  ) 
 Here is how much of TeX's memory you used:
- 25970 strings out of 476091
- 516466 string characters out of 5794082
- 1869330 words of memory out of 5000000
- 45757 multiletter control sequences out of 15000+600000
- 528869 words of font info for 68 fonts, out of 8000000 for 9000
+ 25953 strings out of 476091
+ 516200 string characters out of 5794082
+ 1866330 words of memory out of 5000000
+ 45747 multiletter control sequences out of 15000+600000
+ 525738 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,18n,122p,771b,690s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vntt8.pfb>
-Output written on chapter0.pdf (20 pages, 610869 bytes).
+ 128i,19n,122p,548b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb>
+Output written on chapter2.pdf (17 pages, 558936 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
- 48 named destinations out of 1000 (max. 500000)
- 100 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 238 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
