@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1751900434 "lab0.tex" "lab0.pdf" "lab0" 1751900437 0
+["pdflatex"] 1752112910 "lab0.tex" "lab0.pdf" "lab0" 1752112912 0
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -235,11 +235,11 @@
   "flux.jpg" 1751879168 25348 a480d58a084d5b3ddb9a92adb5f47875 ""
   "gauss.jpg" 1751881737 54731 ca3d5c58b196cc67cfcdc1726d73b056 ""
   "graph.jpg" 1751862463 71046 4511fd2550a425e912ec60a43681a8ee ""
-  "lab0.aux" 1751900436 6995 80c36f9e6fefe75febc5f4806a7cb4da "pdflatex"
-  "lab0.nav" 1751900436 3346 5f0218d91266c32db11fcf5d044a8e2d "pdflatex"
-  "lab0.out" 1751900436 1265 b61cb28f98e46d7a769dbc0db6f198da "pdflatex"
-  "lab0.tex" 1751900434 13092 b81b1bc16562aeff7e5e58a5f1ad4994 ""
-  "lab0.toc" 1751900436 804 d05edbbd392f9d97f69d43110063fa86 "pdflatex"
+  "lab0.aux" 1752112912 6995 80c36f9e6fefe75febc5f4806a7cb4da "pdflatex"
+  "lab0.nav" 1752112912 3346 5f0218d91266c32db11fcf5d044a8e2d "pdflatex"
+  "lab0.out" 1752112912 1265 b61cb28f98e46d7a769dbc0db6f198da "pdflatex"
+  "lab0.tex" 1752112910 13091 bac7a110d9249bc7b4955def1273f705 ""
+  "lab0.toc" 1752112912 804 d05edbbd392f9d97f69d43110063fa86 "pdflatex"
   "mag.jpg" 1751882203 58078 2d84326e8de0aef8d314422221f27ff0 ""
   "maxwell.jpg" 1751886822 44054 1bcfc2289c4ca32b7ab9b04cb4a6272c ""
   "nabla1.jpg" 1751856809 43239 54236d8719a86fe0154cbba689e555f9 ""
