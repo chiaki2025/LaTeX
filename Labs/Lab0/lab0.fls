@@ -1510,6 +1510,16 @@ INPUT ./maxwell.jpg
 INPUT maxwell.jpg
 INPUT ./maxwell.jpg
 INPUT ./maxwell.jpg
+INPUT ./wave.jpg
+INPUT ./wave.jpg
+INPUT wave.jpg
+INPUT ./wave.jpg
+INPUT ./wave.jpg
+INPUT ./antenna.jpg
+INPUT ./antenna.jpg
+INPUT antenna.jpg
+INPUT ./antenna.jpg
+INPUT ./antenna.jpg
 OUTPUT lab0.nav
 OUTPUT lab0.toc
 OUTPUT lab0.snm
