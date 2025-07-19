@@ -41,9 +41,6 @@
 \end{frame}
 \begin{frame}{Khái niệm hệ thống LTI}
 \section{Khái niệm hệ thống LTI}
-\begin{itemize}
-	\item Khái niệm hệ thống LTI
-\end{itemize}
 Trong \alert{Chương 1}, chúng ta đã làm quen và khảo sát $5$ tính chất cơ bản của hệ thống gồm: \textbf{tính nhân quả}, \textbf{tính không nhớ}, \textbf{tính ổn định}, \alert{tính tuyến tính} và \alert{tính bất biến}. Từ \alert{Chương 2} trở đi cho đến hết môn học này, chúng ta sẽ tập trung khảo sát một họ hệ thống có \textbf{tính tuyến tính} (linear time) và \textbf{tính bất biến} (invariant), hay còn gọi là \alert{hệ thống LTI}.
 \\ Suy ngẫm: tại sao chúng ta lại quan tâm đặc biệt đến hệ thống LTI ? Theo bạn, có phải là do đa số các hệ thống vật lý đều tuân theo \textbf{nguyên lý chồng chất (superposition)} không ? Bạn hãy thử tìm ví dụ minh họa cho các hệ thống vật lý có/không có tính tuyến tính.
 \\ Tương tự như \alert{Chương 1}, chúng ta cũng phân loại hệ thống LTI gồm \textbf{hệ thống LTI liên tục} và \textbf{hệ thống LTI rời rạc}. Ngoài cách biểu diễn hệ thống bằng \textbf{phương trình đầu vào-ra} tổng quát với tất cả các loại hệ thống đã học ở chương trước, hệ thống LTI còn có thể được biểu diễn bằng \textbf{đáp ứng xung của hệ thống}.
@@ -239,7 +236,6 @@ Suy ngẫm: các bạn hãy thử tự mình chứng minh lại $3$ tính chất
 			\includegraphics[width=1\textwidth]{test.jpg}
 			\caption{Does this graph $(a=1)$ make any sense ? Can you feel something behind it ?}\label{fig:re10}
 		\end{figure}
-If you don't skip this slide and think deeply about the graph, you are on the right way ! Keep going ! Keep thinking ! Keep wondering !
 \end{frame}
 \begin{frame}{Biểu diễn hệ thống LTI bằng đáp ứng xung}
 \subsubsection{Khảo sát tính chất của hệ thống LTI liên tục}
@@ -270,6 +266,173 @@ Hiển nhiên ta có thể thấy ngay:
 		Ổn định:
 $$\int_{-\infty}^{+\infty}|h(t)|dt<+\infty$$
 	\end{block}
+Suy ngẫm: sau khi đã hiểu bản chất phép toán tích chập, bạn hãy lý giải tại sao đây là hệ thống LTI ?
+\begin{equation*}
+	\begin{split}
+		y[n]&=x[n]*h[n]\\
+		y(t)&=x(t)*h(t)\\
+	\end{split}
+\end{equation*}
+\end{frame}
+\begin{frame}{Biểu diễn hệ thống LTI bằng phương trình đầu vào-ra}
+\section{Biểu diễn hệ thống LTI bằng phương trình đầu vào-ra}
+\subsection{Hệ thống LTI liên tục}
+\subsubsection{Ôn tập phương trình vi phân (optional)}
+\begin{itemize}
+	\item Hệ thống LTI liên tục
+	\end{itemize}
+\begin{itemize}
+\item[-] Ôn tập phương trình vi phân (optional)
+\end{itemize}
+Phương trình vi phân tổng quát có dạng như sau:
+$$\sum_{k=0}^{M}a_{k}\frac{dy^k(t)}{dt^k}=\sum_{k=0}^{N}b_{k}\frac{dx^k(t)}{dt^k}$$
+Giải phương trình vi phân (còn gọi là phương trình ODE - Ordinary Differential Equation) tức là tìm phương trình của hàm $y(t)$ tương ứng với mỗi hàm $x(t)$ cho trước. Người ta đã chứng minh được nghiệm của phương trình vi phân bất kì có công thức tổng quát (general solution) như sau:
+$$y_{G}(t)=y_{P}(t)+y_{H}(t)$$
+Các nghiệm của phương trình vi phân được tìm ra như sau:
+\begin{enumerate}
+	\item Nghiệm $y_{P}(t)$: là nghiệm riêng (particular solution) của phương trình ODE, được tính khi thay thẳng $x(t)$ vào giải phương trình vi phân.
+	\item Nghiệm $y_{H}(t)$: là nghiệm thuần nhất (homogeneous solution) của phương trình ODE, được tính khi thay \alert{$x(t)=0$} vào giải phương trình vi phân.
+	\item Nghiệm $y_{G}(t)$: là nghiệm tổng quát (general solution) của phương trình ODE, được tính theo công thức trên. Tùy thuộc vào điều kiện khởi tạo (intial condition) của phương trình, ta thay nốt hệ điều kiện vào $y_{G}(t)$ để tìm ra đáp án cuối cùng.
+\end{enumerate}
+\end{frame}
+\begin{frame}{Biểu diễn hệ thống LTI bằng phương trình đầu vào-ra}
+Ví dụ: giải phương trình vi phân đơn giản với điều kiện $y(0)=5$:
+$$\frac{dy(t)}{dt}+4y(t)=3t$$
+Ta tiến hành giải các nghiệm theo 3 bước như trên:
+\begin{enumerate}
+	\item Nghiệm $y_{P}(t)$: ta đoán dạng nghiệm $y_{P}(t)=at+b$, thay vào phương trình ta thu được: $$a+4at+4b=3t$$
+Đồng nhất các hệ số, ta thu được $a,b$ và nghiệm $y_{P}(t)$ như sau:
+$$y_{P}(t)=\frac{3}{4}t-\frac{3}{16}$$
+\item Nghiệm $y_{H}(t)$: ta đoán dạng nghiệm $y_{H}(t)=Ke^{\lambda t}$, thay vào phương trình thuần nhất $x(t)=0$, ta có:
+	$$K\lambda e^{\lambda t}+4K e^{\lambda t}=0$$
+Đồng nhất các hệ số, ta thu được $\lambda=-4$ và nghiệm $y_{H}(t)$ như sau:
+$$y_{H}(t)=\alert{K}e^{-4t}$$
+\item Nghiệm $y_{G}(t)$: từ hai nghiệm đã tìm được ở trên, ta thu được dạng nghiệm $y_{G}(t)$ như sau:
+	$$y_{G}(t)=y_{P}(t)+y_{H}(t)=\frac{3}{4}t-\frac{3}{16}+\alert{K}e^{-4t}$$
+	Thay nốt điều kiện đầu $y(0)=5$, ta tìm ra được $K=\frac{83}{16}$. 
+\end{enumerate}
+\end{frame}
+\begin{frame}{Biểu diễn hệ thống LTI bằng phương trình đầu vào-ra}
+\begin{itemize}
+	\item[-] Sử dụng phương trình vi phân phân tích hệ thống LTI liên tục  
+\end{itemize}
+\subsubsection{Sử dụng phương trình vi phân phân tích hệ thống LTI liên tục}
+
+Một hệ thống LTI liên tục không chỉ có thể được biểu diễn trực tiếp bằng \textbf{đáp ứng xung} mà còn có thể được biểu diễn gián tiếp thông qua \textbf{phương trình đầu vào-ra}. Xét một hệ thống LTI được biểu diễn như sau:
+
+$$\sum_{k=0}^{M}a_{k}\frac{dy^k(t)}{dt^k}=\sum_{k=0}^{N}b_{k}\frac{dx^k(t)}{dt^k}$$
+với các điều kiện khởi tạo $y(0)$, $y'(0)$,... là các hằng số.
+\\Suy ngẫm (khó): tại sao hệ thống trên là hệ thống LTI ? Gợi ý, nếu bạn chưa giải thích được cho trường hợp hệ thống tổng quát thì hãy thử tìm phương trình đầu vào-ra của hệ thống bậc 1 rất đơn giản sau (dùng Euler's trick để tìm mối quan hệ giữa $y(t)$ và $x(t)$):
+$$\frac{dy(t)}{dt}+y(t)=x(t)$$
+\end{frame}
+\begin{frame}{Biểu diễn hệ thống LTI bằng phương trình đầu vào-ra}
+Trước khi đi sâu vào phân tích công thức, ta hãy quan sát hiện tượng ấn nút nguồn (power) để khởi động một chiếc máy tính. Máy tính lúc đầu sẽ hiện trạng thái boot system mất khoảng vài giây (tùy từng dòng máy) sau đó mới mở giao diện hệ điều hành ở trạng thái ổn định. Hoặc ta quan sát quá trình thang máy hoạt động chẳng hạn, khi khởi động thang máy luôn mất một khoảng thời gian ngắn để gia tốc từ trạng thái đứng yên đến khi vận tốc thang ổn định.
+\\ Từ quan sát này, ta có thể thấy khi tác động tín hiệu input bất kì vào hệ thống (như ấn nút nguồn máy tính hay ấn nút thang máy), hệ thống luôn \textbf{mất một khoảng thời gian rất ngắn chuyển tiếp giữa trạng thái tĩnh (không hoạt động) đến trạng thái hoạt động ổn định}. Ta có thể nhận thấy tín hiệu output của hệ thống gồm 2 thành phần gồm \alert{đáp ứng của hệ thống trạng thái chuyển tiếp} và \alert{đáp ứng của hệ thống trạng thái ổn định}.
+
+
+\begin{figure}[h]
+			\includegraphics[width=0.4\textwidth]{elevator.jpg}
+			\caption{Elevator velocity graph }\label{fig:re11}
+		\end{figure}
+\end{frame}
+\begin{frame}{Biểu diễn hệ thống LTI bằng phương trình đầu vào-ra}
+	Từ quan sát hiện tượng vật lý thực tiễn như trên, ta xây dựng công thức đáp ứng hệ thống tổng quát $y_{T}(t)$ (total response) như sau:
+	$$y_{T}(t)=y_{N}(t)+y_{F}(t)$$
+với các nghiệm gồm:
+\begin{enumerate}
+	\item Nghiệm $y_{N}(t)$: là đáp ứng tự nhiên (natural response) của hệ thống. Đây là đáp ứng của hệ thống ở trạng thái chuyển tiếp (transient state) giữa trạng thái tĩnh và hoạt động ổn định. Từ nhận định này ta có thể thấy đây chính là \alert{nghiệm thuần nhất $y_{H}(t)$} của phương trình ODE, với  hệ các \textbf{điều kiện khởi tạo $y(0), y'(0), y''(0),..$}.
+	\item Nghiệm $y_{F}(t)$: là đáp ứng cưỡng bức (forced response) của hệ thống. Đây là đáp ứng của hệ thống ở trạng thái ổn định (steady state). Từ nhận định này ta có thể thấy đây chính là \alert{nghiệm tổng quát $y_{G}(t)$} của phương trình ODE, với hệ các \textbf{điều kiện khởi tạo bằng 0}.
+	\item Nghiệm $y_{T}(t)$: là đáp ứng hệ thống (total response) được tính theo công thức trên.
+\end{enumerate}
+\end{frame}
+\begin{frame}{Biểu diễn hệ thống LTI bằng phương trình đầu vào-ra}
+Ví dụ: cho hệ thống LTI liên tục được biểu diễn như sau với điều kiện khởi tạo $y(0)=5$
+$$\frac{dy(t)}{dt}+4y(t)=x(t)$$
+Tìm đầu ra của hệ thống với đầu vào $x(t)=3tu(t)$.
+\\ Ta tiến hành giải các nghiệm (các đáp ứng hệ thống) theo 3 bước như trên:
+\begin{enumerate}
+	\item Nghiệm $y_{N}(t)$: với \alert{$x(t)=0$}, giải với quy trình như ở trên, ta tìm được: $$y_{N}(t)=Ke^{-4t}$$
+Với điều kiện khởi tạo $y(0)=5$, ta dễ dàng tìm được $K=5$.
+	\item Nghiệm $y_{F}(t)$: với $x(t)=3tu(t)$, giải với quy trình như ở trên, ta tìm được:
+		$$y_{F}(t)=\frac{3}{4}t-\frac{3}{16}+Ce^{-4t}$$
+		Với điều kiện \alert{$y(t)=0$}, ta tìm được $C=\frac{3}{16}$
+	\item Nghiệm $y_{T}(t)$, ta dễ dàng tìm được:
+		$$y_{T}(t)=y_{N}(t)+y_{F}(t)=\frac{3}{4}t-\frac{3}{16}+\frac{83}{16}e^{-4t}$$
+\end{enumerate}
+\alert{\textit{Lưu ý: đáp ứng cưỡng bức của hệ thống có dạng của nghiệm tổng quát chứ không phải nghiệm riêng.}}
+\\Suy ngẫm: theo bạn, trong hai cách tìm đáp ứng hệ thống bằng phương trình vi phân đã được trình bày ở trên, cách nào giúp bạn hiểu trực quan và sâu sắc về hành vi của hệ thống hơn ? 
+\end{frame}
+\begin{frame}{Biểu diễn hệ thống LTI bằng phương trình đầu vào-ra}
+\subsection{Hệ thống LTI rời rạc}
+\begin{itemize}
+	\item Hệ thống LTI rời rạc
+\end{itemize}
+\subsubsection{Ôn tập phương trình sai phân (optional but recommended)}
+\begin{itemize}
+	\item[-] Ôn tập phương trình sai phân (optional but recommended)
+\end{itemize}
+Phương trình sai phân có dạng tổng quát như sau:
+$$\sum_{k=0}^{M}a_{k}y[n-k]=\sum_{k=0}^{N}b_{k}x[n-k]$$
+Tương tự như nghiệm phương trình vi phân ODE, nghiệm của phương trình sai phân DE (Difference Equation) có dạng: $$y_{G}[n]=y_{P}[n]+y_{H}[n]$$
+Các nghiệm của phương trình sai phân được tìm ra như sau:
+\begin{enumerate}
+	\item Nghiệm $y_{P}[n]$: là nghiệm riêng (particular solution) của phương trình DE, được tính khi thay thẳng $x[n]$ vào phương trình sai phân.
+	\item Nghiệm $y_{H}[n]$: là nghiệm thuần nhất (homogeneous solution) của phương trình DE, được tính khi thay \alert{$x[n]=0$} vào phương trình sai phân.
+	\item Nghiệm $y_{G}[n]$: là nghiệm tổng quát (general solution) của phương trình DE, được tính theo công thức ở trên. Tùy vào điều kiện khởi tạo (initial condition) của phương trình, ta thay nốt hệ điều kiện vào $y_{G}[n]$ để tìm ra đáp án cuối cùng.
+\end{enumerate}
+\end{frame}
+\begin{frame}{Biểu diễn hệ thống LTI bằng phương trình đầu vào-ra}
+Ví dụ: giải phương trình sai phân đơn giản với điều kiện $y[0]=5$:
+$$y[n]-3y[n-1]=4n$$
+Ta tiến hành giải các nghiệm theo 3 bước như trên:
+\begin{enumerate}
+	\item Nghiệm $y_{P}[n]$: ta đoán dạng nghiệm $y[n]=an+b$, thay vào phương trình ta thu được: 
+	\begin{equation*}
+	\begin{split}
+		y[n]&=3y[n-1]+4n\\
+		\Leftrightarrow an+b&=3[a(n-1)+b]+4n \\
+		\Leftrightarrow an+b&=(3a+4)n-(3a-3b)\\
+	\end{split}
+	\end{equation*}
+	Đồng nhất hệ số, ta thu được $a=-2\, , b=-3$. Vậy ta thu được nghiệm riêng $y_{P}[n]=-2n-3$.
+\item Nghiệm $y_{H}[n]$: ta dễ dàng thấy ngay sau khi thay \alert{$x[n]=0$}, phương trình sai phân trở thành một \textbf{cấp số nhân}: $$y[n]=3y[n-1]$$
+	Vậy ta thu được nghiệm thuần nhất của phương trình DE là $y_{H}[n]=K3^{n}$.
+\item Nghiệm $y_{G}[n]$: ta tìm được dạng nghiệm tổng quát như sau: $$y_{G}[n]=y_{P}[n]+y_{H}[n]=-2n-3+K3^n$$
+Thay nốt điều kiện đầu $y[0]=5$, ta tìm được $K=8$.
+\end{enumerate}
+\end{frame}
+\begin{frame}{Biểu diễn hệ thống LTI bằng phương trình đầu vào-ra}
+\begin{itemize}
+\item[-] Sử dụng phương trình sai phân phân tích hệ thống LTI rời rạc
+\end{itemize}
+\subsubsection{Sử dụng phương trình sai phân phân tích hệ thống LTI rời rạc}
+ Hệ thống LTI rời rạc tổng quát có thể được biểu diễn qua phương trình sai phân sau:
+$$\sum_{k=0}^{M}a_{k}y[n-k]=\sum_{k=0}^{N}b_{k}x[n-k]$$
+\\ Suy ngẫm (khó): tại sao hệ thống trên là hệ thống LTI ? Nếu bạn chưa chứng minh được trường hợp tổng quát, hãy thử xét một trường hợp cụ thể sau: 
+$$y[n]=y[n-1]+x[n]$$
+Tương tự như hệ thống LTI liên tục, ta xây dựng công thức đáp ứng hệ thống tổng quát $y_{T}[n]$ (total response) như sau: $$y_{T}[n]=y_{N}[n]+y_{F}[n]$$
+với các nghiệm gồm:
+\begin{enumerate}
+	\item Nghiệm $y_{N}[n]$: là đáp ứng tự nhiên (natural response) của hệ thống. Đây chính là \alert{nghiệm thuần nhất $y_{H}[n]$} của phương trình DE, với hệ các \textbf{điều kiện khởi tạo $y[0]\; ,y[-1]\; ,y[-2],...$}
+	\item Nghiệm $y_{F}[n]$: là đáp ứng cưỡng bức (forced response) của hệ thống. Đây chính là \alert{nghiệm tổng quát $y_{G}[n]$} của phương trình DE, với hệ các \textbf{điều kiện khởi tạo bằng 0.}
+	\item Nghiệm $y_{T}[n]$: là đáp ứng hệ thống (total response) được tính theo công thức trên.
+\end{enumerate}
+\end{frame}
+\begin{frame}{Biểu diễn hệ thống LTI bằng phương trình đầu vào-ra}
+Ví dụ: hệ thống LTI rời rạc được biểu diễn như sau với điều kiện khởi tạo $y[0]=5$
+$$y[n]-3y[n-1]=4n$$
+Tìm đầu ra của hệ thống với đầu vào $x[n]=4nu[n]$.
+Ta tiến hành giải các nghiệm (các đáp ứng hệ thống) theo 3 bước như trên:
+\begin{enumerate}
+	\item Nghiệm $y_{N}[n]$: với \alert{$x[n]=0$}, giải với quy trình như ở trên, ta tìm được: $$y_{N}[n]=K3^{n}$$
+		Với điều kiện khởi tạo $y[0]=5$, ta dễ dàng tính được giá trị $K=5$.
+	\item Nghiệm $y_{F}[n]$: với $x[n]=4nu[n]$, giải nghiệm tổng quát (general solution) với quy trình như ở trên, ta tìm được:
+		$$y_{F}[n]=-2n-3+C3^n$$
+	Với điều kiện \alert{$y[0]=0$}, ta tìm được $C=3$.
+\item Nghiệm $y_{T}[n]$, ta dễ dàng tìm được:
+	$$y_{T}[n]=y_{N}[n]+y_{F}[n]=-2n-3+8.3^n$$
+\end{enumerate}
+	Suy ngẫm: khi phân tích hệ thống LTI với một góc nhìn khác, ta gọi hai đáp ứng lối ra là $y_{zs}[n]$ (zero-state response) và $y_{zi}[n]$ (zero-input response). Theo bạn, chúng tương ứng với các nghiệm nào ($y_{F}[n]\; ,y_{N}[n]$) ? Hãy giải thích câu trả lời của bạn. 
 \end{frame}
 \end{document}
 

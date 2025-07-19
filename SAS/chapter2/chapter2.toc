@@ -10,3 +10,10 @@
 \beamer@subsubsectionintoc {4}{2}{1}{Tích chập liên tục}{15}{0}{4}
 \beamer@subsubsectionintoc {4}{2}{2}{Tính chẩt của tích chập liên tục}{19}{0}{4}
 \beamer@subsubsectionintoc {4}{2}{3}{Khảo sát tính chất của hệ thống LTI liên tục}{21}{0}{4}
+\beamer@sectionintoc {5}{Biểu diễn hệ thống LTI bằng phương trình đầu vào-ra}{23}{0}{5}
+\beamer@subsectionintoc {5}{1}{Hệ thống LTI liên tục}{23}{0}{5}
+\beamer@subsubsectionintoc {5}{1}{1}{Ôn tập phương trình vi phân (optional)}{23}{0}{5}
+\beamer@subsubsectionintoc {5}{1}{2}{Sử dụng phương trình vi phân phân tích hệ thống LTI liên tục}{25}{0}{5}
+\beamer@subsectionintoc {5}{2}{Hệ thống LTI rời rạc}{29}{0}{5}
+\beamer@subsubsectionintoc {5}{2}{1}{Ôn tập phương trình sai phân (optional but recommended)}{29}{0}{5}
+\beamer@subsubsectionintoc {5}{2}{2}{Sử dụng phương trình sai phân phân tích hệ thống LTI rời rạc}{31}{0}{5}
