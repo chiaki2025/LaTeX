@@ -39,10 +39,29 @@
 \headcommand {\beamer@framepages {12}{12}}
 \headcommand {\slideentry {2}{2}{4}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {2}{2}{5}{14/14}{}{0}}
+\headcommand {\beamer@sectionpages {1}{13}}
+\headcommand {\beamer@subsectionpages {1}{13}}
+\headcommand {\sectionentry {3}{Lý thuyết Antenna}{14}{Lý thuyết Antenna}{0}}
+\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{14}{ Giới thiệu về Antenna }}
+\headcommand {\beamer@subsubsectionentry {0}{3}{1}{1}{14}{Khái niệm Antenna}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{1}{2}{14}{Các dạng Antenna cơ bản}}
+\headcommand {\slideentry {3}{1}{0}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@partpages {1}{14}}
-\headcommand {\beamer@subsectionpages {1}{14}}
-\headcommand {\beamer@sectionpages {1}{14}}
-\headcommand {\beamer@documentpages {14}}
-\headcommand {\gdef \inserttotalframenumber {14}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{1}{3}{15}{Cơ chế bức xạ}}
+\headcommand {\slideentry {3}{1}{1}{15/15}{}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {3}{1}{2}{16/16}{}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@subsectionpages {1}{16}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{17}{Các tham số cơ bản của Antenna}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{1}{17}{Giới thiệu các tham số cơ bản}}
+\headcommand {\slideentry {3}{2}{0}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {3}{2}{1}{18/18}{}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\beamer@partpages {1}{18}}
+\headcommand {\beamer@subsectionpages {1}{18}}
+\headcommand {\beamer@sectionpages {1}{18}}
+\headcommand {\beamer@documentpages {18}}
+\headcommand {\gdef \inserttotalframenumber {18}}

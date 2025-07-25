@@ -153,7 +153,88 @@ Chúng ta tổng quát hóa định lý Green cho \textbf{Flux} và \textbf{Flow
 \end{itemize}
 \end{block}
 \end{frame}
-\begin{frame}{}
+\begin{frame}{Lý thuyết Antenna}
+\section{Lý thuyết Antenna}
+\begin{itemize}
+	\item Giới thiệu về Antenna
+\end{itemize}
+\subsection{ Giới thiệu về Antenna }
+\subsubsection{Khái niệm Antenna}
+\begin{itemize}
+\item [-] Khái niệm Antenna
+\end{itemize}
+Khái niệm về Antenna có thể được hiểu theo cách đơn giản nhất là vật kim loại (có thể ở dạng thanh cứng hay dây dẫn) được sử dụng để bức xạ và thu sóng điện từ.
+\begin{figure}[h]
+			\includegraphics[width=0.5\textwidth]{block.jpg}
+			\caption{EM transmitter block diagram}			\label{fig:re5}
+\end{figure}
+\begin{itemize}
+	\item[-] Các dạng Antenna cơ bản
+\end{itemize}
+\subsubsection{Các dạng Antenna cơ bản}
+Ta giới thiệu $3$ dạng antenna cơ bản gồm: antenna dây (wire), antenna hở (apeture), antenna mảng (array antenna):
+\begin{figure}[h]
+			\includegraphics[width=0.3\textwidth]{type.jpg}
+			\caption{Some types of antenna}			\label{fig:re6}
+\end{figure}
+
+\end{frame}
+\begin{frame}{Lý thuyết Antenna}
+\begin{itemize}
+\item[-] Cơ chế bức xạ
+\end{itemize}
+\subsubsection{Cơ chế bức xạ}
+Xét một đoạn dây dẫn thẳng dài có dòng điện $I$ chạy qua, với $J$ là mật độ dòng $(A/m^2)$, $q_{v}$ là mật độ điện khối $(C/m^3)$ và $v_{d}$ (drift velocity) là tốc độ trôi dạt của điện tích dương, ta cần chứng minh: $J=q_{v}v_{d}$.
+\begin{equation*}
+\begin{split}
+	Q_{total}&=(q_{v}AL) \\
+	\Rightarrow I&=\frac{Q_{total}}{t}=\frac{(q_{v}AL)}{L/v_{d}}=q_{v}Av_{d}\\
+	\Rightarrow J&=\frac{I}{A}=q_{v}v_{d}
+\end{split}
+	\end{equation*}
+Trong trường hợp dân dẫy có diện tích mặt cắt (cross-section area) cực nhỏ (hay $r\approx 0$) thì ta có thể thay $J$ thành $I$, suy ra:
+$$I=q_{v}v_{d}\Rightarrow \frac{dI}{dt}=q_{v}\frac{dv_{d}}{dt}=q_{v}a_{d}$$
+Ta viết lại phương trình trên dưới dạng vector:
+$$\frac{d\overrightarrow{I}}{dt}=q_{v}\overrightarrow{a_{d}}$$
+\end{frame}
+\begin{frame}{Lý thuyết Antenna}
+Từ phương trình trên ta có thể kết luận:
+\begin{enumerate}
+	\item Nếu điện tích không chuyển động thì hiện tượng bức xạ không xảy ra. 
+	\item Nếu điện tích chuyển động đều thì:
+		\begin{itemize}
+			\item Trong trường hợp dây dẫn thẳng dài vô hạn, hiện tượng bức xạ không xảy ra.
+			\item \alert{Trong trường hợp dây dẫn bị uốn cong, hiện tượng bức xạ \textbf{có xảy ra do vector gia tốc đổi chiều liên tục.} }
+		\end{itemize}
+	\item Nếu điện tích chuyển động với gia tốc khác $0$ thì hiện tượng bức xạ có xảy ra.
+\end{enumerate}
+Ta xét một horn antenna được minh họa như sau:
+\begin{figure}[h]
+			\includegraphics[width=0.9\textwidth]{horn.jpg}
+			\caption{Radiation mechanism}			\label{fig:re7}
+\end{figure}
+
+\end{frame}
+\begin{frame}{Lý thuyết Antenna}
+\begin{itemize}
+	\item Các tham số cơ bản của Antenna
+\end{itemize}
+\subsection{Các tham số cơ bản của Antenna}
+\begin{itemize}
+	\item[-] Giới thiệu các tham số cơ bản
+\end{itemize}
+\subsubsection{Giới thiệu các tham số cơ bản}
+Trước khi phân tích, ta định nghĩa đại lượng $H$ đặc trưng cho cường độ từ trường như sau: $$H=\frac{B}{\mu_{0}}$$
+$B$ đặc trưng cho \alert{phân bố của các vector cảm ứng điện từ}, còn $H$ đặc trưng cho \alert{cường độ từ trường}, đây là 2 đại lượng vật lý dễ nhầm và có ý nghĩa hoàn toàn khác nhau.
+\\ Ta đổi kí hiệu góc trong phép biến đổi tọa độ cầu (sphere coordinate) từ $(r,\theta,\phi)$ thành $(r,\phi,\theta)$ để hợp với cách quy ước của giáo trình.
+\\ Mẫu bức xạ antenna (antenna radiation pattern) được định nghĩa là một hàm số hay đồ thị biểu diễn các tính chất của bức xạ antenna được xác định tại \alert{\textbf{trường xa}} (far-field region). \\Các tính chất tiêu biểu của bức xạ bao gồm công suất, cường độ bức xạ hay độ lớn, hướng, phân cực của trường. Ta sử dụng \alert{\textbf{hệ tọa độ cầu}} để khảo sát các tính chất của bức xạ.
+\end{frame}
+\begin{frame}{Lý thuyết Antenna}
+\begin{figure}[h]
+			\includegraphics[width=0.9\textwidth]{sphere.jpg}
+			\caption{Sphere coordinate to analyze antenna radiation}			\label{fig:re7}
+\end{figure}
+
 \end{frame}
 \end{document}
 
