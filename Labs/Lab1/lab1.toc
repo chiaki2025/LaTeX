@@ -6,3 +6,4 @@
 \beamer@subsectionintoc {2}{2}{Tích phân mặt}{9}{0}{2}
 \beamer@subsubsectionintoc {2}{2}{1}{Diện tích mặt}{9}{0}{2}
 \beamer@subsubsectionintoc {2}{2}{2}{Tích phân mặt vô hướng}{11}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{3}{Tích phân mặt có hướng}{12}{0}{2}

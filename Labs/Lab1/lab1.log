@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  25 JUL 2025 00:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  25 JUL 2025 14:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -793,6 +793,9 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `fig:re4' multiply defined.
 
+
+LaTeX Warning: Label `fig:re5' multiply defined.
+
 )
 \openout1 = `lab1.aux'.
 
@@ -967,7 +970,7 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 ] [3
 
 ]
-<line.jpg, id=63, 1242.6425pt x 635.37375pt>
+<line.jpg, id=65, 1242.6425pt x 635.37375pt>
 File: line.jpg Graphic file (type jpg)
 <use line.jpg>
 Package pdftex.def Info: line.jpg  used on input line 45.
@@ -975,7 +978,7 @@ Package pdftex.def Info: line.jpg  used on input line 45.
  [4
 
  <./line.jpg>]
-<green1.jpg, id=70, 1157.32375pt x 615.29875pt>
+<green1.jpg, id=72, 1157.32375pt x 615.29875pt>
 File: green1.jpg Graphic file (type jpg)
 <use green1.jpg>
 Package pdftex.def Info: green1.jpg  used on input line 56.
@@ -983,7 +986,7 @@ Package pdftex.def Info: green1.jpg  used on input line 56.
  [5
 
  <./green1.jpg>]
-<domain.jpg, id=77, 1353.055pt x 588.1975pt>
+<domain.jpg, id=79, 1353.055pt x 588.1975pt>
 File: domain.jpg Graphic file (type jpg)
 <use domain.jpg>
 Package pdftex.def Info: domain.jpg  used on input line 64.
@@ -998,7 +1001,7 @@ Overfull \hbox (20.5929pt too wide) detected at line 76
 [7
 
 ]
-<flux.jpg, id=96, 1427.3325pt x 893.3375pt>
+<flux.jpg, id=98, 1427.3325pt x 893.3375pt>
 File: flux.jpg Graphic file (type jpg)
 <use flux.jpg>
 Package pdftex.def Info: flux.jpg  used on input line 83.
@@ -1006,7 +1009,7 @@ Package pdftex.def Info: flux.jpg  used on input line 83.
  [8
 
  <./flux.jpg>]
-<cartesina.jpg, id=103, 1457.445pt x 783.92876pt>
+<cartesina.jpg, id=105, 1457.445pt x 783.92876pt>
 File: cartesina.jpg Graphic file (type jpg)
 <use cartesina.jpg>
 Package pdftex.def Info: cartesina.jpg  used on input line 97.
@@ -1021,7 +1024,7 @@ l.97 \end{frame}
  <./cartesina.jpg>] [10
 
 ]
-<sheet.jpg, id=114, 1035.87pt x 615.29875pt>
+<sheet.jpg, id=116, 1035.87pt x 615.29875pt>
 File: sheet.jpg Graphic file (type jpg)
 <use sheet.jpg>
 Package pdftex.def Info: sheet.jpg  used on input line 127.
@@ -1029,6 +1032,23 @@ Package pdftex.def Info: sheet.jpg  used on input line 127.
  [11
 
  <./sheet.jpg>]
+<fluxo.jpg, id=123, 1235.61626pt x 800.9925pt>
+File: fluxo.jpg Graphic file (type jpg)
+<use fluxo.jpg>
+Package pdftex.def Info: fluxo.jpg  used on input line 138.
+(pdftex.def)             Requested size: 276.559pt x 179.27443pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 \end{frame}
+                  [12
+
+ <./fluxo.jpg>] [13
+
+] [14
+
+]
 \tf@nav=\write6
 \openout6 = `lab1.nav'.
 
@@ -1046,18 +1066,18 @@ Package rerunfilecheck Info: File `lab1.out' has not changed.
 (rerunfilecheck)             Checksum: 62E8D69F637EF3E88BA8ADF51E1F576E;601.
  ) 
 Here is how much of TeX's memory you used:
- 25906 strings out of 476091
- 515047 string characters out of 5794082
- 1870330 words of memory out of 5000000
- 45704 multiletter control sequences out of 15000+600000
+ 25949 strings out of 476091
+ 515864 string characters out of 5794082
+ 1874330 words of memory out of 5000000
+ 45739 multiletter control sequences out of 15000+600000
  528888 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,28n,122p,396b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,31n,122p,396b,653s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb>
-Output written on lab1.pdf (11 pages, 417103 bytes).
+Output written on lab1.pdf (14 pages, 501107 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 191 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

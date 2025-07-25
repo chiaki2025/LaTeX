@@ -1251,7 +1251,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
@@ -1495,6 +1495,11 @@ INPUT ./sheet.jpg
 INPUT sheet.jpg
 INPUT ./sheet.jpg
 INPUT ./sheet.jpg
+INPUT ./fluxo.jpg
+INPUT ./fluxo.jpg
+INPUT fluxo.jpg
+INPUT ./fluxo.jpg
+INPUT ./fluxo.jpg
 OUTPUT lab1.nav
 OUTPUT lab1.toc
 OUTPUT lab1.snm

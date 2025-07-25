@@ -4,7 +4,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{mathrsfs}
-\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{amssymb,amsfonts,amsthm}
 \usepackage{wrapfig}
 \usepackage{hyperref}
 \usetheme{Copenhagen}
@@ -26,7 +26,7 @@
 \end{frame}
 \begin{frame}{Tài liệu tham khảo}
 \section{Tài liệu tham khảo}
-Tài liệu tham khảo được sử dụng để nghiên cứu gồm: Calculus 7E (James Stewart), Antenna Theory (Balanis).
+Tài liệu tham khảo được sử dụng để nghiên cứu gồm: Calculus 7E (James Stewart), Antenna Theory (A.Balanis).
 \end{frame}
 \begin{frame}{Các kết quả cơ bản}
 \section{Các kết quả cơ bản}
@@ -114,7 +114,7 @@ Vậy ta thu được diện tích toàn bộ mặt phẳng có thể được b
 $$\alert{A(S)=\sum_{i=1}^{m}\sum_{j=1}^{n}|\overrightarrow{r_{u}}\times\overrightarrow{r_{v}}|=\iint_{D}|\overrightarrow{r_{u}}\times\overrightarrow{r_{v}}|dA}$$
 Đây là kết quả cực kì quan trọng, sẽ liên tục được sử dụng trong phần tích phân mặt.
 \end{frame}
-\begin{frame}
+\begin{frame}{Các kết quả cơ bản}
 \begin{itemize}
 	\item Tích phân mặt vô hướng
 \end{itemize}
@@ -124,6 +124,36 @@ $$\alert{A(S)=\sum_{i=1}^{m}\sum_{j=1}^{n}|\overrightarrow{r_{u}}\times\overrigh
 			\caption{Scalar surface integral}			\label{fig:re5}
 \end{figure}
 
+\end{frame}
+\begin{frame}{Các kết quả cơ bản}
+\subsubsection{Tích phân mặt có hướng}
+\begin{itemize}
+	\item Tích phân mặt có hướng
+\end{itemize}
+\begin{figure}[h]
+			\includegraphics[width=0.9\textwidth]{fluxo.jpg}
+			\caption{Flux in surface integral}			\label{fig:re5}
+\end{figure}
+
+\end{frame}
+\begin{frame}{Các kết quả cơ bản}
+Chúng ta tổng quát hóa định lý Green cho \textbf{Flux} và \textbf{Flow} trong không gian 3 chiều:
+\begin{block}{Định lý Green trong không gian 2 chiều}
+	\begin{equation*}
+		\begin{split}
+			\textbf{Flux}&=\oint_{C}\overrightarrow{F}\overrightarrow{n}ds=\iint_{D}\textbf{div}\overrightarrow{F}dA=\iint_{D}\nabla\cdot \overrightarrow{F}dA \\
+			\textbf{Flow}&=\oint_{C}\overrightarrow{F}\overrightarrow{T}ds=\iint_{D}\textbf{curl}\overrightarrow{F}\hat k dA=\iint_{D}(\nabla\times\overrightarrow{F})\hat k dA
+		\end{split}
+	\end{equation*}
+\end{block}
+\begin{block}{Định lý Green trong không gian 3 chiều}
+\begin{itemize}
+	\item  Định lý phân kỳ (divergence theorem):$$\textbf{Flux}=\iint_{S}\overrightarrow{F}\hat n dS=\iint_{S}\overrightarrow{F}d\overrightarrow{S}=\iiint_{E}\textbf{div}\overrightarrow{F}dV$$
+	\item Định lý Stoke: $$\textbf{Flow}=\int_{C}\overrightarrow{F}\overrightarrow{T}dS=\iint_{S}\textbf{curl}\overrightarrow{F}d\overrightarrow{S}$$
+\end{itemize}
+\end{block}
+\end{frame}
+\begin{frame}{}
 \end{frame}
 \end{document}
 
