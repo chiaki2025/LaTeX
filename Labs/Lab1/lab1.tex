@@ -279,6 +279,56 @@ $B$ đặc trưng cho \alert{phân bố của các vector cảm ứng điện t�
 	\item[-] Công suất bức xạ
 \end{itemize}
 \subsubsection{Công suất bức xạ}
+Từ khái niệm vector Poynting đã được thảo luận ở slide trước, ta định nghĩa kí hiệu mới $\mathscr{W}$ có thứ nguyên $(W/m^2)$ như sau: $$\overrightarrow{\mathscr{W}}=\overrightarrow{\mathscr{E}}\times\overrightarrow{\mathscr{H}}$$
+với các kí hiệu viết hoa biểu thị cho \alert{giá trị tức thời}. Vậy ta dễ dàng suy ra độ lớn công suất tức thời trên búp sóng (được biểu diễn bởi mặt S) là: $$\mathscr{P}=\iint_{S}\overrightarrow{\mathscr{W}}\hat n dA=\iint_{S}\overrightarrow{\mathscr{W}}d\overrightarrow{S}$$
+với $\hat n$ biểu diễn phương truyền sóng. Ta muốn xây dựng công thức để tìm công suất trung bình (hay công suất bức xạ) $P_{avg}=P_{rad}$ của búp sóng.
+\end{frame}
+\begin{frame}{Lý thuyết Antenna}
+Điện trường hay từ trường của sóng EM lan truyền trong không gian và thời gian, về bản chất là hàm vector có thể được biểu diễn bằng hàm $4$ biến $(x,y,z,t)$:
+$$\overrightarrow{E}=\overrightarrow{E(x,y,z)}e^{j\omega t}$$
+$$\overrightarrow{H}=\overrightarrow{H(x,y,z)}e^{j\omega t}$$
+Ta định nghĩa độ lớn tức thời của các giá trị cường độ điện trường và từ trường:
+$$\overrightarrow{\mathscr{E}}=\Re{(\overrightarrow{E})}$$
+$$\overrightarrow{\mathscr{H}}=\Re{(\overrightarrow{H})}$$
+Biến đổi một chút, ta thu được:
+\begin{equation*}
+\begin{split}
+	{\overrightarrow{\mathscr{H}}}=\frac{1}{2}\Re{(\overrightarrow{H}+\overrightarrow{H^*})}
+	\Rightarrow \overrightarrow{\mathscr{W}}=\frac{1}{2}\Re{(\overrightarrow{E}\times\overrightarrow{H})}+\frac{1}{2}\Re{(\overrightarrow{E}\times\overrightarrow{H^*})}
+\end{split}
+\end{equation*}
+Giữ lại thành phần không phụ thuộc vào biến thời gian, ta thu được $W_{avg}$:
+$$\overrightarrow{W_{avg}}=\frac{1}{2}\Re{(\overrightarrow{E}\times\overrightarrow{H^*})}$$
+Dùng định nghĩa tích phân mặt, ta có:
+$$P_{avg}=P_{rad}=\iint_{S}\overrightarrow{W_{avg}}d\overrightarrow{S}=\alert{\iint_{S}\frac{1}{2}\Re{(\overrightarrow{E}\times\overrightarrow{H^*})}dS}$$
+\end{frame}
+\begin{frame}{Lý thuyết Antenna}
+Ví dụ: tính công suất bức xạ trung bình của một bức xạ lý tưởng đẳng hướng (bức xạ đều ra tất cả các hướng với độ lớn vector Poyting là hằng số).
+\begin{equation*}
+\begin{split}
+	P_{avg}&=\iint_{S}W_{0}\hat n_{r} dA=\iint_{S}(W_{0}\hat n_{r}) \hat n_{r}r^2\sin{\theta}d\theta d\phi=\int_{0}^{2\pi}\int_{0}^{\pi}W_{0}r^2\sin{\theta}d\theta d\phi \\
+	       &=4\pi W_{0}r^2
+\end{split}
+\end{equation*}
+\begin{itemize}
+	\item[-] Cường độ bức xạ
+\end{itemize}
+\subsubsection{Cường độ bức xạ}
+Cường độ bức xạ $U$ là đại lượng vô hướng, được định nghĩa là công suất bức xạ từ antenna trên một đơn vị solid angle. $$U=r^2W_{rad}$$ Ta suy ra công thức tìm $P_{rad}$ khác:
+$$P_{rad}=\iint_{\Omega}Ud\Omega=\iint_{\Omega}U\sin{\theta}d\theta d\phi$$
+với công thức tìm vi phân solid angle theo steradian đã được chứng minh ở trên.
+\\ Ví dụ: tính cường độ bức xạ $U_{0}$ của một nguồn bức xạ đẳng hướng có công suất trung bình $P_{rad}$.
+ \begin{equation*}
+\begin{split}
+	P_{rad}=\iint_{\Omega}U_{0}d\Omega=\iint_{\Omega}U_{0}\sin{\theta}d\theta d\phi=U_{0}\int_{0}^{2\pi}\int_{0}^{\pi}\sin{\theta}d\theta d\phi \Rightarrow U_{0}=\frac{P_{rad}}{4\pi}
+\end{split}
+\end{equation*}
+
+\end{frame}
+
+\begin{frame}{Hướng nghiên cứu tiếp theo}
+Học nốt chapter 2 + 3 của textbook Antenna Theory.
+\section{Hướng nghiên cứu tiếp theo}
 \end{frame}
 \end{document}
 

@@ -15,3 +15,5 @@
 \beamer@subsectionintoc {3}{2}{Các tham số cơ bản của Antenna}{17}{0}{3}
 \beamer@subsubsectionintoc {3}{2}{1}{Giới thiệu các tham số cơ bản}{17}{0}{3}
 \beamer@subsubsectionintoc {3}{2}{2}{Công suất bức xạ}{24}{0}{3}
+\beamer@subsubsectionintoc {3}{2}{3}{Cường độ bức xạ}{26}{0}{3}
+\beamer@sectionintoc {4}{Hướng nghiên cứu tiếp theo}{27}{0}{4}
