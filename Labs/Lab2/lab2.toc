@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Tài liệu tham khảo}{3}{0}{1}
+\beamer@sectionintoc {2}{Các tham số cơ bản của Antenna}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Beamwidth}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Directivity}{6}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{1}{Ví dụ 1}{7}{0}{2}
