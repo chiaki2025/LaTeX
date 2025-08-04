@@ -23,10 +23,17 @@
 \headcommand {\beamer@subsubsectionentry {0}{2}{2}{1}{7}{Ví dụ 1}}
 \headcommand {\slideentry {2}{2}{1}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{2}{2}{8}{Ví dụ 2}}
 \headcommand {\slideentry {2}{2}{2}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@partpages {1}{8}}
-\headcommand {\beamer@subsectionpages {1}{8}}
-\headcommand {\beamer@sectionpages {1}{8}}
-\headcommand {\beamer@documentpages {8}}
-\headcommand {\gdef \inserttotalframenumber {8}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{2}{3}{9}{Ví dụ 3}}
+\headcommand {\slideentry {2}{2}{3}{9/9}{}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{2}{4}{10}{Ví dụ 4}}
+\headcommand {\slideentry {2}{2}{4}{10/10}{}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@partpages {1}{10}}
+\headcommand {\beamer@subsectionpages {1}{10}}
+\headcommand {\beamer@sectionpages {1}{10}}
+\headcommand {\beamer@documentpages {10}}
+\headcommand {\gdef \inserttotalframenumber {10}}

@@ -3,3 +3,6 @@
 \beamer@subsectionintoc {2}{1}{Beamwidth}{4}{0}{2}
 \beamer@subsectionintoc {2}{2}{Directivity}{6}{0}{2}
 \beamer@subsubsectionintoc {2}{2}{1}{Ví dụ 1}{7}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{2}{Ví dụ 2}{8}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{3}{Ví dụ 3}{9}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{4}{Ví dụ 4}{10}{0}{2}

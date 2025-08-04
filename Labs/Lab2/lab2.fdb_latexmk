@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1754279962 "lab2.tex" "lab2.pdf" "lab2" 1754279963 0
+["pdflatex"] 1754294368 "lab2.tex" "lab2.pdf" "lab2" 1754294369 0
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -26,6 +26,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm" 1336178347 1676 fb6c6a335484692abff897d6e8965829 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/vntex/vnr/vnss10.tfm" 1647811568 3860 2fdd484113fc2fde7b8c827421590630 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/vntex/vnr/vnss8.tfm" 1647811568 3856 9f75b7140af36732b08690416b434073 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1248133631 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1248133631 24420 52dbb8e8aa0069a1b987309557f8d303 ""
@@ -227,11 +228,11 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1740936571 4623309 82ee5d777482be164acd86bb957845af ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1740936618 7878419 8e1ae05cefa763d0815f9d3da81a31af ""
   "beamwidth.jpg" 1754276082 57127 cb3931a8c86fa6fe7e1a22fafdbb00d7 ""
-  "lab2.aux" 1754279963 3210 b188e09887d867a91a8509a2b474c867 "pdflatex"
-  "lab2.nav" 1754279963 1599 edfbe5b4f38cf6a94948f7527ed804ee "pdflatex"
-  "lab2.out" 1754279963 591 81fb0206fe2409014ae370b1bf6d15df "pdflatex"
-  "lab2.tex" 1754279962 5126 e8c64aba71a428162f711d8885b6fa74 ""
-  "lab2.toc" 1754279963 295 d52033768866416c44eb27deeda71e5e "pdflatex"
+  "lab2.aux" 1754294369 3962 1a3507c42a9a085afa033a92351cd25e "pdflatex"
+  "lab2.nav" 1754294369 1995 53b5e78fece10b95cf397f68d347eee6 "pdflatex"
+  "lab2.out" 1754294369 591 81fb0206fe2409014ae370b1bf6d15df "pdflatex"
+  "lab2.tex" 1754294367 7430 363d7499a5855102a9f9ae01e3dad0ab ""
+  "lab2.toc" 1754294369 470 2038a301602b4712c2e352dc555bedd0 "pdflatex"
   (generated)
   "lab2.aux"
   "lab2.log"

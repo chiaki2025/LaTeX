@@ -1474,6 +1474,7 @@ INPUT lab2.aux
 INPUT ./lab2.out
 INPUT ./lab2.out
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
