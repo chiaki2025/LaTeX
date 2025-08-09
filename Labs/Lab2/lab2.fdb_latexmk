@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1754677788 "lab2.tex" "lab2.pdf" "lab2" 1754677790 0
+["pdflatex"] 1754710357 "lab2.tex" "lab2.pdf" "lab2" 1754710358 0
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -32,6 +32,8 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1248133631 24420 52dbb8e8aa0069a1b987309557f8d303 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb" 1248133631 25168 33771b85f45c82138dd7745db7092d1c ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb" 1248133631 30273 87a352d78b6810ae5cfdc68d2fb827b2 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb" 1229303445 16077 4737ac34f0fb5608550f3780a0202c22 ""
@@ -233,11 +235,11 @@
   "beamwidth.jpg" 1754276082 57127 cb3931a8c86fa6fe7e1a22fafdbb00d7 ""
   "circuit.jpg" 1754672041 36267 0b37f234b0d6a6fac9911d4653b96937 ""
   "incident.jpg" 1754670920 57654 bc77284109f791e4460cb4ad17941d8f ""
-  "lab2.aux" 1754677789 5791 32b8225b9caf10ca8b62fe0e8671495d "pdflatex"
-  "lab2.nav" 1754677789 2877 30a4cf2183e88f0c55407ad29eabad16 "pdflatex"
-  "lab2.out" 1754677789 880 eea6660a1b032e60f43fef0bd461491c "pdflatex"
-  "lab2.tex" 1754677788 12879 754218e37f98fba9582546766ed62a32 ""
-  "lab2.toc" 1754677789 590 c057584f559a0b3df6892dd57d0849c2 "pdflatex"
+  "lab2.aux" 1754710358 6654 046d262d102ca97ed849d272c985cfc4 "pdflatex"
+  "lab2.nav" 1754710358 3398 e4b983e736a06b3ba5202352e852c3d1 "pdflatex"
+  "lab2.out" 1754710358 1208 a1de09c752b1c2a20cacb02214ec809b "pdflatex"
+  "lab2.tex" 1754710357 17319 4eac0d4fc344d9350b3d688206778bea ""
+  "lab2.toc" 1754710358 716 832b2c1753cf65014b42d220bf10365d "pdflatex"
   "omni.jpg" 1754664625 58127 131f4ad88aed1506b17e7d2419dd7973 ""
   "polar.jpg" 1754669017 63124 711874df7836b7c8c6b943a06a82f2f2 ""
   "poynting.jpg" 1754677117 66481 7c6bf110f76238bd65e72aefa6f775dc ""

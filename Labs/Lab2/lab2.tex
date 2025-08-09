@@ -188,7 +188,61 @@ Trước khi đi sâu vào phân tích mô hình, ta hãy thử đặt một v�
 \end{frame}
 \begin{frame}{Các tham số cơ bản của Antenna}
 	Theo như mô hình vật lý trên, sóng EM hay năng lượng từ nguồn lan tỏa ngoài không gian chứ \textbf{không phải trong dây dẫn} cho đến tải (hay trở kháng phức), và điều này chứng tỏ sóng EM trước khi ra đến antenna có va chạm (thay đổi trở kháng đột ngột) với các linh kiện trong mạch điện để phản xạ một phần rồi sau đó mới lan tỏa. Với mô hình này, \alert{hệ số phản xạ có ý nghĩa}.
-\\Trở lại vấn đề chính, sử dụng mô hình "Antenna equivalent circuit model", ta 
+\\Trở lại vấn đề chính, sử dụng mô hình "Antenna equivalent circuit model", ta phân tích cách tính tham số $\Gamma$ (hệ số phản xạ):
+\\ Xét một sóng EM được tạo ra và lan truyền theo mô hình đã trình bày ở trên, sóng khi gặp trở kháng ra $Z_{O}$ đã bị phản xạ một phần, ta giả sử hướng sóng EM truyền đi theo chiều dương trục $Ox$, và các kí hiệu tương ứng $+$, $-$ biểu thị sóng truyền đi và phản xạ lại.
+\\ Từ định luật Ohm, ta có:
+$$Z_{I}=\frac{V_{I}^+}{I_{I}^+}=-\frac{V^-_{I}}{I^-_{I}}\quad Z_{O}=\frac{V^+_{O}}{I^+_{O}}=-\frac{V^-_{O}}{I^-_{O}}$$
+Với $\beta=\frac{2\pi}{\lambda}$ là hệ số sóng (wave number) của sóng EM, đại lượng đặc trưng cho sự biến đổi về pha theo không gian, ta viết lại biểu thức hàm $V^+$ và $V^-$ (bỏ qua yếu tố biến đổi pha về mặt thời gian do tần số của chúng như nhau):
+$$V_{O}=V_{I}^+ e^{j\beta x}+V_{I}^- e^{-j\beta x}$$
+$$I_{O}=I_{I}^+ e^{j\beta x}+I_{I}^- e^{-j\beta x}$$
+$$\Rightarrow Z_{O}=\frac{V_{I}^+ e^{j\beta x}+V_{I}^- e^{-j\beta x}}{I_{I}^+ e^{j\beta x}+I_{I}^- e^{-j\beta x}}$$
 \end{frame}
+\begin{frame}{Các tham số cơ bản của Antenna}
+Nếu xét gốc tọa độ tại $Z_{L} (???)$ và biến đổi tương đương (khá tricky), ta thu được:
+$$\Gamma=\frac{V_{I}^-}{V_{I}^+}=\frac{Z_{O}-Z_{I}}{Z_{O}+Z_{I}}$$
+và ta gọi $\Gamma$ là \alert{hệ số phản xạ}.
+\\Ta tiếp tục định nghĩa SWR (Standing wave ratio) và RL (Return loss):
+$$SWR=\frac{1+|\Gamma|}{1-|\Gamma|}$$
+$$RL=-20\log_{10}|\Gamma|$$
+Hiển nhiên, để tối ưu độ hiệu quả truyền sóng EM thì $\Gamma=0$, tương ứng với $SWR=1$ và $RL=+\infty$. Ta suy ra được một kết quả cực kì quan trọng (sẽ được chứng minh bằng một cách khác ở phần sau), đó là:
+$$\Gamma=0\Leftrightarrow Z_{I}=Z_{O}$$
+\end{frame}
+\begin{frame}{Các tham số cơ bản của Antenna}
+\subsection{Antenna Efficiency}
+\begin{itemize}
+	\item Antenna Efficiency
+\end{itemize}
+Từ mô hình mạch tương đương của Antenna, ta có thể nhận thấy rằng sự hao hụt trong quá trình truyền sóng chủ yếu gây ra do sự mất mát năng lượng dạng nhiệt tỏa ra trên điện trở, và hiện tượng sóng phản xạ tại trở kháng gây ra các điểm "dừng" (standing):
+$$e_{0}=e_{r}e_{c}e_{d}=(1-|\Gamma|^2)e_{c}e_{d}$$
+với: $e_{0}$ là hiệu suất tổng (total efficiency), $e_{r}$ là hiệu suất mismatch impedance, $e_{c}$ và $e_{d}$ là hiệu suất dẫn truyền và điện môi (tạm thời ta bỏ qua do 2 hệ số này rất khó để tìm và chỉ có thể thu được từ thực nghiệm). Hiển nhiên, nếu $\Gamma=1$ thì $Z_{I}=0$ và $e_{0}=0$
+\subsection{Gain and Realized Gain}
+\begin{itemize}
+	\item Relative gain and realized gain
+\end{itemize}
+Độ lợi (gain) của antenna được định nghĩa là tỉ lệ giữa cường độ bức xạ tại \text{một hướng cho trước} với cường độ bức xạ đẳng hướng. Dễ thấy, khác với $D(\phi,\theta)$ là một hàm số, $G$ là hằng số với mỗi cặp biến góc cho trước.
+\\ Ta định nghĩa hai khái niệm gain:
+\begin{enumerate}
+	\item Relative gain: $$G=\frac{4\pi U(\phi,\theta)}{P_{in}}$$
+	\item Realized gain: $$G_{re}=e_{0} G=e_{0}\frac{4\pi U(\phi,\theta)}{P_{in}}$$
+\end{enumerate}
+\end{frame}
+\begin{frame}{Các tham số cơ bản của Antenna}
+Ví dụ: một onmidirectional antenna có hàm: $$U(\phi,\theta)=B_{0}\sin^3{\theta}$$
+Hãy xác định giá trị cực đại của $G_{re}$ biết $Z_{I}=73\Omega$ và $Z_{O}=50\Omega$.
+\\  Ta có:
+\begin{equation*}
+\begin{split}
+	\textbf{max }G_{re}=e_{0}\frac{4\pi U(\phi,\theta)}{P_{in}}=(1-|\Gamma|^2)\frac{4\pi B_{0}\sin^3{\theta}}{B_{0}\iint_{S}U(\phi,\theta)d\Omega}=1.6382
+\end{split}
+\end{equation*}
+Đổi ra thang dB: $$\textbf{max }G_{re}=10log_{10}(1.6382)=2.2865dB$$
+\begin{itemize}
+	\item  Beam Efficiency
+\end{itemize}
+ Hiệu suất chùm được định nghĩa là tỷ số giữa năng lượng bức xạ tại một góc $\theta$ nào đó với năng lượng bức xạ đẳng hướng:
+ $$BE=\frac{\iint_{S'}U(\phi,\theta)d\Omega}{\iint_{S}U(\phi,\theta)d\Omega}$$
+ với $S'$ là mặt kín bị giới hạn bởi góc $\theta$ và các dứ kiện đề bài cho khác, $S$ là toàn bộ mặt phẳng Oxyz.
+\end{frame}
+
 \end{document}
 

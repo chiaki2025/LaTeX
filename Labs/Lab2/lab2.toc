@@ -8,3 +8,5 @@
 \beamer@subsubsectionintoc {2}{2}{4}{Ví dụ 4}{10}{0}{2}
 \beamer@subsectionintoc {2}{3}{Polarization}{12}{0}{2}
 \beamer@subsectionintoc {2}{4}{Reflection coefficient}{15}{0}{2}
+\beamer@subsectionintoc {2}{5}{Antenna Efficiency}{19}{0}{2}
+\beamer@subsectionintoc {2}{6}{Gain and Realized Gain}{19}{0}{2}
