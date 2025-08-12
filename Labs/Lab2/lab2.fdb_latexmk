@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1754710357 "lab2.tex" "lab2.pdf" "lab2" 1754710358 0
+["pdflatex"] 1754882301 "lab2.tex" "lab2.pdf" "lab2" 1754882302 0
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -235,11 +235,11 @@
   "beamwidth.jpg" 1754276082 57127 cb3931a8c86fa6fe7e1a22fafdbb00d7 ""
   "circuit.jpg" 1754672041 36267 0b37f234b0d6a6fac9911d4653b96937 ""
   "incident.jpg" 1754670920 57654 bc77284109f791e4460cb4ad17941d8f ""
-  "lab2.aux" 1754710358 6654 046d262d102ca97ed849d272c985cfc4 "pdflatex"
-  "lab2.nav" 1754710358 3398 e4b983e736a06b3ba5202352e852c3d1 "pdflatex"
-  "lab2.out" 1754710358 1208 a1de09c752b1c2a20cacb02214ec809b "pdflatex"
-  "lab2.tex" 1754710357 17319 4eac0d4fc344d9350b3d688206778bea ""
-  "lab2.toc" 1754710358 716 832b2c1753cf65014b42d220bf10365d "pdflatex"
+  "lab2.aux" 1754882302 7128 fa08b42e3ecc906abc51f6dbfb73a123 "pdflatex"
+  "lab2.nav" 1754882302 3693 0320dfb32677831765808f7043097ed0 "pdflatex"
+  "lab2.out" 1754882302 1408 c9e73e4e9aff838d5d5a4fe3682408c3 "pdflatex"
+  "lab2.tex" 1754882299 17532 15c7dba77870a9cf15257fdf56409f1b ""
+  "lab2.toc" 1754882302 787 211b3c31ef295ea0ec8768c3e5a28e46 "pdflatex"
   "omni.jpg" 1754664625 58127 131f4ad88aed1506b17e7d2419dd7973 ""
   "polar.jpg" 1754669017 63124 711874df7836b7c8c6b943a06a82f2f2 ""
   "poynting.jpg" 1754677117 66481 7c6bf110f76238bd65e72aefa6f775dc ""

@@ -60,8 +60,13 @@
 \headcommand {\beamer@framepages {19}{19}}
 \headcommand {\slideentry {2}{6}{1}{20/20}{}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\beamer@partpages {1}{20}}
-\headcommand {\beamer@subsectionpages {1}{20}}
 \headcommand {\beamer@sectionpages {1}{20}}
-\headcommand {\beamer@documentpages {20}}
-\headcommand {\gdef \inserttotalframenumber {20}}
+\headcommand {\beamer@subsectionpages {1}{20}}
+\headcommand {\sectionentry {3}{Hướng nghiên cứu tiếp theo}{21}{Hướng nghiên cứu tiếp theo}{0}}
+\headcommand {\slideentry {3}{0}{0}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@partpages {1}{21}}
+\headcommand {\beamer@subsectionpages {1}{21}}
+\headcommand {\beamer@sectionpages {1}{21}}
+\headcommand {\beamer@documentpages {21}}
+\headcommand {\gdef \inserttotalframenumber {21}}

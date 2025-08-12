@@ -10,3 +10,4 @@
 \beamer@subsectionintoc {2}{4}{Reflection coefficient}{15}{0}{2}
 \beamer@subsectionintoc {2}{5}{Antenna Efficiency}{19}{0}{2}
 \beamer@subsectionintoc {2}{6}{Gain and Realized Gain}{19}{0}{2}
+\beamer@sectionintoc {3}{Hướng nghiên cứu tiếp theo}{21}{0}{3}
