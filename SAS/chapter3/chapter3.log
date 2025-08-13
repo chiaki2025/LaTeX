@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  7 AUG 2025 22:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  14 AUG 2025 02:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -773,37 +773,65 @@ File: vncaps.tex 2006/06/07 v1.1 Captions in Vietnamese
 \WF@box=\box81
 \WF@everypar=\toks49
 Package: wrapfig 2003/01/31  v 3.6
+) (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeCopenhagen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesplit.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count344
 \l__pdf_internal_box=\box82
-) (./chapter3.aux)
+) (./chapter3.aux
+
+LaTeX Warning: Label `fig:re11' multiply defined.
+
+
+LaTeX Warning: Label `fig:re11' multiply defined.
+
+
+LaTeX Warning: Label `fig:re11' multiply defined.
+
+
+LaTeX Warning: Label `fig:re11' multiply defined.
+
+
+LaTeX Warning: Label `fig:re11' multiply defined.
+
+
+LaTeX Warning: Label `fig:re11' multiply defined.
+
+
+LaTeX Warning: Label `fig:re11' multiply defined.
+
+
+LaTeX Warning: Label `fig:re11' multiply defined.
+
+)
 \openout1 = `chapter3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 19.
-LaTeX Font Info:    Trying to load font information for T5+cmr on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 20.
+LaTeX Font Info:    Trying to load font information for T5+cmr on input line 20.
  (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    ... okay on input line 20.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -858,64 +886,64 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 20.
  (./chapter3.out) (./chapter3.out)
 \@outlinefile=\write5
 \openout5 = `chapter3.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 19.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 20.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 19.
-\symnumbers=\mathgroup6
-\sympureletters=\mathgroup7
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 20.
+\symnumbers=\mathgroup7
+\sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T5/cmr/m/n on input line 19.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 19.
+(Font)                  OT1/cmss/m/n --> T5/cmr/m/n on input line 20.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T5/cmss/b/n on input line 19.
+(Font)                  OT1/cmr/bx/n --> T5/cmss/b/n on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T5/cmss/b/n on input line 19.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 19.
+(Font)                  OT1/cmr/bx/n --> T5/cmss/b/n on input line 20.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T5/cmss/m/n on input line 19.
+(Font)                  OT1/cmss/m/n --> T5/cmss/m/n on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T5/cmss/m/n on input line 19.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 19.
+(Font)                  OT1/cmss/bx/n --> T5/cmss/m/n on input line 20.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T5/cmss/m/it on input line 19.
+(Font)                  OT1/cmr/m/it --> T5/cmss/m/it on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T5/cmss/m/it on input line 19.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 19.
+(Font)                  OT1/cmr/bx/it --> T5/cmss/m/it on input line 20.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 19.
+(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 19.
+(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 20.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T5/cmss/m/n --> T5/cmss/b/n on input line 19.
+(Font)                  T5/cmss/m/n --> T5/cmss/b/n on input line 20.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T5/cmss/m/it --> T5/cmss/b/it on input line 19.
+(Font)                  T5/cmss/m/it --> T5/cmss/b/it on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T5/cmr/b/n on input line 19.
+(Font)                  OT1/cmss/b/n --> T5/cmr/b/n on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T5/cmss/b/n --> T5/cmss/b/n on input line 19.
+(Font)                  T5/cmss/b/n --> T5/cmss/b/n on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T5/cmss/m/n --> T5/cmss/b/n on input line 19.
+(Font)                  T5/cmss/m/n --> T5/cmss/b/n on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T5/cmss/m/it --> T5/cmss/b/it on input line 19.
+(Font)                  T5/cmss/m/it --> T5/cmss/b/it on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T5/cmtt/m/n --> T5/cmtt/b/n on input line 19.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 19.
+(Font)                  T5/cmtt/m/n --> T5/cmtt/b/n on input line 20.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 20.
 LaTeX Font Info:    Encoding `T5' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 19.
+(Font)              `pureletters' in the math version `normal' on input line 20.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T5/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 19.
+(Font)                  T5/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 20.
 LaTeX Font Info:    Encoding `T5' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 19.
+(Font)              `pureletters' in the math version `bold' on input line 20.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T5/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 19.
+(Font)                  T5/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 20.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 19.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 20.
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -937,6 +965,182 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [4
 
 ]
+<Fourier-1000.jpg, id=79, 1003.75pt x 1003.75pt>
+File: Fourier-1000.jpg Graphic file (type jpg)
+<use Fourier-1000.jpg>
+Package pdftex.def Info: Fourier-1000.jpg  used on input line 55.
+(pdftex.def)             Requested size: 122.91406pt x 122.91068pt.
+ [5
+
+ <./Fourier-1000.jpg>]
+<FFT-Time-Frequency-View-540.png, id=85, 406.51875pt x 284.56313pt>
+File: FFT-Time-Frequency-View-540.png Graphic file (type png)
+<use FFT-Time-Frequency-View-540.png>
+Package pdftex.def Info: FFT-Time-Frequency-View-540.png  used on input line 62.
+(pdftex.def)             Requested size: 276.559pt x 193.59589pt.
+ [6
+
+ <./FFT-Time-Frequency-View-540.png>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 84.
+ (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 84.
+ (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+) [7
+
+]
+
+./chapter3.tex:103: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[8
+
+]
+<helix.jpg, id=114, 1126.2075pt x 491.8375pt>
+File: helix.jpg Graphic file (type jpg)
+<use helix.jpg>
+Package pdftex.def Info: helix.jpg  used on input line 114.
+(pdftex.def)             Requested size: 153.64493pt x 67.09314pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.114 \end{frame}
+                 
+<imaginary.jpg, id=115, 1073.00874pt x 736.7525pt>
+File: imaginary.jpg Graphic file (type jpg)
+<use imaginary.jpg>
+Package pdftex.def Info: imaginary.jpg  used on input line 114.
+(pdftex.def)             Requested size: 153.64493pt x 105.4942pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.114 \end{frame}
+                 
+Overfull \vbox (0.28127pt too high) detected at line 114
+ []
+
+[9
+
+ <./helix.jpg> <./imaginary.jpg>]
+<fre.jpg, id=122, 1688.3075pt x 735.74875pt>
+File: fre.jpg Graphic file (type jpg)
+<use fre.jpg>
+Package pdftex.def Info: fre.jpg  used on input line 131.
+(pdftex.def)             Requested size: 144.4266pt x 62.93636pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.131 \end{frame}
+                 
+<sine.jpg, id=123, 990.70125pt x 529.98pt>
+File: sine.jpg Graphic file (type jpg)
+<use sine.jpg>
+Package pdftex.def Info: sine.jpg  used on input line 131.
+(pdftex.def)             Requested size: 144.4266pt x 77.2616pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.131 \end{frame}
+                 
+Overfull \vbox (6.39188pt too high) detected at line 131
+ []
+
+[10
+
+ <./fre.jpg> <./sine.jpg>]
+<square.jpg, id=130, 1471.4975pt x 468.75125pt>
+File: square.jpg Graphic file (type jpg)
+<use square.jpg>
+Package pdftex.def Info: square.jpg  used on input line 152.
+(pdftex.def)             Requested size: 184.3758pt x 58.72966pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.152 \end{frame}
+                 
+Overfull \vbox (2.8922pt too high) detected at line 152
+ []
+
+[11
+
+ <./square.jpg>]
+<s.jpg, id=137, 1640.1275pt x 611.28375pt>
+File: s.jpg Graphic file (type jpg)
+<use s.jpg>
+Package pdftex.def Info: s.jpg  used on input line 169.
+(pdftex.def)             Requested size: 276.559pt x 103.06805pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.169 \end{frame}
+                  [12
+
+ <./s.jpg>] [13
+
+] [14
+
+] [15
+
+] [16
+
+]
+<pro.jpg, id=174, 1170.3725pt x 716.6775pt>
+File: pro.jpg Graphic file (type jpg)
+<use pro.jpg>
+Package pdftex.def Info: pro.jpg  used on input line 262.
+(pdftex.def)             Requested size: 141.3554pt x 86.5553pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.262 \end{frame}
+                 
+Overfull \vbox (10.71042pt too high) detected at line 262
+ []
+
+[17
+
+ <./pro.jpg>]
+<ht.jpg, id=181, 736.7525pt x 288.07625pt>
+File: ht.jpg Graphic file (type jpg)
+<use ht.jpg>
+Package pdftex.def Info: ht.jpg  used on input line 279.
+(pdftex.def)             Requested size: 141.3554pt x 55.26692pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.279 \end{frame}
+                  [18
+
+ <./ht.jpg>] [19
+
+]
 \tf@nav=\write6
 \openout6 = `chapter3.nav'.
 
@@ -947,22 +1151,25 @@ Dictionary: translator-theorem-dictionary, Language: English
 \openout8 = `chapter3.snm'.
 
  (./chapter3.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `chapter3.out' has not changed.
-(rerunfilecheck)             Checksum: 49219F15C91C33277208CC0B0AAA2745;301.
+(rerunfilecheck)             Checksum: AB35DE8B0919D3D5CEBE849D710A67A2;844.
  ) 
 Here is how much of TeX's memory you used:
- 25649 strings out of 476091
- 510262 string characters out of 5794082
- 1860330 words of memory out of 5000000
- 45511 multiletter control sequences out of 15000+600000
- 517587 words of font info for 39 fonts, out of 8000000 for 9000
+ 26017 strings out of 476091
+ 517837 string characters out of 5794082
+ 1863330 words of memory out of 5000000
+ 45801 multiletter control sequences out of 15000+600000
+ 524890 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,400b,598s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb>
-Output written on chapter3.pdf (4 pages, 45357 bytes).
+ 128i,20n,122p,537b,598s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb>
+Output written on chapter3.pdf (19 pages, 762549 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
