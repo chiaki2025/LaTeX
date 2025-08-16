@@ -441,6 +441,7 @@ Dễ thấy chỉ có tín hiệu $x_{1}(t)$ mới tồn tại biến đổi Fou
 \begin{itemize}
 	\item[-] Tính chất biến đổi Fourier liên tục:
 \end{itemize}
+\subsubsection{Tính chất biến đổi Fourier liên tục}
 \begin{block}{Continuous-time Fourier Transform Pair}
 If and only if $x(t)$ is an \textbf{\alert{energy signal:}}
 \begin{equation*}
@@ -595,6 +596,184 @@ $$x(t)=e^{-at}\cos{(\omega_{0}t)}u(t)$$
 Gợi ý: dùng công thức Euler để tách $\cos(\omega_{0}t)$ ra thành tổng hai thành phần mũ phức, đến đây ta có hai hướng làm: tìm CTFT của tín hiệu $e^{-at}u(t)$ rồi sau đó dùng tính chất dịch tần số; hoặc tìm CTFT của tín hiệu phức $e^{\pm j\omega_{0}t}$ rồi sau đó dùng tính chất dịch tần số.
 \end{frame}
 \begin{frame}{Biến đổi Fourier (FT)}
+\begin{figure}[h]
+			\includegraphics[width=0.8\textwidth]{spectrum.jpg}
+			\caption{Time-shifting property visualization}\label{fig:re11}
 
+		\end{figure}
+
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+\begin{figure}[h]
+			\includegraphics[width=0.8\textwidth]{spec.jpg}
+			\caption{Time-scaling (flipping) property visualization}\label{fig:re11}
+
+		\end{figure}
+
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+Suy ngẫm: hãy tìm biến đổi Fourier của tín hiệu $x(t)=e^{-|a|t}$ với $a>0$, vẽ tay phổ biên độ và phổ pha của nó. Quan sát dạng biểu thức của tín hiệu gốc, hãy thử các tính chất như lật, giãn,... trong 10 tính chất đã cho để xem dạng phổ tín hiệu thay đổi như thế nào (các bạn nên tự vẽ tay trước sau đó dùng Matlab hoặc GNU Octave kiểm tra lại kết quả sau).
+\\ Như đã đề cập ở phần trước, phần lớn các bài tập liên quan đến tìm tín hiệu gốc $x(t)$ của phép biến đổi Fourier ngược đa phần dùng tính chất của CTFT chứ không dùng công thức. Đây là dạng bài tập khó và cần phải luyện tập tương đối nhiều để thuần thục.
+\\ Ví dụ:
+\begin{equation*}
+\begin{split}
+	\mathscr{F}^{-1}\left(\frac{j\omega}{(1+j\omega)^2}\right)=?
+\end{split}
+\end{equation*}
+Từ CTFT cơ bản:
+$$\mathscr{F}(e^{-t}u(t))=\frac{1}{1+j\omega}$$
+Sử dụng tính chất phép đạo hàm trong miền tần số, ta có:
+$$\mathscr{F}(te^{-t}u(t))=\frac{1}{(1+j\omega)^2}$$
+Sử dụng tính chất phép đạo hàm trong miền thời gian, ta có:
+$$\mathscr{F}\left[{\frac{d(te^{-t}u(t))}{dt}}\right]=\frac{j\omega}{(1+j\omega)^2}$$
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+Vậy ta thu được:
+
+$$	\mathscr{F}^{-1}\left(\frac{j\omega}{(1+j\omega)^2}\right)=(1-t)e^{-t}u(t)$$
+Suy ngẫm: hãy tự chứng minh lại bảng CTFT của các tín hiệu thường gặp sau (với $a>0$):
+\begin{center}
+\begin{tabular}{ |l|l| } 
+ \hline
+ $f(t)$ & $F(j\omega)$ \\ 
+ $e^{-at}u(t)$ & $\frac{1}{a+j\omega}$  \\ 
+ $e^{at}u(-t)$ &   $\frac{1}{a-j\omega}$ \\ 
+ $e^{-|a|t}$ & $\frac{2a}{a^2+\omega^2}$\\
+ $te^{-at}u(t)$ & $\frac{1}{(a+j\omega)^2}$\\
+ $\delta(t)$ & $1$\\
+ $1$ & $2\pi\delta(\omega)$ \\
+ $e^{j\omega_{0}t}$ & $2\pi\delta(\omega-\omega_{0})$\\
+ $\cos(\omega_{0}t)$ & $\pi(\delta(\omega+\omega_{0})+\delta(\omega-\omega_{0}))$\\
+ $\sin(\omega_{0}t)$ & $j\pi(\delta(\omega+\omega_{0})-\delta(\omega-\omega_{0}))$\\
+ $e^{-at}\sin(\omega_{0}t)u(t)$ & $\frac{\omega_{0}}{(a+j\omega)^2+\omega_{0}^2}$\\
+ $e^{-at}\cos(\omega_{0}t)u(t)$ & $\frac{a+j\omega}{(a+j\omega)^2+\omega_{0}^2}$\\
+
+ \hline
+\end{tabular}
+\end{center}
+Mở rộng (optional): mặc dù không gặp trong môn học này (sẽ gặp rất nhiều trong môn Xử lý tín hiệu số) nhưng các bạn có thể thử tìm:
+$$\mathscr{F}(rect(t))=\mathscr{F}\left(\prod(t)\right)=?$$
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+	\begin{itemize}
+		\item[-] Phân tích hệ thống LTI liên tục
+	\end{itemize}
+\subsubsection{Phân tích hệ thống LTI liên tục}
+Ngoài ra, CTFT còn mở ra cho chúng ta một công cụ cực kì mạnh mẽ để phân tích
+hệ thống LTI do \alert{phép tích chập trong miền thời gian tương ứng với phép nhân đại số
+trong miền tần số}.
+\\Ví dụ: xác định \alert{lối vào} của hệ thống có đáp ứng xung và đáp ứng lối ra được cho như sau:
+$$h(t)=e^{-t}u(t)$$
+$$y(t)=e^{-2t}u(t)$$
+Bài toán này gần như \textbf{bất khả thi} nếu giải theo phương pháp tích chập đã học ở \alert{Chương 2}, ta chỉ còn cách giải theo đáp ứng tần số:
+\\ Dễ thấy từ tính chất của hệ thống LTI:
+$$x(t)*h(t)=y(t)\Rightarrow \mathscr{F}(x(t)*h(t))=\mathscr{F}(y(t))$$
+$$\Rightarrow X(j\omega)H(j\omega)=Y(j\omega)\Rightarrow X(j\omega)=\frac{Y(j\omega)}{H(j\omega)}$$
+Và ta có: $$x(t)=\mathscr{F}^{-1}(X(j\omega))=\mathscr{F}^{-1}\left[\frac{Y(j\omega)}{H(j\omega)}\right]=\mathscr{F}^{-1}\left(\frac{1+j\omega}{2+j\omega}\right)=\mathscr{F}^{-1}\left(1-\frac{1}{2+j\omega}\right)$$
+Sử dụng bảng CTFT đã cho ở trên (các bạn phải \textbf{cực kì thông thạo bảng CTFT}), ta dễ dàng xác định được: $x(t)=1-e^{-2t}u(t)$
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+\subsection{Biến đổi Fourier rời rạc (DTFT)}
+\begin{itemize}
+	\item Biến đổi Fourier rời rạc (DTFT)
+\end{itemize}
+\subsubsection{Khái niệm biến đổi Fourier rời rạc}
+\begin{itemize}
+	\item[-] Khái niệm biến đổi Fourier rời rạc
+\end{itemize}
+Do ý tưởng của biến đổi Fourier rời rạc (DTFT) hoàn toàn tương tự với CTFT, nên ở đây ta chỉ đưa ra cặp công thức và ví dụ cơ bản:
+\begin{equation*}
+\begin{split}
+X(j\Omega)&=\sum_{n=-\infty}^{+\infty}x[n]e^{-j\omega n}\\
+x[n]&=\frac{1}{2\pi}\int_{2\pi}X(j\Omega)e^{jn\omega}d\omega
+\end{split}
+\end{equation*}
+Tương tự như CTFT ta cũng thử tìm DTFT của hai tín hiệu rời rạc sau:
+$$x_{1}[n]=2^{n}u[n]$$
+$$x_{2}[n]=2^{-n}u[n]$$
+Dễ thấy:
+\begin{equation*}
+\begin{split}
+	X_{1}(j\Omega)&=\sum_{n=-\infty}^{+\infty}x_{1}[n]e^{-j\omega n}=\sum_{n=0}^{+\infty}2^n e^{-j\omega n}=\alert{+\infty}\\
+	X_{2}(j\Omega)&=\sum_{n=-\infty}^{+\infty}x_{2}[n]e^{-j\omega n}=\sum_{n=0}^{+\infty}2^{-n} e^{-j\omega n}=
+	\frac{1}{1-\frac{1}{2}e^{-j\omega}}
+\end{split}
+\end{equation*}
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+Vậy điều kiện Dirichlet cũng nghiệm đúng với DTFT, chỉ có tín hiệu năng lượng mới tồn tại DTFT.
+\subsubsection{Tính chất biến đổi Fourier rời rạc}
+\begin{itemize}
+	\item[-] Tính chất biến đổi Fourier rời rạc
+\end{itemize}
+\begin{block}{Discrete-time Fourier Transform}
+If and only if $x[n]$ is \alert{an energy signal}:
+\begin{equation*}
+	\begin{split}
+X(j\Omega)&=\sum_{n=-\infty}^{+\infty}x[n]e^{-j\omega n}\\
+x[n]&=\frac{1}{2\pi}\int_{2\pi}X(j\Omega)e^{jn\omega}d\omega
+\end{split}
+\end{equation*}
+\end{block}
+Tương tự như CTFT, đa phần khi giải bài tập thực chiến ta không thường xuyên dùng công thức (2) mà thay vào đó tìm tín hiệu gốc $x[n]$ dựa trên các tính chất của DTFT.
+\\ Ở đây, thay vì chứng minh lại toàn bộ tính chất DTFT, ta sẽ chỉ dẫn ra các công thức cơ bản nhất có dạng giống và tương tự với CTFT cho dễ nhớ. Các bạn không cần nhớ hết mà chỉ cần nhớ được các tính chất kí hiệu màu đỏ (sẽ gặp lại rất thường xuyên trong \alert{Chương 5} và môn Xử lý tín hiệu số), còn lại thì chỉ cần tham khảo mà thôi.
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+\begin{enumerate}
+	\item[1] \alert{Dịch trong miền thời gian:}
+\alert{$$\mathscr{F}(x[n-n_{0}])=X(j\Omega)e^{-j\omega n_{0}}$$}
+\item[2] \alert{Dịch trong miền tần số: }
+	\alert{$$\mathscr{F}(x[n]e^{j\Omega n_{0}})=X(j(\Omega-\Omega_{0}))$$}
+\item[3] \alert{Lật tín hiệu:}
+	\alert{$$\mathscr{F}(x[-n])=X(-j\Omega)$$}
+\item[4] Sai phân trong miền thời gian:
+	$$\mathscr{F}(x[n+1]-x[n])=j\Omega X(j\Omega)$$
+\item[5] \alert{Đạo hàm trong miền tần số:}
+	\alert{$$\mathscr{F}(-jnx[n])=\frac{dX(j\Omega)}{d\Omega}$$}
+\item[6] Tích thường (tích điều chế):
+	$$\mathscr{F}(x[n]y[n])=\frac{1}{2\pi}X(j\Omega)\circledast Y(j\Omega)$$
+\end{enumerate}
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+\begin{enumerate}
+	\item[7] \alert{Tích chập trong miền thời gian:}
+		\alert{$$\mathscr{F}(x[n]*y[n])=X(j\Omega)Y(j\Omega)$$}
+\end{enumerate}
+Ví dụ: tìm DTFT của tín hiệu
+$$x[n]=3^{-n}u[n+2]$$
+Ta có: 
+$$\mathscr{F}(3^{-n}u[n])=\frac{1}{1-\frac{1}{3}e^{-j\Omega n}}$$
+Sử dụng tính chất dịch trong miền thời gian:
+$$\mathscr{F}(3^{-(n+2)}u[n+2])=\frac{e^{j2\Omega}}{1-\frac{1}{3}e^{-j\Omega n}}$$
+Vậy ta suy ra:
+$$\mathscr{F}(3^{-n}u[n+2])=\frac{9e^{j2\Omega}}{1-\frac{1}{3}e^{-j\Omega n}}$$
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+Ta có bảng DTFT cơ bản sau (rất ngắn so với CTFT, do DTFT không thường xuyên được hỏi nhiều trong đề thi trường mình) ($|a|<1$):
+\begin{center}
+\begin{tabular}{ |l|l| } 
+ \hline
+ $x[n]$ & $X(j\Omega)$\\ 
+ $a^{n}u[n]$ & $\frac{1}{1-ae^{-j\Omega n}}$ \\ 
+ $\delta[n]$ & $1$ \\ 
+ $\delta[n-n_{0}]$ & $e^{-j\Omega n_{0}}$\\
+ \hline
+\end{tabular}
+\end{center}
+Suy ngẫm: hãy tìm DTFT của tín hiệu sau với ($|a|<1$)
+$$\mathscr{F}((n+1)a^n u[n])=?$$
+\begin{itemize}
+	\item[-] Phân tích hệ thống LTI rời rạc
+\end{itemize}
+\subsubsection{Phân tích hệ thống LTI rời rạc}
+Tương tự như hệ thống LTI liên tục, ta có thể dùng phương pháp đáp ứng tần số để phân tích hệ thống rời rạc.
+\\ Ví dụ: xác định tín hiệu lối vào của hệ thống LTI rời rạc có đáp ứng xung và đáp ứng lối ra lần lượt: $$h[n]=2^{-n}u[n]$$ $$y[n]=3^{-n}u[n]$$
+Ta có: 
+\begin{equation*}
+\begin{split}
+	x[n]&=\mathscr{F}^{-1}(X(j\Omega))=\mathscr{F}^{-1}\left(\frac{Y(j\Omega)}{H(j\Omega)}\right)=\mathscr{F}^{-1}\left(\frac{1-2^{-n}e^{-j\Omega}}{1-3^{-n}e^{-j\Omega}}\right)\\
+	    &=\mathscr{F}^{-1}\left(1-\frac{1}{6}\frac{1}{1-3^{-n}e^{-j\Omega}}\right)=\delta[n]-\frac{1}{6}3^{-n}u[n]
+\end{split}
+\end{equation*}
 \end{frame}
 \end{document}

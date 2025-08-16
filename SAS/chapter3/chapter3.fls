@@ -1524,6 +1524,16 @@ INPUT ./signal.jpg
 INPUT signal.jpg
 INPUT ./signal.jpg
 INPUT ./signal.jpg
+INPUT ./spectrum.jpg
+INPUT ./spectrum.jpg
+INPUT spectrum.jpg
+INPUT ./spectrum.jpg
+INPUT ./spectrum.jpg
+INPUT ./spec.jpg
+INPUT ./spec.jpg
+INPUT spec.jpg
+INPUT ./spec.jpg
+INPUT ./spec.jpg
 OUTPUT chapter3.nav
 OUTPUT chapter3.toc
 OUTPUT chapter3.snm
@@ -1540,6 +1550,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb

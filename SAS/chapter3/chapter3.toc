@@ -13,3 +13,9 @@
 \beamer@sectionintoc {5}{Biến đổi Fourier (FT)}{26}{0}{5}
 \beamer@subsectionintoc {5}{1}{Biến đổi Fourier liên tục (CTFT)}{26}{0}{5}
 \beamer@subsubsectionintoc {5}{1}{1}{Khái niệm biến đổi Fourier liên tục}{26}{0}{5}
+\beamer@subsubsectionintoc {5}{1}{2}{Tính chất biến đổi Fourier liên tục}{28}{0}{5}
+\beamer@subsubsectionintoc {5}{1}{3}{Phân tích hệ thống LTI liên tục}{39}{0}{5}
+\beamer@subsectionintoc {5}{2}{Biến đổi Fourier rời rạc (DTFT)}{40}{0}{5}
+\beamer@subsubsectionintoc {5}{2}{1}{Khái niệm biến đổi Fourier rời rạc}{40}{0}{5}
+\beamer@subsubsectionintoc {5}{2}{2}{Tính chất biến đổi Fourier rời rạc}{41}{0}{5}
+\beamer@subsubsectionintoc {5}{2}{3}{Phân tích hệ thống LTI rời rạc}{44}{0}{5}

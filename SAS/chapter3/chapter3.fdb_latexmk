@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1755327671 "chapter3.tex" "chapter3.pdf" "chapter3" 1755327672 2
+["pdflatex"] 1755358011 "chapter3.tex" "chapter3.pdf" "chapter3" 1755358013 2
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -34,6 +34,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb" 1248133631 30457 bc0868ebece724ed7c3d37e3d9bff7bd ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb" 1248133631 30273 87a352d78b6810ae5cfdc68d2fb827b2 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb" 1229303445 16077 4737ac34f0fb5608550f3780a0202c22 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb" 1647811568 35693 3124518d35473eaa1bca73156ad625e7 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb" 1647811568 35755 40eb5a01357ca8422253fee6a2216252 ""
@@ -233,11 +234,11 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1740936618 7878419 8e1ae05cefa763d0815f9d3da81a31af ""
   "FFT-Time-Frequency-View-540.png" 1755090712 99850 e104ef24d5f65ec4254894105db14b0e ""
   "Fourier-1000.jpg" 1755089989 167972 780a203ad5972af91d0eeb9c200ce4de ""
-  "chapter3.aux" 1755327672 10454 1f437d049ebe46f7fd48fce82f7104d0 "pdflatex"
-  "chapter3.nav" 1755327672 5397 881d22e3f95ce0902af5c54ca3b8ef5e "pdflatex"
-  "chapter3.out" 1755327672 1495 85b83eff944a9962b9650b4283ed9860 "pdflatex"
-  "chapter3.tex" 1755327671 32880 ac8606a2fdcb3ea888dd7a07541fd504 ""
-  "chapter3.toc" 1755327672 1214 474df66d7de5c95915a7e829dda006aa "pdflatex"
+  "chapter3.aux" 1755358013 13367 6d73a558520574064a2d7344ebcb90be "pdflatex"
+  "chapter3.nav" 1755358013 6986 71964ccfd3235e213f548178c0942ba6 "pdflatex"
+  "chapter3.out" 1755358013 1744 1b6b7ae11617a2761b3c2e580b22ab9a "pdflatex"
+  "chapter3.tex" 1755358011 42511 a293b676614c526a492b3c853d8a95e3 ""
+  "chapter3.toc" 1755358013 1760 4144bcf3273c5dce7eb6e471e487a8df "pdflatex"
   "d.jpg" 1755270382 6539 10f0c35b662980fee047e9d9fc4366fd ""
   "fre.jpg" 1755098966 60048 f03c6a2fc574a5cd2c9e8377da9c289c ""
   "helix.jpg" 1755096175 48953 6e23298828c6cf2ac0d44b5abf540496 ""
@@ -248,6 +249,8 @@
   "signal.jpg" 1755312867 11185 4473c24e516e786fb6625aa226deb668 ""
   "sin.jpg" 1755266849 41517 7d835cd0927bd6ba1113ae84bec4e9bb ""
   "sine.jpg" 1755099604 28205 6f6f69ec048fed56e810b346c48db29d ""
+  "spec.jpg" 1755334213 54777 c563b17edd5acb2ce675a092505e0cf0 ""
+  "spectrum.jpg" 1755333629 56267 76ef9e716a7e5fcb212daa552e5a877e ""
   "square.jpg" 1755100404 27304 3cf9064fc8aadc41ed7fb80c7c33ff34 ""
   (generated)
   "chapter3.aux"
