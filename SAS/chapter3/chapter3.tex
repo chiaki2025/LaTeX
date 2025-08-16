@@ -130,6 +130,14 @@ $$x(t)=\sin{(\omega_{0}t)}$$
 
 \end{frame}
 \begin{frame}{Chuỗi Fourier (FS)}
+
+\begin{figure}[h]
+			\includegraphics[width=0.5\textwidth]{sin.jpg}
+			\caption{Components of sine signal explaination}\label{fig:re11}
+
+		\end{figure}
+\end{frame}
+\begin{frame}{Chuỗi Fourier (FS)}
 Ví dụ 2: khai triển tín hiệu sau thành chuỗi Fourier liên tục:
 \begin{figure}[h]
 			\includegraphics[width=0.6\textwidth]{square.jpg}
@@ -180,7 +188,8 @@ Vậy ta thu được hệ số chuỗi Fourier liên tục:
 \end{split}
 \end{equation*}
 \end{block}
-Ta định nghĩa phép toán biến đổi chuỗi tín hiệu liên tục $x(t)$ về chuỗi Fourier liên tục như sau:
+Ta định nghĩa phép toán biến đổi tín hiệu liên tục $x(t)$ về chuỗi Fourier liên tục như sau:
+
 $$\mathscr{FS}(x(t))=a_{k}$$
 Xét cặp tín hiệu $x(t)$ và $y(t)$ tương ứng có phép toán biến đổi chuỗi Fourier liên tục tương ứng:
 $$\mathscr{FS}(x(t))=a_{k}$$
@@ -220,7 +229,7 @@ Như đã thảo luận ở \alert{chương 1}, ta có thể tổng quát hóa b
 \item[4] Co dãn trong miền thời gian:
 $$\mathscr{FS}(x(\alpha t))=a_{k}$$
 do co dãn trong miền thời gian chỉ làm ảnh hưởng đến tần số $\omega_{0}\to \alpha\omega_{0}$ chứ không làm ảnh hưởng đến hệ số $a_{k}$.
-\item[5] Phép vi phân:
+\item[5] Phép đạo hàm:
 \begin{equation*}
 \begin{split}
 \mathscr{FS}\left(\frac{dx(t)}{dt}\right)&=jk\omega_{0}a_{k}
@@ -283,13 +292,309 @@ $$y(t)=x(t)*h(t)=\sum_{k=-\infty}^{+\infty}[(a_{k}e^{jk\omega_{0}t})*h(t)]=\sum_
 Với $x_{k}(t)=a_{k}e^{jk\omega_{0}t}$ là một thành phần điều hòa của tín hiệu $x(t)$ lớn. Ta xét tích chập:
 \begin{equation*}
 \begin{split}
-	y_{k}(t)=x_{k}(t)*h(t)&=\int_{-\infty}^{+\infty}x_{k}(\tau)h(t-\tau)d\tau=\int_{-\infty}^{+\infty}x_{k}(t-\tau)h(\tau)d\tau\\&=\int_{-\infty}^{+\infty}a_{k}e^{jk\omega(t-\tau)}h(\tau)d\tau=\int_{-\infty}^{+\infty}a_{k}e^{jk\omega t}h(\tau)e^{-jk\omega\tau}d\tau\\&=x_{k}(t)\int_{-\infty}^{+\infty}h(\tau)e^{-jk\omega\tau}d\tau
+	y_{k}(t)=x_{k}(t)*h(t)&=\int_{-\infty}^{+\infty}x_{k}(\tau)h(t-\tau)d\tau=\int_{-\infty}^{+\infty}x_{k}(t-\tau)h(\tau)d\tau\\&=\int_{-\infty}^{+\infty}a_{k}e^{jk\omega_{0}(t-\tau)}h(\tau)d\tau=\int_{-\infty}^{+\infty}a_{k}e^{jk\omega_{0} t}h(\tau)e^{-jk\omega_{0}\tau}d\tau\\&=x_{k}(t)\int_{-\infty}^{+\infty}h(\tau)e^{-jk\omega_{0}\tau}d\tau
 \end{split}
 \end{equation*}
 Ta kí hiệu:
-$$H(j\omega)=\int_{-\infty}^{+\infty}h(\tau)e^{-jk\omega\tau}d\tau$$
-là hàm số theo biến tần số $\omega$, và gọi hàm số này là \alert{đáp ứng tần số của hệ thống},
+$$H(jk\omega_{0})=\int_{-\infty}^{+\infty}h(\tau)e^{-jk\omega_{0}\tau}d\tau$$
+là hàm số theo biến tần số $\omega_{0}$, và gọi hàm số này là \alert{đáp ứng tần số của hệ thống},
 ta tiếp tục suy ra:
-$$y(t)=\sum_{k=-\infty}^{+\infty}y_{k}(t)=\sum_{k=-\infty}^{+\infty}x_{k}(t)H(j\omega)$$
+$$y(t)=\sum_{k=-\infty}^{+\infty}y_{k}(t)=\sum_{k=-\infty}^{+\infty}x_{k}(t)H(jk\omega_{0})$$
+\end{frame}
+\begin{frame}{Chuỗi Fourier (FS)}
+	Ví dụ: tìm đáp ứng lối ra của hệ thống có đáp ứng xung $h(t)=e^{-2t}u(t)$ với tín hiệu vào $x(t)=1+\cos{(2t)}$. 
+	\\ Ta áp dụng công thức tính \alert{đáp ứng tần số của hệ thống} (chúng ta tạm thời công nhận công thức này và sẽ được chứng minh lại rất chi tiết ở phần sau):
+	$$H(jk\omega_{0})=\int_{-\infty}^{+\infty}h(\tau)e^{-jk\omega_{0}\tau}d\tau=\frac{1}{2+jk\omega_{0}}$$
+Khai triển chuỗi FS của tín hiệu lối vào $x(t)$, ta thu được:
+$$x(t)=1+\cos{(2t)}=1+\frac{1}{2}e^{j2t}+\frac{1}{2}e^{-j2t}$$
+Hiển nhiên với $\omega_{0}=2$ là tần số góc cơ sở, ta thay lần lượt các giá trị $k=0,k=1$ và $k=-1$ vào biểu thức tính $y(t)$:
+\begin{equation*}
+\begin{split}
+	y(t)=\sum_{k=-\infty}^{+\infty}x_{k}(t)H(jk\omega_{0})&=\frac{1}{2}+\frac{1}{2}\left(\frac{e^{j2t}}{2+j2}+\frac{e^{-j2t}}{2-j2}\right)\\
+							      &=\frac{1}{2}+\frac{1}{4}[\cos{(2t)}+\sin{(2t)}]
+\end{split}
+\end{equation*}
+Dễ thấy nếu giải bài toán này bằng phương pháp tích chập thông thường ở \alert{Chương 2} gần như là không thể.
+\end{frame}
+\begin{frame}{Chuỗi Fourier (FS)}
+\subsection{Chuỗi Fourier rời rạc (DTFS)}
+\begin{itemize}
+	\item  Chuỗi Fourier rời rạc (DTFS)
+\end{itemize}
+\subsubsection{Khái niệm chuỗi Fourier rời rạc}
+\begin{itemize}
+	\item[-] Khái niệm chuỗi Fourier rời rạc
+\end{itemize}
+Tương tự như khái niệm chuỗi Fourier liên tục, ta cũng có thể biểu diễn một tín hiệu rời rạc tuần hoàn dưới dạng tổng của rất nhiều tín hiệu rời rạc tuần hoàn khác như sau:
+$$x[n]=\sum_{\alert{k=<N_{0}>}}c_{k}e^{jk\Omega_{0}n}$$
+Hệ số $c_{k}$ được tìm ra qua công thức:
+$$c_{k}=\frac{1}{N_{0}}\sum_{\alert{n=<N_{0}>}}x[n]e^{-jk\Omega_{0}n}$$
+Ta có thể thấy rằng điểm khác biệt lớn nhất giữa cặp công thức DTFS và CTFS chính là các tổng \texbf{hữu hạn} do tính chất cực kì đặc biệt sau:
+$$c_{k+N_{0}}=\frac{1}{N_{0}}\sum_{\alert{n=<N_{0}>}}x[n+N_{0}]e^{-jk\Omega_{0}(n+N_{0})}=\alert{c_{k}}$$
+Vậy khác với hệ số $a_{k}$ của chuỗi CTFS, \textbf{hệ số $c_{k}$ của chuỗi DTFS tuần hoàn} với chu kì cơ sở $N_{0}$. Hiển nhiên do cả $c_{k}$ và $e^{jk\Omega_{0}n}$ đều tuần hoàn, nên ta chỉ cần biểu diễn \textit{tổng hữu hạn} của cả tín hiệu $x[n]$ và hệ số chuỗi mà thôi.
+\end{frame}
+\begin{frame}{Chuỗi Fourier (FS)}
+Ví dụ: tìm hệ số chuỗi Fourier của tín hiệu: $$x[n]=\sum_{k=-\infty}^{+\infty}\delta[n-3k+1]$$
+\begin{figure}[h]
+			\includegraphics[width=0.46\textwidth]{d.jpg}
+			\caption{Sketch $x(t)$}\label{fig:re11}
+
+		\end{figure}
+Dễ thấy $N_{0}=3$, vậy $\Omega_{0}=\frac{2\pi}{3}$, ta chọn đoạn $<N_{0}>=[0,2]$ (các bạn có thể chọn các đoạn khác) và thay trực tiếp công thức tính $c_{k}$ ở trên:
+\begin{equation*}
+\begin{split}
+	c_{k}=\frac{1}{3}\sum_{n=0}^2 x[n]e^{-jk\Omega_{0}n}=\frac{1}{3}e^{-jk\frac{4\pi}{3}}
+\end{split}
+\end{equation*}
+Tương tự như tín hiệu liên tục, ta cũng có thể vẽ phổ biên độ và pha của tín hiệu rời rạc \textbf{với lưu ý phổ tuần hoàn với chu kì cơ sở $N_{0}$}.
+\\ Suy ngẫm: các bạn hãy tự vẽ phổ của tín hiệu $x[n]$ trên.
+\end{frame}
+\begin{frame}{Chuỗi Fourier (FS)}
+\begin{itemize}
+	\item[-] Tính chất chuỗi Fourier rời rạc
+\end{itemize}
+\begin{block}{Discrete-time Fourier Series Pair}
+	\begin{equation*}
+		\begin{split}
+			x[n]&=\sum_{k=<N_{0}>}c_{k}e^{jk\Omega_{0}n}\\
+			c_{k}&=\frac{1}{N_{0}}\sum_{n=<N_{0}>}x[n]e^{-jk\Omega_{0}n}
+\end{split}
+\end{equation*}
+\end{block}
+\subsubsection{Tính chất chuỗi Fourier rời rạc}
+Tương tự như CTFS, DTFS cũng có các tính chất sau (chúng ta chỉ tổng quát hóa tính chất từ miền liên tục sang rời rạc và không chứng minh lại)
+với $$\mathscr{FS}(x[n])=a_{k}\; , \mathscr{FS}(y[n])=b_{k}$$
+\begin{enumerate}
+	\item[1] Tính tuyến tính: $$\mathscr{FS}(\alpha x[n]+\beta y[n])=\alpha\mathscr{FS}(x[n])+\beta\mathscr{FS}(y[n])$$
+	\item[2] Dịch thời gian: $$\mathscr{FS}(x[n-N_{0}])=a_{k}e^{-jk\Omega_{0}N_{0}}$$
+\end{enumerate}
+\end{frame}
+\begin{frame}{Chuỗi Fourier (FS)}
+\begin{enumerate}
+	\item[3] Lật tín hiệu $$\mathscr{FS}(x[-n])=a_{-k}$$
+	\item[4] Phép tích thường (điều chế): $$\mathscr{FS}(x[n]y[n])=a_{k}*b_{k}$$
+	\item[5] Đẳng thức năng lượng Parseval: $$\frac{1}{N_{0}}\sum_{\alert{n=<N_{0}>}}|x[n]|^2=\sum_{\alert{k=<N_{0}>}}|a_{k}|^2$$
+\end{enumerate}
+\begin{itemize}
+	\item[-] Đáp ứng của hệ thống LTI với tín hiệu tuần hoàn
+\end{itemize}
+\subsubsection{Đáp ứng của hệ thống LTI với tín hiệu tuần hoàn}
+ Tương tự như tín hiệu và hệ thống LTI liên tục, ta cũng có:
+$$H(jk\Omega_{0})=\sum_{n=-\infty}^{+\infty}h[n]e^{-jk\Omega_{0}n}$$
+$$y[n]=\sum_{k=-\infty}^{+\infty}y_{k}[n]=\sum_{k=-\infty}^{+\infty}x_{k}[n]H(jk\omega_{0})$$
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+\section{Biến đổi Fourier (FT)}
+\subsection{Biến đổi Fourier liên tục (CTFT)}
+\begin{itemize}
+	\item Biến đổi Fourier liên tục (CTFT)
+\end{itemize}
+\subsubsection{Khái niệm biến đổi Fourier liên tục}
+\begin{itemize}
+	\item[-] Khái niệm biến đổi Fourier liên tục
+\end{itemize}
+Dirichlet đã tổng quát hóa kết quả của Fourier để phân tích phổ của tín hiệu \textbf{liên tục không tuần hoàn} như sau:
+\begin{figure}[h]
+			\includegraphics[width=0.46\textwidth]{signal.jpg}
+			\caption{Form periodic signal $\widetilde{x}(t)$ from non-periodic signal $x(t)$}\label{fig:re11}
+
+		\end{figure}
+		\alert{Tín hiệu không tuần hoàn thì tuần hoàn với chu kì $T_{0}=+\infty$ !!!}
+\\Áp dụng công thức chuỗi CTFS cho tín hiệu $\widetidle{x}(t)$, ta có:
+\begin{equation*}
+	\begin{split}
+		\widetilde{x}(t)&=\sum_{k=-\infty}^{+\infty}a_{k}e^{jk\omega_{0}t}\\
+		a_{k}&=\frac{1}{T_{0}}\int_{T_{0}}\widetilde{x}(t)e^{-jk\omega_{0}t}dt
+	\end{split}
+\end{equation*}
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+	Khi $T_{0}\to+\infty$ thì hiển nhiên $\widetilde{x}(t)\to x(t)$, ta xét tích phân đoạn có độ dài $[\frac{-T_{0}}{2},\frac{T_{0}}{2}]$:
+\begin{equation*}
+a_{k}=\frac{1}{T_{0}}\int_{-\infty}^{+\infty}x(t)e^{-jk\omega_{0}t}dt
+\end{equation*}
+Ta định nghĩa:
+$$X(j\omega)=\int_{-\infty}^{+\infty}x(t)e^{-j\omega t}dt$$
+Quay ngược trở lại công thức tín hiệu gốc:
+\begin{equation*}
+\begin{split}
+	\widetilde{x}(t)&=\sum_{k=-\infty}^{+\infty}a_{k}e^{jk\omega_{0}t}=\frac{1}{T_{0}}\sum_{k=-\infty}^{+\infty}X(jk\omega_{0})e^{jk\omega_{0}t}\\
+			&=\sum_{k=-\infty}^{+\infty}\frac{1}{2\pi}X(jk\omega_{0})e^{jk\omega_{0}t}\omega_{0}
+\end{split}
+\end{equation*}
+Hiển nhiên khi $T_{0}\to+\infty$ thì $\omega_{0}\to d\omega$, từ định nghĩa tổng Riemann, ta thu được:
+$$x(t)=\frac{1}{2\pi}\int_{-\infty}^{+\infty}X(j\omega)e^{j\omega t}d\omega$$
+Ví dụ: từ định nghĩa, hãy tìm biến đổi Fourier của tín hiệu sau với $a>0$:
+$$x_{1}(t)=e^{-at}u(t)$$
+$$x_{2}(t)=e^{at}u(t)$$
+
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+\begin{equation*}
+\begin{split}
+	X_{1}(j\omega)&=\int_{-\infty}^{+\infty}x_{1}(t)e^{-j\omega t}dt=\int_{0}^{+\infty}e^{-at}e^{-j\omega t}dt=\frac{1}{a+j\omega}\\
+	X_{2}(j\omega)&=\int_{-\infty}^{+\infty}x_{2}(t)e^{-j\omega t}dt=\int_{0}^{+\infty}e^{at}e^{-j\omega t}dt=\alert{+\infty}
+\end{split}
+\end{equation*}
+Dễ thấy chỉ có tín hiệu $x_{1}(t)$ mới tồn tại biến đổi Fourier; còn tín hiệu $x_{2}(t)$ thì không do \textbf{tích phân phân kì, không hội tụ}.
+\\ Dirichlet đã đưa ra 3 điều kiện để xác định sự tồn tại của biến đổi Fourier (các bạn có thể tra từ khóa Dirichlet's conditions); thế nhưng ta chỉ dùng điều kiện "lỏng" nhất, đó là \textbf{chỉ có tín hiệu năng lượng mới tồn tại biến đổi Fourier.} 
+\begin{itemize}
+	\item[-] Tính chất biến đổi Fourier liên tục:
+\end{itemize}
+\begin{block}{Continuous-time Fourier Transform Pair}
+If and only if $x(t)$ is an \textbf{\alert{energy signal:}}
+\begin{equation*}
+\begin{split}
+	X(j\omega)&=\int_{-\infty}^{+\infty}x(t)e^{-j\omega t}dt\\
+	x(t)&=\frac{1}{2\pi}\int_{-\infty}^{+\infty}X(j\omega)e^{j\omega t}d\omega
+	\end{split}
+\end{equation*}
+\end{block}
+ Trong quá trình giải bài tập thực chiến thì công thức $(2)$ không thường xuyên được sử dụng trong môn học này, mà thay vào đó ta tìm tín hiệu gốc $x(t)$ dựa vào tính chất của CTFT.
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+Ta định nghĩa các phép toán CTFT của tín hiệu $x(t)$ như sau:
+$$\mathscr{F}(x(t))=X(j\omega)$$
+$$\mathscr{F}^{-1}(X(j\omega))=x(t)$$
+Với tín hiệu $y(t)$ có:
+
+$$\mathscr{F}(y(t))=Y(j\omega)$$
+$$\mathscr{F}^{-1}(Y(j\omega))=y(t)$$
+Ta lần lượt khảo sát các tính chất của CTFT gồm:
+\begin{enumerate}
+	\item[1] Tính tuyến tính:
+\begin{equation*}
+\begin{split}
+	\mathscr{F}(\alpha x(t)+\beta y(t))&=\int_{-\infty}^{+\infty}[\alpha x(t)+\beta y(t)]e^{-j\omega t}dt\\
+					   &=\alpha \int_{-\infty}^{+\infty}x(t)e^{-j\omega t}dt+\beta\int_{-\infty}^{+\infty}y(t)e^{-j\omega t}dt\\
+					   &= \alpha\mathscr{F}(x(t))+\beta\mathscr{F}(y(t))\\
+					   &= \alpha X(j\omega)+\beta Y(j\omega)
+\end{split}
+\end{equation*}
+	\item[2] Dịch thời gian:
+\begin{equation*}
+\begin{split}
+	\mathscr{F}(x(t-t_{0}))&=\int_{-\infty}^{+\infty}x(t-t_{0})e^{-j\omega t}dt=\int_{-\infty}^{+\infty}x(t-t_{0})e^{-j\omega (t-t_{0})}e^{-j\omega t_{0}}d(t-t_{0})\\
+			       &=\mathscr{F}(x(t))e^{-j\omega t_{0}}=X(j\omega)e^{-j\omega t_{0}}
+\end{split}
+\end{equation*}
+\end{enumerate}
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+\begin{enumerate}
+	\item[3] Dịch tần số:
+\begin{equation*}
+\begin{split}
+	\mathscr{F}^{-1}(X(j(\omega-\omega_{0})))&=\frac{1}{2\pi}\int_{-\infty}^{+\infty}X(j(\omega-\omega_{0}))e^{j\omega t}d\omega \\&=\frac{1}{2\pi}\int_{-\infty}^{+\infty}X(j(\omega-\omega_{0}))e^{j(\omega-\omega_{0})t}e^{j\omega_{0}t}d(\omega-\omega_{0})\\&=x(t)e^{j\omega_{0}t}
+\end{split}
+\end{equation*}
+$$\Leftrightarrow \mathscr{F}(x(t)e^{j\omega_{0}t})=X(j(\omega-\omega_{0}))$$
+\item[4] Phép đạo hàm trong miền thời gian:
+\begin{equation*}
+\begin{split}
+	\mathscr{F}\left(\frac{dx(t)}{dt}\right)&=\int_{-\infty}^{+\infty}\left(\frac{dx(t)}{dt}\right)e^{-j\omega t}dt=\int_{-\infty}^{+\infty}\left[\frac{j\omega}{2\pi}\int_{-\infty}^{+\infty}X(j\omega)e^{j\omega t}d\omega\right]e^{-j\omega t}dt\\&= j\omega\int_{-\infty}^{+\infty}x(t)e^{-j\omega t}dt=j\omega X(j\omega)
+\end{split}
+\end{equation*}
+\item[5] Phép tích phân trong miền thời gian:
+\begin{equation*}
+\begin{split}
+	\mathscr{F}\left(\int_{-\infty}^{t}x(\tau)d\tau\right)&=\int_{-\infty}^{+\infty}\left[\int_{-\infty}^{t}x(\tau)d\tau\right]e^{-j\omega t}dt\\
+							      &=\int_{-\infty}^{+\infty}\left[\frac{1}{2\pi j\omega}\int_{-\infty}^{+\infty}X(j\omega)e^{j\omega t}d\omega\right]e^{-j\omega t}dt=\frac{X(j\omega)}{j\omega}
+\end{split}
+\end{equation*}
+\end{enumerate}
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+\begin{enumerate}
+\item[6] Phép tích thường (điều chế):
+\begin{equation*}
+\begin{split}
+	\mathscr{F}(x(t)y(t))&=\int_{-\infty}^{+\infty}[x(t)y(t)]e^{-j\omega t}dt=\int_{-\infty}^{+\infty}\frac{1}{2\pi}\left[\int_{-\infty}^{+\infty}X(jp)e^{jpt}dp\right]y(t)e^{-j\omega t}dt\\
+			     &=\alert{\int_{-\infty}^{+\infty}\frac{1}{2\pi}X(jp)\left[\int_{-\infty}^{+\infty}y(t)e^{j(p-\omega)t} dt\right]dp}\\
+			     &=\int_{-\infty}^{+\infty}\frac{1}{2\pi}X(jp)\left[\int_{-\infty}^{+\infty}y(t)e^{-j(\omega-p)t} dt\right]dp\\
+			     &=\int_{-\infty}^{+\infty}\frac{1}{2\pi}X(jp)Y(j(\omega-p))dp\\
+			     &=\frac{1}{2\pi}X(j\omega)*Y(j\omega)
+\end{split}
+\end{equation*}
+\item[7] Phép đạo hàm trong miền tần số:
+	\begin{equation*}
+	\begin{split}
+		\mathscr{F}^{-1}\left(\frac{dX(j\omega)}{d\omega}\right)=\mathscr{F}^{-1}\left(-jt\int_{-\infty}^{+\infty}x(t)e^{-j\omega t}dt\right)=\mathscr{F}^{-1}(-jtX(j\omega))=-jtx(t)
+	\end{split}
+\end{equation*}
+\item[8] Phép đối ngẫu: 
+\begin{equation*}
+\begin{split}
+\mathscr{F}(X(t))=2\pi x(-\omega)
+\end{split}
+\end{equation*}
+\end{enumerate}
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+\begin{enumerate}
+	\item[] Phép đối ngẫu tương đối tricky và ý tưởng chứng minh không tự nhiên:
+		\begin{equation*}
+\begin{split}
+	x(t)=\frac{1}{2\pi}\int_{-\infty}^{+\infty}X(j\omega)e^{j\omega t}d\omega\Leftrightarrow 2\pi x(t)=\int_{-\infty}^{+\infty}X(j\omega)e^{j\omega t}d\omega
+\end{split}
+		\end{equation*}
+Đổi $t$ thành $-t$ và hoán đổi $t$ và $\omega$, ta lần lượt thu được:
+\begin{equation*}
+\begin{split}
+	2\pi x(-t)&=\int_{-\infty}^{+\infty}X(j\omega)e^{-j\omega t}d\omega\\
+	\Leftrightarrow 2\pi x(-\omega)&=\int_{-\infty}^{+\infty}X(t)e^{-j\omega t}dt=\mathscr{F}(X(t))
+\end{split}
+\end{equation*}
+\item[9] Phép tích chập trong miền thời gian:
+\begin{equation*}
+\begin{split}
+	\mathscr{F}(x(t)*y(t))&=\int_{-\infty}^{+\infty}[x(t)*y(t)]e^{-j\omega t}dt=\int_{-\infty}^{+\infty}\left[\int_{-\infty}^{+\infty}x(\tau)y(t-\tau)d\tau\right]e^{-j\omega t}dt\\
+			      &=\alert{\int_{-\infty}^{+\infty}x(\tau)\left[\int_{-\infty}^{+\infty}y(t-\tau)e^{-j\omega (t-\tau)}\right d(t-\tau)]e^{-j\omega \tau}d\tau}\\
+			      &=\int_{-\infty}^{+\infty}x(\tau)Y(j\omega)e^{-j\omega \tau}d\tau \\
+			      &=X(j\omega)Y(j\omega)
+\end{split}
+\end{equation*}
+\end{enumerate}
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+\begin{enumerate}
+	\item[10] Co giãn trong miền thời gian, với $a>0$ ($a<0$ chứng minh tương tự):
+\begin{equation*}
+\begin{split}
+	\mathscr{F}(x(at))&=\int_{-\infty}^{+\infty}x(at)e^{-j\omega t}dt=\frac{1}{a}\int_{-\infty}^{+\infty}x(at)e^{-j\omega t}d(at)\\
+			  &=\frac{1}{a}\int_{-\infty}^{+\infty}x(t)e^{\frac{-j\omega t}{a}}dt=\frac{1}{a}X\left(\frac{\omega}{a}\right)
+\end{split}
+\end{equation*}
+Trường hợp $a<0$ các bạn chỉ cần đảo cận tích phân ngược lại là xong, tổng quát ta có với trường hợp $a$ bất kì:
+$$\mathscr{F}\left(x(at)\right)=\frac{1}{|a|}X\left(\frac{\omega}{a}\right)$$
+\item[11] Đẳng thức năng lượng Parseval:
+	$$\int_{-\infty}^{+\infty}|x(t)|^2 dt=\frac{1}{2\pi}\int_{-\infty}^{+\infty}|X(j\omega)|^2d\omega$$
+	Đẳng thức này rất khó chứng minh nên ta chỉ cần liên hệ nó với công thức tương tự trong phần CTFS và nhớ mà thôi.
+\end{enumerate}
+Suy ngẫm: ngoại trừ tính chất 11, các bạn hãy tự chứng minh lại \alert{toàn bộ} phép toán trên để khắc sâu bản chất của phép biến đổi Fourier về mặt toán học.
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+Ví dụ: sử dụng phép đối ngẫu:
+\begin{equation*}
+\begin{split}
+	\mathscr{F}(\delta(t))&=\int_{-\infty}^{+\infty}\delta(t)e^{-j\omega t}dt=1 \\
+	\Rightarrow \mathscr{F}(1)&=2\pi\delta(-\omega)=2\pi\delta(\omega)
+\end{split}
+\end{equation*}
+Tiếp tục sử dụng phép dịch tần số $\omega_{0}$:
+\begin{equation*}
+	\begin{split}
+		\mathscr{F}(1)&=2\pi\delta(\omega)\Rightarrow \mathscr{F}^{-1}(2\pi\delta(\omega-\omega_{0}))=e^{j\omega_{0}t}\\
+		\Rightarrow & \mathscr{F}(e^{j\omega_{0}t})=2\pi\delta(\omega-\omega_{0})
+	\end{split}
+\end{equation*}
+Về mặt \alert{biểu thức toán học} sử dụng tính chất tuyến tính ta thu được:
+$$\mathscr{F}(\cos{(\omega_{0}t)})=\mathscr{F}\left[\frac{1}{2}\left(e^{j\omega_{0}t}+e^{-j\omega_{0}t}\right)\right]=\pi(\delta(\omega-\omega_{0})+\delta(\omega+\omega_{0}))$$
+Suy ngẫm: các bạn hãy tìm CTFT của tín hiệu sau theo gợi ý với $a>0$:
+$$x(t)=e^{-at}\cos{(\omega_{0}t)}u(t)$$
+Gợi ý: dùng công thức Euler để tách $\cos(\omega_{0}t)$ ra thành tổng hai thành phần mũ phức, đến đây ta có hai hướng làm: tìm CTFT của tín hiệu $e^{-at}u(t)$ rồi sau đó dùng tính chất dịch tần số; hoặc tìm CTFT của tín hiệu phức $e^{\pm j\omega_{0}t}$ rồi sau đó dùng tính chất dịch tần số.
+\end{frame}
+\begin{frame}{Biến đổi Fourier (FT)}
+
 \end{frame}
 \end{document}

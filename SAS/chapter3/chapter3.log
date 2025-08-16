@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  14 AUG 2025 02:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  16 AUG 2025 14:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -805,6 +805,15 @@ LaTeX Warning: Label `fig:re11' multiply defined.
 
 LaTeX Warning: Label `fig:re11' multiply defined.
 
+
+LaTeX Warning: Label `fig:re11' multiply defined.
+
+
+LaTeX Warning: Label `fig:re11' multiply defined.
+
+
+LaTeX Warning: Label `fig:re11' multiply defined.
+
 )
 \openout1 = `chapter3.aux'.
 
@@ -965,7 +974,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [4
 
 ]
-<Fourier-1000.jpg, id=79, 1003.75pt x 1003.75pt>
+<Fourier-1000.jpg, id=102, 1003.75pt x 1003.75pt>
 File: Fourier-1000.jpg Graphic file (type jpg)
 <use Fourier-1000.jpg>
 Package pdftex.def Info: Fourier-1000.jpg  used on input line 55.
@@ -973,7 +982,7 @@ Package pdftex.def Info: Fourier-1000.jpg  used on input line 55.
  [5
 
  <./Fourier-1000.jpg>]
-<FFT-Time-Frequency-View-540.png, id=85, 406.51875pt x 284.56313pt>
+<FFT-Time-Frequency-View-540.png, id=108, 406.51875pt x 284.56313pt>
 File: FFT-Time-Frequency-View-540.png Graphic file (type png)
 <use FFT-Time-Frequency-View-540.png>
 Package pdftex.def Info: FFT-Time-Frequency-View-540.png  used on input line 62.
@@ -1015,7 +1024,7 @@ or  <return>  to continue without it.
 [8
 
 ]
-<helix.jpg, id=114, 1126.2075pt x 491.8375pt>
+<helix.jpg, id=137, 1126.2075pt x 491.8375pt>
 File: helix.jpg Graphic file (type jpg)
 <use helix.jpg>
 Package pdftex.def Info: helix.jpg  used on input line 114.
@@ -1026,7 +1035,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has
                    \relax 
 l.114 \end{frame}
                  
-<imaginary.jpg, id=115, 1073.00874pt x 736.7525pt>
+<imaginary.jpg, id=138, 1073.00874pt x 736.7525pt>
 File: imaginary.jpg Graphic file (type jpg)
 <use imaginary.jpg>
 Package pdftex.def Info: imaginary.jpg  used on input line 114.
@@ -1043,7 +1052,7 @@ Overfull \vbox (0.28127pt too high) detected at line 114
 [9
 
  <./helix.jpg> <./imaginary.jpg>]
-<fre.jpg, id=122, 1688.3075pt x 735.74875pt>
+<fre.jpg, id=145, 1688.3075pt x 735.74875pt>
 File: fre.jpg Graphic file (type jpg)
 <use fre.jpg>
 Package pdftex.def Info: fre.jpg  used on input line 131.
@@ -1054,7 +1063,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has
                    \relax 
 l.131 \end{frame}
                  
-<sine.jpg, id=123, 990.70125pt x 529.98pt>
+<sine.jpg, id=146, 990.70125pt x 529.98pt>
 File: sine.jpg Graphic file (type jpg)
 <use sine.jpg>
 Package pdftex.def Info: sine.jpg  used on input line 131.
@@ -1071,74 +1080,252 @@ Overfull \vbox (6.39188pt too high) detected at line 131
 [10
 
  <./fre.jpg> <./sine.jpg>]
-<square.jpg, id=130, 1471.4975pt x 468.75125pt>
+<sin.jpg, id=153, 625.33624pt x 841.1425pt>
+File: sin.jpg Graphic file (type jpg)
+<use sin.jpg>
+Package pdftex.def Info: sin.jpg  used on input line 139.
+(pdftex.def)             Requested size: 153.64493pt x 206.6657pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.139 \end{frame}
+                 
+Overfull \vbox (2.49884pt too high) detected at line 139
+ []
+
+[11
+
+ <./sin.jpg>]
+<square.jpg, id=160, 1471.4975pt x 468.75125pt>
 File: square.jpg Graphic file (type jpg)
 <use square.jpg>
-Package pdftex.def Info: square.jpg  used on input line 152.
+Package pdftex.def Info: square.jpg  used on input line 160.
 (pdftex.def)             Requested size: 184.3758pt x 58.72966pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.152 \end{frame}
+l.160 \end{frame}
                  
-Overfull \vbox (2.8922pt too high) detected at line 152
+Overfull \vbox (2.8922pt too high) detected at line 160
  []
 
-[11
+[12
 
  <./square.jpg>]
-<s.jpg, id=137, 1640.1275pt x 611.28375pt>
+<s.jpg, id=168, 1640.1275pt x 611.28375pt>
 File: s.jpg Graphic file (type jpg)
 <use s.jpg>
-Package pdftex.def Info: s.jpg  used on input line 169.
+Package pdftex.def Info: s.jpg  used on input line 177.
 (pdftex.def)             Requested size: 276.559pt x 103.06805pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.169 \end{frame}
-                  [12
+l.177 \end{frame}
+                  [13
 
- <./s.jpg>] [13
-
-] [14
+ <./s.jpg>] [14
 
 ] [15
 
 ] [16
 
+] [17
+
 ]
-<pro.jpg, id=174, 1170.3725pt x 716.6775pt>
+<pro.jpg, id=204, 1170.3725pt x 716.6775pt>
 File: pro.jpg Graphic file (type jpg)
 <use pro.jpg>
-Package pdftex.def Info: pro.jpg  used on input line 262.
+Package pdftex.def Info: pro.jpg  used on input line 271.
 (pdftex.def)             Requested size: 141.3554pt x 86.5553pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.262 \end{frame}
+l.271 \end{frame}
                  
-Overfull \vbox (10.71042pt too high) detected at line 262
+Overfull \vbox (10.71042pt too high) detected at line 271
  []
 
-[17
+[18
 
  <./pro.jpg>]
-<ht.jpg, id=181, 736.7525pt x 288.07625pt>
+<ht.jpg, id=211, 736.7525pt x 288.07625pt>
 File: ht.jpg Graphic file (type jpg)
 <use ht.jpg>
-Package pdftex.def Info: ht.jpg  used on input line 279.
+Package pdftex.def Info: ht.jpg  used on input line 288.
 (pdftex.def)             Requested size: 141.3554pt x 55.26692pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.279 \end{frame}
-                  [18
+l.288 \end{frame}
+                  [19
 
- <./ht.jpg>] [19
+ <./ht.jpg>] [20
+
+] [21
+
+]
+./chapter3.tex:335: Undefined control sequence.
+\beamer@doifinframe ...�nh là các tổng \texbf 
+                                                  {hữu hạn} do tính ch�...
+l.335 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Font Warning: Font shape `T5/cmss/m/it' in size <8> not available
+(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 335.
+
+[22
+
+]
+<d.jpg, id=238, 549.05125pt x 121.45375pt>
+File: d.jpg Graphic file (type jpg)
+<use d.jpg>
+Package pdftex.def Info: d.jpg  used on input line 351.
+(pdftex.def)             Requested size: 141.3554pt x 31.26773pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.351 \end{frame}
+                  [23
+
+ <./d.jpg>] [24
+
+] [25
+
+]
+<signal.jpg, id=258, 560.0925pt x 321.2pt>
+File: signal.jpg Graphic file (type jpg)
+<use signal.jpg>
+Package pdftex.def Info: signal.jpg  used on input line 410.
+(pdftex.def)             Requested size: 141.3554pt x 81.06438pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.410 \end{frame}
+                 
+./chapter3.tex:410: Undefined control sequence.
+<recently read> \widetidle 
+                           
+l.410 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \vbox (0.61949pt too high) detected at line 410
+ []
+
+[26
+
+ <./signal.jpg>] [27
+
+]
+Overfull \vbox (2.40161pt too high) detected at line 454
+ []
+
+[28
+
+]
+Overfull \hbox (9.71565pt too wide) detected at line 482
+[]
+ []
+
+
+Overfull \hbox (17.00024pt too wide) detected at line 482
+[]
+ []
+
+[29
+
+]
+Overfull \hbox (7.95743pt too wide) detected at line 506
+[]
+ []
+
+
+Overfull \hbox (17.00024pt too wide) detected at line 506
+[]
+ []
+
+[30
+
+]
+Overfull \hbox (16.41333pt too wide) detected at line 532
+[]
+ []
+
+
+Overfull \hbox (17.00024pt too wide) detected at line 532
+[]
+ []
+
+
+Overfull \hbox (0.77904pt too wide) detected at line 532
+[]
+ []
+
+
+Overfull \hbox (17.00024pt too wide) detected at line 532
+[]
+ []
+
+[31
+
+]
+./chapter3.tex:558: Missing delimiter (. inserted).
+<to be read again> 
+                   d
+l.558 \end{frame}
+                 
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+./chapter3.tex:558: Missing delimiter (. inserted).
+<to be read again> 
+                   d
+l.558 \end{frame}
+                 
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+
+Overfull \hbox (18.14082pt too wide) detected at line 558
+[]
+ []
+
+
+Overfull \hbox (17.00024pt too wide) detected at line 558
+[]
+ []
+
+[32
+
+] [33
+
+] [34
 
 ]
 \tf@nav=\write6
@@ -1155,21 +1342,21 @@ l.279 \end{frame}
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `chapter3.out' has not changed.
-(rerunfilecheck)             Checksum: AB35DE8B0919D3D5CEBE849D710A67A2;844.
+(rerunfilecheck)             Checksum: 85B83EFF944A9962B9650B4283ED9860;1495.
  ) 
 Here is how much of TeX's memory you used:
- 26017 strings out of 476091
- 517837 string characters out of 5794082
- 1863330 words of memory out of 5000000
- 45801 multiletter control sequences out of 15000+600000
- 524890 words of font info for 62 fonts, out of 8000000 for 9000
+ 26130 strings out of 476091
+ 518988 string characters out of 5794082
+ 1868330 words of memory out of 5000000
+ 45873 multiletter control sequences out of 15000+600000
+ 527395 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,122p,537b,598s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb>
-Output written on chapter3.pdf (19 pages, 762549 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssi8.pfb>
+Output written on chapter3.pdf (34 pages, 872739 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 193 compressed objects within 2 object streams
- 48 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 400 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

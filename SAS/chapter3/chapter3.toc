@@ -4,5 +4,12 @@
 \beamer@sectionintoc {4}{Chuỗi Fourier (FS)}{7}{0}{4}
 \beamer@subsectionintoc {4}{1}{Chuỗi Fourier liên tục (CTFS)}{7}{0}{4}
 \beamer@subsubsectionintoc {4}{1}{1}{Khái niệm chuỗi Fourier liên tục}{7}{0}{4}
-\beamer@subsubsectionintoc {4}{1}{2}{Tính chất chuỗi Fourier liên tục}{13}{0}{4}
-\beamer@subsubsectionintoc {4}{1}{3}{Đáp ứng của hệ thống LTI với tín hiệu tuần hoàn}{18}{0}{4}
+\beamer@subsubsectionintoc {4}{1}{2}{Tính chất chuỗi Fourier liên tục}{14}{0}{4}
+\beamer@subsubsectionintoc {4}{1}{3}{Đáp ứng của hệ thống LTI với tín hiệu tuần hoàn}{19}{0}{4}
+\beamer@subsectionintoc {4}{2}{Chuỗi Fourier rời rạc (DTFS)}{22}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{1}{Khái niệm chuỗi Fourier rời rạc}{22}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{2}{Tính chất chuỗi Fourier rời rạc}{24}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{3}{Đáp ứng của hệ thống LTI với tín hiệu tuần hoàn}{25}{0}{4}
+\beamer@sectionintoc {5}{Biến đổi Fourier (FT)}{26}{0}{5}
+\beamer@subsectionintoc {5}{1}{Biến đổi Fourier liên tục (CTFT)}{26}{0}{5}
+\beamer@subsubsectionintoc {5}{1}{1}{Khái niệm biến đổi Fourier liên tục}{26}{0}{5}
