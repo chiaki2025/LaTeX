@@ -203,4 +203,49 @@ Ta có thể rất dễ dàng biểu diễn các điểm cực và không trên 
 		\end{figure}
 		Khi xét đến tính chất đơn giản của hệ thống sử dụng biến đổi Laplace (trong giới hạn môn học này), ta chỉ xét đến \textbf{\alert{điểm cực}} của hệ thống mà thôi, tạm thời chưa cần quan tâm đến điểm không.
 \end{frame}
+\begin{frame}{Biến đổi Laplace}
+\begin{figure}[h]
+			\includegraphics[width=1\textwidth]{r.jpg}
+			\caption{Determine system properties using poles}\label{fig:re4}
+
+		\end{figure}
+
+\end{frame}
+\begin{frame}{Biến đổi Laplace}
+\begin{figure}[h]
+			\includegraphics[width=0.8\textwidth]{example.jpg}
+			\caption{An example of stable system}\label{fig:re5}
+
+		\end{figure}
+\end{frame}
+\begin{frame}{Biến đổi Laplace}
+	\subsection{Phân tích đáp ứng lối ra của hệ thống}
+Suy ngẫm: liệu có thể tồn tại trường hợp  $ROC: \Re{(s)}\alert{\leq}\frac{3}{2}$ hay không? Từ đó đưa ra kết luận nếu hệ thống có cặp cực nằm trên trục ảo thì có thể ổn định không?
+\begin{itemize}
+	\item Phân tích đáp ứng lối ra của hệ thống
+\end{itemize}
+Với các bài toán \textbf{không có hệ điều kiện khởi tạo}, ta rất dễ dàng sử dụng biến đổi Laplace để phân tích đáp ứng lối ra của hệ thống tương tự bài tập \alert{Chương 3}. Phân tích đáp ứng hệ thống bằng biến đổi Laplace tiện hơn rất nhiều so với biến đổi Fourier vì biến đổi Laplace luôn tồn tại với tất cả các dạng tín hiệu. 
+\\ Trong mục này, ta sẽ tập trung khảo sát các bài toán phân tích đáp ứng lối ra của hệ thống \alert{có hệ điều kiện khởi tạo} bằng \textbf{biến đổi Laplace một phía (unilateral Laplace transform)}. Để phân biệt với biến đổi Laplace hai phía thông thường phân tích ở trên (bilateral Laplace transform), ta sử dụng kí tự như sau:
+$$\mathscr{X}(s)=\int_{\alert{0^-}}^{+\infty}x(t)e^{-st}dt=\mathscr{UL}(x(t))$$
+Khác với biến đổi Laplace hai phía, biến đổi Laplace một phía có tính chất rất đặc biệt sau:
+$$\mathscr{UL}\left(\frac{dx(t)}{dt}\right)=s\mathscr{X}(s)-x(0^-)$$
+$$\mathscr{UL}\left(\frac{d^2x(t)}{dt}\right)=s^2\mathscr{X}(s)-sx(0^-)-x^{'}(0^-)$$
+\end{frame}
+\begin{frame}{Biến đổi Laplace}
+Ví dụ: một hệ thống có quan hệ đầu vào-ra được biểu diễn bằng phương trình ODE sau
+$$\frac{dy(t)}{dt}+4y(t)=x(t)$$
+Với điều kiện khởi tạo $y(0^-)=5$ và $x(t)=3tu(t)$, hãy xác định đáp ứng lối ra của hệ thống.
+\\ Sử dụng phép biển đổi Laplace một phía (unilateral Laplace transform) cho cả hai vế, ta có:
+\begin{equation*}
+\begin{split}
+	\mathscr{UL}\left(\frac{dy(t)}{dt}+4y(t)\right)&=\mathscr{UL}(x(t))\\
+	\Rightarrow s\mathscr{Y}(s)-y(0^-)+4\mathscr{Y}(s)&=\mathscr{X}(s)\\
+	\Rightarrow \mathscr{Y}(s)=\frac{\mathscr{X}(s)}{s+4}+\frac{y'(0^-)}{s+4}&=\left(\frac{3}{s^2(s+4)}\right)+\left(\frac{5}{s+4}\right)\\
+&= \left(\frac{-3}{16}.\frac{1}{s}+\frac{3}{4}.\frac{1}{s^2}+\frac{3}{16}.\frac{1}{s+4}\right)+\left(\frac{5}{s+4}\right)
+\end{split}
+\end{equation*}
+Suy ra:
+$$y(t)=\mathscr{UL}^{-1}(\mathscr{Y}(s))=\left(\frac{-3}{16}+\frac{3}{4}t+\frac{83}{16}e^{-4t}\right)u(t)$$
+  Dễ dàng thấy rằng đáp ứng lối ra $\mathscr{Y}(s)$ gồm hai thành phần rời rạc nhau, thành phần phụ thuộc tín hiệu đầu vào $\mathscr{X}(s)$ chính là \alert{\textbf{đáp ứng cưỡng bức}}, còn thành phần còn lại không phụ thuộc tín hiệu đầu vào chính là \alert{\textbf{đáp ứng tự nhiên}} của hệ thống.
+\end{frame}
 \end{document}

@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{Giới thiệu playlist}{3}{0}{1}
+\beamer@sectionintoc {2}{Tài liệu tham khảo}{4}{0}{2}
+\beamer@sectionintoc {3}{Khái niệm biến đổi Z}{5}{0}{3}
+\beamer@sectionintoc {4}{Tính chất của biến đổi Z}{6}{0}{4}
+\beamer@sectionintoc {5}{Phân tích hệ thống rời rạc}{8}{0}{5}
+\beamer@subsectionintoc {5}{1}{Phân tích tính chất của hệ thống rời rạc}{8}{0}{5}
+\beamer@subsectionintoc {5}{2}{Phân tích đáp ứng hệ thống}{9}{0}{5}
