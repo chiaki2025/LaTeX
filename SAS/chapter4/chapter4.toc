@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Giới thiệu playlist}{3}{0}{1}
+\beamer@sectionintoc {2}{Tài liệu tham khảo}{4}{0}{2}
+\beamer@sectionintoc {3}{Khái niệm biến đổi Laplace}{5}{0}{3}
+\beamer@sectionintoc {4}{Tính chất của biến đổi Laplace}{7}{0}{4}
+\beamer@sectionintoc {5}{Phân tích hệ thống LTI liên tục}{12}{0}{5}
+\beamer@subsectionintoc {5}{1}{Phân tích tính chất của hệ thống}{12}{0}{5}

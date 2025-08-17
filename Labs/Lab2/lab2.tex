@@ -198,13 +198,13 @@ $$I_{O}=I_{I}^+ e^{j\beta x}+I_{I}^- e^{-j\beta x}$$
 $$\Rightarrow Z_{O}=\frac{V_{I}^+ e^{j\beta x}+V_{I}^- e^{-j\beta x}}{I_{I}^+ e^{j\beta x}+I_{I}^- e^{-j\beta x}}$$
 \end{frame}
 \begin{frame}{Các tham số cơ bản của Antenna}
-Nếu xét gốc tọa độ tại $Z_{L} (???)$ và biến đổi tương đương (khá tricky), ta thu được:
+Nếu xét gốc tọa độ tại $Z_{O} (???)$ và biến đổi tương đương (khá tricky), ta thu được:
 $$\Gamma=\frac{V_{I}^-}{V_{I}^+}=\frac{Z_{O}-Z_{I}}{Z_{O}+Z_{I}}$$
 và ta gọi $\Gamma$ là \alert{hệ số phản xạ}.
 \\Ta tiếp tục định nghĩa SWR (Standing wave ratio) và RL (Return loss):
 $$SWR=\frac{1+|\Gamma|}{1-|\Gamma|}$$
 $$RL=-20\log_{10}|\Gamma|$$
-Hiển nhiên, để tối ưu độ hiệu quả truyền sóng EM thì $\Gamma=0$, tương ứng với $SWR=1$ và $RL=+\infty$. Ta suy ra được một kết quả cực kì quan trọng (sẽ được chứng minh bằng một cách khác ở phần sau), đó là:
+Hiển nhiên, để tối ưu độ hiệu quả truyền sóng EM thì $\Gamma=0$, tương ứng với $SWR=1$ và $RL=+\infty$. Ta suy ra được một kết quả cực kì quan trọng đó là:
 $$\Gamma=0\Leftrightarrow Z_{I}=Z_{O}$$
 \end{frame}
 \begin{frame}{Các tham số cơ bản của Antenna}
@@ -241,7 +241,7 @@ Hãy xác định giá trị cực đại của $G_{re}$ biết $Z_{I}=73\Omega$
 \end{itemize}
  Hiệu suất chùm được định nghĩa là tỷ số giữa năng lượng bức xạ tại một góc $\theta$ nào đó với năng lượng bức xạ đẳng hướng:
  $$BE=\frac{\iint_{S'}U(\phi,\theta)d\Omega}{\iint_{S}U(\phi,\theta)d\Omega}$$
- với $S'$ là mặt kín bị giới hạn bởi góc $\theta$ và các dứ kiện đề bài cho khác, $S$ là toàn bộ mặt phẳng Oxyz.
+ với $S'$ là mặt kín bị giới hạn bởi góc $\theta$ và các dữ kiện đề bài cho khác, $S$ là toàn bộ mặt phẳng Oxyz.
 \end{frame}
 \begin{frame}{Hướng nghiên cứu tiếp theo}
 	\section{Hướng nghiên cứu tiếp theo}
