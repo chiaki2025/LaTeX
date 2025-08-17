@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1755358011 "chapter3.tex" "chapter3.pdf" "chapter3" 1755358013 2
+["pdflatex"] 1755392141 "chapter3.tex" "chapter3.pdf" "chapter3" 1755392143 2
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -234,11 +234,11 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1740936618 7878419 8e1ae05cefa763d0815f9d3da81a31af ""
   "FFT-Time-Frequency-View-540.png" 1755090712 99850 e104ef24d5f65ec4254894105db14b0e ""
   "Fourier-1000.jpg" 1755089989 167972 780a203ad5972af91d0eeb9c200ce4de ""
-  "chapter3.aux" 1755358013 13367 6d73a558520574064a2d7344ebcb90be "pdflatex"
-  "chapter3.nav" 1755358013 6986 71964ccfd3235e213f548178c0942ba6 "pdflatex"
-  "chapter3.out" 1755358013 1744 1b6b7ae11617a2761b3c2e580b22ab9a "pdflatex"
-  "chapter3.tex" 1755358011 42511 a293b676614c526a492b3c853d8a95e3 ""
-  "chapter3.toc" 1755358013 1760 4144bcf3273c5dce7eb6e471e487a8df "pdflatex"
+  "chapter3.aux" 1755392143 13367 6d73a558520574064a2d7344ebcb90be "pdflatex"
+  "chapter3.nav" 1755392143 6986 71964ccfd3235e213f548178c0942ba6 "pdflatex"
+  "chapter3.out" 1755392143 1744 1b6b7ae11617a2761b3c2e580b22ab9a "pdflatex"
+  "chapter3.tex" 1755392141 42505 5230ef6ee179a5ab3be59b7fb2ae2ee5 ""
+  "chapter3.toc" 1755392143 1760 4144bcf3273c5dce7eb6e471e487a8df "pdflatex"
   "d.jpg" 1755270382 6539 10f0c35b662980fee047e9d9fc4366fd ""
   "fre.jpg" 1755098966 60048 f03c6a2fc574a5cd2c9e8377da9c289c ""
   "helix.jpg" 1755096175 48953 6e23298828c6cf2ac0d44b5abf540496 ""
