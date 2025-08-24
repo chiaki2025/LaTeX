@@ -1,0 +1,2 @@
+\beamer@sectionintoc {1}{Reference documents}{3}{0}{1}
+\beamer@sectionintoc {2}{Magnetic vector potential}{4}{0}{2}
