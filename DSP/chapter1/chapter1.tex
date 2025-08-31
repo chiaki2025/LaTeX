@@ -76,7 +76,7 @@ Trong môn học tiên quyết \alert{Tín hiệu và hệ thống} trước, ta
 \end{equation*}
 Dễ dàng nhận thấy $\Delta(t)$ có dạng \textbf{chuỗi Fourier liên tục (CTFS)}, ta thử tìm cách biểu diễn tín hiệu này về dạng chuỗi CTFS để phân tích trong miền tần số như sau:
 $$\Delta(t)=\sum_{n=-\infty}^{+\infty}c_{n}e^{jn\Omega_{0}t}$$
-$$c_{n}=\frac{1}{T_{0}}\int_{T_{0}}\Delta(t)e^{-jn\Omega_{0}t}=\frac{1}{T_{0}}\int_{-\frac{T_{0}}{2}}^{+\frac{T_{0}}{2}}\left[\sum_{n=-\infty}^{+\infty}\delta(t-nT_{0})\right]e^{-jn\Omega_{0}t}dt=\frac{1}{T_{0}}$$
+$$c_{n}=\frac{1}{T_{0}}\int_{T_{0}}\Delta(t)e^{-jn\Omega_{0}t}dt=\frac{1}{T_{0}}\int_{-\frac{T_{0}}{2}}^{+\frac{T_{0}}{2}}\left[\sum_{n=-\infty}^{+\infty}\delta(t-nT_{0})\right]e^{-jn\Omega_{0}t}dt=\frac{1}{T_{0}}$$
 Vậy ta thu được chuỗi CTFS của tín hiệu $\Delta(t)$: 
 $$\Delta(t)=\frac{1}{T_{0}}\sum_{n=-\infty}^{+\infty}e^{jn\Omega_{0}t}$$
 Ta xét biến đổi Fourier liên tục (CTFT) và tính chất \textbf{dịch trong miền tần số}:
@@ -121,6 +121,25 @@ Ta phác họa đáp ứng biên độ của tín hiệu liên tục và rời r
 			\caption{Using 4 bits to quantizate DT signal}			\label{fig:re7}
 		\end{figure}
 \end{frame}
+\begin{frame}{Quy trình ADC}
+	Ví dụ: tín hiệu $x(t)=2\cos{(500\pi t)}$ được lấy mẫu với \alert{tốc độ} $f_{sam}=3\text{k (sample/s)}$, sau đó được lượng tử hóa với độ phân giải $8$ bit. 
+	\\ Dễ thấy $f_{N}=2f_{M}=500\text{Hz}$, và $f_{sam}>f_{N}$ nên \textbf{hiện tượng gập phổ không xảy ra}. Tín hiệu rời rạc được xác định qua phương trình:
+	$$x[n]=x(nT_{sam})=x\left(\frac{n}{f_{sam}}\right)=2\cos\left(\frac{\pi n}{6}\right)$$
+Hiển nhiên $-2\leq x[n]\leq +2$, nên áp dụng công thức tìm mức lượng tử $\Delta$ ta thu được:
+$$\Delta=\frac{V_{max}-V_{min}}{2^{n}}=\frac{2-(-2)}{2^{8}}=\frac{1}{64}$$
+Nếu ta lấy mẫu với \alert{tốc độ} $f_{sam}=400$ (sample/s), phổ của tín hiệu rời rạc sẽ bị ảnh hưởng như thế nào? Hiển nhiên ta thấy khi lấy mẫu ở tốc độ thấp \textbf{hiện tượng gập phổ có xảy ra}.
+\begin{figure}[h]
+			\includegraphics[width=0.6\textwidth]{9.jpg}
+			\caption{Aliasing Phenomenon}			\label{fig:re8}
+		\end{figure}
+\end{frame}
+\begin{frame}{Quy trình ADC}
+	Từ công thức: $$0<\pm f_{aliasing}+k f_{sam}<\frac{f_{sam}}{2}$$ 
+	và công thức tìm tín hiệu sau khi lấy mẫu: $$x[n]=x\left(\frac{nf}{f_{sam}}\right)$$
+Ta dễ dàng xác định được tần số của tín hiệu sau khi bị gập phổ, và tín hiệu rời rạc tương ứng thu được là:
+$$x[n]=x\left(\frac{nf}{f_{sam}}\right)=2\cos\left(\frac{3\pi n}{8}\right)$$
+Ta có thể tăng độ phân giải từ $8$ bit lên $16$ hoặc $32$ bit để tín hiệu rời rạc thu được dưới dạng mã nhị phân chính xác hơn. Nói chung, độ phân giải càng cao thì tín hiệu rời rạc càng chính xác. 
+\end{frame}
 \begin{frame}{Quy trình DAC}
 	\section{Quy trình DAC}
 \begin{figure}[h]
@@ -154,7 +173,7 @@ Ta gọi hằng số $f_{N}=\frac{f_{0}}{2}$ là \alert{tần số Nyquist của
 
 \end{frame}
 \begin{frame}{Quy trình DAC}
-Sau khi đã thấy mối quan hệ giữa $x[n]$ và $x_{c}(t)$ trong miền tần số, ta muốn tìm mối quan hệ của chúng tương ứng trong miền thời gian; và so sánh sự sai khác giữa tín hiệu $x_{c}(t)$ với tín hiệu $x(t)$ trong miền thời gian.
+Sau khi đã thấy mối quan hệ giữa $x[n]$ và $x_{c}(t)$ trong miền tần số, ta muốn tìm mối quan hệ của chúng tương ứng trong miền thời gian; và so sánh sự sai khác giữa tín hiệu $x_{c}(t)$ với tín hiệu $x(t)$.
 Ta có:
 $$\mathscr{F}^{-1}[X_{c}(\Omega)]=\mathscr{F}^{-1}[X(\omega)H(\Omega)]\Rightarrow x_{c}(t)=x(nT_{0})*h(t)$$
 Có nhiều cách để tìm đáp ứng tần số của $H(\Omega)$, các bạn có thể tìm gián tiếp bằng tính chất đối ngẫu (duality) của CTFT, nhưng ở đây mình sẽ tìm trực tiếp bằng công thức ICTFT:
@@ -174,5 +193,6 @@ Vậy hiển nhiên ta có:
 \end{split}
 \end{equation*}
 Đây chính là phương trình của tín hiệu liên tục $x_{c}(t)$ có thể khôi phục được từ khối DAC.
+Công thức này còn được gọi là \textbf{công thức nội suy của tín hiệu $x(t)$}.
 \end{frame}
 \end{document}

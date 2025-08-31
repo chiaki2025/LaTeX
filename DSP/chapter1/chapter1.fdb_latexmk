@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1756635508 "chapter1.tex" "chapter1.pdf" "chapter1" 1756635509 0
+["pdflatex"] 1756655369 "chapter1.tex" "chapter1.pdf" "chapter1" 1756655371 0
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -226,18 +226,19 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1740936571 4623309 82ee5d777482be164acd86bb957845af ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1740936618 7878419 8e1ae05cefa763d0815f9d3da81a31af ""
   "1.jpg" 1756630215 49952 f38650d9f4f4977a5926609371bf0056 ""
-  "2.jpg" 1756614173 77928 6491ced53fbadeff791e1fd0ce03e5a5 ""
+  "2.jpg" 1756650712 51912 18578d8a183bf7ed45c7bd1d773fcecc ""
   "3.jpg" 1756615009 39540 e2c7baf169a7bb0f19f220c04b0c02ac ""
   "4.jpg" 1756634776 55358 9340573b057a7b505d8a07b9d7a93a86 ""
-  "5.jpg" 1756627849 49295 2a4b2c337750a2f22cf941c0d832b8e4 ""
+  "5.jpg" 1756650654 51139 17c785971c274e6a6aca8743e32732bf ""
   "6.jpg" 1756628598 50793 611c014d2b05892d42b2b951a54bd6c7 ""
   "7.jpg" 1756630298 51501 5ce455022b349f549cc74938964fd42d ""
   "8.jpg" 1756631789 34319 bd433b37a90189541d9d530de76f1e32 ""
-  "chapter1.aux" 1756635509 5845 15e1dad623e5b712de2f657cd3055721 "pdflatex"
-  "chapter1.nav" 1756635509 2888 2089d13620ac6a63a6649899532a6a38 "pdflatex"
-  "chapter1.out" 1756635509 1104 1809be55f203aae77f29f4fcc7c827cc "pdflatex"
-  "chapter1.tex" 1756635507 11232 4de3a14fc5057592e5fa3ffb200d6f99 ""
-  "chapter1.toc" 1756635509 427 9a052fc16e736d6f998f83721145ac95 "pdflatex"
+  "9.jpg" 1756653471 29942 f58b8b40f5cc264ed9a0aaf4c2960029 ""
+  "chapter1.aux" 1756655371 6190 c2ba34e848bc57646ea599425843ce59 "pdflatex"
+  "chapter1.nav" 1756655371 3072 53f40aa9b56fa7009c47e2961be210d3 "pdflatex"
+  "chapter1.out" 1756655371 1104 1809be55f203aae77f29f4fcc7c827cc "pdflatex"
+  "chapter1.tex" 1756655369 13116 e376fcb3dea1df30690b9da36d2b464e ""
+  "chapter1.toc" 1756655371 427 9598f9a7e28754f8d3d4cf551042c353 "pdflatex"
   (generated)
   "chapter1.aux"
   "chapter1.log"
