@@ -1,0 +1,8 @@
+\beamer@sectionintoc {1}{Giới thiệu playlist}{3}{0}{1}
+\beamer@sectionintoc {2}{Tài liệu tham khảo}{4}{0}{2}
+\beamer@sectionintoc {3}{Quy trình xử lý tín hiệu số}{5}{0}{3}
+\beamer@sectionintoc {4}{Các phần tử hạt nhân cấu thành hệ thống rời rạc}{6}{0}{4}
+\beamer@sectionintoc {5}{Cấu trúc hệ thống}{8}{0}{5}
+\beamer@subsectionintoc {5}{1}{Cấu trúc hệ thống loại I}{8}{0}{5}
+\beamer@subsectionintoc {5}{2}{Cấu trúc hệ thống loại II}{10}{0}{5}
+\beamer@sectionintoc {6}{Phân loại hệ thống}{13}{0}{6}

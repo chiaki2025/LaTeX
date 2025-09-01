@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  1 SEP 2025 08:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  1 SEP 2025 23:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**chapter1.tex
-(./chapter1.tex
+**chapter2.tex
+(./chapter2.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16> (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/09/13 v3.68 A class for typesetting presentations
@@ -780,12 +780,8 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count344
 \l__pdf_internal_box=\box82
-) (./chapter1.aux
-
-LaTeX Warning: Label `fig:re8' multiply defined.
-
-)
-\openout1 = `chapter1.aux'.
+) (./chapter2.aux)
+\openout1 = `chapter2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
@@ -866,9 +862,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring OFF on input line 20.
- (./chapter1.out) (./chapter1.out)
+ (./chapter2.out) (./chapter2.out)
 \@outlinefile=\write5
-\openout5 = `chapter1.out'.
+\openout5 = `chapter2.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 20.
@@ -935,20 +931,20 @@ Dictionary: translator-months-dictionary, Language: English
 Dictionary: translator-numbers-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./chapter1.nav) [1
+) (./chapter2.nav) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./chapter1.toc) [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./chapter2.toc) [2
 
 ] [3
 
 ] [4
 
 ]
-<1.jpg, id=86, 1071.00125pt x 523.9575pt>
+<1.jpg, id=92, 1207.51125pt x 508.90125pt>
 File: 1.jpg Graphic file (type jpg)
 <use 1.jpg>
 Package pdftex.def Info: 1.jpg  used on input line 48.
-(pdftex.def)             Requested size: 338.02072pt x 165.36728pt.
+(pdftex.def)             Requested size: 338.02072pt x 142.45255pt.
 
 Overfull \hbox (30.73085pt too wide) in paragraph at lines 48--48
  [] 
@@ -957,155 +953,128 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 48--48
 [5
 
  <./1.jpg>]
-<2.jpg, id=93, 1247.66125pt x 540.0175pt>
+<2.jpg, id=99, 1289.81876pt x 732.7375pt>
 File: 2.jpg Graphic file (type jpg)
 <use 2.jpg>
-Package pdftex.def Info: 2.jpg  used on input line 58.
-(pdftex.def)             Requested size: 338.02072pt x 146.30107pt.
+Package pdftex.def Info: 2.jpg  used on input line 55.
+(pdftex.def)             Requested size: 338.02072pt x 192.01665pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 58--58
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 55--55
  [] 
  []
 
 [6
 
  <./2.jpg>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+<3.jpg, id=106, 1212.53pt x 800.9925pt>
+File: 3.jpg Graphic file (type jpg)
+<use 3.jpg>
+Package pdftex.def Info: 3.jpg  used on input line 62.
+(pdftex.def)             Requested size: 307.28987pt x 202.9976pt.
+ [7
+
+ <./3.jpg>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 69.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 69.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
-<3.jpg, id=100, 1087.06125pt x 575.14874pt>
-File: 3.jpg Graphic file (type jpg)
-<use 3.jpg>
-Package pdftex.def Info: 3.jpg  used on input line 69.
-(pdftex.def)             Requested size: 245.83282pt x 130.06108pt.
- [7
-
- <./3.jpg>] [8
+) [8
 
 ]
-<4.jpg, id=121, 1161.33875pt x 692.5875pt>
+<4.jpg, id=126, 1235.61626pt x 755.82375pt>
 File: 4.jpg Graphic file (type jpg)
 <use 4.jpg>
-Package pdftex.def Info: 4.jpg  used on input line 96.
-(pdftex.def)             Requested size: 245.83282pt x 146.59958pt.
+Package pdftex.def Info: 4.jpg  used on input line 93.
+(pdftex.def)             Requested size: 338.02072pt x 206.76231pt.
 
-Overfull \vbox (2.17645pt too high) detected at line 96
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 93--93
+ [] 
+ []
+
+
+Overfull \vbox (4.55956pt too high) detected at line 93
  []
 
 [9
 
- <./4.jpg>] [10
+ <./4.jpg>]
+Overfull \hbox (25.38614pt too wide) detected at line 119
+[]
+ []
+
+[10
 
 ]
-<5.jpg, id=136, 1235.61626pt x 498.86375pt>
+<5.jpg, id=139, 1013.7875pt x 787.94376pt>
 File: 5.jpg Graphic file (type jpg)
 <use 5.jpg>
-Package pdftex.def Info: 5.jpg  used on input line 117.
-(pdftex.def)             Requested size: 245.83282pt x 99.24574pt.
+Package pdftex.def Info: 5.jpg  used on input line 126.
+(pdftex.def)             Requested size: 245.83282pt x 191.05809pt.
  [11
 
  <./5.jpg>]
-<6.jpg, id=143, 812.03375pt x 576.1525pt>
+<6.jpg, id=147, 1265.72874pt x 657.45625pt>
 File: 6.jpg Graphic file (type jpg)
 <use 6.jpg>
-Package pdftex.def Info: 6.jpg  used on input line 123.
-(pdftex.def)             Requested size: 245.83282pt x 174.42073pt.
+Package pdftex.def Info: 6.jpg  used on input line 137.
+(pdftex.def)             Requested size: 215.10196pt x 111.72595pt.
  [12
 
- <./6.jpg>]
-<9.jpg, id=151, 957.5775pt x 431.6125pt>
-File: 9.jpg Graphic file (type jpg)
-<use 9.jpg>
-Package pdftex.def Info: 9.jpg  used on input line 135.
-(pdftex.def)             Requested size: 184.3758pt x 83.10048pt.
-
-Overfull \vbox (5.23145pt too high) detected at line 135
- []
-
-[13
-
- <./9.jpg>] [14
+ <./6.jpg>] [13
 
 ]
-<7.jpg, id=167, 1221.56375pt x 530.98375pt>
+Overfull \hbox (1.01976pt too wide) detected at line 159
+\OT1/mathkerncmss/m/sl/8 h\OT1/cmss/m/n/8 [\OT1/mathkerncmss/m/sl/8 n\OT1/cmss/m/n/8 ] = \U/rsfs/m/n/8 Z[]\OT1/cmss/m/n/8 (\OT1/mathkerncmss/m/sl/8 H\OT1/cmss/m/n/8 (\OT1/mathkerncmss/m/sl/8 z\OT1/cmss/m/n/8 )) = \U/rsfs/m/n/8 Z[] [] \OT1/cmss/m/n/8 = (\OT1/mathkerncmss/m/sl/8 A\OML/cmm/m/it/8 ^^U[] \OT1/cmss/m/n/8 + \OT1/mathkerncmss/m/sl/8 B\OML/cmm/m/it/8 ^^U[] \OT1/cmss/m/n/8 + [] )\OT1/mathkerncmss/m/sl/8 u\OT1/cmss/m/n/8 [\OT1/mathkerncmss/m/sl/8 n\OT1/cmss/m/n/8 ]
+ []
+
+[14
+
+]
+<7.jpg, id=169, 809.0225pt x 701.62125pt>
 File: 7.jpg Graphic file (type jpg)
 <use 7.jpg>
-Package pdftex.def Info: 7.jpg  used on input line 150.
-(pdftex.def)             Requested size: 338.02072pt x 146.93246pt.
-
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 150--150
- [] 
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.150 \end{frame}
-                  [15
+Package pdftex.def Info: 7.jpg  used on input line 166.
+(pdftex.def)             Requested size: 215.10196pt x 186.53897pt.
+ [15
 
  <./7.jpg>]
-<8.jpg, id=173, 1061.9675pt x 474.77374pt>
-File: 8.jpg Graphic file (type jpg)
-<use 8.jpg>
-Package pdftex.def Info: 8.jpg  used on input line 159.
-(pdftex.def)             Requested size: 338.02072pt x 151.11932pt.
-
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 159--159
- [] 
- []
-
-[16
-
- <./8.jpg>] [17
-
-] [18
-
-] [19
-
-]
 \tf@nav=\write6
-\openout6 = `chapter1.nav'.
+\openout6 = `chapter2.nav'.
 
 \tf@toc=\write7
-\openout7 = `chapter1.toc'.
+\openout7 = `chapter2.toc'.
 
 \tf@snm=\write8
-\openout8 = `chapter1.snm'.
+\openout8 = `chapter2.snm'.
 
- (./chapter1.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `chapter1.out' has not changed.
-(rerunfilecheck)             Checksum: 1809BE55F203AAE77F29F4FCC7C827CC;1104.
+ (./chapter2.aux)
+Package rerunfilecheck Info: File `chapter2.out' has not changed.
+(rerunfilecheck)             Checksum: 1312BB096C24E0644CDE665158441A01;1579.
  ) 
 Here is how much of TeX's memory you used:
- 25956 strings out of 476091
- 515351 string characters out of 5794082
- 1862330 words of memory out of 5000000
- 45734 multiletter control sequences out of 15000+600000
- 524890 words of font info for 62 fonts, out of 8000000 for 9000
+ 25931 strings out of 476091
+ 515137 string characters out of 5794082
+ 1868330 words of memory out of 5000000
+ 45719 multiletter control sequences out of 15000+600000
+ 526770 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,122p,569b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb>
-Output written on chapter1.pdf (19 pages, 560263 bytes).
+ 128i,19n,122p,400b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb>
+Output written on chapter2.pdf (15 pages, 541078 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
- 198 compressed objects within 2 object streams
- 54 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 232 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
