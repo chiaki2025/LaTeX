@@ -154,7 +154,7 @@ Lấy biến đổi Z ngược hai vế để tìm đáp ứng xung của hệ t
 $$h[n]=\mathscr{Z}^{-1}(H(z))=\mathscr{Z}^{-1}\left(\frac{A}{1-\lambda_{1}z^{-1}}+\frac{B}{1-\lambda_{2}z^{-1}}+\cdots\right)=(A\lambda_{1}^{n}+B\lambda_{2}^{n}+\cdots)u[n]$$
 Từ dạng đáp ứng xung $h[n]$, ta thấy đây là hệ thống \textbf{IIR} (infinite impulse response).
 \\ Ta đã biết dạng tín hiệu đầu ra $y[n]$ như đã thảo luận ở phần trước:
-$$\sum_{k=0}^{M}a_{k}y[n-k]=\sum_{k=0}^{N}b_{k}x[n-k]\Rightarrow y[n]=\sum_{k=0}^{N}b_{k}x[n-k]-\sum_{k=1}^{M}a_{k}y[n-k]$$
+$$\sum_{k=0}^{N}a_{k}y[n-k]=\sum_{k=0}^{M}b_{k}x[n-k]\Rightarrow y[n]=\sum_{k=0}^{M}b_{k}x[n-k]-\sum_{k=1}^{N}a_{k}y[n-k]$$
 Ta thấy tín hiệu đầu ra $y[n]$ không chỉ được cấu thành bởi tổng hữu hạn tuyến tính các dịch trễ  của tín hiệu đầu vào $x[n]$, mà còn cộng với tổng \alert{hồi quy của tín hiệu đầu ra $y[n]$}. Ta biểu diễn hai loại hệ thống \textbf{FIR} và \textbf{IIR} bằng lưu đồ dòng chảy.
 \end{frame}
 \begin{frame}{Phân loại hệ thống}

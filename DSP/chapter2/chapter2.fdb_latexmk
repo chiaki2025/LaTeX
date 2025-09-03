@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1756743408 "chapter2.tex" "chapter2.pdf" "chapter2" 1756743409 0
+["pdflatex"] 1756889505 "chapter2.tex" "chapter2.pdf" "chapter2" 1756889507 0
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -224,18 +224,18 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1740936571 4623309 82ee5d777482be164acd86bb957845af ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1740936618 7878419 8e1ae05cefa763d0815f9d3da81a31af ""
-  "1.jpg" 1756690010 53301 c0327527cacd6fc7ba784882adf01caa ""
+  "1.jpg" 1756889404 48659 252523e7eac3c8aa05ddf857eecc885e ""
   "2.jpg" 1756691280 54087 b5ca144aa11cb7d04834263a19b5c4ca ""
   "3.jpg" 1756692663 70091 9cb4413615802b8e71f35ab491db38ec ""
   "4.jpg" 1756695638 81274 191655d63645bbe3264306827baff53d ""
   "5.jpg" 1756739645 46992 3e8116a1772597900ed4f90d442bb71b ""
   "6.jpg" 1756740147 63801 1f917c50df2580198ea9a27db2bd69dc ""
   "7.jpg" 1756743164 47626 79d9f100bf701672efe84bede24758dd ""
-  "chapter2.aux" 1756743409 6033 1ad1be8594128f09a49ecac9b5486d73 "pdflatex"
-  "chapter2.nav" 1756743409 3025 a96437932537807ddfc4babd777b5e62 "pdflatex"
-  "chapter2.out" 1756743409 1579 1312bb096c24e0644cde665158441a01 "pdflatex"
-  "chapter2.tex" 1756743408 9041 3ad8917737c427d8d08bf4ef00ed4a2e ""
-  "chapter2.toc" 1756743409 566 aa3ae0f42de4e652ee9c05550b547f8f "pdflatex"
+  "chapter2.aux" 1756889507 6033 1ad1be8594128f09a49ecac9b5486d73 "pdflatex"
+  "chapter2.nav" 1756889507 3025 a96437932537807ddfc4babd777b5e62 "pdflatex"
+  "chapter2.out" 1756889507 1579 1312bb096c24e0644cde665158441a01 "pdflatex"
+  "chapter2.tex" 1756889505 9041 e6e20d30f85405369561dbc67e6a7193 ""
+  "chapter2.toc" 1756889507 566 aa3ae0f42de4e652ee9c05550b547f8f "pdflatex"
   (generated)
   "chapter2.aux"
   "chapter2.log"
