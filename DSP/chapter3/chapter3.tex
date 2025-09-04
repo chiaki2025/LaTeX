@@ -6,6 +6,7 @@
 \usepackage{wrapfig}
 \usepackage{hyperref}
 \usepackage{mathrsfs}
+\usepackage{verbatim}
 \usetheme{Copenhagen}
 \usecolortheme{dolphin}
 \setbeamertemplate{navigation symbols}{}
@@ -231,5 +232,41 @@ Hiển nhiên ta thấy rằng từ kết quả trên, số bước tính toán 
 \end{frame}
 \begin{frame}{Biến đổi Fourier nhanh (FFT)}
 Nếu ta thay $W_{N_{0}}^{rk}$ thành liên hợp của nó $W_{N_{0}}^{-rk}=(W_{N_{0}}^{rk})^*$ trong các công thức và lưu đồ tín hiệu, sau đó chia toàn bộ kết quả cho $N_{0}$, ta thu được thuật toán IFFT hoàn toàn tương tự với FFT.
+\end{frame}
+\begin{frame}[fragile]{Thực hành}
+	\section{Thực hành}
+Ta khởi tạo một chuỗi tín hiệu rời rạc 8 điểm bằng mảng trong GNU Octave/Matlab và tính hệ số phổ của nó như sau:
+\begin{center}
+\begin{verbatim}
+x=[1 2 3 4 5 6 7 8];
+N=8; % 8 points
+X=fft(x,N);
+\end{verbatim}
+\end{center}
+Hiển nhiên, vì phần mềm sử dụng thuật toán DIT radix 2, nên N phải là lũy thừa của 2. 
+\\ Nếu ta thay N khác, phần mềm sẽ "zero padding", bù các phần tử 0 vào mảng cho đến khi N đủ lũy thừa 2. 
+\\ Ở chế độ mặc định, ta bỏ tham số N ra khỏi hàm \verb|fft()|, phần mềm sẽ giải thuật cho L điểm (với L là chiều dài mảng). Từ giờ ta cũng sẽ không sử dụng tham số N nữa.
+\begin{verbatim}
+x=[1 2 5 6 8 9]; %L=6
+X=fft(x)
+\end{verbatim}
+Với hàm \verb|ifft()| ta cũng tiến hành hoàn toàn tương tự, nhưng lưu ý \alert{nhân thêm hệ số $\frac{1}{L}$}.
+\\Ta muốn vẽ phổ biên độ và phổ pha của tín hiệu $x[n]$. Quy trình vẽ được tiến hành như sau:
+\end{frame}
+\begin{frame}[fragile]{Thực hành}
+\begin{verbatim}
+x=[1 2 3 4];
+L=length(x);
+X=fft(x);
+Mag_X=abs(X)/L;
+Phase_X=angle(X);
+k=linspace(0,L-1,L);
+figure(1);
+stem(k,Mag_X);
+figure(2);
+stem(k,Phase_X);
+pause;
+\end{verbatim}
+Tất nhiên đây chỉ là hướng dẫn \textbf{cực kì cơ bản} giúp cho các bạn làm quen với hàm \verb|fft()| trong phần mềm mô phỏng. Bằng hàm \verb|fft()| các bạn không chỉ vẽ được phổ của chuỗi DFT; mà còn có thể vẽ phổ tín hiệu liên tục, rời rạc và hơn thế nữa. Các bạn có thể nghiên cứu bài toán vẽ phổ để nghiệm thu lại hiện tượng chồng phổ (aliasing), tốc độ và tần số Nyquist (Nyquist rate and Nyquist frequency) ta đã tìm hiểu ở \alert{Chương 2}.
 \end{frame}
 \end{document}

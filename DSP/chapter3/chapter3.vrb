@@ -1,0 +1,15 @@
+\frametitle{Thực hành}
+\begin{verbatim}
+x=[1 2 3 4];
+L=length(x);
+X=fft(x);
+Mag_X=abs(X)/L;
+Phase_X=angle(X);
+k=linspace(0,L-1,L);
+figure(1);
+stem(k,Mag_X);
+figure(2);
+stem(k,Phase_X);
+pause;
+\end{verbatim}
+Tất nhiên đây chỉ là hướng dẫn \textbf{cực kì cơ bản} giúp cho các bạn làm quen với hàm \verb|fft()| trong phần mềm mô phỏng. Bằng hàm \verb|fft()| các bạn không chỉ vẽ được phổ của chuỗi DFT; mà còn có thể vẽ phổ tín hiệu liên tục, rời rạc và hơn thế nữa. Các bạn có thể nghiên cứu bài toán vẽ phổ để nghiệm thu lại hiện tượng chồng phổ (aliasing), tốc độ và tần số Nyquist (Nyquist rate and Nyquist frequency) ta đã tìm hiểu ở \alert{Chương 2}.
