@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1757062572 "chapter4.tex" "chapter4.pdf" "chapter4" 1757062574 2
+["pdflatex"] 1757075650 "chapter4.tex" "chapter4.pdf" "chapter4" 1757075652 2
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -248,11 +248,11 @@
   "7.jpg" 1756980318 76731 c731187a075030029aae971ac561d0c1 ""
   "8.jpg" 1756990375 79518 6f4912bf979f7fe45f3083c75845013e ""
   "9.jpg" 1756990996 63071 d3feb8bab1d6bc1eefcffe8b97d08a3c ""
-  "chapter4.aux" 1757062574 10777 a1bc31a6f82f4f0505229116e44991af "pdflatex"
-  "chapter4.nav" 1757062574 5441 196eeb0991ae4484d9ce4bac63571f11 "pdflatex"
-  "chapter4.out" 1757062574 1154 5f64e2cfd2201510fd0cf310ae82af1a "pdflatex"
-  "chapter4.tex" 1757062572 28465 ea0fd8f76764f538075fe083bc718a38 ""
-  "chapter4.toc" 1757062574 867 1e1be1b97863e9e3afd3173719882e32 "pdflatex"
+  "chapter4.aux" 1757075651 11164 7bee5b4fda526679a6cde736c69d812a "pdflatex"
+  "chapter4.nav" 1757075651 5720 b102c33ca0f45de74a062bc2c1a7decb "pdflatex"
+  "chapter4.out" 1757075651 1154 5f64e2cfd2201510fd0cf310ae82af1a "pdflatex"
+  "chapter4.tex" 1757075650 31966 45d0d1391b5f63ca925f082bafec494e ""
+  "chapter4.toc" 1757075651 867 1e1be1b97863e9e3afd3173719882e32 "pdflatex"
   "phpe46ibx.png" 1757002634 14015 32cb7c4e45effdb0391760e344c02e2f ""
   "ves_basisf-chebyshev.png" 1757046485 126347 e9234d0cc6b4f5d801cd089a71c56866 ""
   (generated)

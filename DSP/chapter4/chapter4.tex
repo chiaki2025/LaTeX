@@ -353,7 +353,7 @@ $$\alert{\Omega_{C}=\frac{\Omega_{P}}{\left(10^{\frac{A_{P}}{10}}-1\right)^{\fra
 $$
 \end{frame}
 \begin{frame}{Thiết kế bộ lọc tương tự}
-	Thiết kế một bộ lọc LP Butterworth thỏa mãn các đặc tả sau: $$0<\Omega<20\;\text{(rad/s)};\quad 0<A<2\;\text{(dB)}$$
+	Ví dụ: thiết kế một bộ lọc LP Butterworth thỏa mãn các đặc tả sau: $$0<\Omega<20\;\text{(rad/s)};\quad 0<A<2\;\text{(dB)}$$
 $$\Omega>50\;\text{(rad/s)};\quad A>25\;\text{(dB)}$$
 Từ đặc tả trên (và dựa vào phác họa đáp ứng tần số), ta dễ thấy $\Omega_{P}=20$, $\Omega_{S}=50$, $A_{P}=2$, $A_{S}=25$ (đối với các bài tập tính toán, ta có thể tạm thời lược bỏ không ghi thứ nguyên cho đơn giản).
 Áp dụng công thức trên, ta có:
@@ -448,7 +448,56 @@ Từ dạng của đáp ứng tần số $|H^2(j\Omega)|$, ta chọn $\alpha$ th
 Từ công thức đa thức Chebyshev: $$\cos(Nx)=T_{N}(\cos(x))$$
 Ta đặt $\cos(x)=t$, hiển nhiên $|t|\leq 1$, biến đổi tương đương ta có:
 $$\cos(Nx)=T_{N}(\cos(x))\Rightarrow T_{N}(t)=\cos{(N\arccos(t))}\quad (|t|\leq 1)$$
-Với $|t|>1$, ta công nhận không chứng minh: $$T_{N}(t)=\cosh(N\text{ arccosh}{(t)})$$
-\\ Ví dụ: thiết kế bộ lọc LP Chebyshev từ \textbf{4 thông số cơ bản} sau: $r, \Omega_{C}, A_{S},\Omega_{S}$
+Với $|t|>1$, ta công nhận không chứng minh: $$T_{N}(t)=\cosh(N\text{ arccosh}{(t)})\Rightarrow \alert{N=\frac{\text{arccosh}(T_{N}(t))}{\text{arccosh}(t)}}$$
+\\ Ví dụ: thiết kế bộ lọc LP Chebyshev từ \textbf{4 thông số cơ bản} sau: $r, \Omega_{C}, G_{S},\Omega_{S}$
+Do đã có sẵn tần số cắt $\Omega_{C}$, nên ta chỉ cần tìm bậc $N$ của bộ lọc là đủ dữ kiện thiết kế.
+\begin{equation*}
+\begin{split}
+	G_{S}&=20\log_{10}|H(j\Omega_{S})|=10\log_{10}|H^2(j\Omega_{S})|=10\log_{10}\left(\frac{\alpha}{1+\varepsilon^2T^2_{N}\left(\frac{\Omega_{S}}{\Omega_{C}}\right)}\right)\\
+	     &\approx -10\log_{10}\left(1+\varepsilon^2T^2_{N}\left(\frac{\Omega_{S}}{\Omega_{C}}\right)\right)\Rightarrow T_{N}\left(\frac{\Omega_{S}}{\Omega_{C}}\right)=\sqrt{\frac{10^{\frac{-G_{s}}{10}}-1}{\varepsilon^2}}
+\end{split}
+\end{equation*}
+$$\Rightarrow \alert{N=\text{arccosh}\left(\sqrt{\frac{10^{\frac{-G_{s}}{10}}-1}{\varepsilon^2}}
+\right)\bigg/\text{arccosh}\left(\frac{\Omega_{S}}{\Omega_{C}}\right)}$$
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Thay $A_{S}=-G_{S}$, ta thu được công thức:$$\alert{N=\text{arccosh}\left(\sqrt{\frac{10^{\frac{A_{s}}{10}}-1}{\varepsilon^2}}
+\right)\bigg/\text{arccosh}\left(\frac{\Omega_{S}}{\Omega_{C}}\right)}$$
+Ví dụ: thiết kế bộ lọc Chebyshev có thông số sau
+	$$0<\Omega<10\text{ (rad/s)}; \quad 0<A<2.5\text{ (dB)}$$
+	$$\Omega>20\text{ (rad/s)}; \quad A>23\text{ (dB)}$$
+Ta xác định được 4 thông số cơ bản với giá trị tương ứng sau: 
+$$\Omega_{C}=10\;, r=2.5\;, \Omega_{S}=20\;,A_{S}=23$$
+Ta tìm hệ số $\varepsilon^2$: $$\varepsilon^2=10^{\frac{r}{10}}-1=0.778$$
+Từ công thức trên, ta tìm được bậc $N$ của bộ lọc:
+$$N=\text{arccosh}\left(\sqrt{\frac{10^{\frac{A_{s}}{10}}-1}{\varepsilon^2}}
+\right)\bigg/\text{arccosh}\left(\frac{\Omega_{S}}{\Omega_{C}}\right)=2.629\Rightarrow \lceil N\rceil =3$$
+Do đây là bộ lọc bậc lẻ nên ta chọn $\alpha=1$ để thỏa mãn yêu cầu độ khuếch đại DC.
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Sau khi đã xác định được đáp ứng tần số $|H(j\Omega)|$ của bộ lọc Chebyshev LP, ta hoàn toàn có thể áp dụng lại thuật toán thiết kế với bộ lọc Butterworth LP ở trên.
+\\ Ta bắt đầu thiết kế từ hàm truyền bộ lọc có \alert{tần số cắt chuẩn hóa}:
+$$|H_{N}^2(j\lambda)|=\frac{1}{1+\varepsilon^2 T^2_{3}(\lambda)}=\frac{1}{1+0.778(4\lambda^3-3\lambda)^2}$$
+Thay $p=j\lambda$, ta thu được:
+$$|H^2_{N}(j\lambda)|=\frac{1}{1+12.448\lambda^6-18.672\lambda^4+7\lambda^2}=H_{N}(p)H_{N}(-p)$$$$=\frac{1}{-12.448p^6-18.672p^4-7p^2+1}$$
+Bằng phương pháp giải căn bậc 2 mũ phức tương tự như phần bộ lọc Butterworth, ta tìm ra các nghiệm cực thỏa mãn $\Re{(p)}<0$ sau:
+\begin{equation*}
+\begin{cases}
+	p_{1}=-0.33\\
+	p_{2}=-0.926\angle 1.3919\\
+	p_{3}=-0.926\angle -1.3919\\
+\end{cases}
+\end{equation*}
+Áp dụng định lý Viete đảo, ta tìm được phương trình nghiệm cực của bộ lọc chuẩn hóa là:
+$$(p+0.33)(p^2+0.3295p+0.8574)$$
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tư}
+Vậy ta thu được hàm truyền của bộ lọc chuẩn hóa:
+$$H_{N}(p)=\frac{\alert{0.33 . 0.8574}}{(p+0.33)(p^2+0.395p+0.8574)}=\frac{0.2829}{(p+0.33)(p^2+0.3295p+0.8574)}$$
+Tách mẫu thức, ta thu được:
+$$H_{N}(p)=\frac{0.2829}{p^3+0.6595p^2+0.9661p+0.2829}$$
+Ta đổi biến: $$p=\frac{s}{\Omega_{C}}=\frac{s}{10}$$
+Và thu được hàm truyền của bộ lọc cần tìm:
+$$H(s)=\frac{282.9}{s^3+6.595s^2+96.91s+282.9}$$
 \end{frame}
 \end{document}
