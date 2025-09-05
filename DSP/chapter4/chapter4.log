@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  4 SEP 2025 22:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  5 SEP 2025 11:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -781,11 +781,56 @@ Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks50
 \verbatim@line=\toks51
 \verbatim@in@stream=\read3
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count344
+\float@exts=\toks52
+\float@box=\box82
+\@float@everytoks=\toks53
+\@floatcapt=\box83
+)
+\@float@every@algorithm=\toks54
+\c@algorithm=\count345
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+ (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count346
+\c@ALG@rem=\count347
+\c@ALG@nested=\count348
+\ALG@tlm=\skip65
+\ALG@thistlm=\skip66
+\c@ALG@Lnr=\count349
+\c@ALG@blocknr=\count350
+\c@ALG@storecount=\count351
+\c@ALG@tmpcounter=\count352
+\ALG@tmplength=\skip67
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeCopenhagen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesplit.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemedolphin.sty) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count344
-\l__pdf_internal_box=\box82
+\l__color_backend_stack_int=\count353
+\l__pdf_internal_box=\box84
 ) (./chapter4.aux
+
+LaTeX Warning: Label `fig:re2' multiply defined.
+
+
+LaTeX Warning: Label `fig:re2' multiply defined.
+
+
+LaTeX Warning: Label `fig:re2' multiply defined.
+
+
+LaTeX Warning: Label `fig:re2' multiply defined.
+
+
+LaTeX Warning: Label `fig:re2' multiply defined.
+
 
 LaTeX Warning: Label `fig:re2' multiply defined.
 
@@ -819,30 +864,30 @@ LaTeX Warning: Label `fig:re2' multiply defined.
 )
 \openout1 = `chapter4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 21.
-LaTeX Font Info:    Trying to load font information for T5+cmr on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 23.
+LaTeX Font Info:    Trying to load font information for T5+cmr on input line 23.
  (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -880,81 +925,81 @@ LaTeX Font Info:    ... okay on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count345
+\scratchcounter=\count354
 \scratchdimen=\dimen309
-\scratchbox=\box83
-\nofMPsegments=\count346
-\nofMParguments=\count347
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count348
+\scratchbox=\box85
+\nofMPsegments=\count355
+\nofMParguments=\count356
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count357
 \MPscratchDim=\dimen310
-\MPnumerator=\count349
-\makeMPintoPDFobject=\count350
-\everyMPtoPDFconversion=\toks53
+\MPnumerator=\count358
+\makeMPintoPDFobject=\count359
+\everyMPtoPDFconversion=\toks56
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 23.
  (./chapter4.out) (./chapter4.out)
 \@outlinefile=\write5
 \openout5 = `chapter4.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 21.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 23.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 21.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 23.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T5/cmr/m/n on input line 21.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 21.
+(Font)                  OT1/cmss/m/n --> T5/cmr/m/n on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T5/cmss/b/n on input line 21.
+(Font)                  OT1/cmr/bx/n --> T5/cmss/b/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T5/cmss/b/n on input line 21.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 21.
+(Font)                  OT1/cmr/bx/n --> T5/cmss/b/n on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T5/cmss/m/n on input line 21.
+(Font)                  OT1/cmss/m/n --> T5/cmss/m/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T5/cmss/m/n on input line 21.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 21.
+(Font)                  OT1/cmss/bx/n --> T5/cmss/m/n on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T5/cmss/m/it on input line 21.
+(Font)                  OT1/cmr/m/it --> T5/cmss/m/it on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T5/cmss/m/it on input line 21.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 21.
+(Font)                  OT1/cmr/bx/it --> T5/cmss/m/it on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 21.
+(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 21.
+(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 23.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T5/cmss/m/n --> T5/cmss/b/n on input line 21.
+(Font)                  T5/cmss/m/n --> T5/cmss/b/n on input line 23.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T5/cmss/m/it --> T5/cmss/b/it on input line 21.
+(Font)                  T5/cmss/m/it --> T5/cmss/b/it on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T5/cmr/b/n on input line 21.
+(Font)                  OT1/cmss/b/n --> T5/cmr/b/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T5/cmss/b/n --> T5/cmss/b/n on input line 21.
+(Font)                  T5/cmss/b/n --> T5/cmss/b/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T5/cmss/m/n --> T5/cmss/b/n on input line 21.
+(Font)                  T5/cmss/m/n --> T5/cmss/b/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T5/cmss/m/it --> T5/cmss/b/it on input line 21.
+(Font)                  T5/cmss/m/it --> T5/cmss/b/it on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T5/cmtt/m/n --> T5/cmtt/b/n on input line 21.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 21.
+(Font)                  T5/cmtt/m/n --> T5/cmtt/b/n on input line 23.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 23.
 LaTeX Font Info:    Encoding `T5' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 21.
+(Font)              `pureletters' in the math version `normal' on input line 23.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T5/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 21.
+(Font)                  T5/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 23.
 LaTeX Font Info:    Encoding `T5' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 21.
+(Font)              `pureletters' in the math version `bold' on input line 23.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T5/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 21.
+(Font)                  T5/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 23.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 21.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 23.
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -976,52 +1021,52 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [4
 
 ]
-<1.jpg, id=88, 1109.14375pt x 521.95pt>
+<1.jpg, id=90, 1109.14375pt x 521.95pt>
 File: 1.jpg Graphic file (type jpg)
 <use 1.jpg>
-Package pdftex.def Info: 1.jpg  used on input line 49.
+Package pdftex.def Info: 1.jpg  used on input line 51.
 (pdftex.def)             Requested size: 338.02072pt x 159.0631pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 49--49
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 51--51
  [] 
  []
 
 [5
 
  <./1.jpg>]
-<2.jpg, id=95, 1620.0525pt x 779.91376pt>
+<2.jpg, id=97, 1620.0525pt x 779.91376pt>
 File: 2.jpg Graphic file (type jpg)
 <use 2.jpg>
-Package pdftex.def Info: 2.jpg  used on input line 66.
+Package pdftex.def Info: 2.jpg  used on input line 68.
 (pdftex.def)             Requested size: 307.28987pt x 147.92334pt.
  [6
 
  <./2.jpg>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 76.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 78.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 76.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 78.
  (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [7
 
 ]
-<3.jpg, id=116, 1817.79124pt x 872.25874pt>
+<3.jpg, id=118, 1817.79124pt x 872.25874pt>
 File: 3.jpg Graphic file (type jpg)
 <use 3.jpg>
-Package pdftex.def Info: 3.jpg  used on input line 83.
+Package pdftex.def Info: 3.jpg  used on input line 85.
 (pdftex.def)             Requested size: 338.02072pt x 162.19054pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 83--83
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 85--85
  [] 
  []
 
@@ -1029,18 +1074,18 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 83--83
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 \end{frame}
+l.85 \end{frame}
                  [8
 
  <./3.jpg>]
 
-./chapter4.tex:94: LaTeX Error: There's no line here to end.
+./chapter4.tex:96: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.94 \end{frame}
+l.96 \end{frame}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1049,13 +1094,13 @@ or  <return>  to continue without it.
 [9
 
 ]
-<4.jpg, id=129, 1274.7625pt x 459.7175pt>
+<4.jpg, id=131, 1274.7625pt x 459.7175pt>
 File: 4.jpg Graphic file (type jpg)
 <use 4.jpg>
-Package pdftex.def Info: 4.jpg  used on input line 101.
+Package pdftex.def Info: 4.jpg  used on input line 103.
 (pdftex.def)             Requested size: 338.02072pt x 121.8947pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 101--101
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 103--103
  [] 
  []
 
@@ -1063,17 +1108,17 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 101--101
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.101 \end{frame}
+l.103 \end{frame}
                   [10
 
  <./4.jpg>]
-<5.jpg, id=136, 1442.38875pt x 613.29124pt>
+<5.jpg, id=138, 1442.38875pt x 613.29124pt>
 File: 5.jpg Graphic file (type jpg)
 <use 5.jpg>
-Package pdftex.def Info: 5.jpg  used on input line 108.
+Package pdftex.def Info: 5.jpg  used on input line 110.
 (pdftex.def)             Requested size: 338.02072pt x 143.72105pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 108--108
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 110--110
  [] 
  []
 
@@ -1081,17 +1126,17 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 108--108
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \end{frame}
+l.110 \end{frame}
                   [11
 
  <./5.jpg>]
-<6.jpg, id=143, 1222.5675pt x 598.235pt>
+<6.jpg, id=145, 1222.5675pt x 598.235pt>
 File: 6.jpg Graphic file (type jpg)
 <use 6.jpg>
-Package pdftex.def Info: 6.jpg  used on input line 120.
+Package pdftex.def Info: 6.jpg  used on input line 122.
 (pdftex.def)             Requested size: 338.02072pt x 165.39601pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 120--120
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 122--122
  [] 
  []
 
@@ -1099,14 +1144,14 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 120--120
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.120 \end{frame}
+l.122 \end{frame}
                   [12
 
  <./6.jpg>]
-./chapter4.tex:129: Undefined control sequence.
+./chapter4.tex:131: Undefined control sequence.
 \beamer@doifinframe ...tau )^2}\Rightarrow \angel 
                                                   \angle H(j\Omega )=\arctan...
-l.129 \end{frame}
+l.131 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1117,13 +1162,13 @@ and I'll forget about whatever was undefined.
 [13
 
 ]
-<7.jpg, id=159, 1713.40125pt x 840.13875pt>
+<7.jpg, id=161, 1713.40125pt x 840.13875pt>
 File: 7.jpg Graphic file (type jpg)
 <use 7.jpg>
-Package pdftex.def Info: 7.jpg  used on input line 136.
+Package pdftex.def Info: 7.jpg  used on input line 138.
 (pdftex.def)             Requested size: 338.02072pt x 165.7429pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 136--136
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 138--138
  [] 
  []
 
@@ -1131,19 +1176,19 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 136--136
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.136 \end{frame}
+l.138 \end{frame}
                   [14
 
  <./7.jpg>] [15
 
 ]
-<8.jpg, id=172, 1805.74625pt x 780.9175pt>
+<8.jpg, id=174, 1805.74625pt x 780.9175pt>
 File: 8.jpg Graphic file (type jpg)
 <use 8.jpg>
-Package pdftex.def Info: 8.jpg  used on input line 151.
+Package pdftex.def Info: 8.jpg  used on input line 153.
 (pdftex.def)             Requested size: 338.02072pt x 146.17143pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 151--151
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 153--153
  [] 
  []
 
@@ -1151,17 +1196,17 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 151--151
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.151 \end{frame}
+l.153 \end{frame}
                   [16
 
  <./8.jpg>]
-<9.jpg, id=179, 1562.83875pt x 752.8125pt>
+<9.jpg, id=181, 1562.83875pt x 752.8125pt>
 File: 9.jpg Graphic file (type jpg)
 <use 9.jpg>
-Package pdftex.def Info: 9.jpg  used on input line 158.
+Package pdftex.def Info: 9.jpg  used on input line 160.
 (pdftex.def)             Requested size: 338.02072pt x 162.81644pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 158--158
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 160--160
  [] 
  []
 
@@ -1169,17 +1214,17 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 158--158
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 \end{frame}
+l.160 \end{frame}
                   [17
 
  <./9.jpg>]
-<10.jpg, id=186, 1502.61375pt x 837.1275pt>
+<10.jpg, id=188, 1502.61375pt x 837.1275pt>
 File: 10.jpg Graphic file (type jpg)
 <use 10.jpg>
-Package pdftex.def Info: 10.jpg  used on input line 169.
+Package pdftex.def Info: 10.jpg  used on input line 171.
 (pdftex.def)             Requested size: 338.02072pt x 188.30724pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 169--169
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 171--171
  [] 
  []
 
@@ -1187,22 +1232,22 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 169--169
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.169 \end{frame}
+l.171 \end{frame}
                   [18
 
  <./10.jpg>]
-<11.jpg, id=193, 1265.72874pt x 829.0975pt>
+<11.jpg, id=195, 1265.72874pt x 829.0975pt>
 File: 11.jpg Graphic file (type jpg)
 <use 11.jpg>
-Package pdftex.def Info: 11.jpg  used on input line 180.
+Package pdftex.def Info: 11.jpg  used on input line 182.
 (pdftex.def)             Requested size: 307.28987pt x 201.2773pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.180 \end{frame}
+l.182 \end{frame}
                  
-Overfull \vbox (2.07405pt too high) detected at line 180
+Overfull \vbox (2.07405pt too high) detected at line 182
  []
 
 [19
@@ -1210,23 +1255,132 @@ Overfull \vbox (2.07405pt too high) detected at line 180
  <./11.jpg>] [20
 
 ]
-<12.jpg, id=207, 1192.455pt x 623.32875pt>
+<12.jpg, id=209, 1192.455pt x 623.32875pt>
 File: 12.jpg Graphic file (type jpg)
 <use 12.jpg>
-Package pdftex.def Info: 12.jpg  used on input line 205.
+Package pdftex.def Info: 12.jpg  used on input line 207.
 (pdftex.def)             Requested size: 307.28987pt x 160.62546pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.205 \end{frame}
+l.207 \end{frame}
                   [21
 
  <./12.jpg>] [22
 
 ] [23
 
+] [24
+
+] [25
+
 ]
+<phpe46ibx.png, id=244, 582.175pt x 260.975pt>
+File: phpe46ibx.png Graphic file (type png)
+<use phpe46ibx.png>
+Package pdftex.def Info: phpe46ibx.png  used on input line 292.
+(pdftex.def)             Requested size: 215.10196pt x 96.42384pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.292 \end{frame}
+                  [26
+
+ <./phpe46ibx.png>]
+<13.jpg, id=253, 1123.19624pt x 473.77pt>
+File: 13.jpg Graphic file (type jpg)
+<use 13.jpg>
+Package pdftex.def Info: 13.jpg  used on input line 301.
+(pdftex.def)             Requested size: 276.559pt x 116.64938pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.301 \end{frame}
+                  [27
+
+ <./13.jpg>] [28
+
+] [29
+
+]
+<14.jpg, id=272, 773.89125pt x 442.65375pt>
+File: 14.jpg Graphic file (type jpg)
+<use 14.jpg>
+Package pdftex.def Info: 14.jpg  used on input line 334.
+(pdftex.def)             Requested size: 276.559pt x 158.18672pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.334 \end{frame}
+                  [30
+
+ <./14.jpg>] [31
+
+] [32
+
+] [33
+
+]
+<15.jpg, id=301, 1246.6575pt x 478.78876pt>
+File: 15.jpg Graphic file (type jpg)
+<use 15.jpg>
+Package pdftex.def Info: 15.jpg  used on input line 388.
+(pdftex.def)             Requested size: 338.02072pt x 129.8153pt.
+
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 388--388
+ [] 
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.388 \end{frame}
+                  [34
+
+ <./15.jpg>]
+./chapter4.tex:403: Undefined control sequence.
+<argument> ...+\varepsilon ^2 T_{N}^2\left (\righ 
+                                                  \frac {\Omega }{\Omega _{C...
+l.403 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./chapter4.tex:403: Undefined control sequence.
+<argument> 1+\varepsilon ^2 T_{N}^2\left (\righ 
+                                                \frac {\Omega }{\Omega _{C}}...
+l.403 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[35
+
+]
+<ves_basisf-chebyshev.png, id=314, 1003.75pt x 602.25pt>
+File: ves_basisf-chebyshev.png Graphic file (type png)
+<use ves_basisf-chebyshev.png>
+Package pdftex.def Info: ves_basisf-chebyshev.png  used on input line 410.
+(pdftex.def)             Requested size: 307.28987pt x 184.3706pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.410 \end{frame}
+                  [36
+
+ <./ves_basisf-chebyshev.png>]
 \tf@nav=\write6
 \openout6 = `chapter4.nav'.
 
@@ -1244,18 +1398,18 @@ Package rerunfilecheck Info: File `chapter4.out' has not changed.
 (rerunfilecheck)             Checksum: 5F64E2CFD2201510FD0CF310AE82AF1A;1154.
  ) 
 Here is how much of TeX's memory you used:
- 26055 strings out of 476091
- 517526 string characters out of 5794082
- 1863330 words of memory out of 5000000
- 45822 multiletter control sequences out of 15000+600000
- 524890 words of font info for 62 fonts, out of 8000000 for 9000
+ 26802 strings out of 476091
+ 529827 string characters out of 5794082
+ 1869330 words of memory out of 5000000
+ 46521 multiletter control sequences out of 15000+600000
+ 526770 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,509b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb>
-Output written on chapter4.pdf (23 pages, 865863 bytes).
+ 128i,22n,122p,509b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb>
+Output written on chapter4.pdf (36 pages, 1138884 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 218 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 301 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 

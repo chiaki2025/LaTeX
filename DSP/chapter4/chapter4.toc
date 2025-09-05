@@ -9,3 +9,4 @@
 \beamer@subsubsectionintoc {4}{1}{4}{Bộ lọc chặn dải (BS)}{19}{0}{4}
 \beamer@subsectionintoc {4}{2}{Thiết kế bộ lọc LP}{20}{0}{4}
 \beamer@subsubsectionintoc {4}{2}{1}{Bộ lọc Butterworth}{20}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{2}{Bộ lọc Chebyshev}{34}{0}{4}

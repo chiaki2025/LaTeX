@@ -7,6 +7,8 @@
 \usepackage{hyperref}
 \usepackage{mathrsfs}
 \usepackage{verbatim}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 \usetheme{Copenhagen}
 \usecolortheme{dolphin}
 \setbeamertemplate{navigation symbols}{}
@@ -225,6 +227,185 @@ $$|H(j\Omega)|=\frac{1}{\sqrt{1+\Omega^4}}\Rightarrow |H^2(j\Omega)|=\frac{1}{1+
 Thay $s=j\Omega$, ta cũng có:
 
 $$|H^2(j\Omega)|=\frac{1}{1+\Omega^4}\Rightarrow H(s)H(-s)=\frac{1}{1+\left(\frac{s}{j}\right)^4}=\frac{1}{s^4+1}$$
+Từ phương trình nghiệm cực $s^4+1=0$, ta cần phải giải ra $2$ nghiệm phức thỏa mãn $\Re{(s)}<0$:
+$$s^4+1=0\Rightarrow(s^2-j)(s^2+j)=0$$
+\begin{equation*}
+\begin{cases}
+	s^2=j=\alert{e^{j\frac{\pi}{2}}}\\
+	s^2=-j=\alert{e^{-j\frac{\pi}{2}}}\\
+\end{cases}
+\Rightarrow
+\begin{cases}
+	s=e^{j\frac{\pi}{4}}\\
+	s=-e^{j\frac{\pi}{4}}\\
+
+	s=e^{-j\frac{\pi}{4}}\\
+	s=-e^{-j\frac{\pi}{4}}\\
+\end{cases}
+\end{equation*}
+Chọn cặp nghiệm $s=-e^{\pm j\frac{\pi}{4}}=-0.707\pm 0.707$, dùng định lý Viete đảo, ta tìm được: $$H(s)=\frac{1}{s+\sqrt{2}s+1}$$
 	\end{enumerate}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+
+	\begin{enumerate}
+		\item[3] Thiết kế bộ lọc Butterworth LP bậc 3 có tần số cắt $\alert{\Omega_{C}=1\;\text{(rad/s)}}$.  Thực hiện với quy trình tương tự, ta cũng có:
+
+$$|H(j\Omega)|=\frac{1}{\sqrt{1+\Omega^6}}\Rightarrow |H^2(j\Omega)|=\frac{1}{1+\Omega^6}$$
+Thay $s=j\Omega$, ta cũng có:
+
+$$|H^2(j\Omega)|=\frac{1}{1+\Omega^6}\Rightarrow H(s)H(-s)=\frac{1}{1+\left(\frac{s}{j}\right)^6}=\frac{1}{-s^6+1}$$
+Từ phương trình nghiệm cực $-s^6+1=0$, ta cần phải giải ra $3$ nghiệm phức thỏa mãn $\Re{(s)}<0$:
+$$-s^6+1=0\Rightarrow(s^2-1)(s^4+s^2+1)=0$$
+
+\begin{equation*}
+\begin{cases}
+s=\pm 1\\
+s^2=e^{\pm j\frac{2\pi}{3}}\\
+\end{cases}
+\Rightarrow
+\begin{cases}
+	s=\pm 1\\
+	s=\pm e^{j\frac{\pi}{3}}\\
+	s=\pm e^{-j\frac{\pi}{3}}\\
+\end{cases}
+\end{equation*}
+Ta chọn 3 nghiệm $s=-1$, $s=-e^{\pm j\frac{\pi}{3}}$, dùng định lý Viete đảo, ta tìm được:
+$$H(s)=\frac{1}{(s+1)(s^2+s+1)}$$
+\end{enumerate}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Tổng quát, bài toán thiết kế bộ lọc LP Butterworth bậc $n$ có $\Omega_{C}=1\;$(rad/s) tương đương với tìm đa thức có nghiệm \textbf{là nghiệm phần thực âm} của phương trình điểm cực:
+$$\left(\frac{s}{j}\right)^{2n}=-1=e^{j\pi(2k-1)}\Rightarrow s^{2n}=e^{j\pi(2k-1)}e^{j\pi n}=e^{j\pi(n+2k-1)}$$
+Vậy ta tìm được các nghiệm: $$s_{k}=e^{\frac{j\pi(n+2k-1)}{2n}}\;(k=1,2,\cdots,2n)$$
+Chọn các nghiệm thỏa mãn $\Re{(s_{k})}<0$, ta thu được đa thức cực tương ứng của bộ lọc: $$\prod_{\Re{(s_{k})}<0}(s-s_{k})$$
+Ta gọi đa thức cực trên là \textbf{đa thức Butterworth} có bậc $N$, được kí hiệu là $B_{N}(s)$.
+\\ Các nhà toán học đã tìm được bảng \textbf{đa thức Butterworth} như sau:
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+\begin{figure}[h]
+			\includegraphics[width=0.7\textwidth]{phpe46ibx.png}
+		\caption{Butterworth polynomials table}			\label{fig:re2}
+		\end{figure}
+Đương nhiên, bằng cách tính tay như đã trình bày ở 3 ví dụ trước, ta đều có thể tự nghiệm thu lại các đa thức Butterworth trong bảng trên. Thế nhưng, để cho tiện ta sẽ dùng thẳng bảng đa thức này luôn (đi thi bảng cũng được in vào đề).
+\\ Ta thu được một kết quả quan trọng:  \\\textbf{\alert{Bộ lọc Butterworth LP bậc $N$ có tần số cắt chuẩn hóa (normalized frequency) $\Omega_{C}=1$ (rad/s) có hàm truyền:}} $$\alert{H(s)=\frac{1}{B_{N}(s)}}$$
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Ta mở rộng kết quả trên để tìm hàm truyền của bộ lọc Butterworth LP có \alert{tần số cắt $\Omega_{C}$ không chuẩn hóa}, dễ thấy từ đồ thị đáp ứng biên độ của hai bộ lọc:
+\begin{figure}[h]
+	\includegraphics[width=0.9\textwidth]{13.jpg}
+	\caption{Design Butterworth LP filter}			\label{fig:re2}
+		\end{figure}
+		Ta dễ dàng nhận thấy rằng ta phải \textbf{định nghĩa thêm các kí hiệu mới tương ứng với các loại bộ lọc} để tránh nhầm lẫn và rối. Hay nói cách khác, các kí hiệu phải được \alert{hệ thống} một cách thuận tiện và chính xác.
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Đối với bộ lọc Butterworth LP có \alert{tần số cắt chuẩn hóa $\Omega_{C}=1$ (rad/s)}, ta kí hiệu:
+\begin{enumerate}
+	\item[1] Kí hiệu tần số góc: $\lambda$
+	\item[2] Kí hiệu biến Laplace: $p$
+	\item[3] Kí hiệu hàm truyền: $H_{N}(p)$
+\end{enumerate}
+
+Đối với bộ lọc Butterworth LP có \alert{tần số cắt không chuẩn hóa} (hay gọi là tần số cắt thường), ta kí hiệu:
+\begin{enumerate}
+	\item[1] Kí hiệu tần số góc: $\Omega$
+	\item[2] Kí hiệu biến Laplace: $s$
+	\item[3] Kí hiệu hàm truyền: $H(s)$
+\end{enumerate}
+Hệ thống kí hiệu này sẽ theo ta cho đến hết môn học, nên ta cần phải nắm rất chắc và không được nhầm lẫn ý nghĩa của chúng với nhau. Mình sẽ liên tục nhắc lại hệ thống kí hiệu này ở từng mục nhỏ.
+\\Sử dụng hệ thống kí hiệu trên, ta thu được: 
+$$\lambda=\frac{\Omega}{\Omega_{C}}\Rightarrow p=\frac{s}{\Omega_{C}}\Rightarrow H(s)=H_{N}\left(\frac{s}{\Omega_{C}}\right)$$
+$$H_{N}(p)=\frac{1}{B_{N}(p)}$$
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+	Ví dụ: thiết kế bộ lọc Butterworth LP bậc 1 có tần số cắt $\Omega_{C}=4$ (rad/s).	\\ Từ bảng đa thức Butterworth, ta có: $$H_{N}(p)=\frac{1}{p+1}$$ Thay: $$p=\frac{s}{\Omega_{C}}$$ Ta thu được: $$H(s)=\frac{1}{\frac{s}{4}+1}=\frac{4}{s+4}$$
+Hai thông số quan trọng nhất trong thiết kế là \textbf{bậc $N$} và \textbf{tần số cắt $\Omega_{C}$} của bộ lọc.
+\\ Ta tuần tự "tổng quát hóa" bài toán thiết kế bộ lọc Butterworth LP như sau:
+\\ \textbf{Biết bậc $N$ và $\Omega_{C}=1$ (rad/s)} $\rightarrow$ \textbf{Biết bậc $N$ và $\Omega_{C}$} $\rightarrow$ \textbf{Biết 4 thông số cơ bản của bộ lọc}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Ví dụ: thiết kế bộ lọc Butterworth LP biết \textbf{4 thông số cơ bản} sau: $\Omega_{P}$, $G_{P}$, $\Omega_{S}$, $G_{S}$. Ta lần lượt biểu diễn các thông số này trên đồ thị đáp ứng tần số:
+\begin{figure}[h]
+	\includegraphics[width=0.9\textwidth]{14.jpg}
+	\caption{General Butterworth LP filter frequency response}			\label{fig:re2}
+		\end{figure}
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+ Hiển nhiên ta có:
+ \begin{equation*}
+\begin{split}
+	&G=20\log_{10}|H(j\Omega)|=10\log_{10}|H^2(j\Omega)|=-10\log_{10}\left(1+\left(\frac{\Omega}{\Omega_{C}}\right)^{2n}\right)\\
+	&\Rightarrow \left(\frac{\Omega}{\Omega_{C}}\right)^{2n}=10^{\frac{-G}{10}}-1\Rightarrow \alert{\left(\frac{\Omega_{P}}{\Omega_{S}}\right)^{2n}=\frac{10^{\frac{-G_{P}}{10}}-1}{10^{\frac{-G_{S}}{10}}-1}}\\
+	&\Rightarrow \alert{n=\log_{10}\left(\frac{10^{\frac{-G_{P}}{10}}-1}{10^{\frac{-G_{S}}{10}}-1}\right)\bigg/2\log_{10}\left(\frac{\Omega_{P}}{\Omega_{S}}\right)}\\
+	&\textbf{Lưu ý chọn  $(n=\lceil n\rceil)$}\\
+	&\left(\frac{\Omega}{\Omega_{C}}\right)^{2n}=10^{\frac{-G}{10}}-1\Rightarrow \left(\frac{\Omega_{P}}{\Omega_{C}}\right)^{2n}=10^{\frac{-G_{P}}{10}}-1 \Rightarrow \alert{\Omega_{C}=\frac{\Omega_{P}}{\left(10^{\frac{-G_{P}}{10}}-1\right)^{\frac{1}{2n}}}}
+\end{split}
+\end{equation*}
+Nếu đề bài cho $A$, ta chỉ việc đổi dấu $A=-G$:
+\begin{equation*}
+\begin{split}
+	\alert{n=\log_{10}\left(\frac{10^{\frac{A_{P}}{10}}-1}{10^{\frac{A_{S}}{10}}-1}\right)\bigg/2\log_{10}\left(\frac{\Omega_{P}}{\Omega_{S}}\right)}\\
+\end{split}
+\end{equation*}
+$$\alert{\Omega_{C}=\frac{\Omega_{P}}{\left(10^{\frac{A_{P}}{10}}-1\right)^{\frac{1}{2n}}}}
+$$
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+	Thiết kế một bộ lọc LP Butterworth thỏa mãn các đặc tả sau: $$0<\Omega<20\;\text{(rad/s)};\quad 0<A<2\;\text{(dB)}$$
+$$\Omega>50\;\text{(rad/s)};\quad A>25\;\text{(dB)}$$
+Từ đặc tả trên (và dựa vào phác họa đáp ứng tần số), ta dễ thấy $\Omega_{P}=20$, $\Omega_{S}=50$, $A_{P}=2$, $A_{S}=25$ (đối với các bài tập tính toán, ta có thể tạm thời lược bỏ không ghi thứ nguyên cho đơn giản).
+Áp dụng công thức trên, ta có:
+$$n=\log_{10}\left(\frac{10^{\frac{A_{P}}{10}}-1}{10^{\frac{A_{S}}{10}}-1}\right)\bigg/2\log_{10}\left(\frac{\Omega_{P}}{\Omega_{S}}\right)=3.43\Rightarrow \lceil n \rceil =4$$
+
+$$\Omega_{C}=\frac{\Omega_{P}}{\left(10^{\frac{A_{P}}{10}}-1\right)^{\frac{1}{2n}}}=21.386$$
+Từ bảng đa thức Butterworth, ta có: $$H_{N}(p)=\frac{1}{B_{4}(p)}$$
+Thay: $$p=\frac{s}{\Omega_{C}}\Rightarrow H(s)=H_{N}\left(\frac{s}{\Omega_{C}}\right)$$
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+	Vậy ta thu được: $$H(s)=\frac{1}{B_{4}\left(\frac{s}{21.386}\right)}$$
+	\begin{block}{Thuật toán thiết kế bộ lọc Butterworth LP}
+	\begin{enumerate}
+		\item[1] Xác định bậc $n$ và tần số cắt $\Omega_{C}$ của bộ lọc LP.
+		\item[2] Tìm hàm truyền $H_{N}(p)$ bậc $n$ của bộ lọc thông thấp chuẩn hóa bằng bảng đa thức Butterworth.
+		\item[3] Từ phép đổi biến Laplace: $$p=\frac{s}{\Omega_{c}}$$ Ta thu được hàm truyền $H(s)$ của bộ lọc LP.
+	\end{enumerate}
+\end{block}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+\subsubsection{Bộ lọc Chebyshev}
+\begin{itemize}
+	\item[-] Bộ lọc Chebyshev
+\end{itemize}
+Khác với bộ lọc Butterworth, bộ lọc Chebyshev \alert{là bộ lọc phức tạp} với quy trình lắp ráp khó, không thể được tạo ra chỉ từ tổ hợp các linh kiện điện tử đơn giản. Do giới hạn chương trình học phần, ta chỉ tìm hiểu bộ lọc Chebyshev loại I (hay gọi tắt là bộ lọc Chebyshev). Ta phác họa đáp ứng tần số của bộ lọc này như sau:
+\begin{figure}[h]
+	\includegraphics[width=1.1\textwidth]{15.jpg}
+	\caption{Frequency response of Chebyshev LP filter}			\label{fig:re2}
+		\end{figure}
+
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+	 \alert{Chính vì thế nên độ suy hao tại tần số cắt của bộ lọc Chebyshev hoàn toàn phụ thuộc vào độ gợn sóng dải thông, chứ \textbf{không cố định tại điểm 3dB}}.
+\\Các nhà toán học xấp xỉ đáp ứng tần số $|H(j\Omega)|$ của bộ lọc Chebyshev như sau:
+$$|H(j\Omega)|=\frac{\sqrt{\alert{\alpha}}}{\sqrt{1+\varepsilon^2 T_{N}^2\left(\righ\frac{\Omega}{\Omega_{C}}\right)}}\Rightarrow |H^2(j\Omega)|=\frac{\alert{\alpha}}{1+\varepsilon^2 T_{N}^2\left(\righ\frac{\Omega}{\Omega_{C}}\right)}$$
+
+	Khác với bộ lọc Butterworth, \alert{tần số cắt $\Omega_{C}$} của bộ lọc Chebyshev được định nghĩa là \textbf{tần số biên của dải thông}, mà tại vị trí này ripples bắt đầu không còn nữa, và tín hiệu dần bị suy hao do tiến vào dải chuyển tiếp. 
+	\\$T_{N}(x)$ là đa thức Chebyshev bậc $N$ được định nghĩa như sau: $$\cos(Nx)=T_{N}(\cos(x))$$
+	Ví dụ:
+\begin{enumerate}
+	\item[1] $$\cos(x)=\cos(x)\Rightarrow T_{1}(x)=x$$
+	\item[2] $$\cos(2x)=2\cos^2(x)-1\Rightarrow T_{2}(x)=2x^2-1$$
+	\item[3] $$\cos(3x)=4\cos^3(x)-3\cos(x)\Rightarrow T_{3}(x)=4x^3-3x$$
+	\item[4] $$\cos(4x)=8\cos^4(x)-8\cos^2(x)+1\Rightarrow T_{4}(x)=8x^4-8x^2+1$$
+\end{enumerate}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+\begin{figure}[h]
+	\includegraphics[width=1\textwidth]{ves_basisf-chebyshev.png}
+	\caption{Chebyshev Polinomials}			\label{fig:re2}
+		\end{figure}
+
 \end{frame}
 \end{document}
