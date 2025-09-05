@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  5 SEP 2025 11:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  5 SEP 2025 15:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -861,6 +861,9 @@ LaTeX Warning: Label `fig:re2' multiply defined.
 
 LaTeX Warning: Label `fig:re2' multiply defined.
 
+
+LaTeX Warning: Label `fig:re2' multiply defined.
+
 )
 \openout1 = `chapter4.aux'.
 
@@ -1380,7 +1383,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has 
 l.410 \end{frame}
                   [36
 
- <./ves_basisf-chebyshev.png>]
+ <./ves_basisf-chebyshev.png>] [37
+
+] [38
+
+]
+<16.jpg, id=334, 1419.3025pt x 689.57625pt>
+File: 16.jpg Graphic file (type jpg)
+<use 16.jpg>
+Package pdftex.def Info: 16.jpg  used on input line 446.
+(pdftex.def)             Requested size: 307.28987pt x 149.29768pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.446 \end{frame}
+                  [39
+
+ <./16.jpg>] [40
+
+]
 \tf@nav=\write6
 \openout6 = `chapter4.nav'.
 
@@ -1398,18 +1420,18 @@ Package rerunfilecheck Info: File `chapter4.out' has not changed.
 (rerunfilecheck)             Checksum: 5F64E2CFD2201510FD0CF310AE82AF1A;1154.
  ) 
 Here is how much of TeX's memory you used:
- 26802 strings out of 476091
- 529827 string characters out of 5794082
+ 26825 strings out of 476091
+ 530048 string characters out of 5794082
  1869330 words of memory out of 5000000
- 46521 multiletter control sequences out of 15000+600000
+ 46535 multiletter control sequences out of 15000+600000
  526770 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,22n,122p,509b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb>
-Output written on chapter4.pdf (36 pages, 1138884 bytes).
+Output written on chapter4.pdf (40 pages, 1191169 bytes).
 PDF statistics:
- 397 PDF objects out of 1000 (max. 8388607)
- 301 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 426 PDF objects out of 1000 (max. 8388607)
+ 325 compressed objects within 4 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 199 words of extra memory for PDF output out of 10000 (max. 10000000)
 

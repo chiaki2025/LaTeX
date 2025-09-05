@@ -387,11 +387,11 @@ Khác với bộ lọc Butterworth, bộ lọc Chebyshev \alert{là bộ lọc p
 
 \end{frame}
 \begin{frame}{Thiết kế bộ lọc tương tự}
-	 \alert{Chính vì thế nên độ suy hao tại tần số cắt của bộ lọc Chebyshev hoàn toàn phụ thuộc vào độ gợn sóng dải thông, chứ \textbf{không cố định tại điểm 3dB}}.
-\\Các nhà toán học xấp xỉ đáp ứng tần số $|H(j\Omega)|$ của bộ lọc Chebyshev như sau:
+Các nhà toán học đã xấp xỉ đáp ứng tần số $|H(j\Omega)|$ của bộ lọc Chebyshev như sau:
 $$|H(j\Omega)|=\frac{\sqrt{\alert{\alpha}}}{\sqrt{1+\varepsilon^2 T_{N}^2\left(\righ\frac{\Omega}{\Omega_{C}}\right)}}\Rightarrow |H^2(j\Omega)|=\frac{\alert{\alpha}}{1+\varepsilon^2 T_{N}^2\left(\righ\frac{\Omega}{\Omega_{C}}\right)}$$
 
 	Khác với bộ lọc Butterworth, \alert{tần số cắt $\Omega_{C}$} của bộ lọc Chebyshev được định nghĩa là \textbf{tần số biên của dải thông}, mà tại vị trí này ripples bắt đầu không còn nữa, và tín hiệu dần bị suy hao do tiến vào dải chuyển tiếp. 
+	  \\ \alert{Chính vì thế nên độ suy hao tại tần số cắt của bộ lọc Chebyshev hoàn toàn phụ thuộc vào gợn sóng dải thông, chứ \textbf{không cố định tại điểm 3dB}}.
 	\\$T_{N}(x)$ là đa thức Chebyshev bậc $N$ được định nghĩa như sau: $$\cos(Nx)=T_{N}(\cos(x))$$
 	Ví dụ:
 \begin{enumerate}
@@ -407,5 +407,48 @@ $$|H(j\Omega)|=\frac{\sqrt{\alert{\alpha}}}{\sqrt{1+\varepsilon^2 T_{N}^2\left(\
 	\caption{Chebyshev Polinomials}			\label{fig:re2}
 		\end{figure}
 
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+	Đa thức Chebyshev $T_{N}(x)$ \textbf{gợn sóng rất mạnh} với $x\in[0,1]$, và tắt gợn sóng với $x>1$. Đây cũng chính là ý nghĩa toán học của khái niệm \textbf{tần số cắt} $\Omega_{C}$. Ta có thể dễ dàng thấy rằng với $0<\Omega<\Omega_{C}$, đáp ứng tần số gợn sóng trên dải thông và $\Omega>\Omega_{C}$ thì suy hao trên dải chuyển tiếp. 
+	\\ Ta quan sát dải thông của bộ lọc và đồ thị đa thức Chebyshev trong khoảng $[0,1]$, dễ thấy:
+$$0\leq T_{N}^2\left(\frac{\Omega}{\Omega_{C}}\right)\leq1$$
+Vậy ta thu được khoảng biến thiên của đáp ứng tần số trong dải thông:
+$$\frac{\alpha}{1+\varepsilon^2}\leq |H^2(j\Omega)|\leq\alpha$$
+Ta tính được độ suy hao \textbf{cực đại} (attenuation) do hiện tượng gợn sóng (ripples) gây ra trong dải thông theo thang dB:
+$$\textbf{max }A_{r}=10\log_{10}\frac{\alpha}{\frac{\alpha}{1+\varepsilon^2}}=10\log_{10}(1+\varepsilon^2)$$
+Ta định nghĩa khái niệm độ gợn sóng $r$ (thang dB) như sau:
+$$r=\textbf{max } A_{r}=10\log_{10}(1+\varepsilon^2)\Rightarrow \varepsilon^2=10^{\frac{r}{10}}-1$$
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Ta muốn thiết kế bộ lọc có độ khuếch đại DC, tức là $$|H(0)|=1$$
+Từ các đa thức Chebyshev, ta thấy:
+\begin{equation*}
+\begin{cases}
+T_{N}(0)=0\quad(\text{N odd})\\
+T_{N}(0)=1\quad(\text{N even})\\
+\end{cases}
+\end{equation*}
+Từ dạng của đáp ứng tần số $|H^2(j\Omega)|$, ta chọn $\alpha$ theo quy tắc để thỏa mãn điều kiện khuếch đại DC:
+
+\begin{equation*}
+\begin{cases}
+\alpha=1\quad(\text{N odd})\\
+\alpha=\varepsilon^2+1\quad(\text{N even})\\
+\end{cases}
+\end{equation*}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+\begin{figure}[h]
+	\includegraphics[width=1\textwidth]{16.jpg}
+	\caption{Chebyshev LP filter N odd order}			\label{fig:re2}
+		\end{figure}
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Từ công thức đa thức Chebyshev: $$\cos(Nx)=T_{N}(\cos(x))$$
+Ta đặt $\cos(x)=t$, hiển nhiên $|t|\leq 1$, biến đổi tương đương ta có:
+$$\cos(Nx)=T_{N}(\cos(x))\Rightarrow T_{N}(t)=\cos{(N\arccos(t))}\quad (|t|\leq 1)$$
+Với $|t|>1$, ta công nhận không chứng minh: $$T_{N}(t)=\cosh(N\text{ arccosh}{(t)})$$
+\\ Ví dụ: thiết kế bộ lọc LP Chebyshev từ \textbf{4 thông số cơ bản} sau: $r, \Omega_{C}, A_{S},\Omega_{S}$
 \end{frame}
 \end{document}

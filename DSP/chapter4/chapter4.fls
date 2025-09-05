@@ -1597,6 +1597,11 @@ INPUT ./ves_basisf-chebyshev.png
 INPUT ves_basisf-chebyshev.png
 INPUT ./ves_basisf-chebyshev.png
 INPUT ./ves_basisf-chebyshev.png
+INPUT ./16.jpg
+INPUT ./16.jpg
+INPUT 16.jpg
+INPUT ./16.jpg
+INPUT ./16.jpg
 OUTPUT chapter4.nav
 OUTPUT chapter4.toc
 OUTPUT chapter4.snm
