@@ -215,7 +215,7 @@ $$|H(j\Omega)|=\frac{1}{\sqrt{1+\Omega^2}}\Rightarrow |H^2(j\Omega)|=\frac{1}{1+
 Do bộ lọc là hệ thống ổn định, nên ta luôn có $\alert{s=j\Omega}$. Từ công thức tích liên hợp phức cơ bản, ta có kết quả rất quan trọng: $$\alert{|H^2(j\Omega)|=H(j\Omega)H(j\Omega)^*=H(j\Omega)H(-j\Omega)=H(s)H(-s)}$$
 Thay toàn bộ $s$ vào phương trình đáp ứng tần số, ta thu được:
 $$|H^2(j\Omega)|=\frac{1}{1+\Omega^2}\Rightarrow H(s)H(-s)=\frac{1}{1+\left(\frac{s}{j}\right)^2}=\frac{1}{-s^2+1}$$
-Giải phương trình điểm cực của $H(s)H(-s)$, ta thu được $2$ điểm cực $s=\pm 1$, thế nhưng ta muốn tìm \alert{hàm truyền $H(s)$} có nghiệm cực sao cho đảm bảo \textbf{hệ thống ổn định}, tương đương với $\Re{(s)}<0$. Vậy ta chọn nghiệm cực $s=1$ và thu được hàm truyền: $$H(s)=\frac{1}{s+1}$$
+Giải phương trình điểm cực của $H(s)H(-s)$, ta thu được $2$ điểm cực $s=\pm 1$, thế nhưng ta muốn tìm \alert{hàm truyền $H(s)$} có nghiệm cực sao cho đảm bảo \textbf{hệ thống ổn định}, tương đương với $\Re{(s)}<0$. Vậy ta chọn nghiệm cực $s=-1$ và thu được hàm truyền: $$H(s)=\frac{1}{s+1}$$
 	\end{enumerate}
 
 \end{frame}
@@ -491,7 +491,7 @@ Bằng phương pháp giải căn bậc 2 mũ phức tương tự như phần b�
 Áp dụng định lý Viete đảo, ta tìm được phương trình nghiệm cực của bộ lọc chuẩn hóa là:
 $$(p+0.33)(p^2+0.3295p+0.8574)$$
 \end{frame}
-\begin{frame}{Thiết kế bộ lọc tương tư}
+\begin{frame}{Thiết kế bộ lọc tương tự}
 Vậy ta thu được hàm truyền của bộ lọc chuẩn hóa:
 $$H_{N}(p)=\frac{\alert{0.33 . 0.8574}}{(p+0.33)(p^2+0.395p+0.8574)}=\frac{0.2829}{(p+0.33)(p^2+0.3295p+0.8574)}$$
 Tách mẫu thức, ta thu được:
@@ -499,5 +499,156 @@ $$H_{N}(p)=\frac{0.2829}{p^3+0.6595p^2+0.9661p+0.2829}$$
 Ta đổi biến: $$p=\frac{s}{\Omega_{C}}=\frac{s}{10}$$
 Và thu được hàm truyền của bộ lọc cần tìm:
 $$H(s)=\frac{282.9}{s^3+6.595s^2+96.91s+282.9}$$
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+\begin{block}{Thuật toán thiết kế bộ lọc Chebyshev LP}
+\begin{enumerate}
+	\item[1] Xác định hằng số $\varepsilon^2$ và bậc $N$ của bộ lọc cần thiết kế
+	\item[2] Xác định hằng số $\alpha$, và tìm đáp ứng tần số của bộ lọc có \textbf{tần số cắt chuẩn hóa}
+		$$|H_{N}^2(j\lambda)|=\frac{\alpha}{1+\varepsilon^2 T^2_{N}(\lambda)}$$
+	\item[3] Thay $p=j\lambda$, tìm đa thức cực và xác định hàm truyền của bộ lọc có \textbf{tần số cắt chuẩn hóa}:
+		$$H_{N}(p)=\frac{\prod_{k=0}^{M}(-p_{k})}{\prod_{k=0}^{M}(s-p_{k})}\quad(\Re{(p_{k})}<0)$$
+	\item[4] Đổi biến: $$p=\frac{s}{\Omega_{C}}\Rightarrow H(s)=H_{N}\left(\frac{s}{\Omega_{C}}\right)$$ Ta thu được hàm truyền $H(s)$ của bộ lọc cần tìm.
+\end{enumerate}
+\end{block}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+\subsection{Thiết kế bộ lọc BP}
+\begin{itemize}
+	\item Thiết kế bộ lọc BP
+\end{itemize}
+\subsubsection{Ý tưởng thiết kế bộ lọc BP}
+\begin{itemize}
+	\item[-] Ý tưởng thiết kế bộ lọc BP 
+\end{itemize}
+\begin{figure}[h]
+	\includegraphics[width=1\textwidth]{17.jpg}
+	\caption{Idea of BP filter design}			\label{fig:re2}
+		\end{figure}
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Đối với bộ lọc LP \alert{có tần số cắt thường}, ta quy ước:
+\begin{enumerate}
+	\item[1] Kí hiệu tần số góc: $\lambda$
+	\item[2] Kí hiệu biến Laplace: $p$
+	\item[3] Kí hiệu hàm truyền: $H_{LP}(p)$
+\end{enumerate}
+Đối với bộ lọc BP, ta quy ước:
+
+\begin{enumerate}
+	\item[1] Kí hiệu tần số góc: $\Omega$
+	\item[2] Kí hiệu biến Laplace: $s$
+	\item[3] Kí hiệu hàm truyền: $H_{BP}(s)$
+\end{enumerate}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+\begin{figure}[h]
+	\includegraphics[width=1\textwidth]{18.jpg}
+	\caption{Mapping frequency in designing BP filter}			\label{fig:re2}
+		\end{figure}
+
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+\subsubsection{Thuật toán thiết kế bộ lọc BP}
+\begin{itemize}
+	\item[-] Thuật toán thiết kế bộ lọc BP
+\end{itemize}
+\begin{block}{Thuật toán thiết kế bộ lọc BP}
+\begin{enumerate}
+	\item[1] Xác định \textbf{tần số trung bình hình học} $\Omega_{2}$ của bộ lọc BP: $$\Omega_{2}=\sqrt{\Omega_{1}\Omega_{3}}$$
+	Với $\Omega_{1},\Omega_{3}$ là \textbf{tần số cắt} ở hai phía của dải thông (do bộ lọc BP đối xứng tại vị trí $\Omega_{2}$).
+\item[2] Ánh xạ toàn bộ tần số bộ lọc BP sang bộ lọc LP bằng công thức: $$\lambda=\frac{\Omega^2-\Omega_{2}^2}{\Omega}$$
+\item[3] Thiết kế bộ lọc LP có hàm truyền $H_{LP}(p)$ tương ứng từ dữ liệu thu được ở bước trên.
+\item[4] Đổi biến: $$p=\frac{s^2+\Omega_{2}^2}{s}$$ 
+	Ta thu được hàm truyền $H_{BP}(s)$ của bộ lọc cần tìm
+\end{enumerate}
+\end{block}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Ví dụ: thiết kế bộ lọc BP thỏa mãn đặc tả sau:
+$$\Omega<10\;\text{(rad/s)};\quad A>20\text{ (dB)}$$
+$$20<\Omega<40\;\text{(rad/s)};\quad 0<A<2\text{ (dB)}$$
+$$\Omega>50\;\text{(rad/s)};\quad A>20\text{ (dB)}$$
+\textbf{Lưu ý: khi $A_{P}=3$ ta có thể chọn cả 2 loại bộ lọc Chebyshev và Butterworth để thiết kế, nhưng nếu $A_{P}\neq3$ ta chỉ có thể chọn bộ lọc Chebyshev.}
+\\Trong đặc tả trên, ta thấy $A_{P}\neq3$, nên ta chọn bộ lọc Chebyshev có: $$r=\textbf{max }A_{P}=2\text{ (dB)}$$
+Ta phác họa đáp ứng biên độ của bộ lọc BP trên đồ thị:
+\begin{figure}[h]
+	\includegraphics[width=0.8\textwidth]{19.jpg}
+	\caption{Mapping frequency algorithm}			\label{fig:re2}
+		\end{figure}
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Với $\Omega_{2}=\sqrt{\Omega_{1}\Omega_{3}}=28.28$ (rad/s),
+ta lần lượt ánh xạ các tần số: $$\lambda=\frac{\Omega^2-\Omega_{2}^2}{\Omega}\Rightarrow \lambda_{P}=\frac{\Omega_{3}^2-\Omega_{2}^2}{\Omega_{3}}=20;\;\lambda_{S}=\frac{\Omega_{S}^2-\Omega_{2}^2}{\Omega_{S}}=34$$
+ Ta thiết kế bộ lọc Chebyshev LP hàm truyền $H_{LP}(p)$ có đặc tả:
+$$\lambda<20\;\text{(rad/s)};\quad A<2\text{ (dB)}$$
+$$\lambda>34\;\text{(rad/s)};\quad A>20\text{ (dB)}$$
+Bằng phương pháp thiết kế đã được trình bày rất kĩ ở trên, ta tìm được bậc bộ lọc $N=3$, và thu được hàm truyền:
+$$H_{LP}(p)=\frac{0.201}{s^3+0.133s^2+3s+0.201}$$
+Đổi biến $$p=\frac{s^2+800}{s}$$
+Ta thu được hàm truyền $H_{BP}(s)$ của bộ lọc thông dải cần tìm.
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+\subsection{Thiết kế bộ lọc BS}
+\begin{itemize}
+	\item Thiết kế bộ lọc BS
+\end{itemize}
+\subsubsection{Ý tưởng thiết kế bộ lọc BS}
+\begin{itemize}
+	\item[-] Ý tưởng thiết kế bộ lọc BS
+\end{itemize}
+\begin{figure}[h]
+	\includegraphics[width=1\textwidth]{20.jpg}
+	\caption{Idea of BS filter design}			\label{fig:re2}
+		\end{figure}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+\begin{figure}[h]
+	\includegraphics[width=1\textwidth]{21.jpg}
+	\caption{Mapping frequency in designing BS filter}			\label{fig:re2}
+		\end{figure}
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+\subsubsection{Thuật toán thiết kế bộ lọc BS}
+\begin{itemize}
+	\item[-] Thuật toán thiết kế bộ lọc BS
+\end{itemize}
+\begin{block}{Thuật toán thiết kế bộ lọc BS}
+\begin{enumerate}
+	\item[1] Xác định \textbf{tần số trung bình hình học} $\Omega_{2}$ của bộ lọc BS: $$\Omega_{2}=\sqrt{\Omega_{1}\Omega_{3}}$$
+	Với $\Omega_{1},\Omega_{3}$ là \textbf{tần số cắt} ở hai phía của dải triệt (do bộ lọc Bs đối xứng tại vị trí $\Omega_{2}$).
+\item[2] Ánh xạ toàn bộ tần số bộ lọc BS sang bộ lọc LP bằng công thức: $$\alert{\lambda=\frac{\Omega_{2}^2\Omega}{\Omega_{2}^2-\Omega^2}}$$
+\item[3] Thiết kế bộ lọc LP có hàm truyền $H_{LP}(p)$ tương ứng từ dữ liệu thu được ở bước trên.
+\item[4] Đổi biến: $$\alert{p=\frac{\Omega_{2}^2s}{s^2+\Omega_{2}^2}}$$ 
+	Ta thu được hàm truyền $H_{BS}(s)$ của bộ lọc cần tìm
+\end{enumerate}
+\end{block}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+ Ví dụ: thiết kế bộ lọc thỏa mãn đặc tả:
+$$\Omega<10\;\text{(rad/s)};\quad A<3\text{ (dB)}$$
+$$20<\Omega<40\;\text{(rad/s)};\quad A>20\text{ (dB)}$$
+$$\Omega>50\;\text{(rad/s)};\quad A<3\text{ (dB)}$$
+Do $A_{P}=3$, nên ta có thể chọn cả 2 loại bộ lọc Butterworth và Chebyshev để thiết kế, ở đây ta chọn bộ lọc Butterworth.
+\\ Ta phác họa đáp ứng tần số của bộ lọc:
+\begin{figure}[h]
+	\includegraphics[width=1\textwidth]{22.jpg}
+	\caption{Mapping frequency algorithm}			\label{fig:re2}
+		\end{figure}
+
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Hiển nhiên, ta thấy lúc này: $$\Omega_{2}=\sqrt{\Omega_{1}\Omega_{3}}=\sqrt{10.50}=22.36$$ Ta ánh xạ các tần số theo công thức:
+$$\lambda=\frac{\Omega_{2}^2\Omega}{\Omega_{2}^2-\Omega^2}\Rightarrow \lambda_{P}=\frac{\Omega_{2}^2\Omega_{1}}{\Omega_{2}^2-\Omega_{1}^2}=12.5;\;\lambda_{S}=\frac{\Omega_{2}^2\Omega_{S}}{\Omega_{2}^2-\Omega_{S}^2}=100.02$$
+Tiếp theo, ta thiết kế bộ lọc LP Butterworth  với các thông số $\lambda_{P}=12.5,\;\lambda_{S}=100.02\; ,A_{P}=3\; ,A_{S}=20$. \\Với thuật toán thiết kế đã được trình bày rất kĩ ở trên, ta thu được hàm truyền:
+$$H_{LP}(p)=\frac{156.621}{s^2+17.6986s+156.621}$$
+Đổi biến: 
+$$p=\frac{\Omega_{2}^2s}{s^2+\Omega_{2}^2}=\frac{500s}{s^2+500}$$
+Ta thu được hàm truyền $H_{BS}(s)$ của bộ lọc chặn dải cần tìm.
 \end{frame}
 \end{document}

@@ -10,3 +10,9 @@
 \beamer@subsectionintoc {4}{2}{Thiết kế bộ lọc LP}{20}{0}{4}
 \beamer@subsubsectionintoc {4}{2}{1}{Bộ lọc Butterworth}{20}{0}{4}
 \beamer@subsubsectionintoc {4}{2}{2}{Bộ lọc Chebyshev}{34}{0}{4}
+\beamer@subsectionintoc {4}{3}{Thiết kế bộ lọc BP}{45}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{1}{Ý tưởng thiết kế bộ lọc BP}{45}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{2}{Thuật toán thiết kế bộ lọc BP}{48}{0}{4}
+\beamer@subsectionintoc {4}{4}{Thiết kế bộ lọc BS}{51}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{1}{Ý tưởng thiết kế bộ lọc BS}{51}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{2}{Thuật toán thiết kế bộ lọc BS}{53}{0}{4}
