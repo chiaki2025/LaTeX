@@ -1,7 +1,7 @@
 \frametitle{Thiết kế bộ lọc tương tự}
-\subsubsection{Thực hành}
+\subsection{Thực hành}
 \begin{itemize}
-	\item[-] Thực hành
+	\item Thực hành
 \end{itemize}
 Ta sẽ sử dụng phần mềm GNU Octave để thiết kế bộ lọc LP tương tự (Matlab hỗ trợ thiết kế cả 4 loại bộ lọc):
 \begin{verbatim}
