@@ -651,4 +651,78 @@ $$H_{LP}(p)=\frac{156.621}{s^2+17.6986s+156.621}$$
 $$p=\frac{\Omega_{2}^2s}{s^2+\Omega_{2}^2}=\frac{500s}{s^2+500}$$
 Ta thu được hàm truyền $H_{BS}(s)$ của bộ lọc chặn dải cần tìm.
 \end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+\subsection{Thiết kế bộ lọc HP}
+\begin{itemize}
+	\item Thiết kế bộ lọc HP
+\end{itemize}
+\subsubsection{Ý tưởng thiết kế bộ lọc HP}
+\begin{itemize}
+	\item[-] Ý tưởng thiết kế bộ lọc HP
+\end{itemize}
+\begin{figure}[h]
+	\includegraphics[width=1\textwidth]{23.jpg}
+	\caption{Idea of HP filter design}			\label{fig:re2}
+		\end{figure}
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+\begin{figure}[h]
+	\includegraphics[width=1\textwidth]{24.jpg}
+	\caption{Mapping frequency in designing HP filter}			\label{fig:re2}
+		\end{figure}
+
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+	\begin{itemize}
+		\item[-] Thuật toán thiết kế bộ lọc HP
+	\end{itemize}
+\begin{block}{Thuật toán thiết kế bộ lọc HP}
+	\begin{enumerate}
+		\item[1] Với bộ lọc HP, ta luôn có: $$\alert{\lambda_{C}=\Omega_{C}}$$ Ánh xạ toàn bộ tần số bộ lọc HP sang LP bằng công thức:
+			$$\lambda=-\frac{\lambda_{C}\Omega_{C}}{\Omega}$$
+		\item[2] Thiết kế bộ lọc thông thấp có hàm truyền $H_{LP}(p)$. 
+		\item[3] Đổi biến: $$p=\frac{\lambda_{C}\Omega_{C}}{s}$$ Ta thu được hàm truyền $H_{HP}(s)$ của bộ lọc cần tìm.
+	\end{enumerate}
+\end{block}
+\subsubsection{Thuật toán thiết kế bộ lọc HP}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Ví dụ: thiết kế bộ lọc tương tự với đặc tả sau:
+	$$0<\Omega<10\text{ (rad/s)}; \quad A>23\text{ (dB)}$$
+	$$\Omega>20\text{ (rad/s)}; \quad 0<A<3\text{ (dB)}$$
+Ta chọn thiết kế bằng bộ lọc Chebyshev và phác họa đáp ứng biên độ của bộ lọc HP trên đồ thị:
+\begin{figure}[h]
+	\includegraphics[width=1\textwidth]{25.jpg}
+	\caption{Mapping frequency in designing HP filter}			\label{fig:re2}
+		\end{figure}
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc tương tự}
+Từ thông số đề bài $\Omega_{S}=10,\;\Omega_{P}=20$, ta dùng công thức chuyển đổi tần số để ánh xạ sang bộ lọc LP tương ứng:
+$$\lambda_{C}=\Omega_{\alert{P}}=\Omega_{\alert{C}}=20$$
+$$\lambda_{S}=-\frac{\lambda_{C}\Omega_{C}}{\alert{-\Omega_{S}}}=40$$
+Vậy ta thiết kế bộ lọc LP Chebyshev với đặc tả: $\lambda_{C}=20,\;\lambda_{S}=40,\;r=3,\;A_{S}=23$
+\\ Sử dụng phương pháp thiết kế đã được trình bày rất kĩ ở trên, ta thu được:
+$$H_{LP}(p)=\frac{2004.754}{s^3+11.944s^2+371.339s+2004.754}$$
+Đổi biến: $$p=\frac{400}{s}$$
+Ta thu được hàm truyền của bộ lọc $H_{HP}(p)$ cần tìm.
+\end{frame}
+\begin{frame}[fragile]{Thiết kế bộ lọc tương tự}
+\subsubsection{Thực hành}
+\begin{itemize}
+	\item[-] Thực hành
+\end{itemize}
+Ta sẽ sử dụng phần mềm GNU Octave để thiết kế bộ lọc LP tương tự (Matlab hỗ trợ thiết kế cả 4 loại bộ lọc):
+\begin{verbatim}
+	[n On]=buttord(Op,Os,Ap,As,'s'); % Butterworth LP filter
+	[b a]=butter(n, On,'s');
+	[n On]=cheb1ord(Op,Os,Ap,As,'s'); % Chebyshev LP filter
+	[b a]=cheby1(n,Ap,On,'s'); 
+	w=linspace(starting_point,ending_point,number_of_points);
+	freqs(b,a,w) % Plot magnitude and phase spectrum of analog filter
+\end{verbatim}
+Các bạn có thể áp dụng đoạn code này để kiếm tra lại đáp án các bài tập thiết kế bộ lọc.
+\end{frame}
 \end{document}

@@ -1,0 +1,15 @@
+\frametitle{Thiết kế bộ lọc tương tự}
+\subsubsection{Thực hành}
+\begin{itemize}
+	\item[-] Thực hành
+\end{itemize}
+Ta sẽ sử dụng phần mềm GNU Octave để thiết kế bộ lọc LP tương tự (Matlab hỗ trợ thiết kế cả 4 loại bộ lọc):
+\begin{verbatim}
+	[n On]=buttord(Op,Os,Ap,As,'s'); % Butterworth LP filter
+	[b a]=butter(n, On,'s');
+	[n On]=cheb1ord(Op,Os,Ap,As,'s'); % Chebyshev LP filter
+	[b a]=cheby1(n,Ap,On,'s');
+	w=linspace(starting_point,ending_point,number_of_points);
+	freqs(b,a,w) % Plot magnitude and phase spectrum of analog filter
+\end{verbatim}
+Các bạn có thể áp dụng đoạn code này để kiếm tra lại đáp án các bài tập thiết kế bộ lọc.

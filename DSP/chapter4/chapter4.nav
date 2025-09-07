@@ -138,8 +138,25 @@
 \headcommand {\beamer@framepages {54}{54}}
 \headcommand {\slideentry {4}{4}{4}{55/55}{}{0}}
 \headcommand {\beamer@framepages {55}{55}}
-\headcommand {\beamer@partpages {1}{55}}
 \headcommand {\beamer@subsectionpages {1}{55}}
-\headcommand {\beamer@sectionpages {1}{55}}
-\headcommand {\beamer@documentpages {55}}
-\headcommand {\gdef \inserttotalframenumber {55}}
+\headcommand {\beamer@subsectionentry {0}{4}{5}{56}{Thiết kế bộ lọc HP}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{5}{1}{56}{Ý tưởng thiết kế bộ lọc HP}}
+\headcommand {\slideentry {4}{5}{0}{56/56}{}{0}}
+\headcommand {\beamer@framepages {56}{56}}
+\headcommand {\slideentry {4}{5}{1}{57/57}{}{0}}
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{5}{2}{58}{Thuật toán thiết kế bộ lọc HP}}
+\headcommand {\slideentry {4}{5}{2}{58/58}{}{0}}
+\headcommand {\beamer@framepages {58}{58}}
+\headcommand {\slideentry {4}{5}{3}{59/59}{}{0}}
+\headcommand {\beamer@framepages {59}{59}}
+\headcommand {\slideentry {4}{5}{4}{60/60}{}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{5}{3}{61}{Thực hành}}
+\headcommand {\slideentry {4}{5}{5}{61/61}{}{0}}
+\headcommand {\beamer@framepages {61}{61}}
+\headcommand {\beamer@partpages {1}{61}}
+\headcommand {\beamer@subsectionpages {1}{61}}
+\headcommand {\beamer@sectionpages {1}{61}}
+\headcommand {\beamer@documentpages {61}}
+\headcommand {\gdef \inserttotalframenumber {61}}
