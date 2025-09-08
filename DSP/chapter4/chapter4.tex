@@ -728,9 +728,291 @@ Các bạn có thể áp dụng đoạn code này để kiếm tra lại đáp �
 \begin{frame}{Thiết kế bộ lọc số}
 	\section{Thiết kế bộ lọc số}
 \begin{itemize}
-	\item Biến đổi Laplace và Z
+	\item Ý tưởng thiết kế bộ lọc số
 \end{itemize}
-\subsection{Biến đổi Laplace và Z}
-123
+\subsection{Ý tưởng thiết kế bộ lọc số}
+Bộ lọc số được thiết kế từ bộ lọc tương tự, trên cơ sở liên hệ chặt chẽ giữa biến đổi Laplace và Z. Ở môn học tiên quyết \alert{Tín hiệu và hệ thống}, ta đã tìm hiểu về hai phép biến đổi này rời rạc nhau; bây giờ ta muốn chỉ ra mối liên hệ giữa chúng làm tiền đề cho \textbf{thuật toán thiết kế bộ lọc số}.
+\\Ta xét biến đổi Laplace của tín hiệu rời rạc sau:
+\begin{equation*}
+\begin{split}
+	x[n]&=x(nT_{0})=x(t)\sum_{n=-\infty}^{+\infty}\delta(t-nT_{0})\\
+\Rightarrow \mathscr{L}\left(x(nT_{0})\right)&=\mathscr{L}\left(x(t)\sum_{n=-\infty}^{+\infty}\delta(t-nT_{0})\right)=\int_{-\infty}^{+\infty}\left(x(t)\sum_{n=-\infty}^{+\infty}\delta(t-nT_{0})\right)e^{-st}dt\\
+					     &=\sum_{n=-\infty}^{+\infty}x(t)\left(\int_{-\infty}^{+\infty}\delta(t-nT_{0})e^{-st}dt\right)=\sum_{n=-\infty}^{+\infty}x(t)\alert{e^{-nsT_{0}}}
+\end{split}
+\end{equation*}
+Ta đặt $z=e^{sT_{0}}$, thu được phương trình chỉ ra mối quan hệ giữa biến đổi Laplace và Z. Chúng ta sẽ phát triển thuật toán thiết kế các loại bộ lọc số dựa trên phương trình này.
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+\subsection{Phương pháp đáp ứng xung bất biến và bậc thang}
+\begin{itemize}
+	\item Phương pháp đáp ứng xung bất biến và bậc thang
+\end{itemize}
+Đây là 2 phương pháp \textbf{không phổ biến, sai số lớn và kém chính xác} khi thiết kế bộ lọc IIR, thế nên chúng ta chỉ cần nhớ 2 công thức sau để đi thi:
+\begin{enumerate}
+	\item[1] Công thức đáp ứng xung bất biến:
+		$$H(s)=\sum\frac{c_{i}}{s-\lambda_{i}}\to H(z)=\sum\frac{c_{i}T_{s}}{1-e^{\lambda_{i}T_{s}}z^{-1}}$$
+	\item[2] Công thức đáp ứng xung bậc thang:
+
+		$$H(s)=\sum\frac{c_{i}}{s-\lambda_{i}}\to H(z)=\sum\frac{1}{\lambda_{i}}\frac{c_{i}(e^{\lambda_{i}T_{s}}-1)z^{-1}}{1-e^{\lambda_{i}T_{s}}z^{-1}}$$
+\end{enumerate}
+\begin{block}{Thuật toán thiết kế bộ lọc số bằng phương pháp xung bất biến/bậc thang}
+\begin{enumerate}
+	\item[1] Chuyển các tần số từ miền số sang miền tương tự:
+		$$\omega=2\pi\frac{F}{F_{sam}}
+		\Rightarrow\Omega=\frac{\omega}{T_{sam}}=\omega F_{sam}=2\pi F$$
+	Với $\omega,F$ là \textbf{các tần số trong miền số}, $F_{sam}$ là \textbf{tần số lấy mẫu}.
+	\item[2] Thiết kế bộ lọc tương tự dựa theo kết quả tính toán từ bước 1.
+	\item[3] Sử dụng công thức đáp ứng xung bất biến hoặc xung bậc thang để chuyển đổi bộ lọc tương tự về bộ lọc số.
+\end{enumerate}
+\end{block}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+\subsection{Phương pháp song tuyến tính}
+\begin{itemize}
+	\item Phương pháp song tuyến tính
+\end{itemize}
+\textbf{Phương pháp song tuyến tính} là trọng tâm của thuật toán thiết kế bộ lọc số. Các phần mềm mô phỏng như GNU Octave/Matlab đều thiết kế bộ lọc dựa trên phương pháp này.
+\\ Từ biểu thức liên hệ giữa biến đổi Laplace và Z:
+\begin{equation*}
+\begin{split}
+	z=e^{sT_{0}}&\Rightarrow z=\frac{e^{\frac{sT_{0}}{2}}}{e^{-\frac{sT_{0}}{2}}}=\frac{1+\frac{sT_{0}}{2}}{1-\frac{sT_{0}}{2}}=\frac{s+\frac{2}{T_{0}}}{-s+\frac{2}{T_{0}}}\\
+		    &\Rightarrow z\left(-s+\frac{2}{T_{0}}\right)=s+\frac{2}{T_{0}}\Rightarrow s(z+1)=\frac{2}{T_{0}}(z-1)\\
+		    &\Rightarrow \alert{s=\frac{2}{T_{0}}\frac{1-z^{-1}}{1+z^{-1}}=C\frac{1-z^{-1}}{1+z^{-1}}}\\
+	z=\frac{s+\frac{2}{T_{0}}}{-s+\frac{2}{T_{0}}}&\Rightarrow e^{j\omega}=\frac{1+j\Omega\frac{T_{0}}{2}}{1-j\Omega\frac{T_{0}}{2}}\Rightarrow j\Omega=\frac{2}{T_{0}}\frac{1-e^{j\omega}}{1+e^{j\omega}}=\frac{2}{T_{0}}\frac{(1-e^{j\omega})(1+e^{-j\omega})}{(1+e^{j\omega})(1+e^{-j\omega})}\\
+	\Rightarrow& \alert{\Omega=\frac{2}{T_{0}}\tan\left(\frac{\omega}{2}\right)=C\tan\left(\frac{\omega}{2}\right)}
+\end{split}
+\end{equation*}
+Dễ thấy hằng số $C$ chính là \textbf{trái tim của phép biến đổi song tuyến tính}.
+Ta có thể chọn: $$C=\frac{2}{T_{0}}$$
+hay $C$ là bất cứ giá trị nào khác để \alert{ánh xạ tần số giữa miền thời gian liên tục và miền thời gian rời rạc.}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+Nếu ta chọn hằng số: $$C=\frac{2}{T_{0}}$$
+Dạng đáp ứng biên độ giữa bộ lọc tương tự và bộ lọc số tương đối giống nhau về dáng điệu đồ thị, nhưng ta không biết thêm bất cứ thông tin nào khác nữa. Ta cần tìm phương án chọn $C$ khác.
+\\  Ta giới thiệu khái niệm "tần số số" mới được định nghĩa: $$v=\frac{F}{F_{N}}$$
+Đây chỉ là khái niệm "tần số số" theo quy ước của Matlab, ở \alert{Chương 5} ta sẽ quy ước: $$v=\frac{F}{F_{sam}}$$
+Hiển nhiên ta thấy rất rõ ý nghĩa vật lý của "tần số số" là "mọi tần số trong miền số không bao giờ vượt qua giá trị tần số Nyquist" (đã được thảo luận ở \alert{Chương 1}).
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+\begin{itemize}
+	\item[-] Thiết kế bộ lọc LP
+\end{itemize}
+\\ Đối với bộ lọc tương tự LP \alert{tần số cắt chuẩn hóa}:
+\begin{enumerate}
+	\item[1] Kí hiệu tần số góc: $\lambda$
+	\item[2] Kí hiệu biến Laplace: $p$
+	\item[3] Kí hiệu hàm truyền: $H_{LP,N}(p)$
+\end{enumerate}
+
+\\ Đối với bộ lọc số LP:
+\begin{enumerate}
+	\item[1] Kí hiệu tần số góc: $\omega$
+	\item[2] Kí hiệu tần số $F$, tần số Nyquist $F_{N}$, tần số lấy mẫu $F_{sam}$
+	\item[3] Kí hiệu tần số số (theo quy ước Matlab): $v$
+	\item[4] Kí hiệu biến Z: $z$
+	\item[5] Kí hiệu hàm truyền: $H_{LP}(z)$
+\end{enumerate}
+Ta viết lại 2 công thức chuyển đổi giữa miền liên tục và miền số (liên hệ giữa biến đổi Laplace và Z):
+$$\alert{p=C\frac{1-z^{-1}}{1+z^{-1}}}$$
+$$\Omega=C\tan\left(\frac{\omega}{2}\right)=C\tan{\left(\frac{2\pi F}{2F_{sam}}\right)}=C\tan{\left(\frac{\pi F}{F_{sam}}\right)}=\alert{C\tan{\left(\frac{\pi v}{2}\right)}}$$
+$$\Rightarrow \alert{C=\Omega\cot{\left(\frac{\pi v}{2}\right)}}$$
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+Ta chọn $C$ sao cho \textbf{tần số cắt trong miền số ánh xạ tới tần số cắt trong miền tương tự}, tức là: $$v_{C}\to\Omega_{C}$$
+Nếu ta chọn bộ lọc LP trong miền tương tự để ánh xạ tới là bộ lọc có tần số cắt chuẩn hóa:
+$$\alert{v_{C}\to\lambda_{C}=1\text{ (rad/s) }}$$
+Vậy ta thu được công thức tìm hằng số $C$:
+$$\alert{C=\lambda_{C}\cot{\left(\frac{\pi v_{C}}{2}\right)}=\cot{\left(\frac{\pi v_{C}}{2}\right)}}$$
+\begin{figure}[h]
+	\includegraphics[width=0.8\textwidth]{26.jpg}
+	\caption{Designing digital LP filter}			\label{fig:re2}
+		\end{figure}
+
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+	\begin{block}{Thuật toán thiết kế bộ lọc LP số}
+	\begin{enumerate}
+	\item[1] Chuyển các tần số trong miền số về các tần số số $v$:
+		$$\alert{v=\frac{F}{F_{N}}}$$
+	\item[2] Xác định tần số cắt số $v_{C}$, và tính hằng số $C$ theo công thức:
+$$\alert{C=\cot{\left(\frac{\pi v_{C}}{2}\right)}}$$
+\item[3] Ánh xạ từng tần số trong miền số sang miền tương tự với hằng số $C$ đã chọn ở trên:
+	$$\alert{\lambda=C\tan{\left(\frac{\pi v}{2}\right)}}$$
+\item[4] Thiết kế bộ lọc thông thấp chuẩn hóa $H_{LP,N}(p)$ với dữ kiện trên.
+\item[5] Đổi biến:
+	$$p=C\frac{1-z^{-1}}{1+z^{-1}}$$
+	 Ta thu được hàm truyền của bộ lọc số $H_{LP}(z)$ cần tìm.
+	\end{enumerate}
+	\end{block}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+Ví dụ: thiết kế bộ lọc số LP thỏa mãn đặc tả sau, biết $F_{sam}=100$ (kHz):
+$$0<F<5\text{ (kHz)};\quad A<1\;(\text{dB})$$
+$$F>10\text{ (kHz)};\quad A>40\;(\text{dB})$$
+Xác định tần số Nyquist: $$F_{N}=\frac{F_{sam}}{2}=50\text{ (kHz) }$$
+Ta chuyển tất cả các tần số $F$ về tần số số $v$ theo quy ước của Matlab:
+$$v=\frac{F}{F_{N}}$$
+Ta thu được: $v_{P}=0.1,\;v_{S}=0.2$. Sử dụng bộ lọc Chebyshev, ta thấy $v_{C}=0.1$. \\Tính hằng số C theo công thức trên, thu được:
+$$C=\cot{\left(\frac{0.1\pi}{2}\right)}=6.313$$
+Ta ánh xạ tần số dừng $v_{S}$ sang miền tương tự:
+$$\lambda_{S}=C\tan{\left(\frac{\pi v_{S}}{2}\right)}=2.0514\text{ (rad/s) }$$
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+Vậy từ phép ánh xạ, ta thu được các kết quả sau:
+$$v_{P}=v_{C}\to\lambda_{C}=1\text{ (rad/s) }$$
+$$v_{S}\to\lambda_{S}=2.0514\text{ (rad/s) }$$
+Thiết kế bộ lọc Chebyshev LP với đặc tả: $\lambda_{C}=1\text{ (rad/s)}$,\;$\lambda_{S}=2.0514\text{ (rad/s)}$,\;$r=1\text{ (dB)}$,\;$A_{S}=40\text{ (dB)}$
+Ta thu được hàm truyền:
+$$H_{LP,N}(p)=\cdots$$
+Đổi biến: $$p=6.313\frac{1-z^{-1}}{1+z^{-1}}$$
+Ta thu được hàm truyền của bộ lọc số cần tìm.
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+\begin{itemize}
+	\item Thiết kế bộ lọc BP
+\end{itemize}
+\begin{figure}[h]
+	\includegraphics[width=0.8\textwidth]{27.jpg}
+	\caption{Designing digital BP filter}			\label{fig:re2}
+		\end{figure}
+Do tài liệu tham khảo gốc viết rất mơ hồ về thuật toán thiết kế bộ lọc BP (mình không hiểu cách chứng minh công thức từ đâu ra), nên ta công nhận các kết quả sau:
+\\ Với $v_{1},v_{3}$ là tần số cắt ở hai phía của bộ lọc BP số, và $v_{2}$ là \textbf{tần số có dạng trung bình hình học} ta có:
+$$\tan^2{\left(\frac{\pi v_{2}}{2}\right)}=\tan^2{\left(\frac{\pi v_{1}}{2}\right)}\tan^2{\left(\frac{\pi v_{3}}{2}\right)}$$
+$$D=\lambda_{C}\cot{\left(\frac{\pi}{2}(v_{3}-v_{1})\right)}$$
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+	$$E=\frac{2\cos{\left(\frac{\pi}{2}(v_{3}+v_{1})\right)}}{\cos{\left(\frac{\pi}{2}(v_{3}-v_{1})\right)}}$$
+	$$\frac{\lambda}{D}=\frac{\cos(\pi v_{2})-\cos(\pi v)}{\sin(\pi v)}$$
+	Đương nhiên, vì chúng ta muốn ánh xạ sang bộ lọc LP tương tự có \textbf{tần số cắt chuẩn hóa}, nên $\lambda_{C}=1$ (rad/s).
+\\	Sau khi đã thiết kế bộ lọc tương tự chuẩn hóa $H_{LP,N}(p)$, ta đổi biến:
+	$$p=D\frac{1-Ez^{-1}+z^{-2}}{1-z^{-2}}$$
+Và thu được hàm truyền của bộ lọc số $H_{BP}(z)$ tương ứng.
+	\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+\begin{block}{Thuật toán thiết kế bộ lọc BP}
+	\begin{enumerate}
+		\item[1] Chuyển toàn bộ tần số $F$ ở miền số về các tần số số $v$ tương ứng theo quy chuẩn Matlab.
+		\item[2] Xác định $v_{1}$, $v_{3}$, tính $v_{2}$, $D$, $E$, theo công thức trên.
+
+			$$\alert{\tan^2{\left(\frac{\pi v_{2}}{2}\right)}=\tan^2{\left(\frac{\pi v_{1}}{2}\right)}\tan^2{\left(\frac{\pi v_{3}}{2}\right)}}$$
+$$D=\lambda_{C}\cot{\left(\frac{\pi}{2}(v_{3}-v_{1})\right)}$$
+	$$E=\frac{2\cos{\left(\frac{\pi}{2}(v_{3}+v_{1})\right)}}{\cos{\left(\frac{\pi}{2}(v_{3}-v_{1})\right)}}$$
+\item[3] Ánh xạ từng tần số trong miền số $v\to\lambda$:
+	$$\frac{\lambda}{D}=\frac{\cos(\pi v_{2})-\cos(\pi v)}{\sin(\pi v)}$$
+\item[4] Thiết kế bộ lọc LP chuẩn hóa $H_{LP,N}(p)$ theo các thông số trên.
+\item[5] Đổi biến:
+$$p=D\frac{1-Ez^{-1}+z^{-2}}{1-z^{-2}}$$
+Và ta thu được hàm truyền của bộ lọc BP số cần tìm.
+
+	\end{enumerate}
+	\end{block}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+Ví dụ: thiết kế bộ lọc số có đặc tả sau biết $F_{sam}=2$ (kHz);
+$$300<F<400\text{ (Hz)};\quad A<3\;(\text{dB})$$
+$$F<200\text{ (Hz)},F>500\text{ (Hz)};\quad A>18\;(\text{dB})$$
+Ta chọn bộ lọc Butterworth để thiết kế, hiển nhiên ta thấy:
+$$F_{N}=1\text{ (kHz) }$$
+Suy ra: $$v_{1}=0.3;v_{3}=0.4;v_{S1}=0.2;v_{S3}=0.5$$
+Ta xác định tần số số $v_{2}$:
+$$\tan^2{\left(\frac{\pi v_{2}}{2}\right)}=\tan^2{\left(\frac{\pi v_{1}}{2}\right)}\tan^2{\left(\frac{\pi v_{3}}{2}\right)}\Rightarrow v_{2}=0.3479$$
+Với \alert{$\lambda_{C}=1$ (rad/s)}, ta tính $D$ và $E$:
+
+$$D=\lambda_{C}\cot{\left(\frac{\pi}{2}(v_{3}-v_{1})\right)}=6.3137$$
+	$$E=\frac{2\cos{\left(\frac{\pi}{2}(v_{3}+v_{1})\right)}}{\cos{\left(\frac{\pi}{2}(v_{3}-v_{1})\right)}}=0.9192$$
+	Sử dụng công thức để ánh xạ các tần số dừng $v_{S}$ tương ứng:
+	$$\frac{\lambda}{D}=\frac{\cos(\pi v_{2})-\cos(\pi v)}{\sin(\pi v)}\Rightarrow \lambda_{S1}=-3.7504;\lambda_{S3}=2.903$$
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+Để đảm bảo đặc tả thiết kế, ta chọn $\lambda_{S}$ sao cho bậc $N$ của bộ lọc cao nhất có thể.
+\\ Vậy ta thiết kế bộ lọc LP Butterworth chuẩn hóa thỏa mãn đặc tả sau: $\lambda_{C}=1$, $\lambda_{S}=2.903$, $A_{P}=3$, $A_{S}=18$.
+\\ Sử dụng phương pháp thiết kế đã được đề cập ở trên, ta thu được hàm truyền:
+$$H_{LP,N}(p)=\frac{1}{p^2+1.41589p+1}$$
+Đổi biến:
+$$p=D\frac{1-Ez^{-1}+z^{-2}}{1-z^{-2}}=6.3137\frac{1-0.9192z^{-1}+z^{-2}}{1-z^{-2}}$$
+Ta thu được hàm truyền $H_{BP}(z)$ của bộ lọc số cần tìm.
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+\begin{itemize}
+	\item[-] Thiết kế bộ lọc HP
+\end{itemize}
+\begin{figure}[h]
+	\includegraphics[width=0.8\textwidth]{28.jpg}
+	\caption{Designing digital HP filter}			\label{fig:re2}
+		\end{figure}
+		Phép ánh xạ từ bộ lọc HP số sang LP tương tự chuẩn hóa với tần số cắt $\lambda_{C}=1$ (rad/s), hoàn toàn ngược với công thức thiết kế bộ lọc LP số.
+		$$p=C\frac{1+z^{-1}}{1-z^{-1}}$$
+		$$\lambda=C\cot{\left(\frac{\pi v}{2}\right)}\Rightarrow C=\lambda\tan{\left(\frac{\pi v}{2}\right)}$$
+		Tương tự như trên, ta chọn $\lambda_{C}=1$ (rad/s) và thu được thuật toán thiết kế sau.
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+\begin{block}{Thuật toán thiết kế bộ lọc HP số}
+	\begin{enumerate}
+	\item[1] Chuyển các tần số trong miền số về các tần số số $v$:
+		$$\alert{v=\frac{F}{F_{N}}}$$
+	\item[2] Xác định tần số cắt số $v_{C}$, và tính hằng số $C$ theo công thức:
+$$\alert{C=\tan{\left(\frac{\pi v_{C}}{2}\right)}}$$
+\item[3] Ánh xạ từng tần số trong miền số sang miền tương tự với hằng số $C$ đã chọn ở trên:
+	$$\alert{\lambda=C\cot{\left(\frac{\pi v}{2}\right)}}$$
+\item[4] Thiết kế bộ lọc thông thấp chuẩn hóa $H_{LP,N}(p)$ với dữ kiện trên.
+\item[5] Đổi biến:
+	$$p=C\frac{1+z^{-1}}{1-z^{-1}}$$
+	 Ta thu được hàm truyền của bộ lọc số $H_{LP}(z)$ cần tìm.
+	\end{enumerate}
+	\end{block}
+
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+Ví dụ: thiết kế bộ lọc số HP thỏa mãn đặc tả sau, biết $F_{sam}=50$ (kHz):
+$$0<F<5\text{ (kHz)};\quad A>20\;(\text{dB})$$
+$$F>10\text{ (kHz)};\quad 0<A<2.5\;(\text{dB})$$
+Ta xác định tần số Nyquist: $$F_{N}=\frac{F_{sam}}{2}=25\text{ (kHz) }$$
+Ta chọn bộ lọc Chebyshev và xác định các giá trị tần số số tương ứng:
+$$v=\frac{F}{F_{N}}\Rightarrow v_{S}=0.2;v_{P}=0.4$$
+Ta tính hằng số C: 
+$$\alert{C=\tan{\left(\frac{\pi v_{C}}{2}\right)}}=0.7625$$
+Ánh xạ tần số số sang miền tương tự:
+$$\alert{\lambda=C\cot{\left(\frac{\pi v}{2}\right)}}\Rightarrow \lambda_{C}=1,\lambda_{S}=2.346$$
+Ta xác định hàm truyền $H_{LP,N}(p)$ với đặc tả $\lambda_{C}=1,\lambda_{S}=2.346,r=2.5,A_{S}=20$:
+$$H_{N,LP}(p)=\frac{0.2833}{p^3+0.6598p^2+0.9677p+0.2833}$$
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc số}
+Đổi biến:
+
+	$$p=C\frac{1+z^{-1}}{1-z^{-1}}=0.7625\frac{1+z^{-1}}{1-z^{-1}}$$
+Ta thu được hàm truyền của bộ lọc HP số cần tìm.
+\end{frame}
+\begin{frame}[fragile]{Thiết kế bộ lọc số}
+\subsection{Thực hành}
+\begin{itemize}
+	\item Thực hành
+\end{itemize}
+Tương tự như phần Thực hành của bộ lọc tương tự, ta cũng dùng phần mềm mô phỏng tính toán để thiết kế các bộ lọc số.
+\begin{verbatim}
+Fp=...;Fs=...;Ap=...;As=...;Fsam=...; % LP filter
+Fny=Fsam/2;
+vp=Fp/Fny;vs=Fs/Fny;
+[n vc]=buttord(vp,vs,Ap,As) % Butterworth filter
+[b a]=butter(n,vc)
+[n vc]=cheby1(vp,vs,Ap,As) % Chebyshev filter
+[b a]=cheb1ord(n,Ap,vc)
+freqz(b,a) % Plot frequency response
+zplane(b,a) % Plot Z-plane to display zeros and poles
+impz(b,a) % Display impulse response of system
+\end{verbatim}
+Đối với bộ lọc HP, cú pháp của Octave và Matlab có một chút khác biệt, ở đây mình thiết kế bằng Octave:
+\begin{verbatim}
+	[n vc]=buttord(vp,vs,Ap,As) % Doesn't have 'high' parameter
+	[b a]=butter(n,vc,'high') % Has 'high' parameter
+\end{verbatim}
+Với bộ lọc BP, ta khởi tạo 2 mảng:
+\begin{verbatim}
+vp=[starting_point,ending_point];vs=[starting_point,ending_point];
+[n vc]=buttord(vp,vs,Ap,As) % Doesn't have 'bandpass' parameter
+[b a]=butter(n,vc,'bandpass') % Has 'bandpass' parameter
+\end{verbatim}
+Với bộ lọc BS, ta chỉ cần thay \verb|'bandpass'| thành \verb|'stop'| là xong.
 \end{frame}
 \end{document}

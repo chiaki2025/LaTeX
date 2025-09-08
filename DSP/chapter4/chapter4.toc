@@ -21,4 +21,7 @@
 \beamer@subsubsectionintoc {4}{5}{2}{Thuật toán thiết kế bộ lọc HP}{58}{0}{4}
 \beamer@subsectionintoc {4}{6}{Thực hành}{61}{0}{4}
 \beamer@sectionintoc {5}{Thiết kế bộ lọc số}{62}{0}{5}
-\beamer@subsectionintoc {5}{1}{Biến đổi Laplace và Z}{62}{0}{5}
+\beamer@subsectionintoc {5}{1}{Ý tưởng thiết kế bộ lọc số}{62}{0}{5}
+\beamer@subsectionintoc {5}{2}{Phương pháp đáp ứng xung bất biến và bậc thang}{63}{0}{5}
+\beamer@subsectionintoc {5}{3}{Phương pháp song tuyến tính}{64}{0}{5}
+\beamer@subsectionintoc {5}{4}{Thực hành}{80}{0}{5}

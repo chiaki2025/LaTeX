@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1757221072 "chapter4.tex" "chapter4.pdf" "chapter4" 1757221074 2
+["pdflatex"] 1757265355 "chapter4.tex" "chapter4.pdf" "chapter4" 1757265357 2
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -33,6 +33,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb" 1248133631 30273 87a352d78b6810ae5cfdc68d2fb827b2 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb" 1229303445 16077 4737ac34f0fb5608550f3780a0202c22 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb" 1647811568 35693 3124518d35473eaa1bca73156ad625e7 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb" 1647811568 35755 40eb5a01357ca8422253fee6a2216252 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb" 1647811568 40590 d65e446f1203ef77fe7df09181803989 ""
@@ -253,6 +254,9 @@
   "23.jpg" 1757216808 33509 3b2ee8b51b80d2b6647690b47259d890 ""
   "24.jpg" 1757216589 33014 f4ff0086bbc38b00b6bdcd32b7acaf1f ""
   "25.jpg" 1757217816 37172 6d29b7bb3fc13a7e7ae2d08cc5213a19 ""
+  "26.jpg" 1757253206 36465 615e7d767b067dea792f5d7d88955986 ""
+  "27.jpg" 1757259253 33964 774edef863fa5edb3638d617cdf07335 ""
+  "28.jpg" 1757262446 24588 2d99103c6de7659b5db0023fb8683c3d ""
   "3.jpg" 1756973492 78617 b38b1e7392b2b653a01646814e683a52 ""
   "4.jpg" 1756976514 46674 2fe1e9f5c031613cb25ec41512998c50 ""
   "5.jpg" 1756977069 56113 957cda415b65bd3a1b1a8bb3ebd09107 ""
@@ -260,12 +264,12 @@
   "7.jpg" 1756980318 76731 c731187a075030029aae971ac561d0c1 ""
   "8.jpg" 1756990375 79518 6f4912bf979f7fe45f3083c75845013e ""
   "9.jpg" 1756990996 63071 d3feb8bab1d6bc1eefcffe8b97d08a3c ""
-  "chapter4.aux" 1757221074 17423 f235804d6c7d8fc2c913fb97b9badce2 "pdflatex"
-  "chapter4.nav" 1757221074 8888 eaeb50ae3bc8329bf3a0509700b7d4aa "pdflatex"
-  "chapter4.out" 1757221074 2132 11f44a5f10e51afab6b46725c9787de0 "pdflatex"
-  "chapter4.tex" 1757221072 43602 bb09ef95e1be9c0091ce945fdd108ecc ""
-  "chapter4.toc" 1757221074 1792 f46916f29938ef25113cdf25c818b160 "pdflatex"
-  "chapter4.vrb" 1757221074 726 0ab01e9a95812cec45d0cfd942c268a5 "pdflatex"
+  "chapter4.aux" 1757265357 20836 dd2fe79b4482fe39f53bf1bc55c69e2c "pdflatex"
+  "chapter4.nav" 1757265357 10974 2f11b6d22f13363ea49fefce0c7a108a "pdflatex"
+  "chapter4.out" 1757265357 2855 4539776e719a956f5d3699a1fae01849 "pdflatex"
+  "chapter4.tex" 1757265355 61091 cd8d85ebbe17e2b4bd3f95b18d85dc61 ""
+  "chapter4.toc" 1757265357 2039 6986ed308462c9e83e4d50104655855e "pdflatex"
+  "chapter4.vrb" 1757265357 1307 7f8c36f41939bdf48373383d7da381f2 "pdflatex"
   "phpe46ibx.png" 1757002634 14015 32cb7c4e45effdb0391760e344c02e2f ""
   "ves_basisf-chebyshev.png" 1757046485 126347 e9234d0cc6b4f5d801cd089a71c56866 ""
   (generated)

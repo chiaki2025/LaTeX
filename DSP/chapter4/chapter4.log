@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  7 SEP 2025 11:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  8 SEP 2025 00:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -891,6 +891,15 @@ LaTeX Warning: Label `fig:re2' multiply defined.
 
 LaTeX Warning: Label `fig:re2' multiply defined.
 
+
+LaTeX Warning: Label `fig:re2' multiply defined.
+
+
+LaTeX Warning: Label `fig:re2' multiply defined.
+
+
+LaTeX Warning: Label `fig:re2' multiply defined.
+
 )
 \openout1 = `chapter4.aux'.
 
@@ -1051,7 +1060,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [4
 
 ]
-<1.jpg, id=133, 1109.14375pt x 521.95pt>
+<1.jpg, id=151, 1109.14375pt x 521.95pt>
 File: 1.jpg Graphic file (type jpg)
 <use 1.jpg>
 Package pdftex.def Info: 1.jpg  used on input line 51.
@@ -1064,7 +1073,7 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 51--51
 [5
 
  <./1.jpg>]
-<2.jpg, id=140, 1620.0525pt x 779.91376pt>
+<2.jpg, id=158, 1620.0525pt x 779.91376pt>
 File: 2.jpg Graphic file (type jpg)
 <use 2.jpg>
 Package pdftex.def Info: 2.jpg  used on input line 68.
@@ -1090,7 +1099,7 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 ) [7
 
 ]
-<3.jpg, id=161, 1817.79124pt x 872.25874pt>
+<3.jpg, id=180, 1817.79124pt x 872.25874pt>
 File: 3.jpg Graphic file (type jpg)
 <use 3.jpg>
 Package pdftex.def Info: 3.jpg  used on input line 85.
@@ -1124,7 +1133,7 @@ or  <return>  to continue without it.
 [9
 
 ]
-<4.jpg, id=175, 1274.7625pt x 459.7175pt>
+<4.jpg, id=193, 1274.7625pt x 459.7175pt>
 File: 4.jpg Graphic file (type jpg)
 <use 4.jpg>
 Package pdftex.def Info: 4.jpg  used on input line 103.
@@ -1142,7 +1151,7 @@ l.103 \end{frame}
                   [10
 
  <./4.jpg>]
-<5.jpg, id=182, 1442.38875pt x 613.29124pt>
+<5.jpg, id=200, 1442.38875pt x 613.29124pt>
 File: 5.jpg Graphic file (type jpg)
 <use 5.jpg>
 Package pdftex.def Info: 5.jpg  used on input line 110.
@@ -1160,7 +1169,7 @@ l.110 \end{frame}
                   [11
 
  <./5.jpg>]
-<6.jpg, id=189, 1222.5675pt x 598.235pt>
+<6.jpg, id=207, 1222.5675pt x 598.235pt>
 File: 6.jpg Graphic file (type jpg)
 <use 6.jpg>
 Package pdftex.def Info: 6.jpg  used on input line 122.
@@ -1192,7 +1201,7 @@ and I'll forget about whatever was undefined.
 [13
 
 ]
-<7.jpg, id=204, 1713.40125pt x 840.13875pt>
+<7.jpg, id=222, 1713.40125pt x 840.13875pt>
 File: 7.jpg Graphic file (type jpg)
 <use 7.jpg>
 Package pdftex.def Info: 7.jpg  used on input line 138.
@@ -1212,7 +1221,7 @@ l.138 \end{frame}
  <./7.jpg>] [15
 
 ]
-<8.jpg, id=217, 1805.74625pt x 780.9175pt>
+<8.jpg, id=235, 1805.74625pt x 780.9175pt>
 File: 8.jpg Graphic file (type jpg)
 <use 8.jpg>
 Package pdftex.def Info: 8.jpg  used on input line 153.
@@ -1230,7 +1239,7 @@ l.153 \end{frame}
                   [16
 
  <./8.jpg>]
-<9.jpg, id=224, 1562.83875pt x 752.8125pt>
+<9.jpg, id=242, 1562.83875pt x 752.8125pt>
 File: 9.jpg Graphic file (type jpg)
 <use 9.jpg>
 Package pdftex.def Info: 9.jpg  used on input line 160.
@@ -1248,7 +1257,7 @@ l.160 \end{frame}
                   [17
 
  <./9.jpg>]
-<10.jpg, id=231, 1502.61375pt x 837.1275pt>
+<10.jpg, id=249, 1502.61375pt x 837.1275pt>
 File: 10.jpg Graphic file (type jpg)
 <use 10.jpg>
 Package pdftex.def Info: 10.jpg  used on input line 171.
@@ -1266,7 +1275,7 @@ l.171 \end{frame}
                   [18
 
  <./10.jpg>]
-<11.jpg, id=238, 1265.72874pt x 829.0975pt>
+<11.jpg, id=256, 1265.72874pt x 829.0975pt>
 File: 11.jpg Graphic file (type jpg)
 <use 11.jpg>
 Package pdftex.def Info: 11.jpg  used on input line 182.
@@ -1285,7 +1294,7 @@ Overfull \vbox (2.07405pt too high) detected at line 182
  <./11.jpg>] [20
 
 ]
-<12.jpg, id=252, 1192.455pt x 623.32875pt>
+<12.jpg, id=270, 1192.455pt x 623.32875pt>
 File: 12.jpg Graphic file (type jpg)
 <use 12.jpg>
 Package pdftex.def Info: 12.jpg  used on input line 207.
@@ -1306,7 +1315,7 @@ l.207 \end{frame}
 ] [25
 
 ]
-<phpe46ibx.png, id=287, 582.175pt x 260.975pt>
+<phpe46ibx.png, id=305, 582.175pt x 260.975pt>
 File: phpe46ibx.png Graphic file (type png)
 <use phpe46ibx.png>
 Package pdftex.def Info: phpe46ibx.png  used on input line 292.
@@ -1319,7 +1328,7 @@ l.292 \end{frame}
                   [26
 
  <./phpe46ibx.png>]
-<13.jpg, id=296, 1123.19624pt x 473.77pt>
+<13.jpg, id=315, 1123.19624pt x 473.77pt>
 File: 13.jpg Graphic file (type jpg)
 <use 13.jpg>
 Package pdftex.def Info: 13.jpg  used on input line 301.
@@ -1336,7 +1345,7 @@ l.301 \end{frame}
 ] [29
 
 ]
-<14.jpg, id=316, 773.89125pt x 442.65375pt>
+<14.jpg, id=334, 773.89125pt x 442.65375pt>
 File: 14.jpg Graphic file (type jpg)
 <use 14.jpg>
 Package pdftex.def Info: 14.jpg  used on input line 334.
@@ -1355,7 +1364,7 @@ l.334 \end{frame}
 ] [33
 
 ]
-<15.jpg, id=344, 1246.6575pt x 478.78876pt>
+<15.jpg, id=362, 1246.6575pt x 478.78876pt>
 File: 15.jpg Graphic file (type jpg)
 <use 15.jpg>
 Package pdftex.def Info: 15.jpg  used on input line 388.
@@ -1398,7 +1407,7 @@ and I'll forget about whatever was undefined.
 [35
 
 ]
-<ves_basisf-chebyshev.png, id=357, 1003.75pt x 602.25pt>
+<ves_basisf-chebyshev.png, id=375, 1003.75pt x 602.25pt>
 File: ves_basisf-chebyshev.png Graphic file (type png)
 <use ves_basisf-chebyshev.png>
 Package pdftex.def Info: ves_basisf-chebyshev.png  used on input line 410.
@@ -1415,7 +1424,7 @@ l.410 \end{frame}
 ] [38
 
 ]
-<16.jpg, id=377, 1419.3025pt x 689.57625pt>
+<16.jpg, id=395, 1419.3025pt x 689.57625pt>
 File: 16.jpg Graphic file (type jpg)
 <use 16.jpg>
 Package pdftex.def Info: 16.jpg  used on input line 446.
@@ -1438,7 +1447,7 @@ l.446 \end{frame}
 ] [44
 
 ]
-<17.jpg, id=415, 1604.99625pt x 814.04124pt>
+<17.jpg, id=433, 1604.99625pt x 814.04124pt>
 File: 17.jpg Graphic file (type jpg)
 <use 17.jpg>
 Package pdftex.def Info: 17.jpg  used on input line 529.
@@ -1453,7 +1462,7 @@ l.529 \end{frame}
  <./17.jpg>] [46
 
 ]
-<18.jpg, id=428, 1233.60875pt x 649.42625pt>
+<18.jpg, id=447, 1233.60875pt x 649.42625pt>
 File: 18.jpg Graphic file (type jpg)
 <use 18.jpg>
 Package pdftex.def Info: 18.jpg  used on input line 552.
@@ -1468,7 +1477,7 @@ l.552 \end{frame}
  <./18.jpg>] [48
 
 ]
-<19.jpg, id=442, 1295.84125pt x 528.97626pt>
+<19.jpg, id=460, 1295.84125pt x 528.97626pt>
 File: 19.jpg Graphic file (type jpg)
 <use 19.jpg>
 Package pdftex.def Info: 19.jpg  used on input line 582.
@@ -1483,7 +1492,7 @@ l.582 \end{frame}
  <./19.jpg>] [50
 
 ]
-<20.jpg, id=456, 1191.45125pt x 653.44125pt>
+<20.jpg, id=474, 1191.45125pt x 653.44125pt>
 File: 20.jpg Graphic file (type jpg)
 <use 20.jpg>
 Package pdftex.def Info: 20.jpg  used on input line 607.
@@ -1496,7 +1505,7 @@ l.607 \end{frame}
                   [51
 
  <./20.jpg>]
-<21.jpg, id=463, 1059.96pt x 558.085pt>
+<21.jpg, id=481, 1059.96pt x 558.085pt>
 File: 21.jpg Graphic file (type jpg)
 <use 21.jpg>
 Package pdftex.def Info: 21.jpg  used on input line 614.
@@ -1511,7 +1520,7 @@ l.614 \end{frame}
  <./21.jpg>] [53
 
 ]
-<22.jpg, id=476, 1223.57124pt x 455.7025pt>
+<22.jpg, id=494, 1223.57124pt x 455.7025pt>
 File: 22.jpg Graphic file (type jpg)
 <use 22.jpg>
 Package pdftex.def Info: 22.jpg  used on input line 644.
@@ -1526,7 +1535,7 @@ l.644 \end{frame}
  <./22.jpg>] [55
 
 ]
-<23.jpg, id=490, 1150.2975pt x 501.875pt>
+<23.jpg, id=508, 1150.2975pt x 501.875pt>
 File: 23.jpg Graphic file (type jpg)
 <use 23.jpg>
 Package pdftex.def Info: 23.jpg  used on input line 668.
@@ -1539,7 +1548,7 @@ l.668 \end{frame}
                   [56
 
  <./23.jpg>]
-<24.jpg, id=497, 1180.41pt x 461.725pt>
+<24.jpg, id=515, 1180.41pt x 461.725pt>
 File: 24.jpg Graphic file (type jpg)
 <use 24.jpg>
 Package pdftex.def Info: 24.jpg  used on input line 676.
@@ -1554,7 +1563,7 @@ l.676 \end{frame}
  <./24.jpg>] [58
 
 ]
-<25.jpg, id=510, 1237.62375pt x 450.68375pt>
+<25.jpg, id=528, 1237.62375pt x 450.68375pt>
 File: 25.jpg Graphic file (type jpg)
 <use 25.jpg>
 Package pdftex.def Info: 25.jpg  used on input line 701.
@@ -1577,7 +1586,119 @@ LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 7.
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )) [61
 
-] [62
+]
+Overfull \hbox (11.09862pt too wide) detected at line 744
+[]
+ []
+
+[62
+
+] [63
+
+]
+Overfull \vbox (0.49477pt too high) detected at line 788
+ []
+
+[64
+
+] [65
+
+]
+
+./chapter4.tex:819: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.819 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./chapter4.tex:819: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.819 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[66
+
+]
+<26.jpg, id=577, 1388.18625pt x 575.14874pt>
+File: 26.jpg Graphic file (type jpg)
+<use 26.jpg>
+Package pdftex.def Info: 26.jpg  used on input line 832.
+(pdftex.def)             Requested size: 245.83282pt x 101.84607pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.832 \end{frame}
+                  [67
+
+ <./26.jpg>] [68
+
+] [69
+
+] [70
+
+]
+<27.jpg, id=603, 1104.125pt x 490.83376pt>
+File: 27.jpg Graphic file (type jpg)
+<use 27.jpg>
+Package pdftex.def Info: 27.jpg  used on input line 884.
+(pdftex.def)             Requested size: 245.83282pt x 109.27943pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.884 \end{frame}
+                  [71
+
+ <./27.jpg>] [72
+
+]
+Overfull \vbox (0.22174pt too high) detected at line 911
+ []
+
+[73
+
+] [74
+
+] [75
+
+]
+<28.jpg, id=635, 1046.91125pt x 456.70625pt>
+File: 28.jpg Graphic file (type jpg)
+<use 28.jpg>
+Package pdftex.def Info: 28.jpg  used on input line 949.
+(pdftex.def)             Requested size: 245.83282pt x 107.24236pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.949 \end{frame}
+                  [76
+
+ <./28.jpg>] [77
+
+] [78
+
+] [79
+
+]
+\openout4 = `chapter4.vrb'.
+
+ (./chapter4.vrb) [80
 
 ]
 \tf@nav=\write6
@@ -1594,21 +1715,21 @@ File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `chapter4.out' has not changed.
-(rerunfilecheck)             Checksum: 11F44A5F10E51AFAB6B46725C9787DE0;2132.
+(rerunfilecheck)             Checksum: 4539776E719A956F5D3699A1FAE01849;2855.
  ) 
 Here is how much of TeX's memory you used:
- 27039 strings out of 476091
- 532417 string characters out of 5794082
- 1869330 words of memory out of 5000000
- 46678 multiletter control sequences out of 15000+600000
+ 27146 strings out of 476091
+ 533478 string characters out of 5794082
+ 1870330 words of memory out of 5000000
+ 46741 multiletter control sequences out of 15000+600000
  527081 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,22n,122p,509b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vntt8.pfb>
-Output written on chapter4.pdf (62 pages, 1629522 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vntt8.pfb>
+Output written on chapter4.pdf (80 pages, 1764019 bytes).
 PDF statistics:
- 631 PDF objects out of 1000 (max. 8388607)
- 496 compressed objects within 5 object streams
- 151 named destinations out of 1000 (max. 500000)
- 292 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 775 PDF objects out of 1000 (max. 8388607)
+ 615 compressed objects within 7 object streams
+ 190 named destinations out of 1000 (max. 500000)
+ 331 words of extra memory for PDF output out of 10000 (max. 10000000)
 
