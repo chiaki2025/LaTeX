@@ -243,7 +243,7 @@ $$s^4+1=0\Rightarrow(s^2-j)(s^2+j)=0$$
 	s=-e^{-j\frac{\pi}{4}}\\
 \end{cases}
 \end{equation*}
-Chọn cặp nghiệm $s=-e^{\pm j\frac{\pi}{4}}=-0.707\pm 0.707$, dùng định lý Viete đảo, ta tìm được: $$H(s)=\frac{1}{s+\sqrt{2}s+1}$$
+Chọn cặp nghiệm $s=-e^{\pm j\frac{\pi}{4}}=-0.707\pm j0.707$, dùng định lý Viete đảo, ta tìm được: $$H(s)=\frac{1}{s^2+\sqrt{2}s+1}$$
 	\end{enumerate}
 \end{frame}
 \begin{frame}{Thiết kế bộ lọc tương tự}
@@ -424,8 +424,8 @@ Ta muốn thiết kế bộ lọc có độ khuếch đại DC, tức là $$|H(0
 Từ các đa thức Chebyshev, ta thấy:
 \begin{equation*}
 \begin{cases}
-T_{N}(0)=0\quad(\text{N odd})\\
-T_{N}(0)=1\quad(\text{N even})\\
+T^2_{N}(0)=0\quad(\text{N odd})\\
+T^2_{N}(0)=1\quad(\text{N even})\\
 \end{cases}
 \end{equation*}
 Từ dạng của đáp ứng tần số $|H^2(j\Omega)|$, ta chọn $\alpha$ theo quy tắc để thỏa mãn điều kiện khuếch đại DC:
@@ -587,7 +587,7 @@ ta lần lượt ánh xạ các tần số: $$\lambda=\frac{\Omega^2-\Omega_{2}^
 $$\lambda<20\;\text{(rad/s)};\quad A<2\text{ (dB)}$$
 $$\lambda>34\;\text{(rad/s)};\quad A>20\text{ (dB)}$$
 Bằng phương pháp thiết kế đã được trình bày rất kĩ ở trên, ta tìm được bậc bộ lọc $N=3$, và thu được hàm truyền:
-$$H_{LP}(p)=\frac{0.201}{s^3+0.133s^2+3s+0.201}$$
+$$H_{LP}(p)=\frac{0.201}{p^3+0.133p^2+3p+0.201}$$
 Đổi biến $$p=\frac{s^2+800}{s}$$
 Ta thu được hàm truyền $H_{BP}(s)$ của bộ lọc thông dải cần tìm.
 \end{frame}
@@ -646,7 +646,7 @@ Do $A_{P}=3$, nên ta có thể chọn cả 2 loại bộ lọc Butterworth và 
 Hiển nhiên, ta thấy lúc này: $$\Omega_{2}=\sqrt{\Omega_{1}\Omega_{3}}=\sqrt{10.50}=22.36$$ Ta ánh xạ các tần số theo công thức:
 $$\lambda=\frac{\Omega_{2}^2\Omega}{\Omega_{2}^2-\Omega^2}\Rightarrow \lambda_{P}=\frac{\Omega_{2}^2\Omega_{1}}{\Omega_{2}^2-\Omega_{1}^2}=12.5;\;\lambda_{S}=\frac{\Omega_{2}^2\Omega_{S}}{\Omega_{2}^2-\Omega_{S}^2}=100.02$$
 Tiếp theo, ta thiết kế bộ lọc LP Butterworth  với các thông số $\lambda_{P}=12.5,\;\lambda_{S}=100.02\; ,A_{P}=3\; ,A_{S}=20$. \\Với thuật toán thiết kế đã được trình bày rất kĩ ở trên, ta thu được hàm truyền:
-$$H_{LP}(p)=\frac{156.621}{s^2+17.6986s+156.621}$$
+$$H_{LP}(p)=\frac{156.621}{p^2+17.6986p+156.621}$$
 Đổi biến: 
 $$p=\frac{\Omega_{2}^2s}{s^2+\Omega_{2}^2}=\frac{500s}{s^2+500}$$
 Ta thu được hàm truyền $H_{BS}(s)$ của bộ lọc chặn dải cần tìm.
@@ -705,7 +705,7 @@ $$\lambda_{C}=\Omega_{\alert{P}}=\Omega_{\alert{C}}=20$$
 $$\lambda_{S}=-\frac{\lambda_{C}\Omega_{C}}{\alert{-\Omega_{S}}}=40$$
 Vậy ta thiết kế bộ lọc LP Chebyshev với đặc tả: $\lambda_{C}=20,\;\lambda_{S}=40,\;r=3,\;A_{S}=23$
 \\ Sử dụng phương pháp thiết kế đã được trình bày rất kĩ ở trên, ta thu được:
-$$H_{LP}(p)=\frac{2004.754}{s^3+11.944s^2+371.339s+2004.754}$$
+$$H_{LP}(p)=\frac{2004.754}{p^3+11.944p^2+371.339p+2004.754}$$
 Đổi biến: $$p=\frac{400}{s}$$
 Ta thu được hàm truyền của bộ lọc $H_{HP}(p)$ cần tìm.
 \end{frame}

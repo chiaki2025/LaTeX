@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  11 SEP 2025 18:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  11 SEP 2025 14:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**chapter4.tex
-(./chapter4.tex
+**chapter5.tex
+(./chapter5.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16> (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/09/13 v3.68 A class for typesetting presentations
@@ -815,93 +815,8 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count353
 \l__pdf_internal_box=\box84
-) (./chapter4.aux
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-
-LaTeX Warning: Label `fig:re2' multiply defined.
-
-)
-\openout1 = `chapter4.aux'.
+) (./chapter5.aux)
+\openout1 = `chapter5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
@@ -982,9 +897,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring OFF on input line 23.
- (./chapter4.out) (./chapter4.out)
+ (./chapter5.out) (./chapter5.out)
 \@outlinefile=\write5
-\openout5 = `chapter4.out'.
+\openout5 = `chapter5.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 23.
@@ -1051,20 +966,20 @@ Dictionary: translator-months-dictionary, Language: English
 Dictionary: translator-numbers-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./chapter4.nav) [1
+) (./chapter5.nav) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./chapter4.toc) [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./chapter5.toc) [2
 
 ] [3
 
 ] [4
 
 ]
-<1.jpg, id=151, 1109.14375pt x 521.95pt>
+<1.jpg, id=68, 1201.48875pt x 587.19376pt>
 File: 1.jpg Graphic file (type jpg)
 <use 1.jpg>
 Package pdftex.def Info: 1.jpg  used on input line 51.
-(pdftex.def)             Requested size: 338.02072pt x 159.0631pt.
+(pdftex.def)             Requested size: 338.02072pt x 165.19263pt.
 
 Overfull \hbox (30.73085pt too wide) in paragraph at lines 51--51
  [] 
@@ -1072,664 +987,35 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 51--51
 
 [5
 
- <./1.jpg>]
-<2.jpg, id=158, 1620.0525pt x 779.91376pt>
-File: 2.jpg Graphic file (type jpg)
-<use 2.jpg>
-Package pdftex.def Info: 2.jpg  used on input line 68.
-(pdftex.def)             Requested size: 307.28987pt x 147.92334pt.
- [6
-
- <./2.jpg>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 78.
- (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 78.
- (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-) [7
-
-]
-<3.jpg, id=180, 1817.79124pt x 872.25874pt>
-File: 3.jpg Graphic file (type jpg)
-<use 3.jpg>
-Package pdftex.def Info: 3.jpg  used on input line 85.
-(pdftex.def)             Requested size: 338.02072pt x 162.19054pt.
-
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 85--85
- [] 
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.85 \end{frame}
-                 [8
-
- <./3.jpg>]
-
-./chapter4.tex:96: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.96 \end{frame}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[9
-
-]
-<4.jpg, id=193, 1274.7625pt x 459.7175pt>
-File: 4.jpg Graphic file (type jpg)
-<use 4.jpg>
-Package pdftex.def Info: 4.jpg  used on input line 103.
-(pdftex.def)             Requested size: 338.02072pt x 121.8947pt.
-
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 103--103
- [] 
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.103 \end{frame}
-                  [10
-
- <./4.jpg>]
-<5.jpg, id=200, 1442.38875pt x 613.29124pt>
-File: 5.jpg Graphic file (type jpg)
-<use 5.jpg>
-Package pdftex.def Info: 5.jpg  used on input line 110.
-(pdftex.def)             Requested size: 338.02072pt x 143.72105pt.
-
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 110--110
- [] 
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.110 \end{frame}
-                  [11
-
- <./5.jpg>]
-<6.jpg, id=207, 1222.5675pt x 598.235pt>
-File: 6.jpg Graphic file (type jpg)
-<use 6.jpg>
-Package pdftex.def Info: 6.jpg  used on input line 122.
-(pdftex.def)             Requested size: 338.02072pt x 165.39601pt.
-
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 122--122
- [] 
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.122 \end{frame}
-                  [12
-
- <./6.jpg>]
-./chapter4.tex:131: Undefined control sequence.
-\beamer@doifinframe ...tau )^2}\Rightarrow \angel 
-                                                  \angle H(j\Omega )=\arctan...
-l.131 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[13
-
-]
-<7.jpg, id=222, 1713.40125pt x 840.13875pt>
-File: 7.jpg Graphic file (type jpg)
-<use 7.jpg>
-Package pdftex.def Info: 7.jpg  used on input line 138.
-(pdftex.def)             Requested size: 338.02072pt x 165.7429pt.
-
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 138--138
- [] 
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.138 \end{frame}
-                  [14
-
- <./7.jpg>] [15
-
-]
-<8.jpg, id=235, 1805.74625pt x 780.9175pt>
-File: 8.jpg Graphic file (type jpg)
-<use 8.jpg>
-Package pdftex.def Info: 8.jpg  used on input line 153.
-(pdftex.def)             Requested size: 338.02072pt x 146.17143pt.
-
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 153--153
- [] 
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.153 \end{frame}
-                  [16
-
- <./8.jpg>]
-<9.jpg, id=242, 1562.83875pt x 752.8125pt>
-File: 9.jpg Graphic file (type jpg)
-<use 9.jpg>
-Package pdftex.def Info: 9.jpg  used on input line 160.
-(pdftex.def)             Requested size: 338.02072pt x 162.81644pt.
-
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 160--160
- [] 
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.160 \end{frame}
-                  [17
-
- <./9.jpg>]
-<10.jpg, id=249, 1502.61375pt x 837.1275pt>
-File: 10.jpg Graphic file (type jpg)
-<use 10.jpg>
-Package pdftex.def Info: 10.jpg  used on input line 171.
-(pdftex.def)             Requested size: 338.02072pt x 188.30724pt.
-
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 171--171
- [] 
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.171 \end{frame}
-                  [18
-
- <./10.jpg>]
-<11.jpg, id=256, 1265.72874pt x 829.0975pt>
-File: 11.jpg Graphic file (type jpg)
-<use 11.jpg>
-Package pdftex.def Info: 11.jpg  used on input line 182.
-(pdftex.def)             Requested size: 307.28987pt x 201.2773pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.182 \end{frame}
-                 
-Overfull \vbox (2.07405pt too high) detected at line 182
- []
-
-[19
-
- <./11.jpg>] [20
-
-]
-<12.jpg, id=270, 1192.455pt x 623.32875pt>
-File: 12.jpg Graphic file (type jpg)
-<use 12.jpg>
-Package pdftex.def Info: 12.jpg  used on input line 207.
-(pdftex.def)             Requested size: 307.28987pt x 160.62546pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.207 \end{frame}
-                  [21
-
- <./12.jpg>] [22
-
-] [23
-
-] [24
-
-] [25
-
-]
-<phpe46ibx.png, id=305, 582.175pt x 260.975pt>
-File: phpe46ibx.png Graphic file (type png)
-<use phpe46ibx.png>
-Package pdftex.def Info: phpe46ibx.png  used on input line 292.
-(pdftex.def)             Requested size: 215.10196pt x 96.42384pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.292 \end{frame}
-                  [26
-
- <./phpe46ibx.png>]
-<13.jpg, id=315, 1123.19624pt x 473.77pt>
-File: 13.jpg Graphic file (type jpg)
-<use 13.jpg>
-Package pdftex.def Info: 13.jpg  used on input line 301.
-(pdftex.def)             Requested size: 276.559pt x 116.64938pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.301 \end{frame}
-                  [27
-
- <./13.jpg>] [28
-
-] [29
-
-]
-<14.jpg, id=334, 773.89125pt x 442.65375pt>
-File: 14.jpg Graphic file (type jpg)
-<use 14.jpg>
-Package pdftex.def Info: 14.jpg  used on input line 334.
-(pdftex.def)             Requested size: 276.559pt x 158.18672pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.334 \end{frame}
-                  [30
-
- <./14.jpg>] [31
-
-] [32
-
-] [33
-
-]
-<15.jpg, id=362, 1246.6575pt x 478.78876pt>
-File: 15.jpg Graphic file (type jpg)
-<use 15.jpg>
-Package pdftex.def Info: 15.jpg  used on input line 388.
-(pdftex.def)             Requested size: 338.02072pt x 129.8153pt.
-
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 388--388
- [] 
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.388 \end{frame}
-                  [34
-
- <./15.jpg>]
-./chapter4.tex:403: Undefined control sequence.
-<argument> ...+\varepsilon ^2 T_{N}^2\left (\righ 
-                                                  \frac {\Omega }{\Omega _{C...
-l.403 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./chapter4.tex:403: Undefined control sequence.
-<argument> 1+\varepsilon ^2 T_{N}^2\left (\righ 
-                                                \frac {\Omega }{\Omega _{C}}...
-l.403 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[35
-
-]
-<ves_basisf-chebyshev.png, id=375, 1003.75pt x 602.25pt>
-File: ves_basisf-chebyshev.png Graphic file (type png)
-<use ves_basisf-chebyshev.png>
-Package pdftex.def Info: ves_basisf-chebyshev.png  used on input line 410.
-(pdftex.def)             Requested size: 307.28987pt x 184.3706pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.410 \end{frame}
-                  [36
-
- <./ves_basisf-chebyshev.png>] [37
-
-] [38
-
-]
-<16.jpg, id=395, 1419.3025pt x 689.57625pt>
-File: 16.jpg Graphic file (type jpg)
-<use 16.jpg>
-Package pdftex.def Info: 16.jpg  used on input line 446.
-(pdftex.def)             Requested size: 307.28987pt x 149.29768pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.446 \end{frame}
-                  [39
-
- <./16.jpg>] [40
-
-] [41
-
-] [42
-
-] [43
-
-] [44
-
-]
-<17.jpg, id=433, 1604.99625pt x 814.04124pt>
-File: 17.jpg Graphic file (type jpg)
-<use 17.jpg>
-Package pdftex.def Info: 17.jpg  used on input line 529.
-(pdftex.def)             Requested size: 307.28987pt x 155.84946pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.529 \end{frame}
-                  [45
-
- <./17.jpg>] [46
-
-]
-<18.jpg, id=447, 1233.60875pt x 649.42625pt>
-File: 18.jpg Graphic file (type jpg)
-<use 18.jpg>
-Package pdftex.def Info: 18.jpg  used on input line 552.
-(pdftex.def)             Requested size: 307.28987pt x 161.7715pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.552 \end{frame}
-                  [47
-
- <./18.jpg>] [48
-
-]
-<19.jpg, id=460, 1295.84125pt x 528.97626pt>
-File: 19.jpg Graphic file (type jpg)
-<use 19.jpg>
-Package pdftex.def Info: 19.jpg  used on input line 582.
-(pdftex.def)             Requested size: 245.83282pt x 100.3451pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.582 \end{frame}
-                  [49
-
- <./19.jpg>] [50
-
-]
-<20.jpg, id=474, 1191.45125pt x 653.44125pt>
-File: 20.jpg Graphic file (type jpg)
-<use 20.jpg>
-Package pdftex.def Info: 20.jpg  used on input line 607.
-(pdftex.def)             Requested size: 307.28987pt x 168.52472pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.607 \end{frame}
-                  [51
-
- <./20.jpg>]
-<21.jpg, id=481, 1059.96pt x 558.085pt>
-File: 21.jpg Graphic file (type jpg)
-<use 21.jpg>
-Package pdftex.def Info: 21.jpg  used on input line 614.
-(pdftex.def)             Requested size: 307.28987pt x 161.78941pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.614 \end{frame}
-                  [52
-
- <./21.jpg>] [53
-
-]
-<22.jpg, id=494, 1223.57124pt x 455.7025pt>
-File: 22.jpg Graphic file (type jpg)
-<use 22.jpg>
-Package pdftex.def Info: 22.jpg  used on input line 644.
-(pdftex.def)             Requested size: 307.28987pt x 114.4399pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.644 \end{frame}
-                  [54
-
- <./22.jpg>] [55
-
-]
-<23.jpg, id=508, 1150.2975pt x 501.875pt>
-File: 23.jpg Graphic file (type jpg)
-<use 23.jpg>
-Package pdftex.def Info: 23.jpg  used on input line 668.
-(pdftex.def)             Requested size: 307.28987pt x 134.06834pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.668 \end{frame}
-                  [56
-
- <./23.jpg>]
-<24.jpg, id=515, 1180.41pt x 461.725pt>
-File: 24.jpg Graphic file (type jpg)
-<use 24.jpg>
-Package pdftex.def Info: 24.jpg  used on input line 676.
-(pdftex.def)             Requested size: 307.28987pt x 120.19362pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.676 \end{frame}
-                  [57
-
- <./24.jpg>] [58
-
-]
-<25.jpg, id=528, 1237.62375pt x 450.68375pt>
-File: 25.jpg Graphic file (type jpg)
-<use 25.jpg>
-Package pdftex.def Info: 25.jpg  used on input line 701.
-(pdftex.def)             Requested size: 307.28987pt x 111.90044pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.701 \end{frame}
-                  [59
-
- <./25.jpg>] [60
-
-]
-\openout4 = `chapter4.vrb'.
-
- (./chapter4.vrb
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 7.
- (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmtt.fd
-File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)) [61
-
-]
-Overfull \hbox (11.09862pt too wide) detected at line 744
-[]
- []
-
-[62
-
-] [63
-
-]
-Overfull \vbox (0.49477pt too high) detected at line 788
- []
-
-[64
-
-] [65
-
-]
-
-./chapter4.tex:819: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.819 \end{frame}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./chapter4.tex:819: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.819 \end{frame}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[66
-
-]
-<26.jpg, id=577, 1388.18625pt x 575.14874pt>
-File: 26.jpg Graphic file (type jpg)
-<use 26.jpg>
-Package pdftex.def Info: 26.jpg  used on input line 832.
-(pdftex.def)             Requested size: 245.83282pt x 101.84607pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.832 \end{frame}
-                  [67
-
- <./26.jpg>] [68
-
-] [69
-
-] [70
-
-]
-<27.jpg, id=603, 1104.125pt x 490.83376pt>
-File: 27.jpg Graphic file (type jpg)
-<use 27.jpg>
-Package pdftex.def Info: 27.jpg  used on input line 884.
-(pdftex.def)             Requested size: 245.83282pt x 109.27943pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.884 \end{frame}
-                  [71
-
- <./27.jpg>] [72
-
-]
-Overfull \vbox (0.22174pt too high) detected at line 911
- []
-
-[73
-
-] [74
-
-] [75
-
-]
-<28.jpg, id=635, 1046.91125pt x 456.70625pt>
-File: 28.jpg Graphic file (type jpg)
-<use 28.jpg>
-Package pdftex.def Info: 28.jpg  used on input line 949.
-(pdftex.def)             Requested size: 245.83282pt x 107.24236pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:re2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.949 \end{frame}
-                  [76
-
- <./28.jpg>] [77
-
-] [78
-
-] [79
-
-]
-\openout4 = `chapter4.vrb'.
-
- (./chapter4.vrb) [80
+ <./1.jpg>] [6
 
 ]
 \tf@nav=\write6
-\openout6 = `chapter4.nav'.
+\openout6 = `chapter5.nav'.
 
 \tf@toc=\write7
-\openout7 = `chapter4.toc'.
+\openout7 = `chapter5.toc'.
 
 \tf@snm=\write8
-\openout8 = `chapter4.snm'.
+\openout8 = `chapter5.snm'.
 
- (./chapter4.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `chapter4.out' has not changed.
-(rerunfilecheck)             Checksum: 4539776E719A956F5D3699A1FAE01849;2855.
+ (./chapter5.aux)
+Package rerunfilecheck Info: File `chapter5.out' has not changed.
+(rerunfilecheck)             Checksum: 8134A5B4DA5AE111E44E7E65887E34D6;732.
  ) 
 Here is how much of TeX's memory you used:
- 27146 strings out of 476091
- 533478 string characters out of 5794082
- 1870330 words of memory out of 5000000
- 46741 multiletter control sequences out of 15000+600000
- 527081 words of font info for 65 fonts, out of 8000000 for 9000
+ 26353 strings out of 476091
+ 522085 string characters out of 5794082
+ 1858330 words of memory out of 5000000
+ 46185 multiletter control sequences out of 15000+600000
+ 518527 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,22n,122p,509b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vntt8.pfb>
-Output written on chapter4.pdf (80 pages, 1764021 bytes).
+ 128i,15n,122p,400b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb>
+Output written on chapter5.pdf (6 pages, 113071 bytes).
 PDF statistics:
- 775 PDF objects out of 1000 (max. 8388607)
- 615 compressed objects within 7 object streams
- 190 named destinations out of 1000 (max. 500000)
- 331 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 100 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 92 words of extra memory for PDF output out of 10000 (max. 10000000)
 

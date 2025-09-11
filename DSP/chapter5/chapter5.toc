@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Giới thiệu playlist}{3}{0}{1}
+\beamer@sectionintoc {2}{Tài liệu tham khảo}{4}{0}{2}
+\beamer@sectionintoc {3}{Quy trình xử lý tín hiệu số}{5}{0}{3}
+\beamer@sectionintoc {4}{Ý tưởng thiết kế bộ lọc FIR}{6}{0}{4}
