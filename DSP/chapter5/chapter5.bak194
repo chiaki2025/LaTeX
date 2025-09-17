@@ -1,0 +1,145 @@
+\documentclass[8pt]{beamer}
+\usepackage{tikz}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{mathrsfs}
+\usepackage{verbatim}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usetheme{Copenhagen}
+\usecolortheme{dolphin}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\title[Chương 5: Thiết kế bộ lọc FIR] %optional
+{Chương 5: Thiết kế bộ lọc FIR}
+\subtitle{Xử lý tín hiệu số}
+\author[Xử lý tín hiệu số] % (optional)
+{Tín Vũ}
+\date[VLC 2021] % (optional)
+{tinvu1309@gmail.com}
+\begin{document}
+\frame{\titlepage}
+\begin{frame}{Mục lục}
+	\tableofcontents
+\end{frame}
+\begin{frame}{Giới thiệu playlist}
+	\section{Giới thiệu playlist}
+	\begin{itemize}
+		\item Mình là Tín Vũ, hiện đang là sinh viên học tại Trường Đại học Công nghệ, Đại học Quốc gia Hà Nội. Mình tạo playlist video này để hỗ trợ các bạn học môn \textbf{Xử lý tín hiệu số}.
+		\item Khác với môn học tiên quyết \alert{Tín hiệu hệ thống} trước đó, bài giảng môn học này \textbf{hoàn toàn bám sát với đề cương và giáo trình nội bộ} của trường mình, nên các bạn trường khác cần phải lưu ý rất kĩ điều này.
+		\item Không chỉ dừng lại ở lý thuyết, playlist này \textbf{có bổ sung hướng dẫn lập trình cơ bản bằng GNU Octave/Matlab} để vẽ phổ tín hiệu, đáp ứng tần số và thiết kế bộ lọc.
+		\item Môn học này bao gồm \textbf{6 chương}, các chương đều liên quan rất chặt chẽ với nhau nên hãy học cẩn thận ngay từ \alert{Chương 0} để ôn thi cuối kì đỡ vất vả.
+	\end{itemize}
+\end{frame}
+\begin{frame}{Tài liệu tham khảo}
+	\section{Tài liệu tham khảo}
+	\begin{itemize}
+		\item Tài liệu tham khảo chính: Giáo trình Xử lý tín hiệu số (Nguyễn Linh Trung, Trần Đức Tân, Huỳnh Hữu Tuệ, ĐHCN, 2012).
+		\item Tài liệu tham khảo phụ: Discrete-time Signal Processing (Alan V.Oppenheim, 2nd edition).
+	\end{itemize}
+\end{frame}
+\begin{frame}{Quy trình xử lý tín hiệu số}
+	\section{Quy trình xử lý tín hiệu số}
+	\begin{figure}[h]
+		\includegraphics[width=1.1\textwidth]{1.jpg}
+		\caption{DSP Learning Process}			\label{fig:re1}
+	\end{figure}
+
+\end{frame}
+\begin{frame}{Ý tưởng thiết kế bộ lọc FIR}
+	\section{Ý tưởng thiết kế bộ lọc FIR}
+	Nhược điểm lớn nhất của bộ lọc IIR đó là \textbf{méo pha phi tuyến}, nên ta cần phải thiết kế họ bộ lọc khác \texbf{có thể kiếm soát được độ méo pha}. Từ phương trình hàm truyền tổng quát (đã được thảo luận rất kĩ ở \alert{Chương 2}):
+	$$H(z)=\frac{\sum_{k=0}^M b_{k}z^{-k}}{1+\sum_{k=1}^{N}a_{k}z^{-k}}$$
+	Bộ lọc FIR là họ bộ lọc thỏa mãn $a_{k}=0$ $(\forall k)$, ta dễ dàng suy ra phương trình sai phân biểu diễn hệ thống FIR có dạng:
+	$$y[n]=\sum_{k=0}^{M}b_{k}x[n-k]$$
+	Lấy biến đổi $\mathscr{Z}$ của hai vế, ta tìm được dạng đáp ứng xung của hệ thống:
+	$$h[n]=\sum_{k=0}^{M}b_{k}\delta[n-k]$$
+	Nếu $x[n]=e^{j\omega_{0}n}$, dễ thấy:
+	$$y[n]=x[n]*h[n]=\sum_{k=0}^{M}b_{k}e^{j\omega_{0}(n-k)}=\sum_{k=0}^M b_{k}e^{j\omega_{0}n}\alert{e^{-j\omega_{0}k}}$$
+\end{frame}
+\begin{frame}{Ý tưởng thiết kế bộ lọc IIR}
+	\begin{figure}[h]
+		\includegraphics[width=1.1\textwidth]{2.jpg}
+		\caption{Ideal filter}			\label{fig:re2}
+	\end{figure}
+	Từ công thức IDTFT, ta dễ dàng xác định được $h_{id}[n]$:
+	$$h_{id}[n]=\frac{1}{2\pi}\int_{2\pi}H_{id}(\omega)e^{j\omega n}d\omega=\frac{1}{2\pi}\int_{-\pi}^{\pi}e^{j\omega n}d\omega=\frac{1}{2\pi}\int_{-\omega_{C}}^{+\omega_{C}}e^{j\omega n}d\omega=\alert{\frac{\sin{\omega_{C}n}}{\pi n}}$$
+
+\end{frame}
+\begin{frame}{Ý tưởng thiết kế bộ lọc FIR}
+	\begin{figure}[h]
+		\includegraphics[width=1.1\textwidth]{3.jpg}
+		\caption{Real filter}			\label{fig:re3}
+	\end{figure}
+\end{frame}
+\begin{frame}{Ý tưởng thiết kế bộ lọc FIR}
+	Từ biểu thức DTFT, ta có thể giải thích hiện tượng Gibbs như sau:
+	$$H(\omega)=\sum_{n=-\infty}^{+\infty}h[n]e^{-j\omega n}=\sum_{n=-M}^{+M}h[n]e^{-j\omega n}=h[0]+\sum_{n=1}^{M}h[n](e^{j\omega n}+e^{-j\omega n})$$$$=\alert{h[0]+\sum_{n=1}^{M}2h[n]\cos{(\omega n)}}$$
+	Ta có thể thấy rất rõ hệ quả của việc cắt cụt $h_{id}[n]$ thành $h[n]$ là \textbf{tạo gợn sóng mạnh} và \textbf{độ suy hao giảm nhanh} ($A_{id}=+\infty\to A\approx 23\text{dB}$).
+	\\ Hiển nhiên nếu $L\to+\infty$ (tức là tăng L càng lớn càng tốt) thì $h[n]\to h_{id}[n]$, chất lượng bộ lọc được cải thiện rõ rệt.
+	\\ Thế nhưng, trong nhiều trường hợp thực tiễn, việc tăng $L$ trở nên khó khăn, các nhà toán học đã phát triển các phương pháp "cắt" bộ lọc lý tưởng khác tối ưu hơn "cắt" trực tiếp như trên.
+	\\  Phương pháp cắt cụt này được gọi là \alert{phương pháp cửa sổ (windowing method)}, được mô tả qua biểu thức sau: $$h[n]=h_{id}[n]\alert{\cdot}w[n]$$
+\end{frame}
+\begin{frame}{Ý tưởng thiết kế bộ lọc FIR}
+	\begin{figure}[h]
+		\includegraphics[width=1.1\textwidth]{4.jpg}
+		\caption{Windowing method to truncate the ideal filter}			\label{fig:re4}
+	\end{figure}
+
+\end{frame}
+\begin{frame}{Ý tưởng thiết kế bộ lọc FIR}
+	\begin{figure}[h]
+		\includegraphics[width=1\textwidth]{The-rectangular-Hanning-and-Hamming-windows-in-the-time-and-frequency-domains-with-Mw.png}
+		\caption{Comparing windows in time and frequency domain}			\label{fig:re5}
+	\end{figure}
+\end{frame}
+\begin{frame}{Ý tưởng thiết kế bộ lọc FIR}
+	\begin{figure}[h]
+		\includegraphics[width=1.1\textwidth]{5.jpg}
+		\caption{"Causalization" step}			\label{fig:re6}
+	\end{figure}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc FIR}
+	\section{Thiết kế bộ lọc FIR}
+	\subsection{Thiết kế bộ lọc LP}
+	\begin{itemize}
+		\item Thiết kế bộ lọc LP
+	\end{itemize}
+	\begin{figure}[h]
+		\includegraphics[width=0.9\textwidth]{6.jpg}
+		\caption{Frequency response in dB scale}			\label{fig:re7}
+	\end{figure}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc FIR}
+	Ta định nghĩa khái niệm \alert{tần số số} mới như sau:
+	$$\alert{v=\frac{F}{F_{sam}}}$$
+	\textbf{Lưu ý: khái niệm tần số số (digital frequency) này khác với quy ước của Matlab đã được trình bày rất kĩ ở \alert{Chương 4}}.
+	\\ Ta viết lại công thức $h_{id}[n]$ như sau:
+	$$h_{id}[n]=\frac{\sin{(\omega_{C}n)}}{n\pi}=2v\frac{\sin{(2\pi v n)}}{2\pi vn}=\alert{2v\text{sinc}(2vn)}$$
+	Với: $$\text{sinc(x)}=\frac{\sin{(\pi x)}}{\pi x}$$
+	Hiển nhiên từ đáp ứng biên độ trên ta thấy $\Delta v$ và $L$ tỉ lệ \alert{nghịch} với nhau, tức là: $$\Delta v=\frac{C}{L}$$
+\begin{figure}[h]
+		\includegraphics[width=0.7\textwidth]{7.jpg}
+		\caption{Designing FIR LP filter}			\label{fig:re8}
+	\end{figure}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc FIR}
+\begin{block}{Thuật toán thiết kế bộ lọc FIR LP}
+\begin{enumerate}
+    \item[1] Quy đổi tần số về \alert{tần số số} (theo quy chuẩn thường):
+        $$\alert{v=\frac{F}{F_{sam}}}$$
+    \item[2] Xác định tần số số cắt: $$v_{C}=\frac{v_{P}+v_{S}}{2}$$
+    \item[3] Chọn cửa sổ $w[n]$ có $A_{w,S}\geq A_{S}$.
+    \item[4] Từ cửa sổ đã chọn, xác định chiều dài cửa sổ: $$\Delta v=\frac{C}{L}$$
+    \item[5] Thiết kế bộ lọc FIR: $$h[n]=h_{id}[n]w[n]=\alert{2v\textbf{sinc}(2vn)w[n]}\quad\left(|n|\leq\frac{L-1}{2}\right)$$
+    \item[6] Dịch nhân quả:
+        $$h_{C}[n]=h\left[n-\frac{L-1}{2}\right]\quad(0\leq n\leq L-1)$$
+    \end{enumerate}
+\end{block}
+\end{frame}
+\begin{frame}{Thiết kế bộ lọc FIR}
+\end{frame}
+\end{document}

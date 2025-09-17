@@ -2,3 +2,8 @@
 \beamer@sectionintoc {2}{Tài liệu tham khảo}{4}{0}{2}
 \beamer@sectionintoc {3}{Quy trình xử lý tín hiệu số}{5}{0}{3}
 \beamer@sectionintoc {4}{Ý tưởng thiết kế bộ lọc FIR}{6}{0}{4}
+\beamer@sectionintoc {5}{Thiết kế bộ lọc FIR}{13}{0}{5}
+\beamer@subsectionintoc {5}{1}{Thiết kế bộ lọc LP}{13}{0}{5}
+\beamer@subsectionintoc {5}{2}{Thiết kế bộ lọc HP}{19}{0}{5}
+\beamer@subsectionintoc {5}{3}{Thiết kế bộ lọc BP}{23}{0}{5}
+\beamer@sectionintoc {6}{Thực hành}{27}{0}{6}

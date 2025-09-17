@@ -1,0 +1,64 @@
+\documentclass[8pt]{beamer}
+\usepackage{tikz}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{mathrsfs}
+\usepackage{verbatim}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usetheme{Copenhagen}
+\usecolortheme{dolphin}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\title[Chương 5: Thiết kế bộ lọc FIR] %optional
+{Chương 5: Thiết kế bộ lọc FIR}
+\subtitle{Xử lý tín hiệu số}
+\author[Xử lý tín hiệu số] % (optional)
+{Tín Vũ}
+\date[VLC 2021] % (optional)
+{tinvu1309@gmail.com}
+\begin{document}
+\frame{\titlepage}
+\begin{frame}{Mục lục}
+	\tableofcontents
+\end{frame}
+\begin{frame}{Giới thiệu playlist}
+	\section{Giới thiệu playlist}
+	\begin{itemize}
+		\item Mình là Tín Vũ, hiện đang là sinh viên học tại Trường Đại học Công nghệ, Đại học Quốc gia Hà Nội. Mình tạo playlist video này để hỗ trợ các bạn học môn \textbf{Xử lý tín hiệu số}.
+		\item Khác với môn học tiên quyết \alert{Tín hiệu hệ thống} trước đó, bài giảng môn học này \textbf{hoàn toàn bám sát với đề cương và giáo trình nội bộ} của trường mình, nên các bạn trường khác cần phải lưu ý rất kĩ điều này.
+		\item Không chỉ dừng lại ở lý thuyết, playlist này \textbf{có bổ sung hướng dẫn lập trình cơ bản bằng GNU Octave/Matlab} để vẽ phổ tín hiệu, đáp ứng tần số và thiết kế bộ lọc.
+		\item Môn học này bao gồm \textbf{6 chương}, các chương đều liên quan rất chặt chẽ với nhau nên hãy học cẩn thận ngay từ \alert{Chương 0} để ôn thi cuối kì đỡ vất vả.
+	\end{itemize}
+\end{frame}
+\begin{frame}{Tài liệu tham khảo}
+	\section{Tài liệu tham khảo}
+	\begin{itemize}
+		\item Tài liệu tham khảo chính: Giáo trình Xử lý tín hiệu số (Nguyễn Linh Trung, Trần Đức Tân, Huỳnh Hữu Tuệ, ĐHCN, 2012).
+		\item Tài liệu tham khảo phụ: Discrete-time Signal Processing (Alan V.Oppenheim, 2nd edition).
+	\end{itemize}
+\end{frame}
+\begin{frame}{Quy trình xử lý tín hiệu số}
+	\section{Quy trình xử lý tín hiệu số}
+	\begin{figure}[h]
+		\includegraphics[width=1.1\textwidth]{1.jpg}
+		\caption{DSP Learning Process}			\label{fig:re1}
+	\end{figure}
+
+\end{frame}
+\begin{frame}{Ý tưởng thiết kế bộ lọc FIR}
+	\section{Ý tưởng thiết kế bộ lọc FIR}
+    Nhược điểm lớn nhất của bộ lọc IIR đó là \textbf{méo pha phi tuyến}, nên ta cần phải thiết kế họ bộ lọc khác \texbf{có thể kiếm soát được độ méo pha}. Từ phương trình hàm truyền tổng quát (đã được thảo luận rất kĩ ở \alert{Chương 2}):
+    $$H(z)=\frac{\sum_{k=0}^M b_{k}z^{-k}}{1+\sum_{k=1}^{N}a_{k}z^{-k}}$$
+Bộ lọc FIR là họ bộ lọc thỏa mãn $a_{k}=0$ $(\forall k)$, ta dễ dàng suy ra phương trình sai phân biểu diễn hệ thống FIR có dạng:
+$$y[n]=\sum_{k=0}^{M}b_{k}x[n-k]$$
+Lấy biến đổi $\mathscr{Z}$ của hai vế, ta tìm được dạng đáp ứng xung của hệ thống:
+$$h[n]=\sum_{k=0}^{M}b_{k}\delta[n-k]$$
+Nếu $x[n]=e^{j\omega_{0}n}$, dễ thấy:
+$$y[n]=x[n]*h[n]=\sum_{k=0}^{M}b_{k}e^{j\omega_{0}(n-k)}$$
+\end{frame}
+
+\end{document}
