@@ -312,7 +312,7 @@ class RegressionModel(Module):
     \centering
     \includegraphics[width=0.7\linewidth]{5.jpg}
     \label{fig:placeholder}
-    \caption{Final result}
+    \caption{Final result, 6/6 testcases passed}
 \end{figure}
 \section{Language Identification:}
 \subsection{Phát biểu bài toán:}
@@ -401,7 +401,8 @@ Ràng buộc về kích thước của các ma trận được cho trong bảng 
     \hline
 \end{tabular}
 \end{center}
-\subsection{RNN for Word Language Classification}
+\newpage
+\subsection{Thuật toán học máy: Recurrent Neural Network}
 \begin{algorithm}
 \caption{Train an RNN to classify words by language}\label{alg:rnn_word}
 \begin{algorithmic}
@@ -450,26 +451,16 @@ Ràng buộc về kích thước của các ma trận được cho trong bảng 
 \State Update $\theta \gets \theta - \eta \nabla \theta$
 \end{algorithmic}
 \end{algorithm}
+\newpage
 \subsection{Thực thi giải thuật bằng Python}
 \begin{verbatim}
 class LanguageIDModel(Module):
-    """
-    A model for language identification at a single-word granularity.
-
-    (See RegressionModel for more information about the APIs of different
-    methods here. We recommend that you implement the RegressionModel before
-    working on this part of the project.)
-    """
     def __init__(self):
-        # Our dataset contains words from five different languages, and the
-        # combined alphabets of the five languages contain a total of 47 unique
-        # characters.
         # You can refer to self.num_chars or len(self.languages) in your code
         self.num_chars = 47
         self.languages = ["English", "Spanish", "Finnish", "Dutch", "Polish"]
         super(LanguageIDModel, self).__init__()
-        "*** YOUR CODE HERE ***"
-        self.hidden_size = 1024
+        self.hidden_size = 218
         self.output_size = len(self.languages)
 
         # RNN parameters
@@ -478,35 +469,6 @@ class LanguageIDModel(Module):
         self.Wout = Linear(self.hidden_size, self.output_size)
 
     def run(self, xs):
-        """
-        Runs the model for a batch of examples.
-
-        Although words have different lengths, our data processing guarantees
-        that within a single batch, all words will be of the same length (L).
-
-        Here `xs` will be a list of length L. Each element of `xs` will be a
-        tensor with shape (batch_size x self.num_chars), where every row in the
-        array is a one-hot vector encoding of a character. For example, if we
-        have a batch of 8 three-letter words where the last word is "cat", then
-        xs[1] will be a tensor that contains a 1 at position (7, 0). Here the
-        index 7 reflects the fact that "cat" is the last word in the batch, and
-        the index 0 reflects the fact that the letter "a" is the inital (0th)
-        letter of our combined alphabet for this task.
-
-        Your model should use a Recurrent Neural Network to summarize the list
-        `xs` into a single tensor of shape (batch_size x hidden_size), for your
-        choice of hidden_size. It should then calculate a tensor of shape
-        (batch_size x 5) containing scores, where higher scores correspond to
-        greater probability of the word originating from a particular language.
-
-        Inputs:
-            xs: a list with L elements (one per character), where each element
-                is a node with shape (batch_size x self.num_chars)
-        Returns:
-            A node with shape (batch_size x 5) containing predicted scores
-                (also called logits)
-        """
-        "*** YOUR CODE HERE ***"
         batch_size = xs[0].shape[0]
         h = torch.zeros(batch_size, self.hidden_size)
 
@@ -520,41 +482,13 @@ class LanguageIDModel(Module):
         return out
     
     def get_loss(self, xs, y):
-        """
-        Computes the loss for a batch of examples.
-
-        The correct labels `y` are represented as a node with shape
-        (batch_size x 5). Each row is a one-hot vector encoding the correct
-        language.
-
-        Inputs:
-            xs: a list with L elements (one per character), where each element
-                is a node with shape (batch_size x self.num_chars)
-            y: a node with shape (batch_size x 5)
-        Returns: a loss node
-        """
-        "*** YOUR CODE HERE ***"
         logits = self.run(xs)
-        return cross_entropy(logits, y)  # PyTorch cross_entropy expects logits, not softmax
+        return cross_entropy(logits, y)
+        # PyTorch cross_entropy expects logits, not softmax
 
-    def train(self, dataset, batch_size=32, lr=0.001, max_epochs=50):
-        """
-        Trains the model.
-
-        Note that when you iterate through dataloader, each batch will returned as its own vector in the form
-        (batch_size x length of word x self.num_chars). However, in order to run multiple samples at the same time,
-        get_loss() and run() expect each batch to be in the form (length of word x batch_size x self.num_chars), meaning
-        that you need to switch the first two dimensions of every batch. This can be done with the movedim() function 
-        as follows:
-
-        movedim(input_vector, initial_dimension_position, final_dimension_position)
-
-        For more information, look at the pytorch documentation of torch.movedim()
-        """
-        "*** YOUR CODE HERE ***"
+    def train(self, dataset, batch_size=32, lr=0.001, max_epochs=20):
         dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
         optimizer = optim.Adam(self.parameters(), lr=lr)
-
         for epoch in range(max_epochs):
             total_loss = 0.0
             for batch in dataloader:
@@ -563,34 +497,19 @@ class LanguageIDModel(Module):
                 # xs: list of length L, each element shape: batch_size x num_chars
                 xs = [movedim(batch_x[:, i, :], 0, 0) for i in range(batch_x.shape[1])]
                 y = batch['label']  # shape: batch_size x output_size
-
                 optimizer.zero_grad()
                 loss = self.get_loss(xs, y)
                 loss.backward()
                 optimizer.step()
                 total_loss += loss.item()
-
             print(f"Epoch {epoch+1}/{max_epochs}, Loss: {total_loss:.4f}")
 
         
 
 def Convolve(input: tensor, weight: tensor):
-    """
-    Acts as a convolution layer by applying a 2d convolution with the given inputs and weights.
-    DO NOT import any pytorch methods to directly do this, the convolution must be done with only the functions
-    already imported.
-
-    There are multiple ways to complete this function. One possible solution would be to use 'tensordot'.
-    If you would like to index a tensor, you can do it as such:
-
-    tensor[y:y+height, x:x+width]
-
-    This returns a subtensor who's first element is tensor[y,x] and has height 'height, and width 'width'
-    """
     input_tensor_dimensions = input.shape
     weight_dimensions = weight.shape
     Output_Tensor = tensor(())
-    "*** YOUR CODE HERE ***"
     H_out = H_in - H_k + 1
     W_out = W_in - W_k + 1
     for i in range(H_out):
@@ -600,5 +519,12 @@ def Convolve(input: tensor, weight: tensor):
 
     return Output_Tensor
 \end{verbatim}
+\subsection{Kết quả}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{7.jpg}
+    \label{fig:placeholder}
+    \caption{Final result, accuracy: 83.8\%}
+\end{figure}
 \end{document}
 

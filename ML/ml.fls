@@ -1190,6 +1190,11 @@ INPUT ./6.png
 INPUT 6.png
 INPUT ./6.png
 INPUT ./6.png
+INPUT ./7.jpg
+INPUT ./7.jpg
+INPUT 7.jpg
+INPUT ./7.jpg
+INPUT ./7.jpg
 INPUT ml.aux
 INPUT ./ml.out
 INPUT ./ml.out
