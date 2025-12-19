@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  18 DEC 2025 17:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  19 DEC 2025 19:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -846,6 +846,9 @@ LaTeX Warning: Label `fig:placeholder' multiply defined.
 
 LaTeX Warning: Label `fig:placeholder' multiply defined.
 
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
 )
 \openout1 = `ml.aux'.
 
@@ -945,7 +948,7 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 56.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<1.jpg, id=55, 764.8575pt x 623.32875pt>
+<1.jpg, id=75, 764.8575pt x 623.32875pt>
 File: 1.jpg Graphic file (type jpg)
 <use 1.jpg>
 Package pdftex.def Info: 1.jpg  used on input line 62.
@@ -985,12 +988,12 @@ Overfull \hbox (22.52954pt too wide) in paragraph at lines 164--164
 []                                                      \T5/cmtt/m/n/12 # w is a learnable parameter[] 
  []
 
-<2.jpg, id=84, 642.4pt x 527.9725pt>
+<2.jpg, id=104, 642.4pt x 527.9725pt>
 File: 2.jpg Graphic file (type jpg)
 <use 2.jpg>
 Package pdftex.def Info: 2.jpg  used on input line 168.
 (pdftex.def)             Requested size: 338.5863pt x 278.28535pt.
-<3.jpg, id=85, 689.57625pt x 313.17pt>
+<3.jpg, id=105, 689.57625pt x 313.17pt>
 File: 3.jpg Graphic file (type jpg)
 <use 3.jpg>
 Package pdftex.def Info: 3.jpg  used on input line 174.
@@ -1021,12 +1024,12 @@ Overfull \hbox (47.22351pt too wide) in paragraph at lines 303--303
  []
 
 [6]
-<4.jpeg, id=113, 462.528pt x 346.896pt>
+<4.jpeg, id=133, 462.528pt x 346.896pt>
 File: 4.jpeg Graphic file (type jpg)
 <use 4.jpeg>
 Package pdftex.def Info: 4.jpeg  used on input line 307.
 (pdftex.def)             Requested size: 338.5863pt x 253.95184pt.
-<5.jpg, id=114, 677.53125pt x 380.42125pt>
+<5.jpg, id=134, 677.53125pt x 380.42125pt>
 File: 5.jpg Graphic file (type jpg)
 <use 5.jpg>
 Package pdftex.def Info: 5.jpg  used on input line 313.
@@ -1035,32 +1038,138 @@ Package pdftex.def Info: 5.jpg  used on input line 313.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.317 \end{document}
-                     <./4.jpeg>] [8
+l.317 \section
+              {Language Identification:} <./4.jpeg>]
+<6.png, id=141, 1897.0875pt x 898.35625pt>
+File: 6.png Graphic file (type png)
+<use 6.png>
+Package pdftex.def Info: 6.png  used on input line 337.
+(pdftex.def)             Requested size: 338.5863pt x 160.32635pt.
+ [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.317 \end{document}
-                     <./5.jpg>] (./ml.aux)
+l.350 \end{equation*}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.350 \end{equation*}
+                      <./5.jpg> <./6.png>] [9] [10]
+Overfull \hbox (4.00906pt too wide) in paragraph at lines 602--602
+[]        \T5/cmtt/m/n/12 # combined alphabets of the five languages contain a total of 47 unique[] 
+ []
+
+
+Overfull \hbox (4.00906pt too wide) in paragraph at lines 602--602
+[]        \T5/cmtt/m/n/12 tensor with shape (batch_size x self.num_chars), where every row in the[] 
+ []
+
+
+Overfull \hbox (4.00906pt too wide) in paragraph at lines 602--602
+[]        \T5/cmtt/m/n/12 have a batch of 8 three-letter words where the last word is "cat", then[] 
+ []
+
+
+Overfull \hbox (4.00906pt too wide) in paragraph at lines 602--602
+[]        \T5/cmtt/m/n/12 index 7 reflects the fact that "cat" is the last word in the batch, and[] 
+ []
+
+
+Overfull \hbox (4.00906pt too wide) in paragraph at lines 602--602
+[]        \T5/cmtt/m/n/12 `xs` into a single tensor of shape (batch_size x hidden_size), for your[] 
+ []
+
+
+Overfull \hbox (4.00906pt too wide) in paragraph at lines 602--602
+[]        \T5/cmtt/m/n/12 greater probability of the word originating from a particular language.[] 
+ []
+
+[11]
+Overfull \hbox (84.26447pt too wide) in paragraph at lines 602--602
+[]        \T5/cmtt/m/n/12 return cross_entropy(logits, y)  # PyTorch cross_entropy expects logits, not softmax[] 
+ []
+
+
+Overfull \hbox (189.21384pt too wide) in paragraph at lines 602--602
+[]        \T5/cmtt/m/n/12 Note that when you iterate through dataloader, each batch will returned as its own vector in the form[] 
+ []
+
+
+Overfull \hbox (226.25479pt too wide) in paragraph at lines 602--602
+[]        \T5/cmtt/m/n/12 (batch_size x length of word x self.num_chars). However, in order to run multiple samples at the same time,[] 
+ []
+
+
+Overfull \hbox (257.12225pt too wide) in paragraph at lines 602--602
+[]        \T5/cmtt/m/n/12 get_loss() and run() expect each batch to be in the form (length of word x batch_size x self.num_chars), meaning[] 
+ []
+
+
+Overfull \hbox (238.60178pt too wide) in paragraph at lines 602--602
+[]        \T5/cmtt/m/n/12 that you need to switch the first two dimensions of every batch. This can be done with the movedim() function[] 
+ []
+
+
+Overfull \hbox (28.70303pt too wide) in paragraph at lines 602--602
+[]        \T5/cmtt/m/n/12 movedim(input_vector, initial_dimension_position, final_dimension_position)[] 
+ []
+
+
+Overfull \hbox (22.52954pt too wide) in paragraph at lines 602--602
+[]        \T5/cmtt/m/n/12 For more information, look at the pytorch documentation of torch.movedim()[] 
+ []
+
+[12]
+Overfull \hbox (22.52954pt too wide) in paragraph at lines 602--602
+[]                \T5/cmtt/m/n/12 # xs: list of length L, each element shape: batch_size x num_chars[] 
+ []
+
+
+Overfull \hbox (53.397pt too wide) in paragraph at lines 602--602
+[]                \T5/cmtt/m/n/12 xs = [movedim(batch_x[:, i, :], 0, 0) for i in range(batch_x.shape[1])][] 
+ []
+
+
+Overfull \hbox (102.78494pt too wide) in paragraph at lines 602--602
+[]    \T5/cmtt/m/n/12 Acts as a convolution layer by applying a 2d convolution with the given inputs and weights.[] 
+ []
+
+
+Overfull \hbox (201.56082pt too wide) in paragraph at lines 602--602
+[]    \T5/cmtt/m/n/12 DO NOT import any pytorch methods to directly do this, the convolution must be done with only the functions[] 
+ []
+
+
+Overfull \hbox (164.51987pt too wide) in paragraph at lines 602--602
+[]    \T5/cmtt/m/n/12 There are multiple ways to complete this function. One possible solution would be to use 'tensordot'.[] 
+ []
+
+
+Overfull \hbox (164.51987pt too wide) in paragraph at lines 602--602
+[]    \T5/cmtt/m/n/12 This returns a subtensor who's first element is tensor[y,x] and has height 'height, and width 'width'[] 
+ []
+
+[13] (./ml.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `ml.out' has not changed.
-(rerunfilecheck)             Checksum: E366CAD3FB8ABB5F3AB7F02DCE5A7FEA;2275.
+(rerunfilecheck)             Checksum: 8FDBF9EB732B9C221217B30FF551F0A0;3319.
  ) 
 Here is how much of TeX's memory you used:
- 34785 strings out of 476091
- 788085 string characters out of 5794082
- 1868330 words of memory out of 5000000
- 54543 multiletter control sequences out of 15000+600000
+ 34824 strings out of 476091
+ 788541 string characters out of 5794082
+ 1873330 words of memory out of 5000000
+ 54562 multiletter control sequences out of 15000+600000
  531202 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,103p,740b,594s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on ml.pdf (8 pages, 425287 bytes).
+ 99i,16n,103p,740b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
+Output written on ml.pdf (13 pages, 530502 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 275 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 179 words of extra memory for PDF output out of 10000 (max. 10000000)
 

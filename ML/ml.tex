@@ -54,8 +54,8 @@
 \section{Binary Perceptron:}
 \subsection{Phát biểu bài toán:}
 Xét không gian Euclid $\mathbb{R}^n$ với tích trong thông thường (tích chấm), cho tập hợp
-$k$ vector $\mathbf{x}_{1}, \mathbf{x}_{2},...\mathbf{x}_{k}$ và gán tùy ý mỗi vector $\mathbf{x}_{i}$ với một trọng số
-(weight) bất kỳ $y_{i}$ ($y_{i}$ chỉ nhận giá trị $1$ hoặc $-1$). Hỏi có tồn tại một siêu mặt phẳng (hyperplane) nào đó
+$k$ vector $\mathbf{x}_{1}, \mathbf{x}_{2},...\mathbf{x}_{k}$ và gán tùy ý mỗi vector $\mathbf{x}_{i}$ với một nhãn
+(label) bất kỳ $y_{i}$ ($y_{i}$ chỉ nhận giá trị $1$ hoặc $-1$). Hỏi có tồn tại một siêu mặt phẳng (hyperplane) nào đó
 có vector pháp tuyến $\textbf{w}$ phân tách được các điểm $A_{i}$ (ứng với vector $\mathbf{x}_i$) có giá trị trọng số khác nhau không?
 \begin{figure}[H]
     \centering
@@ -87,8 +87,8 @@ $$\langle\mathbf{x},\mathbf{w}\rangle=a_{1}x_{1}+a_{2}x_{2}+...+a_{n-1}x_{n-1}+a
 Vậy hiển nhiên, nếu $b+\langle\mathbf{x},\mathbf{w}\rangle>0$ thì vector này thuộc nửa không gian (1), và $b+\langle\mathbf{x},\mathbf{w}\rangle<0$ thì nó thuộc
 nửa không gian (2).
 \\ Chọn các hệ số $b$ và $a_{k}$ ngẫu nhiên, siêu mặt phẳng luôn tồn tại với trường hợp chỉ có một vector $\mathbf{x}$. Không mất tính tổng quát ta giả sử $\mathbf{x}$ thuộc
-nửa không gian (1), với giá trị $y=+1$; ta quy ước gán cố định trọng số $+1$ cho nửa không gian (1), và $-1$ cho nửa không gian (2).
-\\ Xét trường hợp tổng quát, giả sử ta có hệ $k$ vector $\mathbf{x}_{1}, \mathbf{x}_{2},\cdots,\mathbf{x}_{k}$ với các trọng số tương ứng $y_{1}, y_{2},\cdots,y_{k}$.
+nửa không gian (1), với giá trị $y=+1$; ta quy ước gán cố định nhãn $+1$ cho nửa không gian (1), và $-1$ cho nửa không gian (2).
+\\ Xét trường hợp tổng quát, giả sử ta có hệ $k$ vector $\mathbf{x}_{1}, \mathbf{x}_{2},\cdots,\mathbf{x}_{k}$ với các nhãn tương ứng $y_{1}, y_{2},\cdots,y_{k}$.
 Sau khi thực hiện quy trình trên với vector $\mathbf{x}_{1}$, ta lần lượt xét các bất phương trình:
 \begin{equation}
 y_{i}(b+\langle \textbf{w},\textbf{x}_{i}\rangle)>0\quad(i=2,3,\cdots,k)
@@ -101,7 +101,7 @@ số phương trình nhiều hơn số ẩn nên tồn tại khả năng các mi
 \caption{Binary Linear Regression}\label{alg:perceptron}
 \begin{algorithmic}
 \Require Training set $\mathcal{D} = \{(x_i, y_i)\}_{i=1}^n$, with $x_i \in \mathbb{R}^n$, $y_i \in \{+1,-1\}$
-\Ensure Vector $w$ will classtify all of the data points correctly (if exists), and $b$ is a bias value
+\Ensure Vector $w$ will classify all of the data points correctly (if exists), and $b$ is a bias value
 \State Initialize $w \gets \mathbf{0}$
 \State Initialize $b \gets \mathbf{0}$
 \While{true}
@@ -203,7 +203,7 @@ class PerceptronModel(Module): # class definition
 L=\frac{1}{2}(y-f(x))^2
 \end{equation}
 Với: $$f(z)=\text{relu}(z)w_{2}+b_{2}$$ $$z=xw_{1}+b_{1}$$
-Ta tìm gradient descent của từng biến trong hàm $L$:
+Ta tìm gradient descend của từng biến trong hàm $L$:
 \begin{equation*}
 \nabla_{w_{1}}L=\frac{\partial L}{\partial w_{1}}=\frac{\partial L}{\partial f}\frac{\partial f}{\partial z}\frac{\partial z}{\partial w_{1}}=(y-f(x))w_{2}x1_{z\geq0}
 \end{equation*}
@@ -314,4 +314,291 @@ class RegressionModel(Module):
     \label{fig:placeholder}
     \caption{Final result}
 \end{figure}
+\section{Language Identification:}
+\subsection{Phát biểu bài toán:}
+Cho một tập dữ liệu như sau:
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ Word & Language\\ 
+ \hline
+ discussed& English\\ 
+ enternidad& Spanish\\ 
+ paileis& Dutch\\
+ $\cdots$ & $\cdots$\\ 
+ \hline
+\end{tabular}
+\end{center}
+Thiết kế một mạng lưới neural hồi quy (RNN - Recurrent Neural Network) để phân loại các từ vựng theo
+đúng ngôn ngữ của chúng.
+\\ \textit{Định nghĩa: mạng lưới RNN có kiến trúc như sau:}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{6.png}
+    \label{fig:placeholder}
+    \caption{RNN architecture}
+\end{figure}
+\textit{Kiến trúc mạng RNN có thể "nhớ" (lưu trữ) dữ liệu từ các trạng thái trước thông qua cơ chế hồi quy}.
+\subsection{Hướng giải quyết bài toán}
+Dữ liệu từ vựng (words) được biểu diễn dưới dạng một ma trận khối có cấu trúc như sau với tổng số từ $k$:
+\begin{equation*}
+\mathbf{X}=
+\begin{bmatrix}
+\mathbf{x}_{1}&\mathbf{x}_{2}&\mathbf{x}_{3}&\cdots&\mathbf{x}_{k}
+\end{bmatrix}
+_{1\times k}
+\end{equation*}
+Mỗi từ $\mathbf{x}_{j}$ trong dữ liệu là một ma trận khối của các chữ cái cấu thành với độ dài $L$:
+\begin{equation*}
+\mathbf{x}_j=
+\begin{bmatrix}
+x_{1}&x_{2}&x_{3}&\cdots&x_{L}
+\end{bmatrix}
+_{1\times L}
+\end{equation*}
+Mỗi chữ cái $x_j$ là một ma trận mã hóa one-hot nhị phân được mã hóa theo quy tắc bit "1" ở vị trí có kí tự trong bảng chữ cái và "0" ở các vị trí còn lại:
+\begin{equation*}
+x_j=\begin{bmatrix}
+0&0&\cdots&0&1&0
+\end{bmatrix}^\top_{V\times1}
+\end{equation*}
+Ta chọn thiết kế mạng neural từ hàm khởi tạo:
+\begin{equation}
+h_{1}=f_{\text{intial}}(x_1)=\text{relu}(x_{1}\textbf{W}_{x}+\textbf{b}_{h})
+\end{equation}
+Hàm $f$ là một hàm hợp đệ quy của các hàm trước đó:
+\begin{equation}
+h_{i}=f(x_{i},h_{i-1})=\text{relu}(x_{i}\textbf{W}_{x}+h_{i-1}\textbf{W}_{h}+\textbf{b}_{h})
+\end{equation}
+Chính vì cơ chế đặc biệt này nên mạng RNN có khả năng ghi nhớ thông tin, không bị mất mát trong quá trình học.
+Output của quá trình này là một vector $h_{L}$ (đã tổng hợp lại được toàn bộ thông tin của từ vựng được nhập) có kích thước $1\times d$ với $d$ 
+là một hằng số chọn trước (kích thước của hidden layer).
+\\ $h_L$ tiếp tục được xử lý qua lớp tuyến tính (linear layer):
+\begin{equation}
+\hat{y}=h_{L}\textbf{W}_{out}+\textbf{b}_{out}
+\end{equation}
+$\hat{y}$ chính là \textbf{vector xác suất dự đoán đầu ra} $y$ của từ vựng. Ta xác định hàm cross-entropy loss giữa giá trị dự đoán và thực tế:
+\begin{equation}
+\text{L}(y,\hat{y})=-\sum_{i=1}^{C}y_{i}\log{\hat{y_i}}
+\end{equation}
+Ta sử dụng thuật toán lan truyền ngược (backpropagation) để tìm ra các giá trị gradient rồi cập nhật các tham số:
+\begin{equation}
+\theta \gets \theta - \eta \nabla_{\theta}L
+\end{equation}
+Ràng buộc về kích thước của các ma trận được cho trong bảng sau:
+\begin{center}
+\begin{tabular}{|c|c|}
+    \hline
+    Ma trận & Kích thước\\
+    \hline
+    $x$&$1\times V$\\
+    $\textbf{W}_{x}$&$V\times d$\\
+    $\textbf{b}_{h}$&$1\times d$\\
+    $h_{i}$&$1\times d$\\
+    $\textbf{W}_{h}$&$d\times d$\\
+    $\textbf{b}_{out}$&$1\times C$\\
+    $\textbf{W}_{out}$&$d\times C$\\
+    \hline
+\end{tabular}
+\end{center}
+\subsection{RNN for Word Language Classification}
+\begin{algorithm}
+\caption{Train an RNN to classify words by language}\label{alg:rnn_word}
+\begin{algorithmic}
+\Require 
+\Statex $Dataset$ of word sequences $X = [x_0, x_1, ..., x_{L-1}]$ with labels $y$ 
+\Statex $d$ = hidden state size, $\eta$ = learning rate, $epochs$ = number of training epochs
+\Ensure Trained parameters of RNN: $W_x, W_h, b_h, W_{out}, b_{out}$
+
+\State Initialize RNN parameters $W_x, W_h, b_h, W_{out}, b_{out}$ randomly
+\For{$epoch = 1$ \textbf{to} $epochs$}
+    \For{each batch of words and labels $(X, y)$ in Dataset}
+        \State Initialize hidden states $h_0 = 0$
+        \For{$i = 0$ \textbf{to} $L-1$} \Comment{iterate through letters in word}
+            \If{$i = 0$}
+                \State $h_0 \gets f_{\text{initial}}(x_0) = \text{ReLU}(x_0 W_x + b_h)$
+            \Else
+                \State $h_i \gets f(h_{i-1}, x_i) = \text{ReLU}(x_i W_x + h_{i-1} W_h + b_h)$
+            \EndIf
+        \EndFor
+        \State $y_{\text{pred}} \gets h_{L-1} W_{\text{out}} + b_{\text{out}}$ \Comment{Linear layer to produce scores}
+        \State $loss \gets \text{CrossEntropy}(y_{\text{pred}}, y)$
+        \State Backpropagate $loss$ to compute gradients $\nabla W_x, \nabla W_h, \nabla b_h, \nabla W_{\text{out}}, \nabla b_{\text{out}}$
+        \State Update parameters:
+        \Statex \hspace{0.5cm} $W_x \gets W_x - \eta \nabla W_x$
+        \Statex \hspace{0.5cm} $W_h \gets W_h - \eta \nabla W_h$
+        \Statex \hspace{0.5cm} $b_h \gets b_h - \eta \nabla b_h$
+        \Statex \hspace{0.5cm} $W_{\text{out}} \gets W_{\text{out}} - \eta \nabla W_{\text{out}}$
+        \Statex \hspace{0.5cm} $b_{\text{out}} \gets b_{\text{out}} - \eta \nabla b_{\text{out}}$
+    \EndFor
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+\begin{algorithm}
+\caption{Backpropagation Through Time (BPTT)}
+\begin{algorithmic}
+\Require Sequence $(x_1,\dots,x_L)$, label $y$, parameters $\theta$
+\State Forward compute $h_1,\dots,h_L$
+\State Compute output loss $L$
+\State $\delta_L \gets \nabla_{h_L} L$
+\For{$t=L$ down to $1$}
+    \State $\delta_t \gets (W_h^\top \delta_{t+1}) \odot \phi'(z_t)$
+    \State $\nabla W_x \mathrel{+}= \delta_t x_t^\top$
+    \State $\nabla W_h \mathrel{+}= \delta_t h_{t-1}^\top$
+    \State $\nabla b_h \mathrel{+}= \delta_t$
+\EndFor
+\State Update $\theta \gets \theta - \eta \nabla \theta$
+\end{algorithmic}
+\end{algorithm}
+\subsection{Thực thi giải thuật bằng Python}
+\begin{verbatim}
+class LanguageIDModel(Module):
+    """
+    A model for language identification at a single-word granularity.
+
+    (See RegressionModel for more information about the APIs of different
+    methods here. We recommend that you implement the RegressionModel before
+    working on this part of the project.)
+    """
+    def __init__(self):
+        # Our dataset contains words from five different languages, and the
+        # combined alphabets of the five languages contain a total of 47 unique
+        # characters.
+        # You can refer to self.num_chars or len(self.languages) in your code
+        self.num_chars = 47
+        self.languages = ["English", "Spanish", "Finnish", "Dutch", "Polish"]
+        super(LanguageIDModel, self).__init__()
+        "*** YOUR CODE HERE ***"
+        self.hidden_size = 1024
+        self.output_size = len(self.languages)
+
+        # RNN parameters
+        self.Wx = Linear(self.num_chars, self.hidden_size, bias=True)
+        self.Wh = Linear(self.hidden_size, self.hidden_size, bias=False)
+        self.Wout = Linear(self.hidden_size, self.output_size)
+
+    def run(self, xs):
+        """
+        Runs the model for a batch of examples.
+
+        Although words have different lengths, our data processing guarantees
+        that within a single batch, all words will be of the same length (L).
+
+        Here `xs` will be a list of length L. Each element of `xs` will be a
+        tensor with shape (batch_size x self.num_chars), where every row in the
+        array is a one-hot vector encoding of a character. For example, if we
+        have a batch of 8 three-letter words where the last word is "cat", then
+        xs[1] will be a tensor that contains a 1 at position (7, 0). Here the
+        index 7 reflects the fact that "cat" is the last word in the batch, and
+        the index 0 reflects the fact that the letter "a" is the inital (0th)
+        letter of our combined alphabet for this task.
+
+        Your model should use a Recurrent Neural Network to summarize the list
+        `xs` into a single tensor of shape (batch_size x hidden_size), for your
+        choice of hidden_size. It should then calculate a tensor of shape
+        (batch_size x 5) containing scores, where higher scores correspond to
+        greater probability of the word originating from a particular language.
+
+        Inputs:
+            xs: a list with L elements (one per character), where each element
+                is a node with shape (batch_size x self.num_chars)
+        Returns:
+            A node with shape (batch_size x 5) containing predicted scores
+                (also called logits)
+        """
+        "*** YOUR CODE HERE ***"
+        batch_size = xs[0].shape[0]
+        h = torch.zeros(batch_size, self.hidden_size)
+
+        # Process each character sequentially
+        for x_t in xs:
+            # Update hidden state: h_t = ReLU(x_t * Wx + h_{t-1} * Wh + b)
+            h = relu(self.Wx(x_t) + self.Wh(h))
+        
+        # After the last character, use final hidden state to predict language
+        out = self.Wout(h)  # shape: batch_size x output_size
+        return out
+    
+    def get_loss(self, xs, y):
+        """
+        Computes the loss for a batch of examples.
+
+        The correct labels `y` are represented as a node with shape
+        (batch_size x 5). Each row is a one-hot vector encoding the correct
+        language.
+
+        Inputs:
+            xs: a list with L elements (one per character), where each element
+                is a node with shape (batch_size x self.num_chars)
+            y: a node with shape (batch_size x 5)
+        Returns: a loss node
+        """
+        "*** YOUR CODE HERE ***"
+        logits = self.run(xs)
+        return cross_entropy(logits, y)  # PyTorch cross_entropy expects logits, not softmax
+
+    def train(self, dataset, batch_size=32, lr=0.001, max_epochs=50):
+        """
+        Trains the model.
+
+        Note that when you iterate through dataloader, each batch will returned as its own vector in the form
+        (batch_size x length of word x self.num_chars). However, in order to run multiple samples at the same time,
+        get_loss() and run() expect each batch to be in the form (length of word x batch_size x self.num_chars), meaning
+        that you need to switch the first two dimensions of every batch. This can be done with the movedim() function 
+        as follows:
+
+        movedim(input_vector, initial_dimension_position, final_dimension_position)
+
+        For more information, look at the pytorch documentation of torch.movedim()
+        """
+        "*** YOUR CODE HERE ***"
+        dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
+        optimizer = optim.Adam(self.parameters(), lr=lr)
+
+        for epoch in range(max_epochs):
+            total_loss = 0.0
+            for batch in dataloader:
+                batch_x = batch['x']       # shape: batch_size x L x num_chars
+                batch_y = batch['label']   # shape: batch_size x output_size
+                # xs: list of length L, each element shape: batch_size x num_chars
+                xs = [movedim(batch_x[:, i, :], 0, 0) for i in range(batch_x.shape[1])]
+                y = batch['label']  # shape: batch_size x output_size
+
+                optimizer.zero_grad()
+                loss = self.get_loss(xs, y)
+                loss.backward()
+                optimizer.step()
+                total_loss += loss.item()
+
+            print(f"Epoch {epoch+1}/{max_epochs}, Loss: {total_loss:.4f}")
+
+        
+
+def Convolve(input: tensor, weight: tensor):
+    """
+    Acts as a convolution layer by applying a 2d convolution with the given inputs and weights.
+    DO NOT import any pytorch methods to directly do this, the convolution must be done with only the functions
+    already imported.
+
+    There are multiple ways to complete this function. One possible solution would be to use 'tensordot'.
+    If you would like to index a tensor, you can do it as such:
+
+    tensor[y:y+height, x:x+width]
+
+    This returns a subtensor who's first element is tensor[y,x] and has height 'height, and width 'width'
+    """
+    input_tensor_dimensions = input.shape
+    weight_dimensions = weight.shape
+    Output_Tensor = tensor(())
+    "*** YOUR CODE HERE ***"
+    H_out = H_in - H_k + 1
+    W_out = W_in - W_k + 1
+    for i in range(H_out):
+        for j in range(W_out):
+            patch = input[i:i+H_k, j:j+W_k]
+            Output_Tensor[i, j] = (patch * weight).sum()
+
+    return Output_Tensor
+\end{verbatim}
 \end{document}
+
