@@ -1,0 +1,317 @@
+\documentclass{article}
+\usepackage[utf8]{vietnam}
+\usepackage[12pt]{extsizes}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{mathtools}
+\usepackage{booktabs}
+\usepackage{pgfplots}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{float}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+ \usepackage{graphicx}
+ \usepackage{titling}
+ \usepackage{listings}
+ \title{Project 5: Machine Learning
+}
+\author{23020874 Vũ Hàn Tín}
+\date{Ngày 14/12/2025}
+ \usepackage{fancyhdr}
+\fancypagestyle{plain}{%  the preset of fancyhdr 
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot[L]{\thedate}
+    \fancyhead[L]{AIT2004-64 Cơ sở trí tuệ nhân tạo}
+    \fancyhead[R]{\theauthor}
+}
+\makeatletter\def\@maketitle{%
+\newpage
+\null
+\vskip 1em%
+\begin{center}%
+\let \footnote \thanks
+  {\LARGE \@title \par}%
+  \vskip 1em%
+  %{\large \@date}%
+\end{center}%
+\par
+\vskip 1em}
+\makeatother
+\begin{document}
+\maketitle
+\section{Binary Perceptron:}
+\subsection{Phát biểu bài toán:}
+Xét không gian Euclid $\mathbb{R}^n$ với tích trong thông thường (tích chấm), cho tập hợp
+$k$ vector $\mathbf{x}_{1}, \mathbf{x}_{2},...\mathbf{x}_{k}$ và gán tùy ý mỗi vector $\mathbf{x}_{i}$ với một trọng số
+(weight) bất kỳ $y_{i}$ ($y_{i}$ chỉ nhận giá trị $1$ hoặc $-1$). Hỏi có tồn tại một siêu mặt phẳng (hyperplane) nào đó
+có vector pháp tuyến $\textbf{w}$ phân tách được các điểm $A_{i}$ (ứng với vector $\mathbf{x}_i$) có giá trị trọng số khác nhau không?
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{1.jpg}
+    \label{fig:placeholder}
+    \caption{Minh họa bài toán trong không gian $\mathbb{R}^2$}
+\end{figure}
+\subsection{Hướng giải quyết bài toán:}
+Một siêu mặt phẳng tổng quát trong không gian vector $\mathbb{R}^n$ có phương trình dạng:
+$$b+a_{1}x_{1}+a_{2}x_{2}+...+a_{n-1}x_{n-1}+a_{n}x_{n}=0$$
+Vector pháp tuyến của mặt phẳng này chính là ma trận $\mathbf{w}$:
+$$\mathbf{w}=
+\begin{bmatrix}
+a_{1}&a_{2}&a_{3}&\cdots&a_{n-1}&a_{n}
+\end{bmatrix}^\top$$
+Siêu mặt phẳng trên chia không gian $\mathbb{R}^n$ thành 2 nửa:
+\begin{equation}
+b+a_{1}x_{1}+a_{2}x_{2}+...+a_{n-1}x_{n-1}+a_{n}x_{n}>0
+\end{equation}
+\begin{equation}
+b+a_{1}x_{1}+a_{2}x_{2}+...+a_{n-1}x_{n-1}+a_{n}x_{n}<0
+\end{equation}
+Xét một vector $\mathbf{x}$ bất kỳ có tọa độ:
+$$\mathbf{x}=\begin{bmatrix}
+x_{1}&x_{2}&x_{3}&\cdots&x_{n-1}&x_{n}
+\end{bmatrix}^\top$$
+Từ định nghĩa tích trong thông thường, ta có:
+$$\langle\mathbf{x},\mathbf{w}\rangle=a_{1}x_{1}+a_{2}x_{2}+...+a_{n-1}x_{n-1}+a_{n}x_{n}$$
+Vậy hiển nhiên, nếu $b+\langle\mathbf{x},\mathbf{w}\rangle>0$ thì vector này thuộc nửa không gian (1), và $b+\langle\mathbf{x},\mathbf{w}\rangle<0$ thì nó thuộc
+nửa không gian (2).
+\\ Chọn các hệ số $b$ và $a_{k}$ ngẫu nhiên, siêu mặt phẳng luôn tồn tại với trường hợp chỉ có một vector $\mathbf{x}$. Không mất tính tổng quát ta giả sử $\mathbf{x}$ thuộc
+nửa không gian (1), với giá trị $y=+1$; ta quy ước gán cố định trọng số $+1$ cho nửa không gian (1), và $-1$ cho nửa không gian (2).
+\\ Xét trường hợp tổng quát, giả sử ta có hệ $k$ vector $\mathbf{x}_{1}, \mathbf{x}_{2},\cdots,\mathbf{x}_{k}$ với các trọng số tương ứng $y_{1}, y_{2},\cdots,y_{k}$.
+Sau khi thực hiện quy trình trên với vector $\mathbf{x}_{1}$, ta lần lượt xét các bất phương trình:
+\begin{equation}
+y_{i}(b+\langle \textbf{w},\textbf{x}_{i}\rangle)>0\quad(i=2,3,\cdots,k)
+\end{equation}
+Nếu (3) đúng, hiển nhiên $\mathbf{w}$ đã được chọn đúng; còn nếu (3) sai, ta cần phải điều chỉnh lại một vài tham số nào đó trong
+$\mathbf{w}$ cho đến khi bất phương trình trên đúng. Dễ dàng nhận thấy rằng nếu $k>n$, hệ bất phương trình có
+số phương trình nhiều hơn số ẩn nên tồn tại khả năng các miền nghiệm không giao nhau, dẫn đến $\textbf{w}$ có thể không xác định.
+\subsection{Thuật toán học máy: Perceptron}
+\begin{algorithm}
+\caption{Binary Linear Regression}\label{alg:perceptron}
+\begin{algorithmic}
+\Require Training set $\mathcal{D} = \{(x_i, y_i)\}_{i=1}^n$, with $x_i \in \mathbb{R}^n$, $y_i \in \{+1,-1\}$
+\Ensure Vector $w$ will classtify all of the data points correctly (if exists), and $b$ is a bias value
+\State Initialize $w \gets \mathbf{0}$
+\State Initialize $b \gets \mathbf{0}$
+\While{true}
+    \State $mistake \gets 0$
+    \For{each $(x_i, y_i) \in \mathcal{D}$}
+        \If{$y_i \cdot \langle w, x_i \rangle \le 0$}
+            \State $w \gets w + y_i x_i$
+            \State $b \gets b + y_i$
+            \State $mistake \gets mistake + 1$
+        \EndIf
+    \EndFor
+    \If{$mistake = 0$}
+        \State \textbf{break}
+    \EndIf
+\EndWhile
+\State \Return $(w,b)$
+\end{algorithmic}
+\end{algorithm}
+\subsection{Thực thi giải thuật bằng Python}
+\begin{verbatim}
+class PerceptronModel(Module): # class definition
+    def __init__(self, dimensions): # dimensions = n
+
+#  this function allows only one parameter, so we just ignore bias b from now on.
+
+        super(PerceptronModel, self).__init__()
+        self.w = Parameter(torch.ones(1, dimensions)) # w in R^n, x has shape (1,n)
+                                                      # w is a learnable parameter
+
+    def get_weights(self):
+        return self.w   # return learned vector w
+
+    def run(self, x):
+        return (x*self.w).sum() # return inner product <w, x> 
+
+    def get_prediction(self, x):
+        score = self.run(x)
+        if score.item() >= 0:
+            return 1
+        else:
+            return -1
+
+        # checking the score item value of <w, x> positive or negative
+
+    def train(self, dataset):   # uploading training data
+        with no_grad():
+            dataloader = DataLoader(dataset, batch_size=1, shuffle=True)
+            while True: # implement the algorithm above
+                mistakes = 0
+                for sample in dataloader:
+                    x = sample['x']
+                    y = sample['label'].item()
+
+                    score = self.run(x)
+                    if y*score.item() <= 0:
+                        self.w += y*x
+                        mistakes += 1
+                if mistakes == 0:
+                    break
+\end{verbatim}
+\subsection{Kết quả}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{2.jpg}
+    \label{fig:placeholder}
+    \caption{Quá trình thực thi code}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{3.jpg}
+    \label{fig:placeholder}
+    \caption{Final result, 6/6 testcases passed}
+\end{figure}
+\newpage
+\section{Non-linear regression:}
+\subsection{Phát biểu bài toán:}
+Ước lượng xấp xỉ hàm $\sin(x)$ trên đoạn $[-2\pi,2\pi]$ sử dụng neural network từ một tập dữ liệu rời rạc cho trước dưới dạng $(\textbf{x},\textbf{y})$.
+\\ \textit{Định nghĩa: một mạng lưới neural đơn giản là một hàm ước lượng xấp xỉ gồm 2 lớp (layers), lớp phi tuyến và lớp tuyến tính. Lớp tuyến tính được sử dụng để thực hiện các phép toán tuyến tính, còn lớp phi tuyến 
+được dùng để ước lượng xấp xỉ.}
+\begin{equation}
+\mathbf{f(x)}=\text{relu}(\mathbf{x}\cdot\mathbf{W}_1+\mathbf{b}_{1})\cdot\mathbf{W}_{2}+\mathbf{b}_{2}
+\end{equation}
+\begin{equation*}
+\text{relu}(x)=\text{max}(x,0)
+\end{equation*}
+\textit{Ta có thể thêm nhiều lớp để ước lượng chính xác hơn:}
+\begin{equation}
+\mathbf{f(x)}=\text{relu}(\text{relu}(\mathbf{x}\cdot\mathbf{W}_1+\mathbf{b}_{1})\cdot\mathbf{W}_{2}+\mathbf{b}_{2})\cdot\textbf{W}_{3}+\textbf{b}_{3}
+\end{equation}
+\subsection{Hướng giải quyết bài toán:}
+Đề đơn giản, ta chỉ xem xét hướng giải cho trường hợp neural network đơn giản nhất, từ đó tổng quát hóa bài toán với trường hợp mạng có nhiều lớp hơn.
+\\ Ta định nghĩa hàm loss như sau:
+\begin{equation}
+\mathscr{L}=\frac{1}{2N}\sum_{i=1}^N(y_{i}-f(x_i))^2
+\end{equation}
+Điều kiện lý tưởng nhất để $\mathscr{L}$ nhỏ nhất là từng hàm loss của các neuron con trong mạng lưới cũng phải đạt giá trị cực tiểu.
+\\ Ta xét hàm loss của một neural con:
+\begin{equation}
+L=\frac{1}{2}(y-f(x))^2
+\end{equation}
+Với: $$f(z)=\text{relu}(z)w_{2}+b_{2}$$ $$z=xw_{1}+b_{1}$$
+Ta tìm gradient descent của từng biến trong hàm $L$:
+\begin{equation*}
+\nabla_{w_{1}}L=\frac{\partial L}{\partial w_{1}}=\frac{\partial L}{\partial f}\frac{\partial f}{\partial z}\frac{\partial z}{\partial w_{1}}=(y-f(x))w_{2}x1_{z\geq0}
+\end{equation*}
+\begin{equation*}
+\nabla_{b_{1}}L=\frac{\partial L}{\partial b_{1}}=\frac{\partial L}{\partial f}\frac{\partial f}{\partial z}\frac{\partial z}{\partial b_{1}}=(y-f(x))w_{2}1_{z\geq0}
+\end{equation*}
+\begin{equation*}
+\nabla_{w_{2}}L=\frac{\partial L}{\partial w_{2}}=\frac{\partial L}{\partial f}\frac{\partial f}{\partial w_{2}}=(y-f(x))\text{relu(z)}
+\end{equation*}
+\begin{equation*}
+\nabla_{b_{2}}L=\frac{\partial L}{\partial b_{2}}=\frac{\partial L}{\partial f}\frac{\partial f}{\partial b_{2}}=(y-f(x))
+\end{equation*}
+Vector $\nabla L$ chỉ hướng có độ dốc lớn nhất trong không gian $\mathbb{R}^4$, khi ta cập nhật từng giá trị:
+\begin{equation}
+\begin{split}
+w_{1}\leftarrow w_{1}-\eta\nabla_{w_{1}}L\\
+b_{1}\leftarrow b_{1}-\eta\nabla_{b_{1}}L\\
+w_{2}\leftarrow w_{2}-\eta\nabla_{w_{2}}L\\
+b_{2}\leftarrow b_{2}-\eta\nabla_{b_{2}}L\\
+\end{split}   
+\end{equation}
+Khi đó $L$ dần tiến về 0, với $\eta$ là một hằng số cho trước (learning rate).
+\\ Tương tự như vậy, ta có thể tổng quát hóa bài toán cho mạng $n$ lớp.
+\subsection{Thuật toán học máy: Non-linear regression}
+\begin{algorithm}
+\caption{Training a One-Hidden-Layer Neural Network}
+\label{alg:nn_gd}
+\begin{algorithmic}
+
+\Require Dataset $\{(x_i, y_i)\}_{i=1}^N$, learning rate $\eta > 0$
+\Ensure Learned parameters $W_1, b_1, W_2, b_2$
+
+\State Initialize $W_1, b_1, W_2, b_2$ randomly
+\Repeat
+    \State \textbf{Forward pass:}
+    \For{$i = 1$ to $N$}
+        \State $h_i \gets x_i W_1 + b_1$
+        \State $a_i \gets \mathrm{relu}(h_i)$
+        \State $\hat{y}_i \gets a_i W_2 + b_2$
+    \EndFor
+
+    \State \textbf{Compute loss:}
+    \[
+    L \gets \frac{1}{2N} \sum_{i=1}^{N} (\hat{y}_i - y_i)^2
+    \]
+
+    \State \textbf{Backward pass (compute gradients):}
+    \State Compute $\nabla_{W_2} L$, $\nabla_{b_2} L$
+    \State Compute $\nabla_{W_1} L$, $\nabla_{b_1} L$ using chain rule
+
+    \State \textbf{Gradient descent update:}
+    \State $W_1 \gets W_1 - \eta \nabla_{W_1} L$
+    \State $b_1 \gets b_1 - \eta \nabla_{b_1} L$
+    \State $W_2 \gets W_2 - \eta \nabla_{W_2} L$
+    \State $b_2 \gets b_2 - \eta \nabla_{b_2} L$
+
+\Until{$L$ converges (or $L < \varepsilon$)}
+
+\end{algorithmic}
+\end{algorithm}
+\subsection{Thực thi giải thuật bằng Python}
+\begin{verbatim}
+class RegressionModel(Module):
+    def __init__(self):
+        super().__init__()
+        hidden_size = 200 # x in R^200
+        self.fc1 = Linear(1, hidden_size) # initialize W1, b1 in R^200
+                                          # and assign x = x*W1 + b1
+
+        self.fc2 = Linear(hidden_size, 1) # initialize W2 in R^(200*1), b2 in R
+
+    def forward(self, x):
+        return self.fc2(relu(self.fc1(x))) # f(x) = relu(xw1 + b1)w2 + b2
+    
+    def get_loss(self, x, y): # loss function
+        pred = self.forward(x)
+        return mse_loss(pred, y)
+ 
+        
+
+    def train(self, dataset):
+        dataloader = DataLoader(dataset, batch_size=32, shuffle=True) # 32 samples
+        optimizer = optim.Adam(self.parameters(), lr=0.001) # theta<-theta - eta*nabla
+        while True:
+            total_loss = 0.0
+            for sample in dataloader:
+                x = sample['x']
+                y = sample['label']
+                optimizer.zero_grad() # assign zero to grad at first
+                loss = self.get_loss(x, y) # core algorithm here
+                loss.backward()
+                optimizer.step()
+                total_loss += loss.item()
+            
+            if total_loss < 0.02:
+                break
+\end{verbatim}
+\subsection{Kết quả}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{4.jpeg}
+    \label{fig:placeholder}
+    \caption{Quá trình thực thi code}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{5.jpg}
+    \label{fig:placeholder}
+    \caption{Final result}
+\end{figure}
+\end{document}

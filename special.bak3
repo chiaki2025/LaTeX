@@ -1,0 +1,181 @@
+\documentclass{article}
+\usepackage[utf8]{vietnam}
+\usepackage[12pt]{extsizes}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{mathtools}
+\usepackage{booktabs}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+ \usepackage{graphicx}
+ \usepackage{titling}
+ \title{Bài tập về nhà: Phương trình sai phân tuyến tính
+}
+\author{Vũ Hàn Tín 23020874}
+\date{Ngày 8/3/2025}
+ \usepackage{fancyhdr}
+\fancypagestyle{plain}{%  the preset of fancyhdr 
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot[L]{\thedate}
+    \fancyhead[L]{ELT 3144: Xử lý tín hiệu số}
+    \fancyhead[R]{\theauthor}
+}
+\makeatletter\def\@maketitle{%
+\newpage
+\null
+\vskip 1em%
+\begin{center}%
+\let \footnote \thanks
+  {\LARGE \@title \par}%
+  \vskip 1em%
+  %{\large \@date}%
+\end{center}%
+\par
+\vskip 1em}
+\makeatother
+\begin{document}
+\maketitle
+\section*{Nhiệm vụ:}
+\subsection*{a. Giải tìm đáp ứng tổng quát của hệ thống $y[n]$ dưới dạng tổng đáp ứng các đầu vào.}
+Ta sẽ tiếp cận câu hỏi này theo hai cách, cách thứ nhất sử dụng phương trình đặc trưng và cách thứ hai sử dụng biến đổi $\mathscr{UZ}$ (Unilateral Z transform).
+\subsubsection*{Cách thứ nhất:}
+Xét phương trình sai phân $$y[n]-0.5y[n-1]-0.06y[n-2]=2x[n]+x[n-1]$$
+Đối với đáp ứng đầu vào triệt tiêu $y_{zi}[n]$ là đáp ứng \textbf{tự nhiên} của hệ thống, ta cần phải giải phương trình sai phân thuần nhất với điều kiện khởi tạo của hệ thống như sau:
+\begin{equation*}
+    \begin{cases} 
+        y[n]-0.5y[n-1]-0.06y[n-2]=0 \\ 
+        y[-1]=1, y[-2]=-2 \\
+    \end{cases}
+\end{equation*}
+Đầu tiên, ta cần phải giải phương trình sai phân thuần nhất:
+$$1-0.5\lambda^{-1}-0.06\lambda^{-2}=0$$
+$$\Leftrightarrow \lambda_{1} = 0.6, \lambda_{2} = -0.1 $$
+Vậy ta có nghiệm $y_{zi}[n]$ có dạng như sau:
+$$y_{zi}[n]=K_{1}(0.6)^{n}+K_{2}(-0.1)^{n}$$
+Thay điều kiện khởi tạo của hệ thống (initial condition) $y[-1]=1,y[-2]=-2$, ta giải ra được $K_{1}$ và $K_{2}$ tương ứng:
+$$\begin{cases*}
+    K_{1} = \frac{72}{175}  \\
+    K_{2} = -\frac{11}{350} \\
+\end{cases*}$$
+Vậy ta có nghiệm đáp ứng đầu vào triệt tiêu: $$y_{zi}[n]=\frac{72}{175}(0.6)^{n}-\frac{11}{350}(-0.1)^{n}$$
+Tiếp theo ta sẽ tìm $y_{zs}[n]$ (đáp ứng khởi dộng từ gốc với $n\geq0$), tức là đáp ứng \textbf{lực} của hệ thống như sau:
+\begin{equation*}
+\begin{split}
+    y[n]-0.5y[n-1]-0.06y[n-2]&=2x[n]+x[n-1] \\ \Leftrightarrow y[n]-0.5y[n-1]-0.06y[n-2]&=2u[n]-2u[n-3]+u[n-1]-u[n-4]
+\end{split}
+\end{equation*}
+Tiếp theo ta sẽ tìm $y_{zs}[n]$ (đáp ứng khởi động từ gốc với $n\geq0$), tức là đáp ứng \textbf{lực} của hệ thống như sau:
+\begin{equation*}
+\begin{split}
+    y[n]-0.5y[n-1]-0.06y[n-2]&=2x[n]+x[n-1] \\ \Leftrightarrow y[n]-0.5y[n-1]-0.06y[n-2]&=2u[n]-2u[n-3]+u[n-1]-u[n-4] \\
+    &=2\delta[n]+3\delta[n-1]+3\delta[n-2]+\delta[n-3]
+\end{split}
+\end{equation*}
+Với đáp ứng \textbf{lực} của hệ thống là đáp ứng khi hệ thống khi đã đi vào hoạt động ổn định, ta có thể dễ dàng thấy nghiệm đáp ứng lực (zero-state) có dạng của nghiệm tổng quát $y_{G}[n]$ với hệ điều kiện khởi tạo $y[-1]=y[-2]=0$.
+\\ Đầu tiên, ta cần xác định nghiệm riêng của phương trình sai phân, dễ thấy nghiệm riêng $y_{P}$ có dạng:
+$$y_{P}[n]=A\delta[n]+B\delta[n-1]$$
+Thay $y_{P}[n]$ vào phương trình sai phân và lần lượt đồng nhất các hệ số $A, B$ ta thu được nghiệm:
+$$\begin{cases*}
+    A = 2 \\
+    B = -\frac{50}{3} \\
+\end{cases*}$$
+Vậy ta thu được $y_{G}[n]=C_{1}(0.6)^{n}+C_{2}(-0.1)^{n}+2\delta[n]-\frac{50}{3}\delta[n-1]$, thay $y_{G}[n]$ với điều kiện đầu triệt tiêu, ta thu được:
+\begin{equation*}
+    \begin{cases}
+        C_{1} = \frac{154}{9} \\
+        C_{2} = 104 \\
+    \end{cases}
+\end{equation*}
+với $n\geq1$.
+Ta có kết quả cuối cùng:
+$$y_{zs}[n]= 2\delta[n]+104(-0.1)^{n}u[n-1]+\frac{154}{9}(0.6)^{n}u[n-1]-\frac{50}{3}\delta[n-1]$$
+$$y_{zi}[n]= \left[\frac{72}{175}(0.6)^{n}-\frac{11}{350}(-0.1)^{n}\right]u[n]$$
+(nhân thêm $u[n]$ ở $y_{zi}[n]$ do hệ thống nhân quả)
+\subsubsection*{Cách thứ hai:}
+Sử dụng biến đổi Z một phía (unilateral Z transform) (kí hiệu là $\mathscr{UZ}$) cho cả hai vế phương trình, ta có:
+\begin{equation*}
+    \begin{split}
+    \mathscr{UZ}(y[n]-0.5y[n-1]-0.06y[n-2])&=\mathscr{UZ}(2x[n]+x[n-1]) \\
+    \Leftrightarrow \mathscr{Y}(z)-0.5[\mathscr{Y}(z)z^{-1}+y[-1]]-0.06[\mathscr{Y}(z)z^{-2}+y[-1]z^{-1}+y[-2]]&=2\mathscr{X}(z)+\mathscr{X}(z)z^{-1}+x[-1] \\
+    \Leftrightarrow \mathscr{Y}(z)(1-0.5z^{-1}-0.06z^{-2})-0.5-0.06z^{-1}+0.12&=\mathscr{X}(z)(2+z^{-1})\\
+\end{split}
+\end{equation*}
+Suy ra
+    $$\Rightarrow \mathscr{Y}(z) = \frac{\mathscr{X}(z)(2+z^{-1})}{1-0.5z^{-1}-0.06z^{-2}}+\frac{0.38+0.06z^{-1}}{1-0.5z^{-1}-0.06z^{-2}}=\mathscr{Y}_{zs}(z)+\mathscr{Y}_{zi}(z)$$
+Với $x[n]=u[n]-u[n-3]$, ta suy ra:
+$$\Rightarrow \mathscr{X}(z)=\frac{1-z^{-3}}{1-z^{-1}}=1+z^{-1}+z^{-2}$$
+Ta có hai nghiệm $\mathscr{Y}_{zs}(z)$ và $\mathscr{Y}_{zi}(z)$ như sau:
+\begin{equation*}
+    \begin{cases*}
+        \mathscr{Y}_{zs}(z) = \frac{(1+z^{-1}+z^{-2})(2+z^{-1})}{1-0.5z^{-1}-0.06z^{-2}} \\
+        \mathscr{Y}_{zi}(z) = \frac{0.38+0.06z^{-1}}{1-0.5z^{-1}-0.06z^{-2}}
+    \end{cases*}
+\end{equation*}
+Ta xử lý nghiệm $\mathscr{Y}_{zi}(z)$ trước, sử dụng phương pháp phân tích thành phần đơn (partial fraction decomposition), thu được:
+\begin{equation*}
+    \mathscr{Y}_{zi}(z)=\frac{0.38+0.06z^{-1}}{1-0.5z^{-1}-0.06z^{-2}}=\frac{-11}{350}\frac{1}{1+0.1z^{-1}}+\frac{72}{175}\frac{1}{1-0.6z^{-1}}
+\end{equation*}
+Vì hệ thống nhân quả, nên ta có:
+\begin{equation*}
+y_{zi}[n]=\mathscr{UZ}^{-1}(\mathscr{Y}_{zi}(z))=\left[\frac{-11}{350}(-0.1)^{n}+\frac{72}{175}(0.6)^{n}\right]u[n]
+\end{equation*}
+Với nghiệm $\mathscr{Y}_{zs}(z)$, ta cũng xử lý tương tự:
+\begin{equation*}
+    \begin{split}
+\mathscr{Y}_{zs}(z)=\frac{(1+z^{-1}+z^{-2})(2+z^{-1})}{1-0.5z^{-1}-0.06z^{-2}}&=2+\frac{104z^{-1}}{10+z^{-1}}+\frac{154z^{-1}}{3(5-3z^{-1})}-\frac{50}{3}z^{-1} \\
+&= 2+\frac{104}{10}\frac{z^{-1}}{1+0.1z^{-1}}+\frac{154}{15}\frac{z^{-1}}{1-0.6z^{-1}}-\frac{50}{3}z^{-1}
+    \end{split}
+\end{equation*}
+Vì hệ thống nhân quả, nên ta có:
+\begin{equation*}
+    \begin{split}
+y_{zs}[n]&=2\delta[n]+\frac{52}{5}(-0.1)^{n-1}u[n-1]+\frac{154}{15}(0.6)^{n-1}u[n-1]-\frac{50}{3}\delta[n-1] \\
+&= 2\delta[n]+104(-0.1)^{n}u[n-1]+\frac{154}{9}(0.6)^{n}u[n-1]-\frac{50}{3}\delta[n-1]
+    \end{split}
+\end{equation*}
+\subsection*{b. Sử dụng AI để tính toán nghiệm số từ $n=0$ đến $n=5$. So sánh kết quả và lý giải:}
+\begin{center}
+    \begin{tabular}{llrll}
+        \toprule
+        $n$   & $AI$   & $Actual$  \\
+        \midrule
+         0    & 2.38   & 2.38  \\
+         1    & 4.25   & 4.07  \\
+         2    & 5.2678   & 5.178  \\
+         3    & 3.8889   & 3.833 \\
+         4    & 2.2605   & 2.227 \\
+         5    & 1.3636   & 1.3442 \\
+        \bottomrule
+        \end{tabular}
+    \end{center}
+\textbf{Lý giải:} Có sự khác biệt nhỏ giữa kết quả có lẽ lý do phụ thuộc vào cách làm tròn số.
+\subsection*{c. Thay đổi đầu vào thành $x[n]=\left(\frac{1}{2}\right)^{n}u[n]$, dự đoán và tính $y_{zs}[n]$:}
+\begin{enumerate}
+    \item Dự đoán đầu ra $y_{zs}[n]$ sẽ không có xung Kronecker nữa do lúc này bậc của mẫu số là $-3$ có trị tuyệt đối lớn hơn bậc của tử số là $-1$, có thể phân tích hàm $\mathscr{Y}_{zs}(z)$ hoàn toàn về các phân thức hữu tỷ.
+    \item Tính $y_{zs}[n]$:
+        \begin{equation*}
+            \begin{split}
+                \mathscr{Y}_{zs}(z)&=\frac{\mathscr{X}(z)(2+z^{-1})}{1-0.5z^{-1}-0.06z^{-2}}=\frac{2+z^{-1}}{(1-\frac{1}{2}z^{-1})(1-0.5z^{-1}-0.06z^{-2})}\\
+                &=\frac{37.14286}{1-0.6z^{-1}}-\frac{125}{3}\frac{1}{1-0.5z^{-1}}+\frac{4.52381}{1-(-0.1)z^{-1}}
+            \end{split}
+        \end{equation*}
+        Vậy ta thu được $$y_{zs}[n]=37.14286(0.6)^{n}u[n]-\frac{125}{3}(0.5)^{n}u[n]+4.52381(-0.1)^{n}u[n]$$ không có xung Kronecker như dự đoán.
+\end{enumerate}
+\subsection*{d. Suy ngẫm}
+\begin{enumerate}
+\item Việc sử dụng AI có khó khăn là kết quả do AI (ChatGPT) tính toán nhiều khi không chính xác, nên em phải sử dụng công cụ trung gian là GNU Octave và viết code hỗ trợ tính cùng.
+\item Việc chia nghiệm đáp ứng của toàn bộ hệ thống ra các thành phần nhỏ $y_{zs}[n]$ và $y_{zi}[n]$ khiến cho em hiểu về cách hệ thống hoạt động như sau: một hệ thống bất kì khi hoạt động luôn \textbf{có} giai đoạn chuyển tiếp (transient state) giữa các trạng thái ổn định, ví dụ trạng thái chuyển tiếp của các mạch RC hay RL chẳng hạn, và \textbf{không} tồn tại hệ thống có thể đáp ứng được ngay lâp tức (không qua trạng thái chuyển tiếp) trước sự tác động của đầu vào. Sau khi kết thức giai đoạn chuyển tiếp, hệ thống bước vào giai đoạn ổn định (steady-state or stable state), lúc này đáp ứng của hệ thống phụ thuộc hoàn toàn vào tín hiệu đầu vào và các điều kiện khởi tạo \textbf{hoàn toàn không} ảnh hưởng gì đến đáp ứng nữa.
+\item Sau khi đã hiểu và phân tích "behavior" của hệ thống qua các trạng thái vật lý như trên, em có thể nhận thấy được tính logic qua các phép tính tìm đáp ứng đầu ra $y_{zs}[n]$ và $y_{zi}[n]$.
+\begin{itemize}
+    \item $y_{zs}[n]$ là đáp ứng zero-state của hệ thống, tức là loại bỏ toàn bộ điều kiện khởi tạo và cho bằng $0$. Đây là đáp ứng của hệ thống khi đã đi vào trạng thái ổn định và còn gọi là \textbf{đáp ứng lực (force response)} của hệ thống.
+    \item $y_{zi}[n]$ là đáp ứng zero-input của hệ thống, tức là loại bỏ toàn bộ đầu vào và chỉ quan tâm đến trạng thái khởi tạo. Đây là đáp ứng của hệ thống trong giai đoạn chuyển tiếp và còn gọi là \textbf{đáp ứng tự nhiên (natural response)} của hệ thống.
+    \item Tổng của $y_{zi}[n]$ và $y_{zs}[n]$ sẽ cho ta nghiệm đáp ứng hoàn chỉnh của toàn bộ hệ thống, đi qua cả hai giai đoạn chuyển tiếp và ổn định.
+\end{itemize}
+\end{enumerate}
+\end{document}

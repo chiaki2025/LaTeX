@@ -1,0 +1,149 @@
+\documentclass[8pt]{beamer}
+\usepackage{tikz}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{amssymb,amsfonts,amsthm}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usetheme{Copenhagen}
+\usecolortheme{spruce}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+\title[Kết quả nghiên cứu tuần 3]
+{Kết quả nghiên cứu tuần $3$}
+\subtitle{Phòng thí nghiệm Thông tin Vô tuyến}
+\author[Phòng thí nghiệm thông tin Vô tuyến]
+{Tín Vũ}
+\date[VLC 2021] % (optional)
+{tinvu1309@gmail.com}
+\begin{document}
+\frame{\titlepage}
+\begin{frame}{Table of Contents}
+\tableofcontents
+\end{frame}
+\begin{frame}{Reference documents}
+\section{Reference documents}
+The document used for study in this lab report is: Antenna Theory (chapter 2 + 3 + 4).
+\end{frame}
+\begin{frame}{Polarization vector}
+\section{Polarization vector}
+Polarization phenomenon of EM wave was discussed in the last week presentation, so how the polarization phenomenon affects the antenna? Firstlt, we define
+\textbf{PLF} (Polarization factor):  $$\textbf{PLF}=|\hat\rho_{t}\hat\rho_{r}|^2$$
+\begin{figure}[h]
+			\includegraphics[width=0.9\textwidth]{1.jpg}
+			\caption{Polarization phenomenon}			\label{fig:re1}
+\end{figure}
+\end{frame}
+\begin{frame}{Polarization vector}
+We obtain:
+\begin{equation*}
+\begin{split}
+P_{r}&=\frac{P_{t}(1-|\Gamma_{t}|^2)}{4\pi R^2}e_{cd}D_{t}(\theta_{t},\phi_{t})A_{er}\textbf{PLF}\\
+&=P_{t}\left(\frac{\lambda}{4\pi R}\right)^2G_{t}(\theta_{t},\phi_{t})G_{r}(\theta_{r},\phi_{r})(1-|\Gamma_{t}|^2)(1-|\Gamma_{r}|^2)\textbf{PLF}\\
+\end{split}
+\end{equation*}
+\end{frame}
+\begin{frame}{Magnetic vector potential}
+\section{Magnetic vector potential}
+In the previous lab slide, we only derive some very basic antenna parameters are $P$, $U$, $D$, $G$ based on 
+the given $W(\phi,\theta)$ function. So, how to determine $W(\phi,\theta)$ function?
+\\ From the Maxwell's equation in differential form:
+\begin{equation*}
+\begin{split}
+\nabla\cdot\vec{D}&=\rho\\
+\nabla\cdot\vec{H}&=0\\
+\nabla\times\vec{E}&=-\frac{\partial \vec{B}}{\partial t}=-j\omega \vec{B}=-\frac{\partial}{\partial t} \mu_{0}\vec{H}\\
+\nabla\times\vec{H}&=\vec{J}+\frac{\partial \vec{D}}{\partial t}=\vec{J}+j\omega \varepsilon_{0}\vec{E}=\vec{J}+j\omega\vec{D}
+\end{split}
+\end{equation*}
+We introduce the new parameter: $\vec{D}=\varepsilon_{0}\vec{E}$ (electric displacement).
+\\ So how to design current density $\vec{J}$ to satisfies our required antenna characteristic? Or equivalently, given $\vec{J}$,
+determine $\vec{E}$ and $\vec{H}$; and finally use the complex power density of Poynting vector (irradiance) equation to yield $W(\phi,\theta)$.
+\\ Set an auxiliary vector $\vec{A}$ (also can be named as magnetic vector potential) defined as:
+$$\vec{B}=\nabla \times \vec{A}$$
+From the third equation:
+$$\nabla\times\vec{E}=-j\omega(\nabla\times\vec{A})\Rightarrow \nabla\times(\vec{E}+j\omega\vec{A})=0$$
+The right term is equal to the gradient descent of $\phi$: $$\vec{E}+j\omega\vec{A}=-\nabla \phi$$
+\end{frame}
+\begin{frame}{Magnetic vector potential}
+From the fourth equation:
+\begin{equation*}
+\begin{split}
+\nabla\times\vec{H}&=\vec{J}+j\omega \varepsilon_{0}\vec{E}=\vec{J}+j\omega \varepsilon_{0}(-j\omega\vec{A}-\nabla\phi)\\
+\Rightarrow \frac{1}{\mu_{0}}(\nabla\times\nabla\times\vec{A})&=\vec{J}+j\omega \varepsilon_{0}(-j\omega\vec{A}-\nabla\phi)\\
+\Rightarrow \frac{1}{\mu_{0}}[\nabla(\nabla\cdot \vec{A})-\nabla^2\vec{A}]&=\vec{J}+\omega^2\varepsilon_{0}\vec{A}-j\omega\varepsilon_{0}\nabla\phi\\
+\Rightarrow \nabla(\nabla\cdot \vec{A})-\nabla^2\vec{A}&=\mu_{0}(\vec{J}+\omega^2\varepsilon_{0}\vec{A}-j\omega\varepsilon_{0}\nabla\phi)\\
+\end{split}
+\end{equation*}
+After some reduction steps I don't understand, we yield:
+$$\nabla^2\vec{A}+k_{0}^2\vec{A}=-\mu_{0}\vec{J} \quad\text{($k_{0}$ is a constant)}$$
+This equation has one solution:
+$$\vec{A}(\vec{r})=\frac{\mu_{0}}{4\pi}\int \vec{J}(\vec{r'})\frac{e^{-jk|\vec{r}-\vec{r'}|}}{|\vec{r}-\vec{r'}|}dv'$$
+Somehow we can neglect gradient of $\nabla\phi$, so $\vec{E}$ and $\vec{H}$ can easily be determined in term of $\vec{A}$:
+\begin{equation*}
+    \begin{cases}
+    \vec{E}=-j\omega\vec{A}\\
+    \vec{H}=\frac{1}{\mu_{0}}\nabla\times\vec{A}=\alert{\frac{\hat r\times\vec{E}}{\eta }=\frac{\hat r\times(\vec{E_{\theta}}\hat \theta+\vec{E_{\phi}}\hat\phi)}{\eta}}\\
+    \end{cases}
+\end{equation*}
+$\left(\eta=\sqrt{\frac{\varepsilon_{0}}{\mu_{0}}}\right)$
+\end{frame}
+\begin{frame}{Magnetic vector potential}
+In short, we summarize 4 steps to find $\vec{E}$ and $\vec{H}$ in far-field zone with given current density $\vec{J}$:
+\begin{enumerate}
+    \item[1] Find magnetic vector potential $\vec{A}(\vec{r'})$ from $\vec{J}$ and distance $\vec{r'}$.
+    \item[2] Seperate $\vec{A_{r}}$, $\vec{A_{\theta}}$ and $\vec{A_{\phi}}$ components.
+    \item[3] Substitute results into each $\vec{E}$ components:
+    \begin{equation*}
+        \begin{split}
+            \vec{E}_{r}&=0\\
+            \vec{E_{\theta}}&=-j\omega\vec{A_{\theta}}\\
+            \vec{E_{\phi}}&=-j\omega\vec{A_{\phi}}
+        \end{split}
+    \end{equation*}
+    \item[4] Obtain the magnetic intensity function: $$\vec{H}=\frac{\vec{r}\times\vec{E}}{\eta}$$
+\end{enumerate}
+From $\vec{E}$ and $\vec{H}$ above, we can easily deduce: $$\vec{W}=\frac{1}{2}\vec{E}\times\vec{H^*}$$
+Now we apply our steps to analyze the dipole, which is the simplest antenna.
+\end{frame}
+\begin{frame}{Dipole antenna}
+\section{Dipole antenna}
+We apply our procedure above to investigate the simplest antenna case: dipole antenna.
+\begin{figure}[h]
+			\includegraphics[width=0.9\textwidth]{2.jpg}
+			\caption{Dipole antenna model}			\label{fig:re2}
+\end{figure}
+\end{frame}
+\begin{frame}{Dipole antenna}
+From the magnetic vector potential formula:
+\begin{equation*}
+\begin{split}
+\vec{A}(\vec{r})&=\frac{\mu_{0}}{4\pi}\int\vec{J}(\vec{r'})\frac{e^{-jkr}}{r}dv'\\
+&=\frac{\mu_{0}}{4\pi}\frac{e^{-jkr}}{r}\int_{\frac{-l}{2}}^{\frac{l}{2}}I(z')dz' \hat z\\
+&=\frac{\mu_{0}}{4\pi}\frac{e^{-jkr}}{r}I_{0}l\hat z
+\end{split}
+\end{equation*}
+In the form of sphere-coordinate:
+\begin{equation*}
+\begin{bmatrix}
+A_{r}\\
+A_{\theta}\\
+A_{\phi}\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+\sin(\theta)\cos(\phi) && \sin(\theta)\sin(\phi) &&\cos(\theta)\\
+\cos(\theta)\cos(\phi) && \cos(\theta)\sin(\phi) && \sin(\theta )\\
+-\sin(\phi) && \cos(\phi) && 0 \\
+\end{bmatrix}
+\begin{bmatrix}
+A_{x}\\
+A_{y}\\
+A_{z}\\
+\end{bmatrix}
+\end{equation*}
+\end{frame}
+\end{document}

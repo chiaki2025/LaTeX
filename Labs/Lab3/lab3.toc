@@ -1,2 +1,4 @@
 \beamer@sectionintoc {1}{Reference documents}{3}{0}{1}
-\beamer@sectionintoc {2}{Magnetic vector potential}{4}{0}{2}
+\beamer@sectionintoc {2}{Polarization vector}{4}{0}{2}
+\beamer@sectionintoc {3}{Magnetic vector potential}{6}{0}{3}
+\beamer@sectionintoc {4}{Dipole antenna}{9}{0}{4}

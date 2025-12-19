@@ -3,7 +3,7 @@ INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT chapter3.tex
+INPUT /home/Chiaki/LaTeX/SAS/chapter3/chapter3.tex
 OUTPUT chapter3.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1367,16 +1367,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT ./chapter3.out
-INPUT chapter3.out
-INPUT ./chapter3.out
-INPUT chapter3.out
-INPUT ./chapter3.out
-INPUT chapter3.out
-INPUT ./chapter3.out
-INPUT chapter3.out
-INPUT ./chapter3.out
-INPUT ./chapter3.out
 OUTPUT chapter3.out
 INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
@@ -1409,10 +1399,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/vntex/vnr/vnss8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/vntex/vnr/vnss10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/vntex/vnr/vnss8.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT ./chapter3.toc
-INPUT chapter3.toc
-INPUT chapter3.toc
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/vntex/vnr/vnss8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/vntex/vnr/vnssbx10.tfm
 INPUT ./Fourier-1000.jpg
 INPUT ./Fourier-1000.jpg
@@ -1455,6 +1441,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/vntex/vnr/vnss8.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  17 AUG 2025 07:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.3)  20 AUG 2025 01:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**chapter3.tex
-(./chapter3.tex
+**/home/Chiaki/LaTeX/SAS/chapter3/chapter3.tex
+(/home/Chiaki/LaTeX/SAS/chapter3/chapter3.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16> (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/09/13 v3.68 A class for typesetting presentations
@@ -124,8 +124,7 @@ Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 \pgfmath@toks=\toks22
 \pgfmath@stack@operand=\toks23
 \pgfmath@stack@operation=\toks24
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count285
 ))) (/usr/share/texlive/texmf-dist/tex/latex/extsizes/size8.clo
 File: size8.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
@@ -228,8 +227,7 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@hbox=\box63
 \pgf@layerbox@main=\box64
 \pgf@picture@serial@count=\count293
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen261
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
@@ -297,8 +295,7 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
-
-(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
@@ -437,8 +434,7 @@ Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
 \beamer@frameboxcopy=\box71
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetoc.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
 \beamer@sbttoks=\toks32
-
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
 \bmb@box=\box72
 \bmb@colorbox=\box73
 \bmb@boxwidth=\dimen274
@@ -602,8 +598,7 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
 Now handling font encoding T5 ...
 ... processing UTF-8 mapping file for font encoding T5
-
-(/usr/share/texlive/texmf-dist/tex/latex/vntex/t5enc.dfu
+ (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5enc.dfu
 File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
@@ -780,47 +775,7 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count344
 \l__pdf_internal_box=\box82
-) (./chapter3.aux
-
-LaTeX Warning: Label `fig:re11' multiply defined.
-
-
-LaTeX Warning: Label `fig:re11' multiply defined.
-
-
-LaTeX Warning: Label `fig:re11' multiply defined.
-
-
-LaTeX Warning: Label `fig:re11' multiply defined.
-
-
-LaTeX Warning: Label `fig:re11' multiply defined.
-
-
-LaTeX Warning: Label `fig:re11' multiply defined.
-
-
-LaTeX Warning: Label `fig:re11' multiply defined.
-
-
-LaTeX Warning: Label `fig:re11' multiply defined.
-
-
-LaTeX Warning: Label `fig:re11' multiply defined.
-
-
-LaTeX Warning: Label `fig:re11' multiply defined.
-
-
-LaTeX Warning: Label `fig:re11' multiply defined.
-
-
-LaTeX Warning: Label `fig:re11' multiply defined.
-
-
-LaTeX Warning: Label `fig:re11' multiply defined.
-
-)
+) (./chapter3.aux)
 \openout1 = `chapter3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -902,7 +857,6 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring OFF on input line 20.
- (./chapter3.out) (./chapter3.out)
 \@outlinefile=\write5
 \openout5 = `chapter3.out'.
 
@@ -973,14 +927,16 @@ Dictionary: translator-numbers-dictionary, Language: English
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (./chapter3.nav) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./chapter3.toc) [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+No file chapter3.toc.
+[2
 
 ] [3
 
 ] [4
 
 ]
-<Fourier-1000.jpg, id=116, 1003.75pt x 1003.75pt>
+<Fourier-1000.jpg, id=47, 1003.75pt x 1003.75pt>
 File: Fourier-1000.jpg Graphic file (type jpg)
 <use Fourier-1000.jpg>
 Package pdftex.def Info: Fourier-1000.jpg  used on input line 55.
@@ -988,7 +944,7 @@ Package pdftex.def Info: Fourier-1000.jpg  used on input line 55.
  [5
 
  <./Fourier-1000.jpg>]
-<FFT-Time-Frequency-View-540.png, id=122, 406.51875pt x 284.56313pt>
+<FFT-Time-Frequency-View-540.png, id=55, 406.51875pt x 284.56313pt>
 File: FFT-Time-Frequency-View-540.png Graphic file (type png)
 <use FFT-Time-Frequency-View-540.png>
 Package pdftex.def Info: FFT-Time-Frequency-View-540.png  used on input line 62.
@@ -1015,7 +971,7 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
 ]
 
-./chapter3.tex:103: LaTeX Error: There's no line here to end.
+/home/Chiaki/LaTeX/SAS/chapter3/chapter3.tex:103: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1030,7 +986,7 @@ or  <return>  to continue without it.
 [8
 
 ]
-<helix.jpg, id=151, 1126.2075pt x 491.8375pt>
+<helix.jpg, id=87, 1126.2075pt x 491.8375pt>
 File: helix.jpg Graphic file (type jpg)
 <use helix.jpg>
 Package pdftex.def Info: helix.jpg  used on input line 114.
@@ -1041,7 +997,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has
                    \relax 
 l.114 \end{frame}
                  
-<imaginary.jpg, id=152, 1073.00874pt x 736.7525pt>
+<imaginary.jpg, id=88, 1073.00874pt x 736.7525pt>
 File: imaginary.jpg Graphic file (type jpg)
 <use imaginary.jpg>
 Package pdftex.def Info: imaginary.jpg  used on input line 114.
@@ -1058,7 +1014,7 @@ Overfull \vbox (0.28127pt too high) detected at line 114
 [9
 
  <./helix.jpg> <./imaginary.jpg>]
-<fre.jpg, id=159, 1688.3075pt x 735.74875pt>
+<fre.jpg, id=95, 1688.3075pt x 735.74875pt>
 File: fre.jpg Graphic file (type jpg)
 <use fre.jpg>
 Package pdftex.def Info: fre.jpg  used on input line 131.
@@ -1069,7 +1025,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has
                    \relax 
 l.131 \end{frame}
                  
-<sine.jpg, id=160, 990.70125pt x 529.98pt>
+<sine.jpg, id=96, 990.70125pt x 529.98pt>
 File: sine.jpg Graphic file (type jpg)
 <use sine.jpg>
 Package pdftex.def Info: sine.jpg  used on input line 131.
@@ -1086,7 +1042,7 @@ Overfull \vbox (6.39188pt too high) detected at line 131
 [10
 
  <./fre.jpg> <./sine.jpg>]
-<sin.jpg, id=167, 625.33624pt x 841.1425pt>
+<sin.jpg, id=103, 625.33624pt x 841.1425pt>
 File: sin.jpg Graphic file (type jpg)
 <use sin.jpg>
 Package pdftex.def Info: sin.jpg  used on input line 139.
@@ -1103,7 +1059,7 @@ Overfull \vbox (2.49884pt too high) detected at line 139
 [11
 
  <./sin.jpg>]
-<square.jpg, id=175, 1471.4975pt x 468.75125pt>
+<square.jpg, id=110, 1471.4975pt x 468.75125pt>
 File: square.jpg Graphic file (type jpg)
 <use square.jpg>
 Package pdftex.def Info: square.jpg  used on input line 160.
@@ -1120,7 +1076,7 @@ Overfull \vbox (2.8922pt too high) detected at line 160
 [12
 
  <./square.jpg>]
-<s.jpg, id=182, 1640.1275pt x 611.28375pt>
+<s.jpg, id=117, 1640.1275pt x 611.28375pt>
 File: s.jpg Graphic file (type jpg)
 <use s.jpg>
 Package pdftex.def Info: s.jpg  used on input line 177.
@@ -1141,7 +1097,7 @@ l.177 \end{frame}
 ] [17
 
 ]
-<pro.jpg, id=218, 1170.3725pt x 716.6775pt>
+<pro.jpg, id=154, 1170.3725pt x 716.6775pt>
 File: pro.jpg Graphic file (type jpg)
 <use pro.jpg>
 Package pdftex.def Info: pro.jpg  used on input line 271.
@@ -1158,7 +1114,7 @@ Overfull \vbox (10.71042pt too high) detected at line 271
 [18
 
  <./pro.jpg>]
-<ht.jpg, id=225, 736.7525pt x 288.07625pt>
+<ht.jpg, id=162, 736.7525pt x 288.07625pt>
 File: ht.jpg Graphic file (type jpg)
 <use ht.jpg>
 Package pdftex.def Info: ht.jpg  used on input line 288.
@@ -1175,7 +1131,7 @@ l.288 \end{frame}
 ] [21
 
 ]
-./chapter3.tex:335: Undefined control sequence.
+/home/Chiaki/LaTeX/SAS/chapter3/chapter3.tex:335: Undefined control sequence.
 \beamer@doifinframe ...�nh là các tổng \texbf 
                                                   {hữu hạn} do tính ch�...
 l.335 \end{frame}
@@ -1193,7 +1149,7 @@ LaTeX Font Warning: Font shape `T5/cmss/m/it' in size <8> not available
 [22
 
 ]
-<d.jpg, id=252, 549.05125pt x 121.45375pt>
+<d.jpg, id=192, 549.05125pt x 121.45375pt>
 File: d.jpg Graphic file (type jpg)
 <use d.jpg>
 Package pdftex.def Info: d.jpg  used on input line 351.
@@ -1210,7 +1166,7 @@ l.351 \end{frame}
 ] [25
 
 ]
-<signal.jpg, id=272, 560.0925pt x 321.2pt>
+<signal.jpg, id=214, 560.0925pt x 321.2pt>
 File: signal.jpg Graphic file (type jpg)
 <use signal.jpg>
 Package pdftex.def Info: signal.jpg  used on input line 410.
@@ -1221,7 +1177,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:re11}) has
                    \relax 
 l.410 \end{frame}
                  
-./chapter3.tex:410: Undefined control sequence.
+/home/Chiaki/LaTeX/SAS/chapter3/chapter3.tex:410: Undefined control sequence.
 <recently read> \widetidle 
                            
 l.410 \end{frame}
@@ -1309,7 +1265,7 @@ Overfull \hbox (17.00024pt too wide) detected at line 559
 ] [34
 
 ]
-<spectrum.jpg, id=330, 994.71625pt x 820.06375pt>
+<spectrum.jpg, id=275, 994.71625pt x 820.06375pt>
 File: spectrum.jpg Graphic file (type jpg)
 <use spectrum.jpg>
 Package pdftex.def Info: spectrum.jpg  used on input line 605.
@@ -1322,7 +1278,7 @@ l.605 \end{frame}
                   [35
 
  <./spectrum.jpg>]
-<spec.jpg, id=337, 968.61874pt x 833.1125pt>
+<spec.jpg, id=282, 968.61874pt x 833.1125pt>
 File: spec.jpg Graphic file (type jpg)
 <use spec.jpg>
 Package pdftex.def Info: spec.jpg  used on input line 613.
@@ -1374,24 +1330,30 @@ Overfull \vbox (2.01611pt too high) detected at line 778
 
  (./chapter3.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `chapter3.out' has not changed.
-(rerunfilecheck)             Checksum: 1B6B7AE11617A2761B3C2E580B22AB9A;1744.
+
+Package rerunfilecheck Warning: File `chapter3.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `chapter3.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  1B6B7AE11617A2761B3C2E580B22AB9A;1744.
  ) 
 Here is how much of TeX's memory you used:
- 26198 strings out of 476091
- 519740 string characters out of 5794082
+ 26116 strings out of 476091
+ 517449 string characters out of 5794082
  1868330 words of memory out of 5000000
- 45913 multiletter control sequences out of 15000+600000
+ 45836 multiletter control sequences out of 15000+600000
  527395 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,20n,122p,537b,598s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,20n,122p,569b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnssi8.pfb>
-Output written on chapter3.pdf (44 pages, 1011956 bytes).
+Output written on chapter3.pdf (44 pages, 1009401 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 384 compressed objects within 4 object streams
+ 440 PDF objects out of 1000 (max. 8388607)
+ 334 compressed objects within 4 object streams
  111 named destinations out of 1000 (max. 500000)
- 208 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,7 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1749826893 "/home/Chiaki/LaTeX/iir.tex" "iir.pdf" "iir" 1749826895 0
+["pdflatex"] 1764044094 "iir.tex" "iir.pdf" "iir" 1764044096 2
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/Chiaki/LaTeX/iir.tex" 1749826891 18605 380e195286718b6ec071fda9939efc7f ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -241,9 +240,9 @@
   "30.png" 1749795794 27254 d868f6f7411abf4fa9c375a6b60354e2 ""
   "butter.png" 1749784429 23774 79a01291763e44744afe299c0dea6e93 ""
   "che.png" 1749785216 24123 2098f3b2605c5f54a815e057d1b716eb ""
-  "iir.aux" 1749826895 4029 d2e751a15128b530989be83f12e8eda4 "pdflatex"
-  "iir.out" 1749826895 5974 899cc0e1cbfadfc111ef8410019444a5 "pdflatex"
-  "iir.tex" 1749826891 18605 380e195286718b6ec071fda9939efc7f ""
+  "iir.aux" 1764044096 4029 d2e751a15128b530989be83f12e8eda4 "pdflatex"
+  "iir.out" 1764044096 5974 899cc0e1cbfadfc111ef8410019444a5 "pdflatex"
+  "iir.tex" 1764044094 18728 e3a1759ee7850ae180c93371a9dff0b2 ""
   (generated)
   "iir.aux"
   "iir.log"

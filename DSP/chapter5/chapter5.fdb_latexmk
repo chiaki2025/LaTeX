@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1758129502 "chapter5.tex" "chapter5.pdf" "chapter5" 1758129504 2
+["pdflatex"] 1758187280 "chapter5.tex" "chapter5.pdf" "chapter5" 1758187282 2
   "/etc/texmf/web2c/texmf.cnf" 1740892127 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -245,12 +245,12 @@
   "8.jpg" 1758122331 47773 1dda4f369272009b58f19470dd7a6b45 ""
   "9.jpg" 1758122346 84692 3c898998d255a4bf5a993ef8667a47de ""
   "The-rectangular-Hanning-and-Hamming-windows-in-the-time-and-frequency-domains-with-Mw.png" 1758038858 64693 c343fe4ffdcd57f60fdc60cd3ef65708 ""
-  "chapter5.aux" 1758129504 8156 701cfa653b43955d228622017d9467ea "pdflatex"
-  "chapter5.nav" 1758129504 4175 fedcbf715f84bb3bc1e89cb2a4e19547 "pdflatex"
-  "chapter5.out" 1758129504 1507 0761252bf29c84e7c1e7697a565d5d67 "pdflatex"
-  "chapter5.tex" 1758129502 16187 df303348ad8b30721f7f65225f68c5e3 ""
-  "chapter5.toc" 1758129504 585 07eb3327483fe17776fcc30f6a0fb547 "pdflatex"
-  "chapter5.vrb" 1758129504 687 901a4fbacd5c6f8b95a859aadabdb7bf "pdflatex"
+  "chapter5.aux" 1758187281 8156 701cfa653b43955d228622017d9467ea "pdflatex"
+  "chapter5.nav" 1758187281 4175 fedcbf715f84bb3bc1e89cb2a4e19547 "pdflatex"
+  "chapter5.out" 1758187281 1507 0761252bf29c84e7c1e7697a565d5d67 "pdflatex"
+  "chapter5.tex" 1758187280 16203 83d114fc5e2827f7cba0b2b71baba7a2 ""
+  "chapter5.toc" 1758187281 585 07eb3327483fe17776fcc30f6a0fb547 "pdflatex"
+  "chapter5.vrb" 1758187281 687 901a4fbacd5c6f8b95a859aadabdb7bf "pdflatex"
   (generated)
   "chapter5.aux"
   "chapter5.log"
